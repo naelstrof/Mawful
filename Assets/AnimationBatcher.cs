@@ -20,6 +20,13 @@ public class AnimationBatcher : PooledItem {
         character = GetComponentInParent<Character>();
         character.health.depleted += OnDie;
         currentAnimation = walk;
+        Pauser.pauseChanged += OnPauseChanged;
+    }
+    void OnDestroy() {
+        Pauser.pauseChanged -= OnPauseChanged;
+    }
+    void OnPauseChanged(bool paused) {
+        enabled = !paused;
     }
     void OnDie() {
         currentAnimation = stunned;

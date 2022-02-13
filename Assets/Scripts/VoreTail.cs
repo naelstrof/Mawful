@@ -40,6 +40,13 @@ public class VoreTail : MonoBehaviour {
     void Awake() {
         readyToVore = new HashSet<Character>();
         voreBumps = new List<VoreBump>();
+        Pauser.pauseChanged += OnPauseChanged;
+    }
+    void OnDestroy() {
+        Pauser.pauseChanged -= OnPauseChanged;
+    }
+    void OnPauseChanged(bool paused) {
+        enabled = !paused;
     }
     void FinishVore() {
         foreach(Character other in readyToVore) {
@@ -72,10 +79,11 @@ public class VoreTail : MonoBehaviour {
                 blendAmount += sample;
                 if (t>1f && i == tailBlendIDs.Count-1) {
                     // TODO: trigger some belly stuff here
+                    Leveler.AddXP(1);
                     voreBumps.RemoveAt(j);
                 }
             }
-            tailRenderer.SetBlendShapeWeight(tailBlendIDs[i], Mathf.Min(blendAmount*100f, 300f));
+            tailRenderer.SetBlendShapeWeight(tailBlendIDs[i], Mathf.Min(blendAmount*100f, 250f));
         }
     }
     void FixedUpdate() {

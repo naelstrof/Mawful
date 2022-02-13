@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character : PooledItem {
     public static HashSet<Character> characters = new HashSet<Character>();
+    public AnimationCurve hitEffectCurve;
     public Vector3 lastPosition;
     public Vector3 position;
     public Vector3 velocity {
@@ -12,6 +13,8 @@ public class Character : PooledItem {
         }
     }
     private Collider characterCollider;
+    private Renderer targetRenderer;
+    private Coroutine hitRoutine;
     protected Vector3 wishDir;
     [SerializeField]
     protected Attribute speed;
@@ -19,14 +22,35 @@ public class Character : PooledItem {
     protected float friction;
     protected bool phased = false;
     public HealthAttribute health;
+    [SerializeField]
+    protected float radius = 0.5f;
 
     public Attribute damage;
 
     public void BeHit(Character other) {
         health.Damage(Time.fixedDeltaTime);
+        if (hitRoutine != null) {
+            StopCoroutine(hitRoutine);
+        }
+        hitRoutine = StartCoroutine(HitEffect());
+    }
+    IEnumerator HitEffect() {
+        float startTime = Time.time;
+        float duration = 0.33f;
+        while(Time.time < startTime+duration) {
+            float t = (Time.time-startTime)/duration;
+            targetRenderer.material.SetColor("_EmissionColor", Color.Lerp(Color.black, Color.white, hitEffectCurve.Evaluate(t)));
+            yield return null;
+        }
+        targetRenderer.material.SetColor("_EmissionColor", Color.black);
     }
     public void BeHit(Projectile projectile) {
         health.Damage(projectile.damage);
+        position += projectile.knockback * (projectile.position-projectile.lastPosition).normalized;
+        if (hitRoutine != null) {
+            StopCoroutine(hitRoutine);
+        }
+        hitRoutine = StartCoroutine(HitEffect());
     }
     public void SetPositionAndVelocity(Vector3 position, Vector3 velocity) {
         this.position = position;
@@ -48,9 +72,14 @@ public class Character : PooledItem {
         characterCollider = GetComponent<Collider>();
         health.Heal(99999f);
         health.depleted += Die;
+        targetRenderer = GetComponentInChildren<Renderer>();
+        Pauser.pauseChanged += OnPauseChanged;
     }
     public virtual void OnEnable() {
         characters.Add(this);
+    }
+    void OnDestroy() {
+        Pauser.pauseChanged -= OnPauseChanged;
     }
     public virtual void OnDisable() {
         characters.Remove(this);
@@ -58,14 +87,14 @@ public class Character : PooledItem {
     private void DoCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
         foreach(Character character in element.charactersInElement) {
             if (character == this || character.phased) { continue; }
-            if (this is EnemyCharacter && character is PlayerCharacter) {
-                character.BeHit(this);
-            }
             Vector3 diff = position - character.position;
             Vector3 dir = diff.normalized;
             float mag = diff.magnitude;
-            float doubleRadius = 1f;
+            float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
+            if (this is EnemyCharacter && character is PlayerCharacter && health.GetHealth()>0f && moveAmount > 0.01f) {
+                character.BeHit(this);
+            }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
         }
@@ -116,5 +145,8 @@ public class Character : PooledItem {
     public override void Reset() {
         base.Reset();
         health.Heal(99999f);
+    }
+    void OnPauseChanged(bool paused) {
+        enabled = !paused;
     }
 }

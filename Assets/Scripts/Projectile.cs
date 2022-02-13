@@ -4,17 +4,20 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Projectile : PooledItem {
-    private Vector3 lastPosition;
+    [HideInInspector]
+    public Vector3 lastPosition;
     [Range(0f,1f)][SerializeField]
-    private float friction = 0f;
+    protected float friction = 0f;
     public Vector3 position;
     [SerializeField]
     public float damage = 1f;
     public float radius = 1f;
+    public float knockback = 1f;
     private Dictionary<EnemyCharacter, float> hits;
     private float hitCooldown = 1f;
     private int hitCount;
     public int hitLimit = 1;
+    private Collider projectileCollider;
     public Vector3 interpolatedPosition {
         get {
             float timeSinceLastUpdate = Time.time-Time.fixedTime;
@@ -23,9 +26,23 @@ public class Projectile : PooledItem {
     }
     public override void Awake() {
         base.Awake();
+        projectileCollider = GetComponent<Collider>();
         hits = new Dictionary<EnemyCharacter, float>();
+        Pauser.pauseChanged += OnPauseChanged;
     }
-    private void DoHit(EnemyCharacter character) {
+    void OnDestroy() {
+        Pauser.pauseChanged -= OnPauseChanged;
+    }
+    void OnPauseChanged(bool paused) {
+        enabled = !paused;
+    }
+    protected void DoWallCollision(WorldGrid.PathGridElement element, Vector3 newPosition) {
+        if (!element.passable) {
+            Reset();
+            gameObject.SetActive(false);
+        }
+    }
+    protected void DoHit(EnemyCharacter character) {
         hitCount++;
         character.BeHit(this);
         if (hitCount>=hitLimit) {
@@ -38,7 +55,7 @@ public class Projectile : PooledItem {
         transform.position = this.position;
         transform.localScale = Vector3.one*radius;
     }
-    private void CheckCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
+    protected void CheckCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
         foreach(Character character in element.charactersInElement) {
             if (!(character is EnemyCharacter)) { continue; }
             EnemyCharacter enemyCharacter = character as EnemyCharacter;
@@ -60,6 +77,13 @@ public class Projectile : PooledItem {
     public virtual void FixedUpdate() {
         Vector3 newPosition = position + (position-lastPosition)*(1f-friction*friction);
         lastPosition = position;
+        position = newPosition;
+        Vector3 edgePoint = WorldGrid.worldBounds.ClosestPoint(newPosition);
+        if (edgePoint != newPosition) {
+            Reset();
+            gameObject.SetActive(false);
+        }
+
         int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.collisionGridSize);
         int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.collisionGridSize);
         int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.collisionGridSize,1f))*2-1);
@@ -68,7 +92,15 @@ public class Projectile : PooledItem {
         CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY), ref newPosition);
         CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX, collisionY+collisionYOffset), ref newPosition);
         CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset), ref newPosition);
-        position = newPosition;
+
+        int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.pathGridSize);
+        int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.pathGridSize);
+        //int pathXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.pathGridSize,1f))*2-1);
+        //int pathYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.pathGridSize,1f))*2-1);
+        DoWallCollision(WorldGrid.GetPathGridElement(pathX,pathY), newPosition);
+        //DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY), newPosition);
+        //DoWallCollision(WorldGrid.GetPathGridElement(pathX, pathY+pathYOffset), newPosition);
+        //DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), newPosition);
     }
     public virtual void LateUpdate() {
         transform.position = interpolatedPosition;

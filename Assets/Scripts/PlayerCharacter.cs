@@ -15,6 +15,7 @@ public class PlayerCharacter : Character {
     public Attribute projectilePenetration;
     public Attribute projectileRadius;
     public Attribute projectileSpeed;
+    public Attribute luck;
     public override void Awake() {
         base.Awake();
         player = this;

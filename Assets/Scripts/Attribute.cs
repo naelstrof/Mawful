@@ -67,6 +67,9 @@ public class Attribute : ISerializationCallbackReceiver {
         parent.childAttributes.Add(this);
     }
     public virtual void AddModifier(AttributeModifier modifier) {
+        if (modifier == null) {
+            return;
+        }
         modifiers.Add(modifier);
         CacheData();
     }
