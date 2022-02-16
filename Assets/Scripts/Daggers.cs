@@ -19,7 +19,7 @@ public class Daggers : Weapon {
             yield return timeToWait;
             for (int i=0;i<projectileCount.GetValue();i++) {
                 Projectile magicBolt;
-                if (!ProjectilePool.TryInstantiate(out magicBolt)) { continue; }
+                if (!ProjectilePool.StaticTryInstantiate(out magicBolt)) { continue; }
                 SetUpProjectile(magicBolt);
                 magicBolt.SetPositionAndVelocity(player.interpolatedPosition, player.fireDir*speed.GetValue());
                 yield return perProjectileWait;

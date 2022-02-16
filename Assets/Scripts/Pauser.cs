@@ -11,6 +11,7 @@ public static class Pauser {
             return;
         }
         paused = newPause;
+        Time.timeScale = paused ? 0f : 1f;
         pauseChanged?.Invoke(newPause);
     }
 }

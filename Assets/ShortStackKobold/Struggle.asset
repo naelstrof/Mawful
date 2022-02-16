@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: Struggle
+  m_EditorClassIdentifier: 
+  framesPerSecond: 30
+  animationClip: {fileID: 1871406227984168697, guid: f3b0989db70b3694a9c4e05f3baeb17c, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: f3b0989db70b3694a9c4e05f3baeb17c, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: 4ad2a3d2e46ec424c9c112e406ca3b12, type: 2}
+  - {fileID: 4300000, guid: 0fbd3da9002afd048ab3d04632db0989, type: 2}
+  - {fileID: 4300000, guid: fde80edabc6c06c4eb0019f80aa4c63a, type: 2}
+  - {fileID: 4300000, guid: 61bada9d83ca46b4886a6ff0d797a631, type: 2}
+  - {fileID: 4300000, guid: 9f4201f0d9010f44da1a00d4c6189f2a, type: 2}
+  - {fileID: 4300000, guid: f57a8683f64e4164d80d6cc14e4a98ac, type: 2}
+  - {fileID: 4300000, guid: cac4b7a1671939b4d9688bc2b14685bc, type: 2}
+  - {fileID: 4300000, guid: eed56ee29102370429e2e36afcb039c8, type: 2}
+  - {fileID: 4300000, guid: 43ebfa31630f6ca45bd12233deb0fdc7, type: 2}
+  - {fileID: 4300000, guid: 23ff8deec5d9f91469f6e1a9648eb4c6, type: 2}
+  - {fileID: 4300000, guid: 0efd6fb47723dca4492bbe2402671294, type: 2}

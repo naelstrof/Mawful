@@ -18,6 +18,11 @@ public class Projectile : PooledItem {
     private int hitCount;
     public int hitLimit = 1;
     private Collider projectileCollider;
+    public Vector3 velocity {
+        get {
+            return position-lastPosition;
+        }
+    }
     public Vector3 interpolatedPosition {
         get {
             float timeSinceLastUpdate = Time.time-Time.fixedTime;
@@ -44,7 +49,7 @@ public class Projectile : PooledItem {
     }
     protected void DoHit(EnemyCharacter character) {
         hitCount++;
-        character.BeHit(this);
+        character.BeHit(new Character.DamageInstance(damage, velocity*knockback));
         if (hitCount>=hitLimit) {
             gameObject.SetActive(false);
         }

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: RatStruggle2
+  m_EditorClassIdentifier: 
+  framesPerSecond: 30
+  animationClip: {fileID: 7550925074632616781, guid: 298083e0c09cce246bb4a2d237a8df18, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 298083e0c09cce246bb4a2d237a8df18, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: e06fccf5a3806c648a66621b9d7f9658, type: 2}
+  - {fileID: 4300000, guid: 285dfa91e9197834995db21df52d3922, type: 2}
+  - {fileID: 4300000, guid: c69747afced42f54487ab7420e01128c, type: 2}
+  - {fileID: 4300000, guid: b9ab790556556504788a707138e31513, type: 2}
+  - {fileID: 4300000, guid: 56125ba88cdca7443b8948c4b089b0a6, type: 2}
+  - {fileID: 4300000, guid: 263799338bba51e44a57aa2b81b5f7c5, type: 2}
+  - {fileID: 4300000, guid: 5aecd042c22bff648b44a3bffbb37a12, type: 2}
+  - {fileID: 4300000, guid: a6139cb18a9070a489130670ed5791e7, type: 2}
+  - {fileID: 4300000, guid: 825fce6c9ddfd594496a0293589c9903, type: 2}

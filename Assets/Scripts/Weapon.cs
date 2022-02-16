@@ -21,7 +21,6 @@ public class Weapon : MonoBehaviour {
     }
     public virtual void Upgrade() {
         WeaponUpgrade upgrade = upgrades[currentUpgrade++];
-        Debug.Log("Upgrading " + gameObject.name);
         projectileCount.AddModifier(upgrade.countModifier);
         damage.AddModifier(upgrade.damageModifier);
         cooldown.AddModifier(upgrade.cooldownModifier);

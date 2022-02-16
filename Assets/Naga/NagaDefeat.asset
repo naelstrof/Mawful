@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: NagaDefeat
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: 5406804722438174051, guid: e7bb97d05461185448bb01cb73273502, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: e7bb97d05461185448bb01cb73273502, type: 3}
+  loop: 0
+  frames:
+  - {fileID: 4300000, guid: adac6fe57216acc49a81dfaed54a4593, type: 2}
+  - {fileID: 4300000, guid: acc570923baa6b143add672ff50b8186, type: 2}
+  - {fileID: 4300000, guid: d19d05f17ede92646a376fd225b5ffc8, type: 2}
+  - {fileID: 4300000, guid: 2f6d778a2584cf648a5ee7a38a554b11, type: 2}
+  - {fileID: 4300000, guid: 0bc240e3cef017340be7aff7b652d7fc, type: 2}
+  - {fileID: 4300000, guid: 890f51046a9eaa9448b686c93230126e, type: 2}
+  - {fileID: 4300000, guid: 2153aa449ae7234418c373dc69e1440b, type: 2}
+  - {fileID: 4300000, guid: 4cb924cc7dba21a4f82430a1cb1fad8a, type: 2}
+  - {fileID: 4300000, guid: 49f6aae703713c54a8b6c86e652c7059, type: 2}
+  - {fileID: 4300000, guid: bab3add7c33e2ab4ebca7fa5dea227ac, type: 2}
+  - {fileID: 4300000, guid: a34e588a1c39b6c49a2dca62daf00511, type: 2}
+  - {fileID: 4300000, guid: ed5fb5f0f7dbe154080dc5e5cbe4b3f0, type: 2}
+  - {fileID: 4300000, guid: dbfc2eae5abc73b44863568dc468716a, type: 2}
+  - {fileID: 4300000, guid: 760538d20bf89fe4284b475c4a18ac74, type: 2}
+  - {fileID: 4300000, guid: 9b130978ba6abcd47a5c1d6507b63a8d, type: 2}

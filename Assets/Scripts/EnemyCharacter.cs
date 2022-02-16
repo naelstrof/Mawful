@@ -6,7 +6,7 @@ public class EnemyCharacter : Character {
     private bool stunned = false;
     public override void LateUpdate() {
         base.LateUpdate();
-        if (velocity.sqrMagnitude > 0.001f) {
+        if (health.GetHealth()>0f && velocity.sqrMagnitude > 0.0001f) {
             transform.rotation = Quaternion.LookRotation(velocity.normalized, Vector3.up);
         }
     }

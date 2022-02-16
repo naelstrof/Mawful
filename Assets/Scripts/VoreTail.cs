@@ -19,7 +19,8 @@ public class VoreTail : MonoBehaviour {
     private List<int> tailBlendIDs;
     [SerializeField]
     private SkinnedMeshRenderer tailRenderer;
-    private Character character;
+    private Character player;
+    private HashSet<Character> vaccuming;
     private HashSet<Character> readyToVore;
     [SerializeField]
     private AnimationCurve voreBumpCurve;
@@ -27,18 +28,19 @@ public class VoreTail : MonoBehaviour {
     private const float tailBlendDistance = 0.5f;
     void VaccumDefeated(WorldGrid.CollisionGridElement element) {
         foreach(Character character in element.charactersInElement) {
-            if (character.health.GetHealth() <= 0f) {
-                Vector3 dir = tailMouth.position - character.position;
-                character.position += dir * 0.2f;
-                character.lastPosition = Vector3.Lerp(character.lastPosition, character.position, 0.8f);
-                if (dir.magnitude < 0.5f) {
-                    Vore(character);
+            if (character.health.GetHealth() <= 0f && character is EnemyCharacter) {
+                if (Vector3.Distance(tailMouth.position, character.position) < 2f) {
+                    if (!vaccuming.Contains(character)) {
+                        character.GetComponentInChildren<AnimationBatcher>(true).Vore();
+                        vaccuming.Add(character);
+                    }
                 }
             }
         }
     }
     void Awake() {
         readyToVore = new HashSet<Character>();
+        vaccuming = new HashSet<Character>();
         voreBumps = new List<VoreBump>();
         Pauser.pauseChanged += OnPauseChanged;
     }
@@ -53,6 +55,7 @@ public class VoreTail : MonoBehaviour {
             other.Reset();
             other.gameObject.SetActive(false);
             voreBumps.Add(new VoreBump(Time.time,UnityEngine.Random.Range(1.5f, 4f)));
+            vaccuming.Remove(other);
         }
         readyToVore.Clear();
         tailAnimator.ResetTrigger("Chomp");
@@ -67,7 +70,7 @@ public class VoreTail : MonoBehaviour {
         for (int i=0;i<tailBlends.Count;i++) {
             tailBlendIDs.Add(tailRenderer.sharedMesh.GetBlendShapeIndex(tailBlends[i]));
         }
-        character = GetComponentInParent<Character>();
+        player = GetComponentInParent<Character>();
     }
     void Update() {
         for(int i=0;i<tailBlendIDs.Count;i++) {
@@ -96,5 +99,18 @@ public class VoreTail : MonoBehaviour {
         VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY));
         VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX, collisionY+collisionYOffset));
         VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset));
+        foreach(Character character in vaccuming) {
+            Vector3 dir = tailMouth.position - (character.position-character.transform.up*0.5f);
+            character.position += dir * 0.25f;
+            //character.lastPosition = character.position;
+            if (dir.magnitude < 0.5f) {
+                Vore(character);
+            }
+        }
+    }
+    void LateUpdate() {
+        foreach(Character character in vaccuming) {
+            character.transform.rotation = Quaternion.RotateTowards(character.transform.rotation, tailMouth.rotation, Time.deltaTime*360f*3f);
+        }
     }
 }

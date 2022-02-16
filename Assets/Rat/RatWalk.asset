@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: RatWalk
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: -203655887218126122, guid: 9a03964079b2f674b975717f56229f63, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 298083e0c09cce246bb4a2d237a8df18, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: d251acba91981034988db97681dfb430, type: 2}
+  - {fileID: 4300000, guid: 8a3ef14b1223ecc49b921fa4d755f8dc, type: 2}
+  - {fileID: 4300000, guid: d5ac6fabc7461344db0c01f5d55d132b, type: 2}
+  - {fileID: 4300000, guid: acaff9b539e904f41bd538d28d8c06c6, type: 2}
+  - {fileID: 4300000, guid: c34b857205dd905429e84ccfc020c85c, type: 2}
+  - {fileID: 4300000, guid: d43134f2361225c45aaf68a729b1b830, type: 2}
+  - {fileID: 4300000, guid: ffe47a728be896445bfa87ade98ae9b0, type: 2}
+  - {fileID: 4300000, guid: e449dddfa117cd842a5d70754b0a1fcd, type: 2}
+  - {fileID: 4300000, guid: 145b696a24278a24b811832d36cfad6e, type: 2}
+  - {fileID: 4300000, guid: 56cf787e423ee2948ba9e38d5616bdc8, type: 2}
+  - {fileID: 4300000, guid: d052a0484990e8746a53fbd78ad72b04, type: 2}
+  - {fileID: 4300000, guid: 4b72eb66dabc5414fa54a076c1464a5e, type: 2}
+  - {fileID: 4300000, guid: a2f5b53fc89f09042b8d8e5e8190b1bc, type: 2}
+  - {fileID: 4300000, guid: a6a0f2efb7581194ba81623dc90a9757, type: 2}
+  - {fileID: 4300000, guid: dbe54863d7cd3784a9e1fb2acb580e5c, type: 2}
+  - {fileID: 4300000, guid: 82497c35142a1094d8b4f8d415deedf8, type: 2}
+  - {fileID: 4300000, guid: ec7d52e09517c714db5f1ece4cfc422f, type: 2}

@@ -19,7 +19,17 @@ public class GenericPool<T> : MonoBehaviour where T : PooledItem {
             thing.gameObject.SetActive(false);
         }
     }
-    public static bool TryInstantiate(out T thing) {
+    public bool TryInstantiate(out T thing) {
+        if (prefabSet.Count > 0) {
+            thing = prefabSet.Dequeue();
+            thing.Reset();
+            thing.gameObject.SetActive(true);
+            return true;
+        }
+        thing = null;
+        return false;
+    }
+    public static bool StaticTryInstantiate(out T thing) {
         if (instance.prefabSet.Count > 0) {
             thing = instance.prefabSet.Dequeue();
             thing.Reset();

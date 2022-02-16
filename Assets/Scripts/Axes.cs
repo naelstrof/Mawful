@@ -19,7 +19,7 @@ public class Axes : Weapon {
             yield return timeToWait;
             for (int i=0;i<projectileCount.GetValue();i++) {
                 Axe axe;
-                if (!AxePool.TryInstantiate(out axe)) { continue; }
+                if (!AxePool.StaticTryInstantiate(out axe)) { continue; }
                 SetUpProjectile(axe);
                 axe.SetPositionAndVelocity(player.interpolatedPosition, (Vector3.Scale(UnityEngine.Random.insideUnitSphere,new Vector3(0.4f,0,0.4f))+new Vector3(-0.5f,0f,0.5f))*speed.GetValue());
                 yield return perProjectileWait;

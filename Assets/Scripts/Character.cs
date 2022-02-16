@@ -22,31 +22,40 @@ public class Character : PooledItem {
     protected float friction;
     protected bool phased = false;
     public HealthAttribute health;
+    public float radius = 0.5f;
     [SerializeField]
-    protected float radius = 0.5f;
+    [ColorUsage(false, true)]
+    private Color colorFlash;
 
     public Attribute damage;
-
-    public void BeHit(Character other) {
-        health.Damage(Time.fixedDeltaTime);
-        if (hitRoutine != null) {
-            StopCoroutine(hitRoutine);
+    public struct DamageInstance {
+        public DamageInstance(float damage, Vector3 knockback) {
+            this.damage = damage;
+            this.knockback = knockback;
         }
-        hitRoutine = StartCoroutine(HitEffect());
+        public float damage;
+        public Vector3 knockback;
     }
     IEnumerator HitEffect() {
         float startTime = Time.time;
         float duration = 0.33f;
         while(Time.time < startTime+duration) {
             float t = (Time.time-startTime)/duration;
-            targetRenderer.material.SetColor("_EmissionColor", Color.Lerp(Color.black, Color.white, hitEffectCurve.Evaluate(t)));
+            targetRenderer.material.SetColor("_EmissionColor", Color.Lerp(Color.black, colorFlash, hitEffectCurve.Evaluate(t)));
             yield return null;
         }
         targetRenderer.material.SetColor("_EmissionColor", Color.black);
     }
-    public void BeHit(Projectile projectile) {
-        health.Damage(projectile.damage);
-        position += projectile.knockback * (projectile.position-projectile.lastPosition).normalized;
+    public void BeHit(DamageInstance instance) {
+        if (health.GetHealth() <= 0f) {
+            return;
+        }
+        MeshFloater floater;
+        MeshFloaterPool.StaticTryInstantiate(out floater);
+        floater.transform.position = position + Vector3.up*0.5f;
+        floater.SetDisplay(Mathf.CeilToInt(instance.damage*10f));
+        health.Damage(instance.damage);
+        position += instance.knockback;
         if (hitRoutine != null) {
             StopCoroutine(hitRoutine);
         }
@@ -93,7 +102,7 @@ public class Character : PooledItem {
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
             if (this is EnemyCharacter && character is PlayerCharacter && health.GetHealth()>0f && moveAmount > 0.01f) {
-                character.BeHit(this);
+                character.BeHit(new DamageInstance(Time.fixedDeltaTime*health.GetValue(), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
@@ -116,7 +125,9 @@ public class Character : PooledItem {
         if (edgePoint != newPosition) {
             newPosition = edgePoint;
         }
-        newPosition.y = 0f;
+        if (health.GetHealth() > 0f) {
+            newPosition.y = 0f;
+        }
 
         if (!phased) {
             int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.collisionGridSize);

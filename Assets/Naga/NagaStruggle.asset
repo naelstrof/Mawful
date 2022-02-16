@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: NagaStruggle
+  m_EditorClassIdentifier: 
+  framesPerSecond: 20
+  animationClip: {fileID: 3869923046576393986, guid: e7bb97d05461185448bb01cb73273502, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: e7bb97d05461185448bb01cb73273502, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: a8672b4c19befea4b9869861e03bacc8, type: 2}
+  - {fileID: 4300000, guid: 10a134ff66e7e504a8a0ba13cdd30be5, type: 2}
+  - {fileID: 4300000, guid: 25c981862a7c3024593c85349c36c135, type: 2}
+  - {fileID: 4300000, guid: b9f219edde1647a44a8f021db9803f43, type: 2}
+  - {fileID: 4300000, guid: 82c49a60091352d43b0b3c394887007f, type: 2}
+  - {fileID: 4300000, guid: ea99ba65410908e49991384c520c7391, type: 2}
+  - {fileID: 4300000, guid: 7da4c5761eb6112439aa4c73868669c7, type: 2}
+  - {fileID: 4300000, guid: 39d0aa61b928d304aa7eaaaa109917a4, type: 2}
+  - {fileID: 4300000, guid: 27fd83bcce6244940a4fbf1ca58eab6d, type: 2}
+  - {fileID: 4300000, guid: 63641b67f56afb4458c13ae8fe9516f1, type: 2}
+  - {fileID: 4300000, guid: 56f286d7dd7958040bd9b49cb3e4a56d, type: 2}
+  - {fileID: 4300000, guid: ef646b528df444b4a9919b84f94a75e9, type: 2}
+  - {fileID: 4300000, guid: eea2d5a909b0b4541bd97762d6a620df, type: 2}
+  - {fileID: 4300000, guid: e534f874db24d654a96ef58e23a7fbbe, type: 2}
+  - {fileID: 4300000, guid: aa9fdc304c2f09e4ea39781281ee792b, type: 2}
+  - {fileID: 4300000, guid: 81439a1a30f940e4888e9dc8280baa12, type: 2}
+  - {fileID: 4300000, guid: 932528fd83f0c4d4dbbd3db13e949764, type: 2}
+  - {fileID: 4300000, guid: 8a7b76ae8b797fa4b9a1a4dcacbb71de, type: 2}
+  - {fileID: 4300000, guid: 8855765af2dca054983420413e84f4e6, type: 2}

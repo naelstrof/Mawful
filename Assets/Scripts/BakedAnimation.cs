@@ -6,8 +6,7 @@ using System.IO;
 
 [CreateAssetMenu(fileName = "NewBakedAnimation", menuName = "VoreGame/BakedAnimation", order = 1)]
 public class BakedAnimation : ScriptableObject {
-    [SerializeField]
-    private float framesPerSecond = 15f;
+    public float framesPerSecond = 15f;
     [SerializeField]
     private AnimationClip animationClip;
     [SerializeField]
