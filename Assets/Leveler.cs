@@ -11,12 +11,17 @@ public class Leveler : MonoBehaviour {
     [SerializeField]
     private SkinnedMeshRenderer targetRenderer;
     private float currentXP = 0;
+    private float currentTummyVolume = 0f;
+    private float currentTummyVelocity = 0f;
+    private float tummyVolume = 0f;
     private float neededXP = 3;
     [SerializeField]
     private AnimationCurve bounceCurve;
     [SerializeField][Range(0.1f,2f)]
     private float bounceTime;
     private Coroutine bounceRoutine;
+    [SerializeField]
+    private Transform targetDickTransform;
     void Awake() {
         instance = this;
         Pauser.pauseChanged += OnPauseChanged;
@@ -25,9 +30,7 @@ public class Leveler : MonoBehaviour {
         Pauser.pauseChanged -= OnPauseChanged;
     }
     public static void AddXP(float xp) {
-        if (instance.bounceRoutine == null) {
-            instance.StartCoroutine(instance.TweenXP(instance.currentXP, instance.neededXP));
-        }
+        instance.tummyVolume += xp;
         instance.currentXP += xp;
         if (instance.currentXP >= instance.neededXP) {
             instance.currentXP -= instance.neededXP;
@@ -35,24 +38,18 @@ public class Leveler : MonoBehaviour {
             instance.levelUp?.Invoke();
         }
     }
-    void Process(float xp, float maxXP) {
-        float ratio = xp/maxXP;
-        targetRenderer.SetBlendShapeWeight(targetRenderer.sharedMesh.GetBlendShapeIndex(targetBlendshape), ratio*100f);
+    void Update() {
+        targetDickTransform.localScale = Vector3.one * (1f+currentTummyVolume*0.1f);
+        targetRenderer.SetBlendShapeWeight(targetRenderer.sharedMesh.GetBlendShapeIndex(targetBlendshape), Mathf.Min(currentTummyVolume*8f,100f));
+        currentTummyVelocity = Mathf.MoveTowards(currentTummyVelocity, 0f, Time.deltaTime);
+        currentTummyVelocity += (tummyVolume - currentTummyVolume) * Time.deltaTime * 8f;
+        currentTummyVolume += currentTummyVelocity;
+        tummyVolume = Mathf.MoveTowards(tummyVolume, 0f, tummyVolume*Time.deltaTime*0.05f);
     }
-    IEnumerator TweenXP(float fromXP, float fromNeededXP) {
-        float startTime = Time.time;
-        while (Time.time < startTime+bounceTime && isActiveAndEnabled) {
-            yield return null;
-            float t = (Time.time-startTime)/bounceTime;
-            Process(Mathf.Lerp(fromXP, currentXP, bounceCurve.Evaluate(t)), Mathf.Lerp(fromNeededXP, neededXP, bounceCurve.Evaluate(t)));
-        }
-        bounceRoutine = null;
+    void Process(float xp, float maxXP) {
     }
     void OnPauseChanged(bool paused) {
         enabled = !paused;
         bounceRoutine = null;
-        if (enabled) {
-            StartCoroutine(TweenXP(currentXP, neededXP));
-        }
     }
 }

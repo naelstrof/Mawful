@@ -11,21 +11,28 @@ public class EnemySpawner : MonoBehaviour {
     private EnemyPool rats;
     [SerializeField]
     private EnemyPool nagas;
+    [SerializeField]
+    private EnemyPool slimes;
     void Start() {
+        int current = 0;
         for(int i=0;i<count;i++) {
             Vector3 position = new Vector3(UnityEngine.Random.Range(0f,200f), 0f, UnityEngine.Random.Range(0f, 200f));
             position = WorldGrid.worldBounds.ClosestPoint(position);
             EnemyCharacter character;
-            if (i%23 == 0) {
-                nagas.TryInstantiate(out character);
-            } else {
-                if (i%2 == 0) {
-                    kobolds.TryInstantiate(out character);
-                } else {
-                    rats.TryInstantiate(out character);
-                }
+            switch(current) {
+                case 0:
+                    kobolds.TryInstantiate(out character); break;
+                case 1:
+                    rats.TryInstantiate(out character); break;
+                case 2:
+                    nagas.TryInstantiate(out character); break;
+                case 3:
+                    slimes.TryInstantiate(out character); break;
+                default:
+                    kobolds.TryInstantiate(out character); break;
             }
             character.SetPositionAndVelocity(position, Vector3.zero);
+            current = ((++current)%4);
         }
     }
 }

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: SlimeStruggle
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: -8936989440478368456, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: 0c9da4cff721d054999b2f8812e621ea, type: 2}
+  - {fileID: 4300000, guid: c6e366c6e1ef5704eb85580c3de5c205, type: 2}
+  - {fileID: 4300000, guid: 34034c8da73ae6b41ac9991a549d7239, type: 2}
+  - {fileID: 4300000, guid: 27bd1356b573a1042a3448e48d7c96e5, type: 2}
+  - {fileID: 4300000, guid: f5e4acd1aebc1844da6e09a3ad2dbccf, type: 2}
+  - {fileID: 4300000, guid: 787d07e8efb37d14d8738890b59bea4e, type: 2}
+  - {fileID: 4300000, guid: e2f13bd2f6eb15044ba096fef78725ee, type: 2}

@@ -7,7 +7,7 @@ public class EnemyCharacter : Character {
     public override void LateUpdate() {
         base.LateUpdate();
         if (health.GetHealth()>0f && velocity.sqrMagnitude > 0.0001f) {
-            transform.rotation = Quaternion.LookRotation(velocity.normalized, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation(velocity.normalized, Vector3.up), Time.deltaTime*360f);
         }
     }
     public override void Die() {

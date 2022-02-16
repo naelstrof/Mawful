@@ -2298,6 +2298,7 @@ GameObject:
   - component: {fileID: 1106341933}
   - component: {fileID: 1106341934}
   - component: {fileID: 1106341935}
+  - component: {fileID: 1106341936}
   m_Layer: 0
   m_Name: KoboldSpawner
   m_TagString: Untagged
@@ -2321,6 +2322,7 @@ MonoBehaviour:
   kobolds: {fileID: 1106341933}
   rats: {fileID: 1106341934}
   nagas: {fileID: 1106341935}
+  slimes: {fileID: 1106341936}
 --- !u!4 &1106341932
 Transform:
   m_ObjectHideFlags: 0
@@ -2347,7 +2349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6805aa626a4a5824b84eddc8336814a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolSize: 500
+  poolSize: 300
   prefab: {fileID: 8347615568578718693, guid: b4f7667f7cc9d114ab60100ae47a3cbc, type: 3}
 --- !u!114 &1106341934
 MonoBehaviour:
@@ -2361,7 +2363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6805aa626a4a5824b84eddc8336814a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolSize: 500
+  poolSize: 300
   prefab: {fileID: 8347615568578718693, guid: 7fc943033ac6b4d49b49bf92903b0249, type: 3}
 --- !u!114 &1106341935
 MonoBehaviour:
@@ -2375,8 +2377,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6805aa626a4a5824b84eddc8336814a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolSize: 500
+  poolSize: 300
   prefab: {fileID: 8347615568578718693, guid: e99c56ba45238dd4a8d04838ffee381e, type: 3}
+--- !u!114 &1106341936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106341930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6805aa626a4a5824b84eddc8336814a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolSize: 300
+  prefab: {fileID: 8347615568578718693, guid: eac2294318d12c44f844c2885293a007, type: 3}
 --- !u!1 &1141841977
 GameObject:
   m_ObjectHideFlags: 0

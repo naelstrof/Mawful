@@ -461,6 +461,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   bounceTime: 1.5
+  targetDickTransform: {fileID: 8299256670718100628}
 --- !u!1 &3042132873764872123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1130,11 @@ Transform:
 --- !u!4 &551499194026544789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8299256670718100628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1609590634486210384 stripped

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: SlimeWalk
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: 8349542763059015795, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: 8cda895cd4d29ea4b94062ef0d113e70, type: 2}
+  - {fileID: 4300000, guid: ce3f9666410c067428d5aedad04e6d28, type: 2}
+  - {fileID: 4300000, guid: 19a9a140015fc1947b0bda9a92bd026a, type: 2}
+  - {fileID: 4300000, guid: 5bb985b974df59e419536eaf0d4bbe15, type: 2}
+  - {fileID: 4300000, guid: bc92915c7c4036548b0b7821c01b4dd5, type: 2}
+  - {fileID: 4300000, guid: f0273fc0329ac1b46b86f47acf09efe0, type: 2}
+  - {fileID: 4300000, guid: 1962f08f106ede547b6a5c3d0929195c, type: 2}
+  - {fileID: 4300000, guid: b914c72578f2ce94b9c9fdee2e40be8b, type: 2}
+  - {fileID: 4300000, guid: 5ad00db18ae868c459097b04551abaff, type: 2}
+  - {fileID: 4300000, guid: 357b0948ad04d9942872573c53e96471, type: 2}
+  - {fileID: 4300000, guid: ecf3653e28e82e344aeb87f087ada993, type: 2}
+  - {fileID: 4300000, guid: b5b8f055581955c4eb4598f0e0cad760, type: 2}
