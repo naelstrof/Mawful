@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: WolfStruggle1
+  m_EditorClassIdentifier: 
+  framesPerSecond: 20
+  animationClip: {fileID: 7143286592147570172, guid: 66b9e1d56229822439c30d86b80ace11, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 66b9e1d56229822439c30d86b80ace11, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: fb844aba250ef0543b895cbf73e18706, type: 2}
+  - {fileID: 4300000, guid: 28090d8eb9cc33449b0ff1994fedf66e, type: 2}
+  - {fileID: 4300000, guid: abe774c781c3069439a97e8a3fc9572b, type: 2}
+  - {fileID: 4300000, guid: fb90013362409614986d5466f5479344, type: 2}
+  - {fileID: 4300000, guid: 966ad9a4bf65b2142a8ead58d72f6614, type: 2}
+  - {fileID: 4300000, guid: 4959fc126258e3a46b5482ea9b106e80, type: 2}
+  - {fileID: 4300000, guid: 833de41fbcee27f4a9514aa34ac3e653, type: 2}
+  - {fileID: 4300000, guid: e6e96ba47d394774cbaa17d14fc8d70a, type: 2}
+  - {fileID: 4300000, guid: ecf839212827d054e8f63d62fbd2cd9b, type: 2}

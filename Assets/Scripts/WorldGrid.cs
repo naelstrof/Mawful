@@ -106,9 +106,9 @@ public class WorldGrid : MonoBehaviour {
         lastElement = null;
         PrimeGrid<PathGridElement>(40, pathGrid, pathGridSize);
         PrimeGrid<CollisionGridElement>(100, collisionGrid, collisionGridSize);
-        bounds = new Bounds((Vector3.forward+Vector3.right)*Mathf.Max(pathGridSize, collisionGridSize)*2f, Vector3.up);
-        float width = Mathf.Min((pathGrid.Count-3)*pathGridSize, (collisionGrid.Count-3)*collisionGridSize);
-        float height = Mathf.Min((pathGrid[0].Count-3)*pathGridSize, (collisionGrid[0].Count-3)*collisionGridSize);
+        bounds = new Bounds((Vector3.forward+Vector3.right)*Mathf.Max(pathGridSize, collisionGridSize), Vector3.up);
+        float width = Mathf.Min((pathGrid.Count-2)*pathGridSize, (collisionGrid.Count-2)*collisionGridSize);
+        float height = Mathf.Min((pathGrid[0].Count-2)*pathGridSize, (collisionGrid[0].Count-2)*collisionGridSize);
         bounds.Encapsulate(Vector3.right*width + Vector3.forward*height);
     }
     void OnDestroy() {

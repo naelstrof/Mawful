@@ -13,6 +13,10 @@ public class EnemySpawner : MonoBehaviour {
     private EnemyPool nagas;
     [SerializeField]
     private EnemyPool slimes;
+    [SerializeField]
+    private EnemyPool wolves;
+    [SerializeField]
+    private EnemyPool kangaroos;
     void Start() {
         int current = 0;
         for(int i=0;i<count;i++) {
@@ -28,11 +32,15 @@ public class EnemySpawner : MonoBehaviour {
                     nagas.TryInstantiate(out character); break;
                 case 3:
                     slimes.TryInstantiate(out character); break;
+                case 4:
+                    wolves.TryInstantiate(out character); break;
+                case 5:
+                    kangaroos.TryInstantiate(out character); break;
                 default:
                     kobolds.TryInstantiate(out character); break;
             }
             character.SetPositionAndVelocity(position, Vector3.zero);
-            current = ((++current)%4);
+            current = ((++current)%6);
         }
     }
 }

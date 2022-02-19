@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: KangarooDefeat
+  m_EditorClassIdentifier: 
+  framesPerSecond: 20
+  animationClip: {fileID: 5697045212559222180, guid: 99a386284b4f20a4697bc6fb55f468b1, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 99a386284b4f20a4697bc6fb55f468b1, type: 3}
+  loop: 0
+  frames:
+  - {fileID: 4300000, guid: ba08e9faab3b0574694a492d8387fdc5, type: 2}
+  - {fileID: 4300000, guid: ae973276f90255341bf538c62d97648f, type: 2}
+  - {fileID: 4300000, guid: aa9e8a1c550887e4ea2b4540d0e65e5d, type: 2}
+  - {fileID: 4300000, guid: 102d236a42aef5e4e91cd5e078acbc70, type: 2}
+  - {fileID: 4300000, guid: 0d0f476c63ce9374a99bf0eb3f3f90a2, type: 2}
+  - {fileID: 4300000, guid: 0c1c5fbbda0fadd4eb1af68bb173ff98, type: 2}
+  - {fileID: 4300000, guid: 116fff79a0e47f047b930d4e18b002b3, type: 2}
+  - {fileID: 4300000, guid: d8c5f08cac7a7554aa46da4a5b475293, type: 2}
+  - {fileID: 4300000, guid: 9adf86f319d39a14da8a98ff5a555338, type: 2}
+  - {fileID: 4300000, guid: 1fa2c3e2b1ba9c74a94ab1e36b2a2015, type: 2}
+  - {fileID: 4300000, guid: 2d368c4a81ef86f448d1352825624168, type: 2}
+  - {fileID: 4300000, guid: 43d4b01839596a3479d29420f6d87a9b, type: 2}
+  - {fileID: 4300000, guid: dd78d57a08de38b4aa2d9a8c27aaf0d2, type: 2}
+  - {fileID: 4300000, guid: 4756eb818d0a70242a19a1cd3b5fc832, type: 2}
+  - {fileID: 4300000, guid: d391127e6d81cec42acbe84c3b082962, type: 2}
+  - {fileID: 4300000, guid: 8a0c3777cae740747a0effad55ee0f61, type: 2}
+  - {fileID: 4300000, guid: ea64b1919d0acd84197671f0bd8b05c8, type: 2}
+  - {fileID: 4300000, guid: 215ea7c61b3717548b040e74aaaab368, type: 2}
+  - {fileID: 4300000, guid: 3ca2133bd5f91f440b4ba9251010e0c8, type: 2}

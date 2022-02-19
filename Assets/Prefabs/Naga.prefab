@@ -154,7 +154,7 @@ MonoBehaviour:
   health:
     modifiers:
     - {fileID: 11400000, guid: 3b92195ca192d884197052d0289e0e39, type: 2}
-  radius: 0.9
+  radius: 1
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
   damage:
     modifiers: []
@@ -198,7 +198,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8568940013376001890}
-  m_Mesh: {fileID: 4300000, guid: adac6fe57216acc49a81dfaed54a4593, type: 2}
+  m_Mesh: {fileID: 0}
 --- !u!23 &6719131962823964539
 MeshRenderer:
   m_ObjectHideFlags: 0
