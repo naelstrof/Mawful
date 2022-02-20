@@ -19,4 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3550738e5df162b4d91cfa8fa837916c, type: 2}
   - {fileID: 11400000, guid: 3550738e5df162b4d91cfa8fa837916c, type: 2}
   blocksMovement: 1
-  initialProbability: 1
+  initialProbability: 0.7
+  probability: 1
+  rotationAngle: 0
+  canRotate: 0

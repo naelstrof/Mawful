@@ -20,3 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 55fdcae5e9c707449b70f43c9a607dc6, type: 2}
   blocksMovement: 0
   initialProbability: 1
+  probability: 1
+  rotationAngle: 0
+  canRotate: 1

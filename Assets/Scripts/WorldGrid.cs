@@ -4,6 +4,8 @@ using UnityEngine;
 using Unity.Mathematics;
 
 public class WorldGrid : MonoBehaviour {
+    [SerializeField]
+    private MapGenerator mapGeneration;
     private Bounds bounds;
     private Coroutine pathRoutine;
     public static Bounds worldBounds => instance.bounds;
@@ -48,6 +50,9 @@ public class WorldGrid : MonoBehaviour {
             passable = Physics.OverlapBoxNonAlloc(new Vector3(pos.x,pos.y,pos.z)*gridSize, Vector3.one*0.5f*gridSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
             visited = false;
             cameFrom = null;
+        }
+        public void Refresh() {
+            passable = Physics.OverlapBoxNonAlloc(new Vector3(position.x,position.y,position.z)*gridSize, Vector3.one*0.5f*gridSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
         }
     }
     public static Vector3 GetPathTowardsPlayer(Vector3 fromPosition) {
@@ -110,8 +115,26 @@ public class WorldGrid : MonoBehaviour {
         float width = Mathf.Min((pathGrid.Count-2)*pathGridSize, (collisionGrid.Count-2)*collisionGridSize);
         float height = Mathf.Min((pathGrid[0].Count-2)*pathGridSize, (collisionGrid[0].Count-2)*collisionGridSize);
         bounds.Encapsulate(Vector3.right*width + Vector3.forward*height);
+        mapGeneration.generationFinished += OnMapGenerationComplete;
+    }
+    void OnMapGenerationComplete() {
+        // Update colliders
+        for(int x=0;x<pathGrid.Count;x++) {
+            if (pathGrid[x] == null) {
+                continue;
+            }
+            for(int y=0;y<pathGrid[x].Count;y++) {
+                if (pathGrid[x][y] == null) {
+                    continue;
+                }
+                pathGrid[x][y].Refresh();
+            }
+        }
     }
     void OnDestroy() {
+        if (mapGeneration != null) {
+            mapGeneration.generationFinished -= OnMapGenerationComplete;
+        }
         collisionGrid.Clear();
         pathGrid.Clear();
     }
@@ -159,6 +182,14 @@ public class WorldGrid : MonoBehaviour {
                         continue;
                     }
                     PathGridElement target = pathGrid[x][y];
+                    int xdiff = x-element.position.x;
+                    int ydiff = y-element.position.z;
+                    // If we're diagonal, we need to make sure not to path through "pinches"
+                    if (xdiff != 0 && ydiff != 0) {
+                        if (!pathGrid[x][y-ydiff].passable && !pathGrid[x-xdiff][y].passable) {
+                            continue;
+                        }
+                    }
                     if ( !openGraph.Contains(target) && !target.visited && target.passable ) {
                         target.cameFrom = element;
                         openGraph.Add(target);

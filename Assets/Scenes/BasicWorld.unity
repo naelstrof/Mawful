@@ -3988,22 +3988,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8602d74c92a7f954ba3fa79ec353457c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validNeighbors: 01010001000101000100000001000001010001010000000100
+  interationsPerFrame: 64
+  validNeighbors: 010100010000010100010000000001000000010100010101000000010001000000010101
   possibleTiles:
   - {fileID: 11400000, guid: a5fee9dde27ad9a4ba84a773200791b3, type: 2}
   - {fileID: 11400000, guid: 55fdcae5e9c707449b70f43c9a607dc6, type: 2}
   - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
   - {fileID: 11400000, guid: 23c8f8564d79d6c4ea5d3a229be312a9, type: 2}
   - {fileID: 11400000, guid: 3550738e5df162b4d91cfa8fa837916c, type: 2}
+  - {fileID: 11400000, guid: 686af51707b005142aa212b98f0cccef, type: 2}
   mapTiles:
-  - {fileID: 11400000, guid: e8d72fa487a601a4dbba56adc6cff099, type: 2}
+  - {fileID: 11400000, guid: 930d05be0d5c12543997505152f1b2a7, type: 2}
   - {fileID: 11400000, guid: 0dc34f94221e4b14aaccfb53ba6c66aa, type: 2}
   - {fileID: 11400000, guid: bf52334760621454f83da12f71c7134d, type: 2}
   - {fileID: 11400000, guid: 7f027e18d3b983249b697c86efd1d361, type: 2}
   - {fileID: 11400000, guid: 8dad01f3875ce5a408ac7f71a6d69dc6, type: 2}
   - {fileID: 11400000, guid: 3323693c99d5383448654589e0050372, type: 2}
-  width: 20
-  height: 20
+  - {fileID: 11400000, guid: 3e4e23b6fc679cc40a6fb37738110764, type: 2}
+  - {fileID: 11400000, guid: 94642eef6b4c1de4d933e3228d247296, type: 2}
+  - {fileID: 11400000, guid: 6954b64818eb92845b694be5db1df23c, type: 2}
+  width: 40
+  height: 40
 --- !u!4 &525486363
 Transform:
   m_ObjectHideFlags: 0
@@ -4012,7 +4017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525486361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: -2.5, y: -0.5, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14032,6 +14037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 388dff08a9c4ba64f970216e69e3e0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapGeneration: {fileID: 525486362}
   boxCollider: {fileID: 1714001181}
   debugBox: 1
 --- !u!4 &1714001180
