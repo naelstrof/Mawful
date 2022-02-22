@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using System.IO;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 [CreateAssetMenu(fileName = "NewBakedAnimation", menuName = "VoreGame/BakedAnimation", order = 1)]
 public class BakedAnimation : ScriptableObject {
@@ -13,6 +15,7 @@ public class BakedAnimation : ScriptableObject {
     private GameObject animatedMeshPrefab;
     public bool loop = true;
     public List<Mesh> frames;
+#if UNITY_EDITOR
     [ContextMenu("Bake")]
     void Bake() {
         frames = new List<Mesh>();
@@ -33,4 +36,5 @@ public class BakedAnimation : ScriptableObject {
             DestroyImmediate(prefab);
         }
     }
+#endif
 }

@@ -17,6 +17,10 @@ public class EnemySpawner : MonoBehaviour {
     private EnemyPool wolves;
     [SerializeField]
     private EnemyPool kangaroos;
+    [SerializeField]
+    private EnemyPool frennedy;
+    [SerializeField]
+    private EnemyPool shark;
     void Start() {
         int current = 0;
         for(int i=0;i<count;i++) {
@@ -36,11 +40,15 @@ public class EnemySpawner : MonoBehaviour {
                     wolves.TryInstantiate(out character); break;
                 case 5:
                     kangaroos.TryInstantiate(out character); break;
+                case 6:
+                    frennedy.TryInstantiate(out character); break;
+                case 7:
+                    shark.TryInstantiate(out character); break;
                 default:
                     kobolds.TryInstantiate(out character); break;
             }
             character.SetPositionAndVelocity(position, Vector3.zero);
-            current = ((++current)%6);
+            current = ((++current)%8);
         }
     }
 }

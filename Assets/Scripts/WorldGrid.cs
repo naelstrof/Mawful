@@ -23,6 +23,7 @@ public class WorldGrid : MonoBehaviour {
     private static HashSet<PathGridElement> openGraph;
     private static PathGridElement lastElement;
     //private static HashSet<GridElement> closedGraph;
+    public static List<List<PathGridElement>> GetPathGrid() => pathGrid;
     public class GridElement {
         public float gridSize;
         public Vector3 worldPosition {

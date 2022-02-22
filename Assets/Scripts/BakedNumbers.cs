@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 [CreateAssetMenu(fileName = "NewBakedFloaters", menuName = "VoreGame/BakedFloaters", order = 1)]
 public class BakedNumbers : ScriptableObject {
@@ -10,6 +12,7 @@ public class BakedNumbers : ScriptableObject {
     [SerializeField]
     private GameObject textMeshProPrefab;
     public List<Mesh> numbers;
+#if UNITY_EDITOR
     [ContextMenu("Bake")]
     void Bake() {
         numbers = new List<Mesh>();
@@ -30,4 +33,5 @@ public class BakedNumbers : ScriptableObject {
             DestroyImmediate(prefab);
         }
     }
+#endif
 }

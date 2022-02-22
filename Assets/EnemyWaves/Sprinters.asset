@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee440cc25a306c43809863eaeec98b2, type: 3}
+  m_Name: Sprinters
+  m_EditorClassIdentifier: 
+  enemiesToSpawn:
+  - {fileID: 8347615568578718693, guid: e7bd1c00cb92d664c88f31e42bffb2f7, type: 3}
+  waveDuration: 5
+  spawnCount: 50

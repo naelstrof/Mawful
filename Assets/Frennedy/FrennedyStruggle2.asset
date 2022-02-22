@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: FrennedyStruggle2
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: -1015300938297745519, guid: 39a6fb0255e2d85498aafd844d03ca7d, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 39a6fb0255e2d85498aafd844d03ca7d, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: eb89f58a97d8f5941ba824f1f2a34e71, type: 2}
+  - {fileID: 4300000, guid: bfea8ae3c7c37bf4aa7c4b3373397781, type: 2}
+  - {fileID: 4300000, guid: c8d43b7d599cfbe49a32db13eec1656b, type: 2}
+  - {fileID: 4300000, guid: 291093e0957232f458bdeefc01ade690, type: 2}
+  - {fileID: 4300000, guid: 9b921fbea12cdf84e90076a323d07bff, type: 2}
+  - {fileID: 4300000, guid: a8340c7ed41df324c906105f376b1cc5, type: 2}
+  - {fileID: 4300000, guid: 07cf80b6506e5f849a716192710b45fb, type: 2}
+  - {fileID: 4300000, guid: 6efab22c7ce663542931a47ac0e533e6, type: 2}
+  - {fileID: 4300000, guid: 99c249cf07ab07945b382a870e1fbd94, type: 2}
+  - {fileID: 4300000, guid: 9c20e8a2b18c627418b2405e1641d68f, type: 2}

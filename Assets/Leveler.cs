@@ -14,7 +14,9 @@ public class Leveler : MonoBehaviour {
     private float currentTummyVolume = 0f;
     private float currentTummyVelocity = 0f;
     private float tummyVolume = 0f;
-    private float neededXP = 3;
+    private float xpScalingPower = 2f;
+    private int currentLevel = 0;
+    private float neededXP = 5;
     [SerializeField]
     private AnimationCurve bounceCurve;
     [SerializeField][Range(0.1f,2f)]
@@ -34,8 +36,9 @@ public class Leveler : MonoBehaviour {
         instance.currentXP += xp;
         if (instance.currentXP >= instance.neededXP) {
             instance.currentXP -= instance.neededXP;
-            instance.neededXP *= 1.5f;
             instance.levelUp?.Invoke();
+            instance.currentLevel++;
+            instance.neededXP = Mathf.Pow(instance.currentLevel,instance.xpScalingPower) + 5f;
         }
     }
     void Update() {

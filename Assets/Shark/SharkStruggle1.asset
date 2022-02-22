@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: SharkStruggle1
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: -183204454865378093, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: 4e19f38e9b35c0245bf4fdeb81d38cf6, type: 2}
+  - {fileID: 4300000, guid: dc697a6bdc0b67245877253fb9fd24c6, type: 2}
+  - {fileID: 4300000, guid: 2cb2512570d7ea84a8a013c62c14fb38, type: 2}
+  - {fileID: 4300000, guid: d968b7a5d5ab21644b160776eb805a3a, type: 2}
+  - {fileID: 4300000, guid: a41e9715f0f731e42a51a63c9d6da4dd, type: 2}
+  - {fileID: 4300000, guid: 7140122665880b74c90ae3cedcef9e6c, type: 2}
+  - {fileID: 4300000, guid: 69a8578f1404334418c2e7816515e8ff, type: 2}
+  - {fileID: 4300000, guid: 49f4802153d36f944bd8ff54dbfe232a, type: 2}
+  - {fileID: 4300000, guid: af3a0b26b641fb542b53e2860c560261, type: 2}
+  - {fileID: 4300000, guid: f869afe3684f40046b3a946c6b2c1570, type: 2}
+  - {fileID: 4300000, guid: 0c6cc88b0279ea54bb58f07687972a26, type: 2}
+  - {fileID: 4300000, guid: cf03c7655e3d2d043aa1cd2a377d8ed9, type: 2}
+  - {fileID: 4300000, guid: a7919c90e502b6f4fa9add4785aa3d06, type: 2}
+  - {fileID: 4300000, guid: ddfa1bbc4d6ec624ba31181ca8863534, type: 2}
+  - {fileID: 4300000, guid: 9712254734deb43449b179646716a4bb, type: 2}
+  - {fileID: 4300000, guid: a9a1dea98c589f44683a1f021d11cbdb, type: 2}

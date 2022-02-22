@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: SharkWalk
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: 447439991529600006, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: 83ffd97349c6c4444ae5dcce42879658, type: 2}
+  - {fileID: 4300000, guid: 032def699a796674a9414769d64d7191, type: 2}
+  - {fileID: 4300000, guid: e54ca9a48b0d0f14db0a036217c2d5f4, type: 2}
+  - {fileID: 4300000, guid: 6fda27844b4ee1b46b834fb89b75d875, type: 2}
+  - {fileID: 4300000, guid: 31c47f2a74c0dba41b0fce84d7057b0c, type: 2}
+  - {fileID: 4300000, guid: 2896dd5be66eb8b49b1c13c3732c26e3, type: 2}
+  - {fileID: 4300000, guid: 2af9a2b5d6d9dde45a25d9e545a74a10, type: 2}
+  - {fileID: 4300000, guid: 83714ea3795baa64e83416afa3b394be, type: 2}
+  - {fileID: 4300000, guid: 9517f4f3e3b1f2a41a0ecf4720ab0098, type: 2}
+  - {fileID: 4300000, guid: 02f68d766655ede4a973b90bef7b6c1a, type: 2}
+  - {fileID: 4300000, guid: e83a0ae12b9dac24496373e91d4ac9d8, type: 2}
+  - {fileID: 4300000, guid: ff9497480355abe4289945b4fdcef072, type: 2}
+  - {fileID: 4300000, guid: 0c3c5900841857747b042f02481b34f9, type: 2}
+  - {fileID: 4300000, guid: 84b9d45bb84f3b6498b61b721c5cc15e, type: 2}
+  - {fileID: 4300000, guid: 2c482390ace271548adfcde420bf8d9c, type: 2}
+  - {fileID: 4300000, guid: a2255be3100f35f4c843d687ad6deb4a, type: 2}
+  - {fileID: 4300000, guid: 9ac5dea1222e5b6499d83d801d358127, type: 2}
+  - {fileID: 4300000, guid: f7dc85faa3212a04db3eba7d2578ebaa, type: 2}
+  - {fileID: 4300000, guid: e36715f1afea76b42add9d806917d284, type: 2}
+  - {fileID: 4300000, guid: 0a10b6766eb89d34c85a7e6164d2787b, type: 2}
+  - {fileID: 4300000, guid: 2de8ac650f1cae84fa6230ebdbbd2408, type: 2}
+  - {fileID: 4300000, guid: 7995c653dc5468e46b530b7a314fe0a7, type: 2}

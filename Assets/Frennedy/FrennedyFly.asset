@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: FrennedyFly
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: -2065775210875148712, guid: 39a6fb0255e2d85498aafd844d03ca7d, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 39a6fb0255e2d85498aafd844d03ca7d, type: 3}
+  loop: 1
+  frames:
+  - {fileID: 4300000, guid: 935c409eead5ff2419c0e5a885a2cbad, type: 2}
+  - {fileID: 4300000, guid: b1bbd2e4483da0748ae7f0ce0d2caf89, type: 2}
+  - {fileID: 4300000, guid: bd7b29f0e19ba734a84d6d2007d4caf3, type: 2}
+  - {fileID: 4300000, guid: ef401873390402f4592b6e8012eacbc6, type: 2}
+  - {fileID: 4300000, guid: aafcec08b773ec944af3391869a9ab3b, type: 2}
+  - {fileID: 4300000, guid: 26895e15ea228c441a8e757573b12b24, type: 2}
+  - {fileID: 4300000, guid: d34fc6c7f92521548a1f191b12a8d630, type: 2}
+  - {fileID: 4300000, guid: d8921ff725b6b72419904164114ef957, type: 2}
+  - {fileID: 4300000, guid: 8089d9df23e2d6f4faabb6dc1061e6e1, type: 2}
+  - {fileID: 4300000, guid: c8e282ad52ec28b44b30f8f08d86d768, type: 2}
+  - {fileID: 4300000, guid: c4695243b2269a54da06b328572802ab, type: 2}
+  - {fileID: 4300000, guid: f53e47d7b7d46de44a035bc13b24fced, type: 2}
+  - {fileID: 4300000, guid: 442379218184d4241a0ac1a4aa6fa211, type: 2}
+  - {fileID: 4300000, guid: bda6a4a6eb8a2b641bd42c87cf752157, type: 2}
+  - {fileID: 4300000, guid: 2ad5b2f9ed6204243846ee08360c2857, type: 2}
+  - {fileID: 4300000, guid: 829b518b1e6741245b1b25c2313ae196, type: 2}
+  - {fileID: 4300000, guid: cd90afc2a8363f84e9c892596604df3b, type: 2}
+  - {fileID: 4300000, guid: 1a1775e1d189a3b4a85ac3e10b913755, type: 2}
+  - {fileID: 4300000, guid: 3f93013b5e4d2444fb4df34f19fffe8f, type: 2}
+  - {fileID: 4300000, guid: edbf9a439bd7be1498bd724af5b96b9c, type: 2}
+  - {fileID: 4300000, guid: 0c7ec7f0fc991bc46a0856d2764d970c, type: 2}

@@ -15,10 +15,8 @@ public class CameraFollower : MonoBehaviour {
     private Camera cam;
     private Vector3 vel;
     void Awake() {
-        instance = this;
-    }
-    void Start() {
         cam = GetComponent<Camera>();
+        instance = this;
     }
     void Update() {
         if (PlayerCharacter.player == null) {

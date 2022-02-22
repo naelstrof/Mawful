@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: FrennedyDefeat
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: -8576674015175084151, guid: 39a6fb0255e2d85498aafd844d03ca7d, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 39a6fb0255e2d85498aafd844d03ca7d, type: 3}
+  loop: 0
+  frames:
+  - {fileID: 4300000, guid: e34d03aa4b9982a4db9e9f81bcb639a5, type: 2}
+  - {fileID: 4300000, guid: cd64cdba29155b84cabae60ddfdf5278, type: 2}
+  - {fileID: 4300000, guid: f9247d3718ae46042841808ae8df0b6c, type: 2}
+  - {fileID: 4300000, guid: aab3ca2c6dffe2c49ab2a8edf34cc5eb, type: 2}
+  - {fileID: 4300000, guid: c239d98e8f5434241994afbe73665c2b, type: 2}
+  - {fileID: 4300000, guid: 2ded434003ce5bf408e1b3c9b174f35e, type: 2}
+  - {fileID: 4300000, guid: 5df49b951ab2eab4a97de2cd802a8d13, type: 2}
+  - {fileID: 4300000, guid: 0097872d03ac7b849b669d0b942de7e0, type: 2}
+  - {fileID: 4300000, guid: 9c253a2092d89b64aae8bd3faca16fa3, type: 2}
+  - {fileID: 4300000, guid: 9dda5e59a6ce7e241ae16f99a2958958, type: 2}
+  - {fileID: 4300000, guid: a24c22f0253eb9e48bde37c4dd59210a, type: 2}
+  - {fileID: 4300000, guid: d3ce613f123b6a04a82aedbb3da7a1ea, type: 2}
+  - {fileID: 4300000, guid: 043d71c8da3e2c4429cf7bc9b40ff70a, type: 2}
+  - {fileID: 4300000, guid: 227381cfa6865b44badad232daa96c1a, type: 2}
+  - {fileID: 4300000, guid: 9ab61344b2014fb4699e6ba4fa16094b, type: 2}
+  - {fileID: 4300000, guid: 890f5af6376294d4a9785cea6ca7ec97, type: 2}
+  - {fileID: 4300000, guid: 9f2da7a990e08a84690d1508773b3e1d, type: 2}

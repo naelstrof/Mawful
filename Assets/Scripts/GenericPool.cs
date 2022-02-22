@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class GenericPool<T> : MonoBehaviour where T : PooledItem {
     private static GenericPool<T> instance;
     [SerializeField][Range(0,1000)]
     private int poolSize = 10;
-    [SerializeField]
-    private GameObject prefab;
+    public GameObject prefab;
     private Queue<T> prefabSet;
     void Awake() {
         prefabSet = new Queue<T>();

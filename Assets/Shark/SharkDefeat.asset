@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: SharkDefeat
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: 8036135370373906187, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
+  animatedMeshPrefab: {fileID: 919132149155446097, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
+  loop: 0
+  frames:
+  - {fileID: 4300000, guid: 3842ab8a4ccece5439cb3211b4ef853c, type: 2}
+  - {fileID: 4300000, guid: 5b59cc0e2781d3f4abcfb7a250716306, type: 2}
+  - {fileID: 4300000, guid: 633a9cf81cd6d6d4c8ead71e6333b2a9, type: 2}
+  - {fileID: 4300000, guid: b3983b1730d06be498be95c77c772dca, type: 2}
+  - {fileID: 4300000, guid: 2869acb0fa6d3b249bdc5b1274d8c7c1, type: 2}
+  - {fileID: 4300000, guid: ff70e9ce9f7302846a673f808b0d2a42, type: 2}
+  - {fileID: 4300000, guid: ab132b34e2902224fa7c0464edf8f8ab, type: 2}
+  - {fileID: 4300000, guid: 1c60d01820604b546b8895627dadfbea, type: 2}
+  - {fileID: 4300000, guid: 8545881b1f2fcb3488a2cab39700d3c3, type: 2}
+  - {fileID: 4300000, guid: 0d3755c35493785488aa3233d6a1c30f, type: 2}
+  - {fileID: 4300000, guid: e7ba4d8d5bbd08141916d8bf9ee002e7, type: 2}
+  - {fileID: 4300000, guid: b33e101e86c933044bb836fdcb1f9ee7, type: 2}
+  - {fileID: 4300000, guid: 06c4460c02e84e047a1de672f12ef819, type: 2}
+  - {fileID: 4300000, guid: 0b2e7d3d502fbfc4382b26b9b855b202, type: 2}
+  - {fileID: 4300000, guid: c8a2d2cef804c57438869621588408a8, type: 2}
+  - {fileID: 4300000, guid: c7ab8902db33029438fd9b6ae8f4760a, type: 2}
+  - {fileID: 4300000, guid: 8ed2198de02041b4ba054766f94a4f38, type: 2}
+  - {fileID: 4300000, guid: 7114a377b530364479361c711dfe2d8c, type: 2}
+  - {fileID: 4300000, guid: 30a21f75c5aa27744bee86093ea38069, type: 2}
+  - {fileID: 4300000, guid: 6039d2a635c78064bb60084468ac53f5, type: 2}
+  - {fileID: 4300000, guid: e4f968effc798fd4db1fc500b44a6cd6, type: 2}
+  - {fileID: 4300000, guid: 385b3fea699dec84c968f19b0da36cf6, type: 2}
+  - {fileID: 4300000, guid: f27fbcbd03d1d1f4384264b7281a5094, type: 2}
+  - {fileID: 4300000, guid: ea7eb3b150091934f8959d60440feeb1, type: 2}
+  - {fileID: 4300000, guid: 1cd4c67533a7b5141a5118d19d134aa1, type: 2}
+  - {fileID: 4300000, guid: 4c6bd05ac2473334498ae58a77c0a587, type: 2}
