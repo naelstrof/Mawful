@@ -422,7 +422,7 @@ public class MapGenerator : MonoBehaviour {
                 var tile = GetTile(x,y);
                 //Gizmos.color = undecidedSet.Contains(tile)?Color.red:Color.green;
                 Gizmos.color = Color.Lerp(Color.black,Color.red,tile.tileProbabilities.stability*tile.tileProbabilities.stability);
-                Gizmos.DrawCube(new Vector3(x*5f,0,y*5f), Vector3.one);
+                Gizmos.DrawCube(new Vector3(x*10f,0,y*10f), Vector3.one);
             }
         }
     }

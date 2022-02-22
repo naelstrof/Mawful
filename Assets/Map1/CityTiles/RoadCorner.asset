@@ -12,14 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7e047c320e3eb469b8e8d078e3ffe6, type: 3}
   m_Name: RoadCorner
   m_EditorClassIdentifier: 
-  prefab: {fileID: 919132149155446097, guid: 30486f43b6f3b594e8485dd23fbd155a, type: 3}
+  prefab: {fileID: 4242358252123805242, guid: ed459c3ad0c1f5b4d97fa7d0e1dd9788, type: 3}
   edges:
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
+  - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
   - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
   - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
   - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
-  - {fileID: 11400000, guid: 55fdcae5e9c707449b70f43c9a607dc6, type: 2}
-  blocksMovement: 0
-  initialProbability: 1
-  probability: 1
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
+  - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
+  - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+  initialProbability: 0.5
+  probability: 0.175
   rotationAngle: 0
   canRotate: 1
