@@ -19,7 +19,7 @@ public class XPDisplay : MonoBehaviour {
         Leveler.instance.xpChanged += OnXPChanged;
         background.material = Material.Instantiate(background.material);
         voreBumps = new List<float>();
-        for(int i=0;i<32;i++) {
+        for(int i=0;i<64;i++) {
             voreBumps.Add(i%2==0? float.MaxValue : 1f);
         }
         background.material.SetFloatArray("_Vores", voreBumps);
