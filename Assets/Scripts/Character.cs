@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SphereCollider))]
 public class Character : PooledItem {
+    public delegate void PositionSet(Vector3 newPosition);
+    public PositionSet positionSet;
     public static HashSet<Character> characters = new HashSet<Character>();
     public AnimationCurve hitEffectCurve;
     public Vector3 lastPosition;
@@ -22,6 +25,7 @@ public class Character : PooledItem {
     protected float friction;
     protected bool phased = false;
     public HealthAttribute health;
+    [HideInInspector]
     public float radius = 0.5f;
     [SerializeField]
     [ColorUsage(false, true)]
@@ -62,9 +66,10 @@ public class Character : PooledItem {
         hitRoutine = StartCoroutine(HitEffect());
     }
     public void SetPositionAndVelocity(Vector3 position, Vector3 velocity) {
-        this.position = position;
-        lastPosition = position - velocity;
+        this.position = WorldGrid.worldBounds.ClosestPoint(position);
+        lastPosition = this.position - velocity;
         transform.position = this.position;
+        positionSet?.Invoke(this.position);
     }
 
     public Vector3 interpolatedPosition {
@@ -84,6 +89,9 @@ public class Character : PooledItem {
         targetRenderer = GetComponentInChildren<Renderer>();
         Pauser.pauseChanged += OnPauseChanged;
     }
+    void Start() {
+        radius = GetComponent<SphereCollider>().radius;
+    }
     public virtual void OnEnable() {
         characters.Add(this);
     }
@@ -101,7 +109,7 @@ public class Character : PooledItem {
             float mag = diff.magnitude;
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
-            if (this is EnemyCharacter && character is PlayerCharacter && health.GetHealth()>0f && moveAmount > 0.01f) {
+            if (this is EnemyCharacter && character is PlayerCharacter && health.GetHealth()>0f && moveAmount > 0.001f) {
                 character.BeHit(new DamageInstance(Time.fixedDeltaTime*health.GetValue(), Vector3.zero));
             }
             newPosition += dir * moveAmount;

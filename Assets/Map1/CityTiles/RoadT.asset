@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
   - {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
   - {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
-  initialProbability: 0.5
-  probability: 0.7
+  initialProbability: 0.333
+  probability: 0.5
   rotationAngle: 0
   canRotate: 0

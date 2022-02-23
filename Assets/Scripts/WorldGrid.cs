@@ -118,7 +118,7 @@ public class WorldGrid : MonoBehaviour {
         bounds.Encapsulate(Vector3.right*width + Vector3.forward*height);
         mapGeneration.generationFinished += OnMapGenerationComplete;
     }
-    void OnMapGenerationComplete() {
+    void OnMapGenerationComplete(MapGenerator.MapGrid grid) {
         // Update colliders
         for(int x=0;x<pathGrid.Count;x++) {
             if (pathGrid[x] == null) {

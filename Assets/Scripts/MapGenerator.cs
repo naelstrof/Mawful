@@ -43,7 +43,7 @@ public class MapGeneratorEditor : Editor {
 #endif
 
 public class MapGenerator : MonoBehaviour {
-    public delegate void MapGenerationAction();
+    public delegate void MapGenerationAction(MapGrid grid);
     public event MapGenerationAction generationFinished;
     private static Dictionary<GridMapTile, int> tempVisitGraph = new Dictionary<GridMapTile, int>();
     //private static GridMapTile.ProbabilitySet tempProbabilitySet = new GridMapTile.ProbabilitySet();
@@ -110,15 +110,36 @@ public class MapGenerator : MonoBehaviour {
     [SerializeField]
     public List<MapTileEdge> possibleTiles;
     private HashSet<GridMapTile> undecidedSet;
-    private List<GridMapTile> grid;
-    private void SetTile(int x, int y, GridMapTile tile) {
-        int select = Mathf.Clamp(x,0,width-1)+(Mathf.Clamp(y,0,height-1)*width);
-        grid[select] = tile;
+    public class MapGrid { 
+        public MapGrid(int width, int height) {
+            this.width = width;
+            this.height = height;
+            data = new List<GridMapTile>();
+            for(int x=0;x<width;x++) {
+                for(int y=0;y<height;y++) {
+                    data.Add(null);
+                }
+            }
+            for(int x=0;x<width;x++) {
+                for(int y=0;y<height;y++) {
+                    SetTile(x,y, new GridMapTile(x,y));
+                }
+            }
+        }
+        public int width;
+        public int height;
+        private List<GridMapTile> data;
+        public GridMapTile GetTile(int x, int y) {
+            int select = Mathf.Clamp(x,0,width-1)+(Mathf.Clamp(y,0,height-1)*width);
+            return data[select];
+        }
+        public void SetTile(int x, int y, GridMapTile tile) {
+            int select = Mathf.Clamp(x,0,width-1)+(Mathf.Clamp(y,0,height-1)*width);
+            data[select] = tile;
+        }
+
     }
-    public GridMapTile GetTile(int x, int y) {
-        int select = Mathf.Clamp(x,0,width-1)+(Mathf.Clamp(y,0,height-1)*width);
-        return grid[select];
-    }
+    private MapGrid grid;
     [SerializeField]
     private List<MapTile> mapTiles;
     [SerializeField]
@@ -151,30 +172,24 @@ public class MapGenerator : MonoBehaviour {
             edge.validLookupCache = possibleTiles.IndexOf(edge);
         }
         // Create unintialized grid
-        grid = new List<GridMapTile>();
-        for(int x=0;x<width;x++) {
-            for(int y=0;y<height;y++) {
-                grid.Add(null);
-            }
-        }
-        // Zero it
+        grid = new MapGrid(width,height);
+
+        // Set them all to undecided
         undecidedSet = new HashSet<GridMapTile>();
         for(int x=0;x<width;x++) {
             for(int y=0;y<height;y++) {
-                SetTile(x,y,new GridMapTile(x,y));
-                undecidedSet.Add(GetTile(x,y));
+                undecidedSet.Add(grid.GetTile(x,y));
             }
         }
         // Fill it full of possible choices
         for(int x=0;x<width;x++) {
             for(int y=0;y<height;y++) {
-                GetTile(x,y).tileProbabilities = FindChoicesForPoint(x,y);
+                grid.GetTile(x,y).tileProbabilities = FindChoicesForPoint(x,y);
             }
         }
-        //Prime();
-        mapTiles[0].Place(this, 0, 0);
-        UpdatePossibles(0,0);
-        undecidedSet.Remove(GetTile(0,0));
+        // Just place at least one thing, to prime up the choices to make
+        mapTiles[0].Place(grid.GetTile(0,0), transform);
+        ConfirmPlacement(grid.GetTile(0,0));
         StartCoroutine(Solve());
     }
     float GetTotalChoices() {
@@ -199,21 +214,21 @@ public class MapGenerator : MonoBehaviour {
         }
         UpdatePossibles(tile.x, tile.y);
 
-        GetTile(tile.x+1,tile.y).neighbors+=1;
-        GetTile(tile.x-1,tile.y).neighbors+=1;
-        GetTile(tile.x,tile.y-1).neighbors+=1;
-        GetTile(tile.x,tile.y+1).neighbors+=1;
+        grid.GetTile(tile.x+1,tile.y).neighbors+=1;
+        grid.GetTile(tile.x-1,tile.y).neighbors+=1;
+        grid.GetTile(tile.x,tile.y-1).neighbors+=1;
+        grid.GetTile(tile.x,tile.y+1).neighbors+=1;
         int neighbors = 0;
-        if (GetTile(tile.x+1,tile.y).tile != null) {
+        if (grid.GetTile(tile.x+1,tile.y).tile != null) {
             neighbors+=1;
         }
-        if (GetTile(tile.x-1,tile.y).tile != null) {
+        if (grid.GetTile(tile.x-1,tile.y).tile != null) {
             neighbors+=1;
         }
-        if (GetTile(tile.x,tile.y+1).tile != null) {
+        if (grid.GetTile(tile.x,tile.y+1).tile != null) {
             neighbors+=1;
         }
-        if (GetTile(tile.x,tile.y-1).tile != null) {
+        if (grid.GetTile(tile.x,tile.y-1).tile != null) {
             neighbors+=1;
         }
         tile.neighbors = neighbors;
@@ -241,11 +256,12 @@ public class MapGenerator : MonoBehaviour {
         }
         // Place at random valid rotation
         //Debug.Log("Placing " + selectedPlacement + " at " + selectedGridPoint.x + ", " + selectedGridPoint.y + " with " + selectedGridPoint.tileProbabilities);
-        selectedPlacement.Place(this, selectedGridPoint.x, selectedGridPoint.y);
+        selectedPlacement.Place(selectedGridPoint, transform);
+        ConfirmPlacement(selectedGridPoint);
         // Update the surrounding possible tiles
     }
     void UpdatePossibles(int px, int py) {
-        GridMapTile tile = GetTile(px,py);
+        GridMapTile tile = grid.GetTile(px,py);
         if (tile.tile == null) {
             tile.tileProbabilities = FindChoicesForPoint(px,py);
             return;
@@ -261,7 +277,7 @@ public class MapGenerator : MonoBehaviour {
         if (px < 0 || px >= width || py < 0 || py >= height) {
             return;
         }
-        GridMapTile tile = GetTile(px,py);
+        GridMapTile tile = grid.GetTile(px,py);
         if (tile.tile != null) {
             //GetTile(px,py).ZeroProbabilities();
             return;
@@ -302,7 +318,7 @@ public class MapGenerator : MonoBehaviour {
         GridMapTile.ProbabilitySet probabilities = new GridMapTile.ProbabilitySet();
         float sum = 0;
         foreach(MapTile tile in mapTiles) {
-            if (tile.CanPlace(this,x,y)) {
+            if (tile.CanPlace(this, grid, x,y)) {
                 probabilities.Add(tile, tile.probability);
                 sum += tile.probability;
             } else {
@@ -315,35 +331,12 @@ public class MapGenerator : MonoBehaviour {
         probabilities.UpdateStability();
         return probabilities;
     }
-    /*public void Clear(int x, int y) {
-        if (x < 0 || x >= width || y < 0 || y >= height) {
-            return;
-        }
-        GetTile(x,y).tile = null;
-        GetTile(x,y).rotation = 0f;
-        undecidedSet.Add(GetTile(x,y));
-        foreach(GameObject g in GetTile(x,y).spawnedPrefabs) {
-            Destroy(g);
-        }
-        GetTile(x,y).spawnedPrefabs.Clear();
-        GetTile(x,y).tileProbabilities = FindChoicesForPoint(x,y,mapTiles);
-    }*/
-    void Prime() {
-        for(int x=0;x<width;x++) {
-            for(int y=0;y<height;y++) {
-                if (x==0 || y == 0 || x==width-1 || y==height-1) {
-                    mapTiles[0].Place(this, x, y);
-                    UpdatePossibles(x,y);
-                }
-            }
-        }
-    }
     void BackTrack() {
         // Count our backtrack choices
         int backtrackChoices = 0;
         for(int x=0;x<width;x++) {
             for(int y=0;y<height;y++) {
-                if (GetTile(x,y).tile == null) {
+                if (grid.GetTile(x,y).tile == null) {
                     backtrackChoices++;
                 }
             }
@@ -354,9 +347,9 @@ public class MapGenerator : MonoBehaviour {
         GridMapTile selectedTile = null;
         for(int x=0;x<width;x++) {
             for(int y=0;y<height;y++) {
-                if (GetTile(x,y).tile == null) {
+                if (grid.GetTile(x,y).tile == null) {
                     if (selection++ == randomBackTrackChoice) {
-                        selectedTile = GetTile(x,y);
+                        selectedTile = grid.GetTile(x,y);
                         break;
                     }
                 }
@@ -371,18 +364,18 @@ public class MapGenerator : MonoBehaviour {
         // Finally execute the backtrack, deleting prefabs, and setting grid points to undecided.
         for(int x=selectedTile.x-1;x<selectedTile.x+2;x++) {
             for(int y=selectedTile.y-1;y<selectedTile.y+2;y++) {
-                GetTile(x,y).tile = null;
-                undecidedSet.Add(GetTile(x,y));
-                foreach(GameObject g in GetTile(x,y).spawnedPrefabs) {
+                grid.GetTile(x,y).tile = null;
+                undecidedSet.Add(grid.GetTile(x,y));
+                foreach(GameObject g in grid.GetTile(x,y).spawnedPrefabs) {
                     Destroy(g);
                 }
-                GetTile(x,y).spawnedPrefabs.Clear();
+                grid.GetTile(x,y).spawnedPrefabs.Clear();
             }
         }
         // Regenerate possible choices
         for(int x=selectedTile.x-1;x<selectedTile.x+2;x++) {
             for(int y=selectedTile.y-1;y<selectedTile.y+2;y++) {
-                GetTile(x,y).tileProbabilities = FindChoicesForPoint(x,y);
+                grid.GetTile(x,y).tileProbabilities = FindChoicesForPoint(x,y);
             }
         }
     }
@@ -401,8 +394,7 @@ public class MapGenerator : MonoBehaviour {
                 interation = 1;
             }
         }
-        generationFinished?.Invoke();
-        Debug.Log("Done!");
+        generationFinished?.Invoke(grid);
     }
     void OnValidate() {
         for(int x=0;x<possibleTiles.Count;x++) {
@@ -419,7 +411,7 @@ public class MapGenerator : MonoBehaviour {
         }
         for (int x=0;x<width;x++) {
             for (int y=0;y<height;y++) {
-                var tile = GetTile(x,y);
+                var tile = grid.GetTile(x,y);
                 //Gizmos.color = undecidedSet.Contains(tile)?Color.red:Color.green;
                 Gizmos.color = Color.Lerp(Color.black,Color.red,tile.tileProbabilities.stability*tile.tileProbabilities.stability);
                 Gizmos.DrawCube(new Vector3(x*10f,0,y*10f), Vector3.one);

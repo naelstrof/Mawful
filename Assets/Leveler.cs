@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Leveler : MonoBehaviour {
-    public delegate void LevelUpAction();
+    public delegate void XPChangedAction(float xp, float neededXP);
+    public event XPChangedAction xpChanged;
     public event LevelUpAction levelUp;
+    public delegate void LevelUpAction();
     public static Leveler instance;
     [SerializeField]
     private string targetBlendshape;
@@ -39,7 +41,9 @@ public class Leveler : MonoBehaviour {
             instance.levelUp?.Invoke();
             instance.currentLevel++;
             instance.neededXP = Mathf.Pow(instance.currentLevel,instance.xpScalingPower) + 5f;
+            Debug.Log("Leveled up to " + instance.currentLevel + ", now need " + instance.neededXP + " XP");
         }
+        instance.xpChanged?.Invoke(instance.currentXP, instance.neededXP);
     }
     void Update() {
         targetDickTransform.localScale = Vector3.one * (1f+currentTummyVolume*0.1f);

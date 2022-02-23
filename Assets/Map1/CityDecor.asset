@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31848075b33f3d4c95c6502915677b5, type: 3}
+  m_Name: CityDecor
+  m_EditorClassIdentifier: 
+  pairs:
+  - density: 0.2
+    targetEdge: {fileID: 11400000, guid: 73d1446c187f8054fafdaa70d0fcb47a, type: 2}
+    prefabsToSpawn:
+    - {fileID: 3560162545064011977, guid: bebeb31d1e887094197ff986bd6e8b20, type: 3}
+  - density: 0.25
+    targetEdge: {fileID: 11400000, guid: ed5e2adb62f60db4393892582357cc23, type: 2}
+    prefabsToSpawn:
+    - {fileID: 8894772184213628043, guid: 9055c405734e6b04889016ebfc3bc872, type: 3}
+  - density: 0.25
+    targetEdge: {fileID: 11400000, guid: 23c8f8564d79d6c4ea5d3a229be312a9, type: 2}
+    prefabsToSpawn:
+    - {fileID: 8894772184213628043, guid: fb0889faed66e1c4d9d8f46a10ffbbaf, type: 3}
+    - {fileID: 8894772184213628043, guid: e659c3578d35fa4419500f94ab471031, type: 3}
