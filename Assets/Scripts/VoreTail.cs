@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class VoreTail : MonoBehaviour {
-    private class VoreBump {
+    public static VoreTail instance;
+    public delegate void VoreBumpAddedAction(VoreBump bumps);
+    public event VoreBumpAddedAction bumpAdded;
+    public class VoreBump {
         public VoreBump(float st, float dur) {
             startTime = st;
             duration = dur;
@@ -39,6 +42,7 @@ public class VoreTail : MonoBehaviour {
         }
     }
     void Awake() {
+        instance = this;
         readyToVore = new HashSet<Character>();
         vaccuming = new HashSet<Character>();
         voreBumps = new List<VoreBump>();
@@ -55,6 +59,7 @@ public class VoreTail : MonoBehaviour {
             other.Reset();
             other.gameObject.SetActive(false);
             voreBumps.Add(new VoreBump(Time.time,UnityEngine.Random.Range(1.5f, 4f)));
+            bumpAdded(voreBumps[voreBumps.Count-1]);
             vaccuming.Remove(other);
         }
         readyToVore.Clear();
