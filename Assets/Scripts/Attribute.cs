@@ -90,6 +90,7 @@ public class Attribute : ISerializationCallbackReceiver {
 
 [System.Serializable]
 public class HealthAttribute : Attribute {
+    public event AttributeChangedAction healthChanged;
     public delegate void AttributeAction();
     public event AttributeAction depleted;
     private float value;
@@ -108,12 +109,14 @@ public class HealthAttribute : Attribute {
             return;
         }
         value = Mathf.Max(value-amount, 0f);
+        healthChanged?.Invoke(value);
         if (value<=0f) {
             depleted?.Invoke();
         }
     }
     public void Heal(float amount) {
         value = Mathf.Min(value+amount, GetValue());
+        healthChanged?.Invoke(value);
     }
     public float GetHealth() {
         return value;

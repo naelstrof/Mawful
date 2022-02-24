@@ -84,10 +84,11 @@ public class Projectile : PooledItem {
         lastPosition = position;
         position = newPosition;
         Vector3 edgePoint = WorldGrid.worldBounds.ClosestPoint(newPosition);
-        if (edgePoint != newPosition) {
+        if (Vector3.Distance(edgePoint,newPosition) > 0.001f) {
             Reset();
             gameObject.SetActive(false);
         }
+        position.y = 0f;
 
         int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.collisionGridSize);
         int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.collisionGridSize);

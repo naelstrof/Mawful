@@ -17,14 +17,18 @@ public class Axes : Weapon {
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {
             yield return timeToWait;
+            float arc = projectileCount.GetValue()*5f;
+            Quaternion rot = Quaternion.AngleAxis(-arc*0.5f, Vector3.up);
             for (int i=0;i<projectileCount.GetValue();i++) {
+                Vector3 updir = new Vector3(-1,0,1).normalized;
+                float angle = Vector3.Angle(player.fireDir, updir);
+                Vector3 aimDir = Vector3.RotateTowards(player.fireDir, updir, angle*0.8f*Mathf.Deg2Rad, 10f);
+
                 Axe axe;
                 if (!AxePool.StaticTryInstantiate(out axe)) { continue; }
                 SetUpProjectile(axe);
-                Vector3 aimDir = player.transform.forward;
-                // do a 90 degree arc in front of the player
-                float angle = -45+90f*((float)i/projectileCount.GetValue());
-                axe.SetPositionAndVelocity(player.interpolatedPosition, (Vector3.Scale(UnityEngine.Random.insideUnitSphere,new Vector3(0.4f,0,0.4f))+new Vector3(-0.5f,0f,0.5f))*speed.GetValue());
+                axe.SetPositionAndVelocity(player.interpolatedPosition, rot*aimDir*speed.GetValue());
+                rot *= Quaternion.AngleAxis(5f, Vector3.up);
                 yield return perProjectileWait;
             }
         }

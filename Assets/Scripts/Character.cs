@@ -139,10 +139,7 @@ public class Character : PooledItem {
         Vector3 newPosition = position + (position-lastPosition)*(1f-friction*friction);
         lastPosition = position;
         newPosition += wishDir * Time.deltaTime * speed.GetValue();
-        Vector3 edgePoint = WorldGrid.worldBounds.ClosestPoint(newPosition);
-        if (edgePoint != newPosition) {
-            newPosition = edgePoint;
-        }
+        newPosition = WorldGrid.worldBounds.ClosestPoint(newPosition);
         if (health.GetHealth() > 0f) {
             newPosition.y = 0f;
         }
