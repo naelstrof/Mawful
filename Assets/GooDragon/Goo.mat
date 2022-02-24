@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamNormal:
-        m_Texture: {fileID: 2800000, guid: 5dcb3451167da884b8bfee0829561554, type: 3}
+        m_Texture: {fileID: 2800000, guid: 578097abe8951ee4f9a7be3641f6633c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

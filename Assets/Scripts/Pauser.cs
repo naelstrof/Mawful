@@ -4,6 +4,7 @@ using UnityEngine;
 
 public static class Pauser {
     private static bool paused = false;
+    public static bool GetPaused() => paused;
     public delegate void PauseAction(bool paused);
     public static event PauseAction pauseChanged;
     public static void SetPaused(bool newPause) {

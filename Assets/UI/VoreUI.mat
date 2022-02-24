@@ -87,7 +87,10 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _ElementHeight: 16
+    - _ElementWidth: 32
     - _EnvironmentReflections: 1
+    - _Expand: 2
     - _ExtrudeAmount: 16
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -104,6 +107,7 @@ Material:
     - _SrcBlend: 1
     - _Strained: 0
     - _Surface: 0
+    - _UnscaledTime: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

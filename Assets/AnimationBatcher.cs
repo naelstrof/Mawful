@@ -12,13 +12,18 @@ public class AnimationBatcher : PooledItem {
     [SerializeField]
     private List<BakedAnimation> struggles;
     private MeshFilter filter;
+    private Material defaultMaterial;
+    [SerializeField]
+    private Material goopMaterial;
     private float startTime;
     private Character character;
     void Start() {
         startTime = UnityEngine.Random.Range(0f,10f);
         filter = GetComponent<MeshFilter>();
+        defaultMaterial = GetComponent<Renderer>().sharedMaterial;
         character = GetComponentInParent<Character>();
         character.health.depleted += OnDie;
+        character.startedVore += OnVoreStart;
         currentAnimation = walk;
         Pauser.pauseChanged += OnPauseChanged;
     }
@@ -28,7 +33,15 @@ public class AnimationBatcher : PooledItem {
     void OnPauseChanged(bool paused) {
         enabled = !paused;
     }
+    void OnVoreStart() {
+        if (defaultMaterial != null) {
+            GetComponent<Renderer>().sharedMaterial = defaultMaterial;
+        }
+        currentAnimation = struggles[UnityEngine.Random.Range(0,struggles.Count)];
+        startTime = Time.time;
+    }
     void OnDie() {
+        GetComponent<Renderer>().sharedMaterial = goopMaterial;
         currentAnimation = stunned;
         startTime = Time.time;
     }
@@ -44,11 +57,10 @@ public class AnimationBatcher : PooledItem {
     }
     public override void Reset() {
         base.Reset();
+        if (defaultMaterial != null) {
+            GetComponent<Renderer>().sharedMaterial = defaultMaterial;
+        }
         currentAnimation = walk;
-        startTime = Time.time;
-    }
-    public void Vore() {
-        currentAnimation = struggles[UnityEngine.Random.Range(0,struggles.Count)];
         startTime = Time.time;
     }
 }

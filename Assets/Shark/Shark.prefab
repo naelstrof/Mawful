@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8347615568578718692}
   - component: {fileID: 991773355764033130}
   m_Layer: 0
-  m_Name: Wolf
+  m_Name: Shark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.56
+  m_Radius: 0.71
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &991773355764033130
 MonoBehaviour:
@@ -149,11 +149,11 @@ MonoBehaviour:
   position: {x: 100, y: 0, z: 100}
   speed:
     modifiers:
-    - {fileID: 11400000, guid: 3a30f866b10150a49a968bef49aff94b, type: 2}
+    - {fileID: 11400000, guid: 348ff771342cc414780fb1479238c7fa, type: 2}
   friction: 0.3
   health:
     modifiers:
-    - {fileID: 11400000, guid: b507a5aa8621c6a4a8381d4dc2873aa8, type: 2}
+    - {fileID: 11400000, guid: 453a844aa716c02488e15a7a45a6a0ce, type: 2}
   radius: 0.7
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
   damage:
@@ -198,7 +198,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8568940013376001890}
-  m_Mesh: {fileID: 4300000, guid: d59b6721b03915f46ba5365552eb4ef4, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 032def699a796674a9414769d64d7191, type: 2}
 --- !u!23 &6719131962823964539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 78295f198a46f204eba831be9c24078e, type: 2}
+  - {fileID: 2100000, guid: 18fff452f16eebc42bb6192319e6c9f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -252,8 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9828ce5f14ae58f4faee2386d37b71ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walk: {fileID: 11400000, guid: 56114067639663742a2786312047200c, type: 2}
-  stunned: {fileID: 11400000, guid: 0ef70a86dd11cf547a4e3162878780f9, type: 2}
+  walk: {fileID: 11400000, guid: 54a3a1c9898bf184fbca38ce08feecc7, type: 2}
+  stunned: {fileID: 11400000, guid: b321435d726ec45489e35eb7de1b7242, type: 2}
   struggles:
-  - {fileID: 11400000, guid: f7d46d75bf7ed354f9eb499906c91801, type: 2}
-  - {fileID: 11400000, guid: 0230dcc791c50bc4987680ce4024f30e, type: 2}
+  - {fileID: 11400000, guid: 1a1f45e940ae3fa459ba22d4b369428a, type: 2}
+  - {fileID: 11400000, guid: efaf825a081864f4faa9d84f923a24fd, type: 2}
+  goopMaterial: {fileID: 2100000, guid: 7f29f912f63715e448d897bd4cab16ae, type: 2}

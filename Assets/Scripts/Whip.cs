@@ -45,7 +45,8 @@ public class Whip : Weapon {
         while(isActiveAndEnabled) {
             yield return timeToWait;
             for (int i=0;i<whips.Count;i++) {
-                whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f-135f, Vector3.up);
+                float aimAngle = Mathf.Round(player.transform.rotation.eulerAngles.y/180f)*180f;
+                whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f+45f+aimAngle, Vector3.up);
                 whips[i].Play();
                 for(float dist=0f;dist<4f+radius.GetValue();dist+=2f) {
                     foreach(Character character in Character.characters) {

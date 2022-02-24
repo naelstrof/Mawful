@@ -21,6 +21,9 @@ public class Axes : Weapon {
                 Axe axe;
                 if (!AxePool.StaticTryInstantiate(out axe)) { continue; }
                 SetUpProjectile(axe);
+                Vector3 aimDir = player.transform.forward;
+                // do a 90 degree arc in front of the player
+                float angle = -45+90f*((float)i/projectileCount.GetValue());
                 axe.SetPositionAndVelocity(player.interpolatedPosition, (Vector3.Scale(UnityEngine.Random.insideUnitSphere,new Vector3(0.4f,0,0.4f))+new Vector3(-0.5f,0f,0.5f))*speed.GetValue());
                 yield return perProjectileWait;
             }

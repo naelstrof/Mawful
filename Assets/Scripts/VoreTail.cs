@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class VoreTail : MonoBehaviour {
     public static VoreTail instance;
@@ -28,13 +29,16 @@ public class VoreTail : MonoBehaviour {
     [SerializeField]
     private AnimationCurve voreBumpCurve;
     private List<VoreBump> voreBumps;
+    public VisualEffect chompEffect;
     private const float tailBlendDistance = 0.5f;
     void VaccumDefeated(WorldGrid.CollisionGridElement element) {
         foreach(Character character in element.charactersInElement) {
             if (character.health.GetHealth() <= 0f && character is EnemyCharacter) {
-                if (Vector3.Distance(tailMouth.position, character.position) < 2f) {
+                if (Vector3.Distance(tailMouth.position, character.position) < 1f+character.radius) {
                     if (!vaccuming.Contains(character)) {
-                        character.GetComponentInChildren<AnimationBatcher>(true).Vore();
+                        character.StartVore();
+                        // Disable all thinking, time to suck
+                        character.enabled = false;
                         vaccuming.Add(character);
                     }
                 }
@@ -58,12 +62,13 @@ public class VoreTail : MonoBehaviour {
         foreach(Character other in readyToVore) {
             other.Reset();
             other.gameObject.SetActive(false);
-            voreBumps.Add(new VoreBump(Time.time,UnityEngine.Random.Range(1.5f, 4f)));
+            voreBumps.Add(new VoreBump(Time.time,UnityEngine.Random.Range(1f, 3f)));
             bumpAdded(voreBumps[voreBumps.Count-1]);
             vaccuming.Remove(other);
         }
         readyToVore.Clear();
         tailAnimator.ResetTrigger("Chomp");
+        chompEffect.Play();
     }
     void Vore(Character other) {
         readyToVore.Add(other);
@@ -84,7 +89,7 @@ public class VoreTail : MonoBehaviour {
                 float offset = tailBlendDistance * (float)i;
                 float t = (Time.time-(voreBumps[j].startTime+offset))/voreBumps[j].duration;
                 float sample = voreBumpCurve.Evaluate(t);
-                blendAmount += sample;
+                blendAmount = Mathf.Lerp(blendAmount, 2.5f, sample/2.5f);
                 if (t>1f && i == tailBlendIDs.Count-1) {
                     // TODO: trigger some belly stuff here
                     Leveler.AddXP(1);
@@ -92,6 +97,15 @@ public class VoreTail : MonoBehaviour {
                 }
             }
             tailRenderer.SetBlendShapeWeight(tailBlendIDs[i], Mathf.Min(blendAmount*100f, 250f));
+        }
+        Vector3 tailTarget = tailMouth.transform.position+tailMouth.transform.up*0.4f;
+        foreach(Character character in vaccuming) {
+            float dist = Vector3.Distance(character.transform.position, tailTarget);
+            character.transform.position = Vector3.MoveTowards(character.transform.position, tailTarget, Time.deltaTime*8f + dist*Time.deltaTime*2f);
+            character.transform.rotation = Quaternion.RotateTowards(character.transform.rotation, tailMouth.rotation, Time.deltaTime*360f*4f);
+            if (Vector3.Distance(character.transform.position, tailTarget) < 0.1f) {
+                Vore(character);
+            }
         }
     }
     void FixedUpdate() {
@@ -104,18 +118,5 @@ public class VoreTail : MonoBehaviour {
         VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY));
         VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX, collisionY+collisionYOffset));
         VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset));
-        foreach(Character character in vaccuming) {
-            Vector3 dir = tailMouth.position - (character.position-character.transform.up*0.5f);
-            character.position += dir * 0.25f;
-            //character.lastPosition = character.position;
-            if (dir.magnitude < 0.5f) {
-                Vore(character);
-            }
-        }
-    }
-    void LateUpdate() {
-        foreach(Character character in vaccuming) {
-            character.transform.rotation = Quaternion.RotateTowards(character.transform.rotation, tailMouth.rotation, Time.deltaTime*360f*3f);
-        }
     }
 }

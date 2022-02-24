@@ -4,6 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
 public class Character : PooledItem {
+    public delegate void StartVoreAction();
+    public event StartVoreAction startedVore;
     public delegate void PositionSet(Vector3 newPosition);
     public PositionSet positionSet;
     public static HashSet<Character> characters = new HashSet<Character>();
@@ -30,6 +32,7 @@ public class Character : PooledItem {
     [SerializeField]
     [ColorUsage(false, true)]
     private Color colorFlash;
+    private bool beingVored = false;
 
     public Attribute damage;
     public struct DamageInstance {
@@ -49,6 +52,11 @@ public class Character : PooledItem {
             yield return null;
         }
         targetRenderer.material.SetColor("_EmissionColor", Color.black);
+    }
+    public virtual void StartVore() {
+        beingVored = true;
+        enabled = false;
+        startedVore?.Invoke();
     }
     public void BeHit(DamageInstance instance) {
         if (health.GetHealth() <= 0f) {
@@ -109,8 +117,10 @@ public class Character : PooledItem {
             float mag = diff.magnitude;
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
-            if (this is EnemyCharacter && character is PlayerCharacter && health.GetHealth()>0f && moveAmount > 0.001f) {
-                character.BeHit(new DamageInstance(Time.fixedDeltaTime*health.GetValue(), Vector3.zero));
+            if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
+                character.BeHit(new DamageInstance(Time.fixedDeltaTime*health.GetHealth(), Vector3.zero));
+            } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
+                this.BeHit(new DamageInstance(Time.fixedDeltaTime*character.health.GetHealth(), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
@@ -163,9 +173,11 @@ public class Character : PooledItem {
     }
     public override void Reset() {
         base.Reset();
+        enabled = !Pauser.GetPaused();
+        beingVored = false;
         health.Heal(99999f);
     }
     void OnPauseChanged(bool paused) {
-        enabled = !paused;
+        enabled = !paused && !beingVored;
     }
 }

@@ -257,3 +257,4 @@ MonoBehaviour:
   struggles:
   - {fileID: 11400000, guid: dd12d06a14c1247458097b08d124d3a2, type: 2}
   - {fileID: 11400000, guid: 252f79b84e17e0e4e8c3d2f4e0e9b6cb, type: 2}
+  goopMaterial: {fileID: 2100000, guid: 114640e560b20474eb24624361e053e4, type: 2}

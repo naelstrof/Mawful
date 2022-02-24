@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8347615568578718692}
   - component: {fileID: 991773355764033130}
   m_Layer: 0
-  m_Name: Naga
+  m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.82
+  m_Radius: 0.35
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &991773355764033130
 MonoBehaviour:
@@ -149,12 +149,12 @@ MonoBehaviour:
   position: {x: 100, y: 0, z: 100}
   speed:
     modifiers:
-    - {fileID: 11400000, guid: 5de906f7d2da3fb4b9d16b7e40956926, type: 2}
+    - {fileID: 11400000, guid: 0956fcfccf56c5c42831d19c61c21d43, type: 2}
   friction: 0.3
   health:
     modifiers:
-    - {fileID: 11400000, guid: 3b92195ca192d884197052d0289e0e39, type: 2}
-  radius: 1
+    - {fileID: 11400000, guid: 001ae02bcb43cc040a5f6173c284621e, type: 2}
+  radius: 0.5
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
   damage:
     modifiers: []
@@ -184,13 +184,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8568940013376001890}
-  m_LocalRotation: {x: -0.7071057, y: -0, z: -0, w: 0.7071079}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalRotation: {x: -0.0000020638106, y: -0.7071081, z: -0.7071055, w: 0.000002108514}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8347615568578718689}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180}
 --- !u!33 &5401809890548647938
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8568940013376001890}
-  m_Mesh: {fileID: 4300000, guid: 17421c5e1e7e60842978484f9094c4c9, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 1d57efc4687c8a044a96afc51038d0cb, type: 2}
 --- !u!23 &6719131962823964539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25788bee50d01f44f810562e627140b7, type: 2}
+  - {fileID: 2100000, guid: a39cf0233833ccc46844acf5a14a02c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -252,7 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9828ce5f14ae58f4faee2386d37b71ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walk: {fileID: 11400000, guid: 3168be3e800014a4580ee6b78d59d824, type: 2}
-  stunned: {fileID: 11400000, guid: 4eca133b7d6b1e3448a3db9fcdf3b623, type: 2}
+  walk: {fileID: 11400000, guid: 6954b717a820d6a419c174cd4fa38112, type: 2}
+  stunned: {fileID: 11400000, guid: 0070189a113dfd84a9b368725344feed, type: 2}
   struggles:
-  - {fileID: 11400000, guid: ee9b24f4c12f44b4c8681872cd6f0269, type: 2}
+  - {fileID: 11400000, guid: c73051c03cd0a7948acb33128df026a8, type: 2}
+  goopMaterial: {fileID: 2100000, guid: 1c1244d5e4b09894285c6fb6b8d1fb93, type: 2}

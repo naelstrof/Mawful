@@ -57,6 +57,8 @@ public class XPDisplay : MonoBehaviour {
     void Update() {
         for(int i=0;i<prefabs.Count;i++) {
             prefabs[i].material.SetFloat("_UnscaledTime", Time.unscaledTime);
+            prefabs[i].material.SetFloat("_ElementWidth", prefabs[i].GetComponent<RectTransform>().sizeDelta.x);
+            prefabs[i].material.SetFloat("_ElementHeight", prefabs[i].GetComponent<RectTransform>().sizeDelta.y);
         }
     }
 }

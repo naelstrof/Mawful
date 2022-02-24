@@ -183,7 +183,7 @@ ModelImporter:
       takeName: Armature|FullAction
       internalID: 0
       firstFrame: 115
-      lastFrame: 156
+      lastFrame: 171
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -299,8 +299,8 @@ ModelImporter:
       name: SharkStruggle1
       takeName: Armature|FullAction
       internalID: 0
-      firstFrame: 177
-      lastFrame: 223
+      firstFrame: 190
+      lastFrame: 234
       wrapMode: 0
       orientationOffsetY: 180
       level: 0
@@ -416,8 +416,8 @@ ModelImporter:
       name: SharkStruggle2
       takeName: Armature|FullAction
       internalID: 0
-      firstFrame: 247
-      lastFrame: 293
+      firstFrame: 261
+      lastFrame: 305
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

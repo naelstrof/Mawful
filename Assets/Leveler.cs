@@ -16,7 +16,7 @@ public class Leveler : MonoBehaviour {
     private float currentTummyVolume = 0f;
     private float currentTummyVelocity = 0f;
     private float tummyVolume = 0f;
-    private float xpScalingPower = 2f;
+    private float xpScalingPower = 2.5f;
     private int currentLevel = 0;
     private float neededXP = 5;
     [SerializeField]
