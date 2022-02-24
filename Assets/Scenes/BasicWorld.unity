@@ -15719,7 +15719,7 @@ GameObject:
   - component: {fileID: 1807249536}
   - component: {fileID: 1807249535}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19620,6 +19620,86 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[1].time
+      value: 0.26852435
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[2].time
+      value: 0.53849554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[3].time
+      value: 0.7669642
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[4].time
+      value: 0.9896528
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[5].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[5].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[0].inSlope
+      value: 1.7469095
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[1].inSlope
+      value: -0.89278024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[2].inSlope
+      value: -0.108015776
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[3].inSlope
+      value: -0.053569794
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[4].inSlope
+      value: -2.23043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[5].inSlope
+      value: -1.0372818
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[0].outSlope
+      value: 1.7469095
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[1].outSlope
+      value: -0.89278024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[2].outSlope
+      value: -0.108015776
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[3].outSlope
+      value: -0.053569794
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[4].outSlope
+      value: -2.23043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[5].outSlope
+      value: -1.0372818
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100943482689849645, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: healthFlash.m_Curve.Array.data[5].outWeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1331076685134111450, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

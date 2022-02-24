@@ -28,7 +28,7 @@ public class MeshFloater : PooledItem {
     }
     public void SetDisplay(int display) {
         this.display = display;
-        display = Mathf.Clamp(display, 0, numbers.maxNumber);
+        display = Mathf.Clamp(display, 0, numbers.maxNumber-1);
         filter.sharedMesh = numbers.numbers[display];
         startTime = Time.time;
         displayColor = damageColors.Evaluate((float)display/(float)numbers.maxNumber);

@@ -48,6 +48,7 @@ public class HealthBar : MonoBehaviour {
             flashMaterial.color = Color.Lerp(originalColor, Color.white, healthFlash.Evaluate(t));
             yield return null;
         }
+        flashMaterial.color = originalColor;
         yield return new WaitForSeconds(1f);
         float fadeTime = Time.time;
         while (Time.time < fadeTime+healthFlashDuration) {
@@ -56,5 +57,7 @@ public class HealthBar : MonoBehaviour {
             outlineRenderer.material.color = Color.Lerp(originalOutlineColor, Color.clear, t);
             yield return null;
         }
+        flashMaterial.color = Color.clear;
+        outlineRenderer.material.color =  Color.clear;
     }
 }

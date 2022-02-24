@@ -4,26 +4,28 @@ using UnityEngine;
 using Unity.Mathematics;
 
 public class WorldGrid : MonoBehaviour {
+    public delegate void WorldPathReadyAction(List<List<PathGridElement>> pathGrid);
+    public event WorldPathReadyAction worldPathReady;
     [SerializeField]
     private MapGenerator mapGeneration;
     private Bounds bounds;
     private Coroutine pathRoutine;
-    public static Bounds worldBounds => instance.bounds;
-    private static WorldGrid instance;
-    public static BoxCollider pathCollider => instance.boxCollider;
+    public Bounds worldBounds => instance.bounds;
+    public static WorldGrid instance;
+    public BoxCollider pathCollider => instance.boxCollider;
     public BoxCollider boxCollider;
     public bool debugBox = false;
     [Range(1f,10f)]
-    public static float collisionGridSize = 2f;
-    public static float pathGridSize = 5f;
+    public float collisionGridSize = 2f;
+    public float pathGridSize = 5f;
     public delegate void CharacterAction(Character character);
-    private static List<List<CollisionGridElement>> collisionGrid = new List<List<CollisionGridElement>>();
-    private static List<List<PathGridElement>> pathGrid = new List<List<PathGridElement>>();
+    private List<List<CollisionGridElement>> collisionGrid = new List<List<CollisionGridElement>>();
+    private List<List<PathGridElement>> pathGrid = new List<List<PathGridElement>>();
     private static Collider[] staticColliders = new Collider[4];
-    private static HashSet<PathGridElement> openGraph;
-    private static PathGridElement lastElement;
-    //private static HashSet<GridElement> closedGraph;
-    public static List<List<PathGridElement>> GetPathGrid() => pathGrid;
+    private HashSet<PathGridElement> openGraph;
+    private PathGridElement lastElement;
+    //private  HashSet<GridElement> closedGraph;
+    public List<List<PathGridElement>> GetPathGrid() => pathGrid;
     public class GridElement {
         public float gridSize;
         public Vector3 worldPosition {
@@ -33,6 +35,12 @@ public class WorldGrid : MonoBehaviour {
         public virtual void Initialize(int3 pos, float gridSize) {
             this.position = pos;
             this.gridSize = gridSize;
+        }
+        public override int GetHashCode() {
+            return position.GetHashCode();
+        }
+        public override bool Equals(object obj) {
+            return obj.GetHashCode() == GetHashCode();
         }
     }
     public class CollisionGridElement : GridElement {
@@ -55,8 +63,14 @@ public class WorldGrid : MonoBehaviour {
         public void Refresh() {
             passable = Physics.OverlapBoxNonAlloc(new Vector3(position.x,position.y,position.z)*gridSize, Vector3.one*0.5f*gridSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
         }
+        public override int GetHashCode() {
+            return position.GetHashCode();
+        }
+        public override bool Equals(object obj) {
+            return obj.GetHashCode() == GetHashCode();
+        }
     }
-    public static Vector3 GetPathTowardsPlayer(Vector3 fromPosition) {
+    public Vector3 GetPathTowardsPlayer(Vector3 fromPosition) {
         PathGridElement element = GetElement<PathGridElement>(fromPosition, pathGrid, pathGridSize);
         if (element.cameFrom == null) {
             return (fromPosition-element.worldPosition).normalized;
@@ -66,7 +80,7 @@ public class WorldGrid : MonoBehaviour {
         }
         return (element.cameFrom.worldPosition-element.worldPosition).normalized;
     }
-    private static void PrimeGrid<T>(int count, List<List<T>> grid, float gridSize) where T : GridElement, new() {
+    private void PrimeGrid<T>(int count, List<List<T>> grid, float gridSize) where T : GridElement, new() {
         grid.Clear();
         for(int x=0;x<count;x++) {
             grid.Add(new List<T>());
@@ -77,16 +91,16 @@ public class WorldGrid : MonoBehaviour {
             }
         }
     }
-    public static CollisionGridElement GetCollisionGridElement(int x, int y) {
+    public CollisionGridElement GetCollisionGridElement(int x, int y) {
         return collisionGrid[x][y];
     }
-    public static PathGridElement GetPathGridElement(int x, int y) {
+    public PathGridElement GetPathGridElement(int x, int y) {
         return pathGrid[x][y];
     }
-    public static PathGridElement GetPathGridElement(Vector3 position) {
+    public  PathGridElement GetPathGridElement(Vector3 position) {
         return GetElement<PathGridElement>(position, pathGrid, pathGridSize);
     }
-    private static T GetElement<T>(Vector3 position, List<List<T>> grid, float gridSize) where T : GridElement, new() {
+    private T GetElement<T>(Vector3 position, List<List<T>> grid, float gridSize) where T : GridElement, new() {
         int x = Mathf.RoundToInt(position.x/gridSize);
         int y = Mathf.RoundToInt(position.z/gridSize);
 
@@ -131,6 +145,9 @@ public class WorldGrid : MonoBehaviour {
                 pathGrid[x][y].Refresh();
             }
         }
+        DeterminePlayableArea();
+        worldPathReady?.Invoke(pathGrid);
+        TryUpdatePaths(true);
     }
     void OnDestroy() {
         if (mapGeneration != null) {
@@ -139,25 +156,54 @@ public class WorldGrid : MonoBehaviour {
         collisionGrid.Clear();
         pathGrid.Clear();
     }
-    public static void Prepare() {
-        foreach(List<CollisionGridElement> row in collisionGrid) {
-            foreach(CollisionGridElement element in row) {
-                element.charactersInElement.Clear();
+    private HashSet<PathGridElement> FloodFill(PathGridElement center) {
+        HashSet<PathGridElement> flood = new HashSet<PathGridElement>();
+
+        // Just chew through it immediately. 
+        IEnumerator blah = ProcessPaths(center);
+        while(blah.MoveNext()) {}
+
+        foreach(List<PathGridElement> row in pathGrid) {
+            foreach(PathGridElement element in row) {
+                if (!element.visited) { continue; }
+                flood.Add(element);
             }
         }
-        foreach(Character character in Character.characters) {
-            GetElement<CollisionGridElement>(character.position, collisionGrid, collisionGridSize).charactersInElement.Add(character);
-        }
-        PathGridElement center = GetElement<PathGridElement>(PlayerCharacter.playerPosition, pathGrid, pathGridSize);
-        if (lastElement == null || center != lastElement) {
-            if (instance.pathRoutine != null) {
-                instance.StopCoroutine(instance.pathRoutine);
+        return flood;
+    }
+    private void DeterminePlayableArea() {
+        HashSet<PathGridElement> notFloodedSet = new HashSet<PathGridElement>();
+        foreach(List<PathGridElement> row in pathGrid) {
+            foreach(PathGridElement element in row) {
+                if (!element.passable) { continue; }
+                notFloodedSet.Add(element);
             }
-            instance.pathRoutine = instance.StartCoroutine(ProcessPaths(center));
-            lastElement = center;
+        }
+        List<HashSet<PathGridElement>> floods = new List<HashSet<PathGridElement>>();
+        while (notFloodedSet.Count > 0) {
+            int random = UnityEngine.Random.Range(0,notFloodedSet.Count);
+            PathGridElement element = null;
+            int i = 0;
+            foreach(PathGridElement find in notFloodedSet) {
+                element = find;
+                if (i++==random) {
+                    break;
+                }
+            }
+            HashSet<PathGridElement> flooded = FloodFill(element);
+            notFloodedSet.ExceptWith(flooded);
+            floods.Add(flooded);
+        }
+        floods.Sort((a,b)=>{return b.Count.CompareTo(a.Count);});
+
+        // Set all smaller enclosures as impassable, fill them as solid
+        for(int i=1;i<floods.Count;i++) {
+            foreach(PathGridElement element in floods[i]) {
+                element.passable = false;
+            }
         }
     }
-    private static IEnumerator ProcessPaths(PathGridElement center) {
+    private IEnumerator ProcessPaths(PathGridElement center) {
         foreach(List<PathGridElement> row in pathGrid) {
             foreach(PathGridElement element in row) {
                 element.visited = false;
@@ -202,11 +248,35 @@ public class WorldGrid : MonoBehaviour {
             if (graphFramesProcessed++%50 == 0) { yield return null; }
         }
     }
-    public static HashSet<Character> GetCharactersInCell(Vector3 position) {
+    public HashSet<Character> GetCharactersInCell(Vector3 position) {
         return GetElement<CollisionGridElement>(position, collisionGrid, collisionGridSize).charactersInElement;
     }
     void FixedUpdate() {
-        Prepare();
+        foreach(List<CollisionGridElement> row in collisionGrid) {
+            foreach(CollisionGridElement element in row) {
+                element.charactersInElement.Clear();
+            }
+        }
+        foreach(Character character in Character.characters) {
+            GetElement<CollisionGridElement>(character.position, collisionGrid, collisionGridSize).charactersInElement.Add(character);
+        }
+        TryUpdatePaths(false);
+    }
+    void TryUpdatePaths(bool force) {
+        if (PlayerCharacter.player == null) {
+            return;
+        }
+        PathGridElement center = GetElement<PathGridElement>(PlayerCharacter.playerPosition, pathGrid, pathGridSize);
+        if (center == null) {
+            return;
+        }
+        if (force || lastElement == null || center != lastElement) {
+            if (instance.pathRoutine != null) {
+                instance.StopCoroutine(instance.pathRoutine);
+            }
+            instance.pathRoutine = instance.StartCoroutine(ProcessPaths(center));
+            lastElement = center;
+        }
     }
     void OnDrawGizmosSelected() {
         if (collisionGrid == null) {

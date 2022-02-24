@@ -16,12 +16,45 @@ public class PlayerCharacter : Character {
     public Attribute projectileRadius;
     public Attribute projectileSpeed;
     public Attribute luck;
+    private float lastHitTime;
+    public override void BeHit(DamageInstance instance) {
+        // 0.3 second damage boost
+        if (Time.time - lastHitTime > 0.33f) {
+            base.BeHit(instance);
+            lastHitTime = Time.time;
+        }
+    }
     public override void Awake() {
         base.Awake();
         player = this;
     }
     void Start() {
+        lastHitTime = Time.time;
         playerInput = GetComponent<PlayerInput>();
+        WorldGrid.instance.worldPathReady += OnWorldPathReady;
+    }
+    void OnWorldPathReady(List<List<WorldGrid.PathGridElement>> pathGrid) {
+        float possibleChoices = 0f;
+        for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
+            for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
+                if (pathGrid[x][y].passable) {
+                    possibleChoices += 1f;
+                }
+            }
+        }
+        float randomChoice = UnityEngine.Random.Range(0f,possibleChoices);
+        float currentChoice = 0f;
+        for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
+            for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
+                if (pathGrid[x][y].passable) {
+                    currentChoice += 1f;
+                    if (currentChoice >= randomChoice) {
+                        SetPositionAndVelocity(pathGrid[x][y].worldPosition, Vector3.zero);
+                        return;
+                    }
+                }
+            }
+        }
     }
     void Update() {
         if (velocity.sqrMagnitude > 0.0001f) {
@@ -30,7 +63,7 @@ public class PlayerCharacter : Character {
     }
     public override void Die() {
         base.Die();
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
     public override void FixedUpdate() {
         base.FixedUpdate();

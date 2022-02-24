@@ -27,7 +27,7 @@ public class EnemyWave : ScriptableObject {
     }
     protected Vector3 GetValidOffscreenSpawnPosition() {
         float totalChoices = 0f;
-        var pathGrid = WorldGrid.GetPathGrid();
+        var pathGrid = WorldGrid.instance.GetPathGrid();
         for(int x=0;x<pathGrid.Count;x++) {
             for(int y=0;y<pathGrid[x].Count;y++) {
                 if (pathGrid[x][y] == null) {

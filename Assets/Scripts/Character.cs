@@ -58,7 +58,7 @@ public class Character : PooledItem {
         enabled = false;
         startedVore?.Invoke();
     }
-    public void BeHit(DamageInstance instance) {
+    public virtual void BeHit(DamageInstance instance) {
         if (health.GetHealth() <= 0f) {
             return;
         }
@@ -74,7 +74,7 @@ public class Character : PooledItem {
         hitRoutine = StartCoroutine(HitEffect());
     }
     public void SetPositionAndVelocity(Vector3 position, Vector3 velocity) {
-        this.position = WorldGrid.worldBounds.ClosestPoint(position);
+        this.position = WorldGrid.instance.worldBounds.ClosestPoint(position);
         lastPosition = this.position - velocity;
         transform.position = this.position;
         positionSet?.Invoke(this.position);
@@ -118,9 +118,9 @@ public class Character : PooledItem {
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
             if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(Time.fixedDeltaTime*health.GetHealth(), Vector3.zero));
+                character.BeHit(new DamageInstance(Mathf.Ceil(health.GetHealth()), Vector3.zero));
             } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(Time.fixedDeltaTime*character.health.GetHealth(), Vector3.zero));
+                this.BeHit(new DamageInstance(Mathf.Ceil(character.health.GetHealth()), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
@@ -131,7 +131,7 @@ public class Character : PooledItem {
             Vector3 worldPosition = element.worldPosition;
             Vector3 outDir;
             float outDist;
-            Physics.ComputePenetration(characterCollider, newPosition, Quaternion.identity, WorldGrid.pathCollider, worldPosition, Quaternion.identity, out outDir, out outDist);
+            Physics.ComputePenetration(characterCollider, newPosition, Quaternion.identity, WorldGrid.instance.pathCollider, worldPosition, Quaternion.identity, out outDir, out outDist);
             newPosition += outDir*outDist;
         }
     }
@@ -139,30 +139,30 @@ public class Character : PooledItem {
         Vector3 newPosition = position + (position-lastPosition)*(1f-friction*friction);
         lastPosition = position;
         newPosition += wishDir * Time.deltaTime * speed.GetValue();
-        newPosition = WorldGrid.worldBounds.ClosestPoint(newPosition);
+        newPosition = WorldGrid.instance.worldBounds.ClosestPoint(newPosition);
         if (health.GetHealth() > 0f) {
             newPosition.y = 0f;
         }
 
         if (!phased) {
-            int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.collisionGridSize);
-            int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.collisionGridSize);
-            int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.collisionGridSize,1f))*2-1);
-            int collisionYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.collisionGridSize,1f))*2-1);
-            DoCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX, collisionY), ref newPosition);
-            DoCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY), ref newPosition);
-            DoCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX, collisionY+collisionYOffset), ref newPosition);
-            DoCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset), ref newPosition);
+            int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.collisionGridSize);
+            int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.collisionGridSize);
+            int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.instance.collisionGridSize,1f))*2-1);
+            int collisionYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.instance.collisionGridSize,1f))*2-1);
+            DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY), ref newPosition);
+            DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY), ref newPosition);
+            DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY+collisionYOffset), ref newPosition);
+            DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset), ref newPosition);
         }
 
-        int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.pathGridSize);
-        int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.pathGridSize);
-        int pathXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.pathGridSize,1f))*2-1);
-        int pathYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.pathGridSize,1f))*2-1);
-        DoWallCollision(WorldGrid.GetPathGridElement(pathX,pathY), ref newPosition);
-        DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY), ref newPosition);
-        DoWallCollision(WorldGrid.GetPathGridElement(pathX, pathY+pathYOffset), ref newPosition);
-        DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), ref newPosition);
+        int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.pathGridSize);
+        int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.pathGridSize);
+        int pathXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.instance.pathGridSize,1f))*2-1);
+        int pathYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.instance.pathGridSize,1f))*2-1);
+        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX,pathY), ref newPosition);
+        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX+pathXOffset, pathY), ref newPosition);
+        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX, pathY+pathYOffset), ref newPosition);
+        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), ref newPosition);
         position = newPosition;
     }
     public virtual void LateUpdate() {

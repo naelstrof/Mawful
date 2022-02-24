@@ -109,14 +109,14 @@ public class VoreTail : MonoBehaviour {
         }
     }
     void FixedUpdate() {
-        Vector3 position = tailMouth.position;
-        int collisionX = Mathf.RoundToInt(position.x/WorldGrid.collisionGridSize);
-        int collisionY = Mathf.RoundToInt(position.z/WorldGrid.collisionGridSize);
-        int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(position.x/WorldGrid.collisionGridSize,1f))*2-1);
-        int collisionYOffset = -(Mathf.RoundToInt(Mathf.Repeat(position.z/WorldGrid.collisionGridSize,1f))*2-1);
-        VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX, collisionY));
-        VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY));
-        VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX, collisionY+collisionYOffset));
-        VaccumDefeated(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset));
+        Vector3 position = WorldGrid.instance.worldBounds.ClosestPoint(tailMouth.position);
+        int collisionX = Mathf.RoundToInt(position.x/WorldGrid.instance.collisionGridSize);
+        int collisionY = Mathf.RoundToInt(position.z/WorldGrid.instance.collisionGridSize);
+        int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(position.x/WorldGrid.instance.collisionGridSize,1f))*2-1);
+        int collisionYOffset = -(Mathf.RoundToInt(Mathf.Repeat(position.z/WorldGrid.instance.collisionGridSize,1f))*2-1);
+        VaccumDefeated(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY));
+        VaccumDefeated(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY));
+        VaccumDefeated(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY+collisionYOffset));
+        VaccumDefeated(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset));
     }
 }

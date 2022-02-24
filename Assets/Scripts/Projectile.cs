@@ -83,27 +83,27 @@ public class Projectile : PooledItem {
         Vector3 newPosition = position + (position-lastPosition)*(1f-friction*friction);
         lastPosition = position;
         position = newPosition;
-        Vector3 edgePoint = WorldGrid.worldBounds.ClosestPoint(newPosition);
+        Vector3 edgePoint = WorldGrid.instance.worldBounds.ClosestPoint(newPosition);
         if (Vector3.Distance(edgePoint,newPosition) > 0.001f) {
             Reset();
             gameObject.SetActive(false);
         }
         position.y = 0f;
 
-        int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.collisionGridSize);
-        int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.collisionGridSize);
-        int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.collisionGridSize,1f))*2-1);
-        int collisionYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.collisionGridSize,1f))*2-1);
-        CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX, collisionY), ref newPosition);
-        CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY), ref newPosition);
-        CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX, collisionY+collisionYOffset), ref newPosition);
-        CheckCharacterCollision(WorldGrid.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset), ref newPosition);
+        int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.collisionGridSize);
+        int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.collisionGridSize);
+        int collisionXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.instance.collisionGridSize,1f))*2-1);
+        int collisionYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.instance.collisionGridSize,1f))*2-1);
+        CheckCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY), ref newPosition);
+        CheckCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY), ref newPosition);
+        CheckCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY+collisionYOffset), ref newPosition);
+        CheckCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset), ref newPosition);
 
-        int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.pathGridSize);
-        int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.pathGridSize);
+        int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.pathGridSize);
+        int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.pathGridSize);
         //int pathXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.pathGridSize,1f))*2-1);
         //int pathYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.pathGridSize,1f))*2-1);
-        DoWallCollision(WorldGrid.GetPathGridElement(pathX,pathY), newPosition);
+        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX,pathY), newPosition);
         //DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY), newPosition);
         //DoWallCollision(WorldGrid.GetPathGridElement(pathX, pathY+pathYOffset), newPosition);
         //DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), newPosition);

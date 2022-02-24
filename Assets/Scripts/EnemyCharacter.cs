@@ -18,7 +18,7 @@ public class EnemyCharacter : Character {
     public override void FixedUpdate() {
         base.FixedUpdate();
         if (!stunned) {
-            wishDir = WorldGrid.GetPathTowardsPlayer(position);
+            wishDir = WorldGrid.instance.GetPathTowardsPlayer(position);
         } else {
             wishDir = Vector3.zero;
         }

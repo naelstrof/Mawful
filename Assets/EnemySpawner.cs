@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour {
         int current = 0;
         for(int i=0;i<count;i++) {
             Vector3 position = new Vector3(UnityEngine.Random.Range(0f,200f), 0f, UnityEngine.Random.Range(0f, 200f));
-            position = WorldGrid.worldBounds.ClosestPoint(position);
+            position = WorldGrid.instance.worldBounds.ClosestPoint(position);
             EnemyCharacter character;
             switch(current) {
                 case 0:
