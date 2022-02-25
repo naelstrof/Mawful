@@ -14,7 +14,7 @@ public class EnemyWaveManager : MonoBehaviour {
         WorldGrid.instance.worldPathReady -= OnWorldPathReady;
     }
 
-    void OnWorldPathReady(List<List<WorldGrid.PathGridElement>> path) {
+    void OnWorldPathReady() {
         waves[currentWave].waveEnded += NextWave;
         waves[currentWave].OnWaveStart(this);
     }

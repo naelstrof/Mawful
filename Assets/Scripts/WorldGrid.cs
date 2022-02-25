@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.Mathematics;
 
 public class WorldGrid : MonoBehaviour {
-    public delegate void WorldPathReadyAction(List<List<PathGridElement>> pathGrid);
+    public delegate void WorldPathReadyAction();
     public event WorldPathReadyAction worldPathReady;
     [SerializeField]
     private MapGenerator mapGeneration;
@@ -91,13 +91,36 @@ public class WorldGrid : MonoBehaviour {
             }
         }
     }
+    public PathGridElement GetPathableGridElement() {
+        float possibleChoices = 0f;
+        for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
+            for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
+                if (pathGrid[x][y].passable) {
+                    possibleChoices += 1f;
+                }
+            }
+        }
+        float randomChoice = UnityEngine.Random.Range(0f,possibleChoices);
+        float currentChoice = 0f;
+        for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
+            for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
+                if (pathGrid[x][y].passable) {
+                    currentChoice += 1f;
+                    if (currentChoice >= randomChoice) {
+                        return pathGrid[x][y];
+                    }
+                }
+            }
+        }
+        return null;
+    }
     public CollisionGridElement GetCollisionGridElement(int x, int y) {
         return collisionGrid[x][y];
     }
     public PathGridElement GetPathGridElement(int x, int y) {
         return pathGrid[x][y];
     }
-    public  PathGridElement GetPathGridElement(Vector3 position) {
+    public PathGridElement GetPathGridElement(Vector3 position) {
         return GetElement<PathGridElement>(position, pathGrid, pathGridSize);
     }
     private T GetElement<T>(Vector3 position, List<List<T>> grid, float gridSize) where T : GridElement, new() {
@@ -146,7 +169,7 @@ public class WorldGrid : MonoBehaviour {
             }
         }
         DeterminePlayableArea();
-        worldPathReady?.Invoke(pathGrid);
+        worldPathReady?.Invoke();
         TryUpdatePaths(true);
     }
     void OnDestroy() {

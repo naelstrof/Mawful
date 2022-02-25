@@ -118,9 +118,9 @@ public class Character : PooledItem {
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
             if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(Mathf.Ceil(health.GetHealth()), Vector3.zero));
+                character.BeHit(new DamageInstance(Mathf.Min(Mathf.Ceil(health.GetHealth()),3f), Vector3.zero));
             } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(Mathf.Ceil(character.health.GetHealth()), Vector3.zero));
+                this.BeHit(new DamageInstance(Mathf.Min(Mathf.Ceil(health.GetHealth()),3f), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
