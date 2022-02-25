@@ -1,0 +1,670 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_hu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: hu
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: "J\xE1t\xE9k ind\xEDt\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: "Be\xE1ll\xEDt\xE1sok"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: "Kil\xE9p\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Hang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: "Ir\xE1ny\xEDt\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: Analitika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: "Folytat\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: Vissza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: "Eg\xE9r \xE9rz\xE9kenys\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: Alacsony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: Magas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: "K\xF6zepes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: Ki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "A Mawful anonim analitikus adatot k\xFCld az\xE9rt, hogy a j\xE1t\xE9kot
+      jobb\xE1 tegye! Ha meg akarod el\u0151zni ezt akkor nyomj a lenti gombra (Egy
+      b\xF6ng\xE9sz\u0151t fog megnyitni)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: "Nyissa meg az adatv\xE9delmi oldalon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: "Alap\xE9rtelmezett be\xE1ll\xEDt\xE1sok vissza\xE1ll\xEDt\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: "J\xE1t\xE9k \xE1ll\xE1s ment\xE9se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: "J\xE1t\xE9k \xE1ll\xE1s bet\u0151lt\xE9se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: "Folyad\xE9k k\xE9p min\u0151s\xE9ge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: "Ablak m\xF3d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: "Felbont\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: "Ragyog\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: "Elmos\xF3d\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: "K\xF6rnyezeti elz\xE1r\xF3d\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: "\xC1rny\xE9kok"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: "F\u0171"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: "K\xE9perny\u0151 t\xE9r t\xFCkr\xF6z\u0151d\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: "\xC9lsim\xEDt\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: Filmszemcse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: "F\u0151 hanger\u0151"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: "Hanghat\xE1sok hangereje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: Zene hangereje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: Kamera FOV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: "Panini kiny\xFAl\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: "M\xE9lys\xE9g\xE9less\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: "Felh\u0151k\xE9pes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: "\xC1ltal\xE1nos k\xE9p min\u0151s\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: "Mozg\xE1s m\xF3d kapcsol\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: "Kiz\xE1r\xF3lagos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: "Teljes k\xE9perny\u0151"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: Teljes ablak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: Ablakos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: Be
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: Nyelv
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: "J\xE1t\xE9kst\xEDlus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: FIGYELEM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: "EZ A J\xC1T\xC9K KITAL\xC1LT KARAKTEREKET \xC1BR\xC1Z\xD3L AKIK
+      <#FF0000> SZEXU\xC1LISAN MEGHAT\xC1ROZOTT VISELKED\xC9SBEN <#FFFFFF>\n\nVESZNEK
+      R\xC9SZT. >A <#008CFF> J\xC1T\xC9K IND\xCDT\xC1SA <#FFFFFF> GOMBRA KATTINTVA
+      KIJELENTED HOGY:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 ESZK\xDCSZEG\xC9S EL\xCDT\xC9L\xC9SE ALATT, TE BET\u0150LT\xD6TTED
+      A 18. \xC9LET \xC9VED.\n\u2022 MEZTELENS\xC9G \xC9S SZEXU\xC1LIS TEV\xC9KENYS\xC9G
+      NEM S\xC9RT T\xC9GED.\n\u2022 ELISMERED HOGY TE VAGY A FELEL\u0150S MINDENKI\xC9RT
+      AKI A TE ESZK\xD6Z\xD6D\xD6N L\xC1TJA A J\xC1T\xC9KOT T\xD6BB MINT 18 \xC9VES."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: "ok\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "\xDCdv\xF6z\xF6llek a Mawful-ben!\n\nEz egy fejleszt\u0151i kiad\xE1s
+      \xE9s teljesen befejezetlen, sz\xF3val ne v\xE1rj el sokat!\n\nNagyon k\xF6sz\xF6n\xF6m
+      hogy t\xE1mogatod a j\xE1t\xE9kot!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: "Mozg\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: "Ugr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: "S\xE9ta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: "\xD6nmegsemmis\xEDt\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: "Haszn\xE1l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: Megragad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: "Megfog, H\xFAz\xE1s \xE9s tol\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: "Gugol\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: "Statisztika megtekint\xE9se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: "Forgat\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: Kiolvaszt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Rongybaba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: "Fog\xE1s m\xF3d v\xE1lt\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: "N\xE9z\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: "Fogott t\xE1rgy aktiv\xE1l\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: "Vissza\xE1ll\xEDt\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: "Bet\xF6lt\xE9s..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: "T\xF6rmel\xE9k elt\xE1vol\xEDt\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: "Fog\xE1s fejleszt\xE9se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: "Kamera v\xE1lt\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: "V\xEDz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: "J\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: Tej
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: Milkshake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: "Padlizsl\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: "Dinnye l\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: "N\xF6veked\xE9si sz\xE9rum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: "Hi\xE1nyos n\xF6veked\xE9si sz\xE9rum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: Instabil reagens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Cum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: "Toj\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: "Zs\xEDr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: Szerelem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: Nincsenek reagants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: Reagens szkenner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: "Robban\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: "K\xE1lium"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: Multiplayer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: "Gyors j\xE1t\xE9k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: "Priv\xE1t j\xE1t\xE9k l\xE9trehoz\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: Szex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: "Sz\xEDn\xE1rnyalat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: "Fels\u0151 alj\xE1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: "Vastags\xE1g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: "F\xE9nyer\u0151ss\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: "Tel\xEDtetts\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Kontraszt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Fasz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: "Faszm\xE9ret"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: "Boob m\xE9ret"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: "L\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: "Csom\xF3zott"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: "L\xE1ngolt l\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: "K\xFApos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: Egyik sem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: Be ki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: Faipari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: "Csatlakozzon a mag\xE1n j\xE1t\xE9khoz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: "M\xE9g nincs szoba ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: "Megsz\xFCnteti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: Csatlakozik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: 'Szoba neve:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: "Mag\xE1n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: "Maximum j\xE1t\xE9kosok"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: "Kobold m\xE9ret"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: "Nyilv\xE1nos j\xE1t\xE9k l\xE9trehoz\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: "Els\u0151 szem\xE9ly\u0171"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: "Harmadik szem\xE9ly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: Freecam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: "Ragad\xF3s freecam"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: "Szerver b\xF6ng\xE9sz\u0151"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: "J\xE1t\xE9kosok"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: "Csatlakoz\xE1s ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: "V\xE9letlenszer\u0171 szoba megtal\xE1l\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: Bal oldali szoba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: "Valami elvesz\xEDtette a kapcsolatot!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: "Anan\xE1szl\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: "Szam\xE1rs\xE1g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: "Goly\xF3k m\xE9rete"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: "T\xFCk\xF6rmin\u0151s\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: Hemipenis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: Vsync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: "Megc\xE9lzott framerate"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: "Mellbimb\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: "V\xE9d\u0151sisak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: "Egy var\xE1zslatos ragaszthat\xF3, amely hossz\xFA \xE9s hengeres
+      medi\xE1lis gy\u0171r\u0171vel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: "Egy egyszer\u0171 hardhat, hogy megv\xE9dje a fej\xE9t a cs\xF6kken\u0151
+      t\xF6rmel\xE9kt\u0151l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: "Egy var\xE1zslatos k\xF6t\u0151d\xE9s egy csom\xF3, medi\xE1lis
+      gy\u0171r\u0171 \xE9s n\xE9h\xE1ny bumpy gerinc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: "Egy var\xE1zslatos ragaszthat\xF3, amely hossz\xFA, hengeres, \xE9s
+      van egy l\xE1ngol\xF3 cs\xFAcs. Van n\xE9h\xE1ny nagy teleszk\xF3pos akci\xF3!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Egyszer\u0171 test-biztons\xE1gos, hipoallergetikai f\xE9mrudak.
+      (Igen, mennek a mellbimb\xF3idba.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: "Egy var\xE1zslatos, hogy hossz\xFA \xE9s thins ki egy pontig. A
+      goly\xF3it internaliz\xE1lj\xE1k!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: "Kandi fark\xE1ja"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: "Farok t\xE1ska"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: "T\xFCsk\xE9s gall\xE9r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: "Magassark\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: "\xDAj ment\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: "Ment\xE9s / terhel\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: "\xDAj j\xE1t\xE9k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: "Egy\xE9ni j\xE1t\xE9k l\xE9trehoz\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: "Sz\xFCnet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: "Goop min\u0151s\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: "Mellbimb\xF3szivatty\xFAk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: "K\xF6rnyezeti mennyis\xE9g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: "Pr\xF3b\xE1lja \xFAjra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: "T\xE1mad\xE1s"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

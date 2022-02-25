@@ -1,0 +1,668 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_ro
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ro
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: Joaca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: "Op\u021Biuni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: "P\u0103r\u0103si"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: "Grafic\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: Controale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: Analytics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: Continua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: "\xCEnapoi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: Sensibilitatea mouse-ului
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: "Sc\u0103zut"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: "\xCEnalt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: Mediu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: Off.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "Mawful trimite date anonime anonime pentru a face jocul mai bun!
+      Dac\u0103 dori\u021Bi s\u0103 preveni\u021Bi acest lucru, face\u021Bi clic
+      pe butonul de mai jos (acesta va deschide un browser de internet)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: "Deschide\u021Bi pagina de confiden\u021Bialitate a datelor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: "Reseta\u021Bi la valorile implicite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: salva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: "Sarcin\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: "Calitate decalat\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: "Modul fereastr\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: "Rezolu\u0163ie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: a inflori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: Neclaritate de miscare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: "Ocluzie ambiental\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: Umbres.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: "Iarb\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: "Reflec\u021Bii de spa\u021Biu pe ecran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: Anti-aliasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: Film de cereale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: Volumul principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: Volumul efectelor sonore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: Volumul muzicii
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: Camera fov.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: "Proiec\u021Bia Panini."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: Adancimea terenului
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: Nori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: "Calitate general\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: "Comuta\u021Bi pe jos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: Exclusiv
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: Ecran complet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: Fereastra maxed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: "Fereastr\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: Pe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: Limba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: Gameplay.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: AVERTIZARE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: "ACEST JOC \xCENSCRIE PERSONAJE FI\u021AIONALE PARTICIPANTE LA <#FF0000>
+      COMPORTAMENT SEXUAL EXPLICIT <#FFFFFF>\n\nF\u0102C\xC2ND CLIC <#008CFF> PLAY
+      <#FFFFFF> DECLARA\u021AI C\u0102:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 sub pedeapsa de sperjur, ai peste 18 ani.\n\u2022 Nuditate
+      \u0219i reprezent\u0103ri explicite ale activit\u0103\u021Bii sexuale nu v\u0103
+      jignesc.\n\u2022 Recunoa\u0219te\u021Bi c\u0103 sunte\u021Bi responsabil pentru
+      asigurarea tuturor persoanelor care vizualizeaz\u0103 jocul de pe dispozitivul
+      dvs. dep\u0103\u0219e\u0219te v\xE2rsta de 18 ani."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: bine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "Bine a\u021Bi venit la mawful!\n\nAcesta este un dezvoltator construit
+      \u0219i este complet neterminat, nu v\u0103 a\u0219tepta\u021Bi prea mult!\n\nV\u0103
+      mul\u021Bumesc foarte mult pentru a sprijini jocul!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: "Mi\u0219care"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: A sari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: Mers pe jos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: GIB.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: Utilizare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: Apuca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: "Apuca\u021Bi \xEEmpingerea \u0219i trage\u021Bi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: Crouch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: "Vizualiza\u021Bi statisticile"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: Roti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: Disfare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Papusa de carpa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: "Schimba\u021Bi modul de apucare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: Uite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: "Activa\u021Bi grabul"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: Resetare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: "Se \xEEncarc\u0103..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: Resturi clare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: Upgrade de apucare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: "Comuta\u021Bi camera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: "Ap\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: "Ghea\u0163\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: Lapte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: Milkshake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: Suc de vinete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: Suc de pepene galben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: "Serul de cre\u0219tere"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: "Serul de cre\u0219tere incomplet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: Reactivul instabil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Cum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: Ou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: Gras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: Dragoste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: "Nu au fost g\u0103site imobiliare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: Scanerul reactivului
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: Explozie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: Potasiu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: Multiplayer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: Joc rapid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: "Crea\u021Bi un joc privat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: Sex
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: "Nuan\u0163\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: Sus jos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: Grosime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: Luminozitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: Saturare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Contrast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Dick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: Dimensiunea Dick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: Boob size.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: Ecine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: Knotted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: "Ecin\u0103 la cabin\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: Conice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: Nici unul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: "\xCEn afar\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: Lemn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: "Al\u0103tura\u021Bi-v\u0103 jocului privat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: "Nu s-au g\u0103sit \xEEnc\u0103 camere ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: Anulare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: A te alatura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: 'Numele Camerei:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: 'Privat:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: Jucatori maximi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: Kobold Size.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: "Crea\u021Bi un joc public"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: Prima persoana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: A treia persoana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: FreeCam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: Lipicios FreeCam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: Server Browser.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: "Juc\u0103tori"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: Conectarea ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: "G\u0103sirea camerei aleatorii"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: "Camer\u0103 din st\xE2nga"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: "Ceva te-a f\u0103cut s\u0103 pierzi conexiunea!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: Suc de ananas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: Chubbiness.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: Bilele de dimensiune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: Mirror Calitate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: Hemipenis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: Vsync.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: "\u021Aint\u0103 frameratul"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: Niplu Barbells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: Palarie tare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: "O staculant\u0103 magic\u0103 este lung\u0103 \u0219i cilindric\u0103
+      cu un inel medial."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: "Un simplu greu de a proteja capul din resturile care se \xEEncadreaz\u0103."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: "Un magic ata\u0219abil cu un nod, un inel medial \u0219i unele
+      crest\u0103turi bumpy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: "O staculant\u0103 magic\u0103 este lung\u0103, cilindric\u0103
+      \u0219i are un v\xE2rf de ardere. Are o ac\u021Biune mare de telescoping!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Simple bare de metale hipoalergetice. (Da, merg \xEEn sf\xE2rcuri.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: "O staculant\u0103 magic\u0103 este lung\u0103 \u0219i a ie\u0219it
+      p\xE2n\u0103 la un punct. Bilele sale sunt internalizate!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: Dick-ul lui Kandi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: "Baghet\u0103 de coad\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: Gulerul spiked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: Toc inalt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: Noua salvare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: "Salva\u021Bi / \xEEnc\u0103rcare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: Joc nou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: "Crea\u021Bi joc personalizat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: "Pauz\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: Calitatea Goop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: Pompe de mamelon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: "Volumul ambian\u021Bei"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: "Re\xEEncerca\u021Bi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: Atac
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

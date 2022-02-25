@@ -1,0 +1,673 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: Optionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: "Aufh\xF6ren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: Grafik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: Steuerelemente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: Analytik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: Fortsetzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: Maus-Empfindlichkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: Niedrig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: Hoch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: Mittel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: Aus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "Mawful sendet anonyme Analysedaten, um das Spiel zu verbessern!
+      Wenn du dies nicht m\xF6chtest, klicke auf die Schaltfl\xE4che unten. (\xD6ffnet
+      ein Browserfenster.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: "\xD6ffne Datenschutz-Seite (Englisch)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: "Auf Standardeinstellungen zur\xFCcksetzen\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: Speichern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: Laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: "Spritzfleck-Qualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: Fenstermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: "Aufl\xF6sung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: "Lichtunsch\xE4rfe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: "Bewegungsunsch\xE4rfe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: Umgebungsverdeckung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: Schatten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: Gras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: Bildschirmraumreflexionen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: "Kantengl\xE4ttung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: "K\xF6rnigkeit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: "Master-Lautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: "Effektlautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: "Musiklautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: Kamera-Sichtbereich
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: Panini-Projektion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: "Tiefensch\xE4rfe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: Wolken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: "Gesamtqualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: Gehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: Exklusiv
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: Vollbild
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: Maximiertes Fenster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: Fenster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: Ein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: Gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: WARNUNG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: 'DIESES SPIEL ZEIGT FIKTIONALE CHARAKTERE IN <#FF0000>SEXUELL EXPLIZITEN
+      HANDLUNGEN.<#FFFFFF>
+
+      
+
+      Wenn du auf <#008CFF>SPIELEN<#FFFFFF>
+      klickst, gibst du Folgendes an:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 Du bist \xFCber 18 Jahre alt.\r\n\u2022 Nacktheit und explizite
+      Darstellungen von sexuellen Aktivit\xE4ten verst\xF6ren dich nicht.\r\n\u2022
+      Du hast die Verantwortung, sicherzustellen, dass alle Personen, die dieses
+      Spiel auf deinem Ger\xE4t sehen, \xFCber 18 Jahre alt sind."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "Willkommen bei Mawful!\r\n\r\nDies ist eine Entwicklerversion und
+      noch sehr unvollst\xE4ndig, also erwarte nicht allzu viel!\r\n\r\nVielen Dank,
+      dass du das Spiel unterst\xFCtzt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: Bewegen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: Springen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: Spaziergang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: "Selbstzerst\xF6rung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: Verwenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: Greifen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: Schieben und Ziehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: Ducken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: Statistiken anzeigen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: Drehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: "L\xF6sen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Ragdoll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: Greifmodus wechseln
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: Umsehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: Gegriffenes benutzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: "Zur\xFCcksetzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: Laden...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: Schutt beseitigen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: Greifen aufwerten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: Schalter Kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: Wasser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: Eis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: Milch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: Milchshake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: Auberginensaft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: Melonensaft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: Wachstumsserum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: Unfertiges Wachstumsserum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: Instabiles Reagenz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Sperma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: Ei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: Fett
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: Liebe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: Kein Reagenz gefunden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: Reagenz-Scanner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: Explosion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: Kalium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: Mehrspieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: Schnelles Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: Privates Spiel erstellen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: Geschlecht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: Farbton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: Oben/Unten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: Dicke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: Helligkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: "S\xE4ttigung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Kontrast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Penis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: "Penisgr\xF6\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: "Brustgr\xF6\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: Pferdepenis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: Mit Knoten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: Geweiteter Pferdepenis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: Auslaufend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: Keiner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: "Mitte/Au\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: Holz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: Privatem Spiel beitreten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: Noch keine Lobby gefunden...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: Verbinden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: 'Lobbyname:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: 'Privat:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: Maximale Spielerzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: "Koboldgr\xF6\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: "\xD6ffentliches Spiel erstellen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: Erste Person
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: Dritte Person
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: Freie Kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: Haftende Kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: Serverbrowser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: Spieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: Verbinden...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: Suche nach Zufallslobby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: Lobby verlassen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: Die Verbindung wurde getrennt!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: Ananassaft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: Pummeligkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: "Hodengr\xF6\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: "Spiegelqualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: Hemipenis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: Vsync.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: Ziel-Framerate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: Nippel-Barbells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: Schutzhelm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: Ein magisches Accessoire, lang und zylindrisch mit einem mittleren
+      Ring.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: "Ein einfacher Helm, der den Kopf vor herabfallenden Tr\xFCmmern
+      sch\xFCtzt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: "Ein magisches Accessoire mit einem Knoten, einem mittleren Ring
+      und ein paar genoppten W\xFClsten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: "Ein magisches Accessiore, lang und zylindrisch mit einer geweiteten
+      Spitze. L\xE4sst sich super auseinanderschieben!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Einfache, hautvertr\xE4gliche, hypoallergene Metallstangen. (Ja,
+      sie geh\xF6ren in die Brustwarzen.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: "Ein magisches Accessiore, das lang ist und zu einer Spitze ausl\xE4uft.
+      Die Hoden sind im K\xF6rper!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: Kandi's Penis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: Schwanztasche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: Stachelhalsband
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: High Heels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: Neuer Spielstand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: Speichern / Laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: Neues Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: Eigenes Spiel erstellen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: "Glibberqualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: Nippelpumpen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: Ambiente Volumen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: Wiederholen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: Attacke
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

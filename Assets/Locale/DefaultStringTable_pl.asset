@@ -1,0 +1,674 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_pl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: Graj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: Opcje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: "Wyjd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: Sterowanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: Analityka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: Kontyntynuj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: "Wr\xF3\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: "Czu\u0142o\u015B\u0107 myszy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: Niski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: Wysoka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: "\u015Arednia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: "Wy\u0142\u0105czone"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "Mawful wysy\u0142a anonimowe dane analityczne, aby uczyni\u0107
+      gr\u0119 lepsz\u0105! Je\u015Bli chcesz tego unikn\u0105\u0107, nale\u017Cy
+      klikn\u0105\u0107 na przycisk poni\u017Cej (otworzy to przegl\u0105dark\u0119
+      internetow\u0105)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: "Otw\xF3rz stron\u0119 dotycz\u0105c\u0105 prywatno\u015Bci danych"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: "Przywr\xF3\u0107 domy\u015Blne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: Zapisz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: Wczytaj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: "Jako\u015B\u0107 naklejek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: 'Tryb okna
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: "Rozdzielczo\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: Barwa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: Rozmycie w ruchu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: Artykulacja otoczenia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: Cienie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: Trawka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: Odbicia w przestrzeni ekranu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: "Wyg\u0142adzanie kraw\u0119dzi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: "Szczeg\xF3\u0142owo\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 efekt\xF3w d\u017Awi\u0119kowych"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 muzyki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: Pole widzenia kamery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: Projekcja panini
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: "G\u0142\u0119bia ostro\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: Chmury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: "Og\xF3lna jako\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: "Prze\u0142\u0105cz tryb chodzenia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: Ekskluzywny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: "Pe\u0142en ekran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: Maksymalizuj okno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: Tryb okienkowy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: "W\u0142\u0105cz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: "J\u0119zyk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: Rozgrywka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: "OSTRZE\u017BENIE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: "TA GRA PRZEDSTAWIA FIKCJONALNE POSTACIE UCZESTNICZ\u0104CE W <#FF0000>
+      WYRA\u0179NYCH ZACHOWANIACH SEKSUALNYCH <#FFFFFF>\n\nKLIKAJ\u0104C <#008CFF>
+      GRAJ <#FFFFFF> Twierdzisz, \u017Ce:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 Pod kar\u0105 krzywoprzysi\u0119stwa, jeste\u015B w wieku
+      powy\u017Cej 18 lat.\n\u2022 Nago\u015Bci i jasne przedstawienie dzia\u0142a\u0144
+      seksualnych nie obra\u017Ca ci\u0119.\n\u2022 Potwierdzasz, \u017Ce jeste\u015B
+      odpowiedzialny/a za zapewnienie \u017Ce wszystkie osoby ogl\u0105daj\u0105ce
+      gr\u0119 z twojego urz\u0105dzenia s\u0105 w wieku powy\u017Cej 18 lat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "Witamy w Mawful!\n\nTo jest wersja developerska i jest kompletnie
+      nie sko\u0144czona, nie oczekuj zbyt wiele!\n\nDzi\u0119kuj\u0119 ci bardzo
+      za wspieranie gry!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: "Poruszanie si\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: Skok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: "Id\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: Zwiotczej
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: "U\u017Cyj"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: "Chwy\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: "Z\u0142ap popchnij i poci\u0105gnij"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: Kucanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: "Wy\u015Bwietl statystyki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: "Obr\xF3t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: "Odmr\xF3\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Szmaciana lalka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: "W\u0142\u0105cz tryb chwytu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: Patrz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: Aktywuj chwyt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: Resetuj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: "\u0141adowanie..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: "Wyczy\u015B\u0107 gruz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: Upgrade Grab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: "Prze\u0142\u0105cz aparat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: Woda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: "l\xF3d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: mleko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: "Nap\xF3j mleczny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: "Sok bak\u0142a\u017Canowy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: Sok melonowy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: Serum wzrostu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: Niekompletne serum wzrostu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: Niestabilny odczynnik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Sperma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: jajko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: "T\u0142uszcz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: "Mi\u0142o\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: Nie znaleziono odczynnika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: "Skaner odczynnik\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: Eksplozja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: Potas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: Multiplayer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: Szybka gra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: Tworzenie prywatnej gry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: Seks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: "Odcie\u0144"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: "G\xF3ra d\xF3\u0142"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: "Grubo\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: "Jasno\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: Nasycenie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Kontrast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Penis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: Rozmiar kutasa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: Rozmiar piersi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: "Ko\u0144ski"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: "Zawi\u0105zany"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: "Ko\u0144ski sp\u0142aszczony"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: Spiczasty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: Nic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: w poza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: Drewno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: "Do\u0142\u0105cz do prywatnej gry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: Nie znaleziono jeszcze pokoi...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: "Anulowa\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: "Do\u0142\u0105cz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: 'Nazwa pokoju:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: 'Prywatny:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: Maksimum graczy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: Rozmiar Kobolda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: "Stw\xF3rz gr\u0119 publiczn\u0105"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: Pierwsza osoba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: Trzecia osoba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: Freeecam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: Lepki freeecam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: "Przegl\u0105darka serwera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: Gracze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: "Z\u0142\u0105czony..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: Znalezienie losowego pokoju.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: "Lewy pok\xF3j"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: "Co\u015B sprawi\u0142o, \u017Ce straci\u0142e\u015B po\u0142\u0105czenie!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: Sok ananasowy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: "Chubbi\u0144stwo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: "Wielko\u015B\u0107 pi\u0142ki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: "Jako\u015B\u0107 lustra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: Hemipenis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: Vsync.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: Cel Framered.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: Sutek barbells.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: Kask
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: "Magiczna mocowana, kt\xF3ra jest d\u0142uga i cylindryczna z pier\u015Bcieniem
+      przy\u015Brodkowym."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: "Prosty hardhat chroni\u0107 g\u0142ow\u0119 przed spadaj\u0105cymi
+      gruzem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: "Magiczny przymocowany z w\u0119z\u0142em, pier\u015Bcieniem przy\u015Brodkowym
+      i niekt\xF3rymi wyboistymi grzbietami."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: "Magiczny przymocowany, kt\xF3ry jest d\u0142ugi, cylindryczny i
+      ma rozszerzon\u0105 ko\u0144c\xF3wk\u0119. Ma kilka \u015Bwietnych dzia\u0142a\u0144
+      teleskopowych!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Proste bezpieczne body, hipoallergetic metalowe pr\u0119ty. (Tak,
+      id\u0105 w swoich sutkach.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: "Magiczny przymocowany, kt\xF3ry jest d\u0142ugi i ko\u0144czy do
+      punktu. Jego kulki s\u0105 internalizowane!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: Kandi Dick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: Torba ogonowa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: Collar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: Heel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: Nowy Zapisz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: "Zapisz / za\u0142aduj"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: Nowa gra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: "Utw\xF3rz niestandardow\u0105 gr\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: Pauza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: "Jako\u015B\u0107 GoOP."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: Pompy sutkowe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: "Obj\u0119to\u015B\u0107 atmosfera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: "Spr\xF3bowa\u0107 ponownie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: Atak
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

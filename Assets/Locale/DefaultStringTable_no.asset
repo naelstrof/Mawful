@@ -1,0 +1,665 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_no
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: no
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: Spille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: Alternativer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: Slutte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Lyd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: Grafikk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: Kontroller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: Analytics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: Fortsette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: Tilbake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: "Musf\xF8lsomhet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: Lav
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: "H\xF8y"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: Av
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "Mawful sender anonyme analytiske data for \xE5 gj\xF8re spillet
+      bedre! Hvis du vil forhindre dette, klikker du p\xE5 knappen nedenfor (den
+      vil \xE5pne en nettleser)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: "\xC5pne Data Privacy Page"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: Tilbakestill til standardinnstillinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: Lagre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: Laste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: Dekalkvalitet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: Vindusmodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: Vedtak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: Blomstre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: Bevegelse uskarphet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: Omgivende okklusjon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: Skygger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: Gress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: Skjerm rom refleksjoner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: Anti-aliasing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: Film korn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: Hovedvolum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: Lydeffekter volum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: Musikkvolum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: Kamera fov.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: Panini-projeksjon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: Feltdybde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: Skyer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: Generell kvalitet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: Bytt tur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: Eksklusiv
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: Full skjerm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: Maxed vindu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: Windowed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: "P\xE5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: "Spr\xE5k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: Gameplay.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: ADVARSEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: "DETTE SPILLET skildrer FIKTIONELLE KARAKTER SOM DELTAKER I <#FF0000>
+      SEKSUELL EKSPLISITT OPPF\xD8RSEL <#FFFFFF>\n\nVED \xC5 KLIKKE P\xC5 <#008CFF>
+      SPILL <#FFFFFF> OPPR\xC6RER DU AT:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 Under straff av perjury er du over 18 \xE5r.\n\u2022 Nakenhet
+      og eksplisitte avbildninger av seksuell aktivitet forn\xE6rmer deg ikke.\n\u2022
+      Du anerkjenner at du er ansvarlig for at alle personer som ser spillet fra
+      enheten din, er over 18 \xE5r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: Greit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "Velkommen til Mawful!\n\nDette er en utviklerbygging og er helt
+      uferdig, ikke forvent mye!\n\nTakk s\xE5 mye for \xE5 st\xF8tte spillet!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: Bevege seg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: Hoppe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: "G\xE5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: Gib.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: Bruk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: Gripe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: Ta tak i trykk og trekk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: "Kr\xF8ke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: Se statistikk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: Rotere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: Unfreeze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Ragdoll.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: Bytt tak i modus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: Se
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: Aktiver Grab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: Nullstille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: Laster ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: Klar rusk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: Oppgrader Grab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: Bytt kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: Vann
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: Is
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: Melk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: Milkshake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: Aubergine juice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: Melonjuice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: Vekstserum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: Ufullstendig vekstserum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: Ustabil reagens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Cum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: Egg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: fett
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: "Kj\xE6rlighet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: Ingen reagants funnet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: Reagensskanner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: Eksplosjon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: Kalium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: Multiplayer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: Hurtigspill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: Lag privat spill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: "Kj\xF8nn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: Hue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: Topp bunn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: Tykkelse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: Lysstyrke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: Metning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Kontrast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Dick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: Dick size.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: "Boob st\xF8rrelse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: Equine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: Knotted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: Flared equine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: Tapered.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: Ingen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: Ut av det
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: Tre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: Bli med Private Game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: "Ingen rom funnet enn\xE5 ..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: Avbryt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: Bli med
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: 'Romnavn:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: 'Privat:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: Maks spillere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: "Kobold st\xF8rrelse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: Skape offentlig spill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: "F\xF8rsteperson"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: Tredje person
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: FreeCam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: Klebrig freecam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: Server nettleser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: Spillere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: Kobler til...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: Finne tilfeldig rom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: Venstre rom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: Noe gjorde at du mister tilkoblingen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: Ananas jus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: Chubbiness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: "Baller st\xF8rrelse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: Speilkvalitet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: Hemipenis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: Vssync.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: "M\xE5l Framerate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: Brystvorte barbells.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: Hardt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: En magisk festbar som er lang og sylindrisk med en medial ring.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: "En enkel hardhat for \xE5 beskytte hodet mot fallende rusk."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: En magisk festbar med en knute, medial ring og noen humpete rygger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: En magisk festbar som er lang, sylindrisk, og har en flared opp
+      tips. Har noen gode teleskopiske handlinger!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Enkel kroppssikker, hypoallergetiske metallstenger. (Ja, de g\xE5r
+      i brystvorten.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: En magisk festbar som er lang og tynner ut til et punkt. Dens baller
+      er internalisert!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: Kandis Dick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: Hale bag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: Spiked krage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: "H\xF8ye h\xE6ler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: Ny Save.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: Lagre / last
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: Nytt spill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: Lag tilpasset spill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: Goop kvalitet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: Brystvorte pumper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: "Atmosf\xE6ren volum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: "Pr\xF8v p\xE5 nytt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: Angrep
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

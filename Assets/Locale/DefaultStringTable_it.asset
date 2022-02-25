@@ -1,0 +1,673 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: Giocare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: Opzioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: Uscire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: Grafica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: Controlli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: Analytics.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: Continua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: Di ritorno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: "Sensibilit\xE0 del mouse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: Basso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: Alto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: medio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: Spento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "Ageful invia dati anonimi anonimi al fine di rendere il gioco migliore!
+      Se si desidera impedire questo, fai clic sul pulsante sottostante (aprir\xE0
+      un browser Internet)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: Apri la pagina della privacy dei dati
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: Ripristina i valori predefiniti.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: Salva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: Carico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: "Qualit\xE0 della decalcomania"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: "Modalit\xE0 finestra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: Risoluzione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: fioritura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: Sfocatura movimento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: Occlusione ambientale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: Ombre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: Erba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: Riflessioni dello spazio dello schermo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: Anti aliasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: Grana della pellicola
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: Volume principale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: Effetti sonori Volume.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: Volume musicale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: Fotocamera fov.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: Panini Projection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: "Profondit\xE0 di campo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: Nuvole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: "Qualit\xE0 complessiva"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: Toggle Walk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: Esclusivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: A schermo intero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: Finestra massima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: Finestra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: Su
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: Lingua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: Gameplay.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: AVVERTIMENTO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: 'QUESTO GIOCO MOSTRA PERSONAGGI DI FANTASIA CHE PARTECIPANO A <#FF0000>
+      COMPORTAMENTI SESSUALMENTE ESPLICITI <#FFFFFF>
+
+
+      FACENDO CLIC SU <#008CFF>
+      PLAY <#FFFFFF> STAI INDICANDO CHE:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 Sotto la pena di spergiuro, hai pi\xF9 di 18 anni.\n\u2022
+      La nudit\xE0 e le raffigurazioni esplicite dell'attivit\xE0 sessuale non ti
+      offendono.\n\u2022 L'utente riconosce di essere responsabile di garantire che
+      tutte le persone che osservano il gioco dal tuo dispositivo abbia pi\xF9 di
+      18 anni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: Bene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "Benvenuto a Dangeful!\n\nQuesta \xE8 una build per sviluppatori
+      ed \xE8 completamente incompiuta, non aspettarti molto!\n\nGrazie mille per
+      aver sostenuto il gioco!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: Spostare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: Salto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: Camminare a piedi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: Religioso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: Utilizzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: Preda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: Afferrare premere e tirare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: Crouch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: Visualizza le statistiche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: Ruotare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: Scongelare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Bambola di pezza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: "Passa la modalit\xE0 di presa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: Aspetto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: Attiva grab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: Ripristina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: Caricamento in corso...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: Detriti chiari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: Aggiorna Grab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: Cambio macchina fotografica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: Acqua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: Ghiaccio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: Latte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: "Frapp\xE8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: Succo di melanzana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: Succo di melone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: Siero di crescita
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: Siero di crescita incompleto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: Reagente instabile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Cum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: Uovo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: Grasso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: Amare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: Nessun reaganello trovato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: Scanner di reagente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: Esplosione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: Potassio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: Multiplayer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: Partita veloce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: Crea un gioco privato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: Sesso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: Tinta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: Top in fondo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: Spessore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: "Luminosit\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: Saturazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Contrasto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Cazzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: Dimensioni del cazzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: Dimensione delle tette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: Equino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: Annodato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: Svasato equino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: Conico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: Nessuno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: Dentro fuori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: Legna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: Unisciti a giochi privati
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: Nessuna camera trovata ancora ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: Annulla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: Giuntura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: 'Nome della stanza:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: 'Privato:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: Giocatori massimi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: Dimensione di kobold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: Crea un gioco pubblico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: La prima persona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: Terza persona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: Frecam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: Appiccicoso freecam.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: Browser del server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: Giocatori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: Collegamento ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: Trovare stanza casuale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: Stanza sinistra.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: Qualcosa ti ha fatto perdere la connessione!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: Succo di ananas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: Chubbiness.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: Dimensioni delle palle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: "Qualit\xE0 speculare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: Emipeni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: Vsync.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: Target framerate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: Bilancieri del capezzolo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: Hardhat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: "Un magico attaccabile che \xE8 lungo e cilindrico con un anello
+      mediale."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: Un semplice elmetto protettivo per proteggere la testa dai detriti
+      che cadono.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: Un magico attaccabile con un nodo, un anello mediale e alcune creste
+      accidentate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: "Un magico attaccabile che \xE8 lungo, cilindrico e ha una punta
+      svasata. Ha una grande azione telescopica!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Barre semplici in metallo cassaforte del corpo, ipoallengeriche.
+      (S\xEC, vanno nei tuoi capezzoli.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: "Un magico attaccabile che \xE8 lungo e dihins fino a un punto.
+      Le sue palle sono interiorizzate!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: Kandi's Dick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: Borsa di coda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: Collar a spillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: Tacco alto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: Nuovo Salva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: Salva / carico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: Nuovo gioco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: Crea un gioco personalizzato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: "Qualit\xE0 di goop."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: Pompe capezzoli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: Volume dell'ambiente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: Ricercare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: attacco
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

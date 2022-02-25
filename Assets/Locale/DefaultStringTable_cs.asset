@@ -1,0 +1,673 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultStringTable_cs
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: b3b13eb23f694ad468ff6648c5075d38, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13688688640
+    m_Localized: "Hr\xE1t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300075307008
+    m_Localized: "Mo\u017Enosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861440
+    m_Localized: "Odej\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300108861441
+    m_Localized: Zvuk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055744
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055745
+    m_Localized: "Ovl\xE1d\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055746
+    m_Localized: "Sb\u011Br dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055747
+    m_Localized: "Pokra\u010Dovat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055748
+    m_Localized: "Zp\u011Bt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055749
+    m_Localized: "Citlivost my\u0161i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055750
+    m_Localized: "N\xEDzk\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055751
+    m_Localized: "Vysok\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055752
+    m_Localized: "St\u0159edn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055753
+    m_Localized: Vypnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055754
+    m_Localized: "Mawful pos\xEDl\xE1 anonymn\xED data za \xFA\u010Delem zlep\u0161en\xED
+      hern\xEDho z\xE1\u017Eitku. Pokud chcete p\u0159edej\xEDt zas\xEDl\xE1n\xED
+      dat, klikn\u011Bte na tla\u010D\xEDtko n\xED\u017Ee. (Klinut\xED otev\u0159e
+      internetov\xFD prohl\xED\u017Ee\u010D.)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055755
+    m_Localized: "Otev\u0159\xEDt str\xE1nku ochrany dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055756
+    m_Localized: "Obnovit v\xFDchoz\xED hodnoty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055757
+    m_Localized: "Ulo\u017Eit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055758
+    m_Localized: "Na\u010D\xEDst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055759
+    m_Localized: "Kvalita dekorativn\xEDch textur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055760
+    m_Localized: "Re\u017Eim okna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055761
+    m_Localized: "Rozli\u0161en\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055762
+    m_Localized: "p\u0159esv\xEDcen\xED obrazu (Bloom)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055763
+    m_Localized: "Rozost\u0159en\xED pohybu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055764
+    m_Localized: "zast\xEDn\u011Bn\xED okol\xEDm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055765
+    m_Localized: "St\xEDny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055766
+    m_Localized: "Tr\xE1va"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055767
+    m_Localized: "odrazy okol\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055768
+    m_Localized: "Vyhlazovan\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055769
+    m_Localized: "Filmov\xE9 zrno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055770
+    m_Localized: "Celkov\xE1 hlasitost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055771
+    m_Localized: "zvukov\xE9 efekty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300113055772
+    m_Localized: Hudba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250048
+    m_Localized: "Zorn\xE9 pole"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250049
+    m_Localized: "Zak\u0159iven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250050
+    m_Localized: Hloubka ostrosti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250051
+    m_Localized: Mraky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250052
+    m_Localized: "Celkov\xE1 kvalita"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250053
+    m_Localized: "p\u0159epnut\xED ch\u016Fze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250054
+    m_Localized: "V\xFDhradn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250055
+    m_Localized: "Cel\xE1 obrazovka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250056
+    m_Localized: "Okno na cel\xFD obraz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250057
+    m_Localized: "V okn\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250058
+    m_Localized: Zapnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250059
+    m_Localized: Jazyk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250060
+    m_Localized: Hra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250061
+    m_Localized: "VAROV\xC1N\xCD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250062
+    m_Localized: "TATO HRA ZOBRAZUJE FIKTIVN\xCD POSTAVY VYKON\xC1VAJ\xCDC\xCD A
+      U\u010CASTN\xCDC\xCD SE <#FF0000> NEVHODN\xC9HO A SEXU\xC1LN\xCDHO CHOV\xC1N\xCD
+      <#FFFFFF>\r\n\r\nKLIKNUT\xCDM NA <#008CFF> HR\xC1T <#FFFFFF> UV\xC1D\xCDTE,
+      \u017DE:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250063
+    m_Localized: "\u2022 pod trestem k\u0159iv\xE9 p\u0159\xEDsahy, je v\xE1m v\xEDce
+      ne\u017E 18 let.\r\n\u2022 nahota a zobrazen\xED sexu\xE1ln\xEDho chov\xE1n\xED
+      v\xE1s nijak nepohor\u0161uje.\r\n\u2022 souhlas\xEDte s p\u0159evzet\xEDm
+      zodpov\u011Bdnosti za uji\u0161t\u011Bn\xED, \u017Ee v\xE1mi zobrazovan\xFD
+      obsah hry, je ukazov\xE1n pouze osob\xE1m star\u0161\xEDm 18 let."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250064
+    m_Localized: "dob\u0159e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250065
+    m_Localized: "V\xEDtejte v Mawful!\n\nToto je v\xFDvoj\xE1\u0159sk\xE1 verze
+      a je zcela nekompletn\xED, neo\u010Dek\xE1vejte moc! \n\nMoc V\xE1m d\u011Bkuji
+      za podporu t\xE9to hry!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250066
+    m_Localized: Pohyb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250067
+    m_Localized: Skok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250068
+    m_Localized: "Ch\u016Fze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250069
+    m_Localized: "sebevra\u017Eda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250070
+    m_Localized: "Pou\u017E\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250071
+    m_Localized: Uchopit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250072
+    m_Localized: "t\xE1hnout, tla\u010Dit v \xFAchopu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250073
+    m_Localized: "skr\u010Dit se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250074
+    m_Localized: Zobrazit statistiky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250075
+    m_Localized: "Rotace \xFAchopu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250076
+    m_Localized: Odmrazit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250077
+    m_Localized: Ragdoll.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250078
+    m_Localized: "P\u0159epnout na \xFAchop"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250079
+    m_Localized: Pohled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250080
+    m_Localized: Chytit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250081
+    m_Localized: Resetovat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250082
+    m_Localized: "Na\u010D\xEDt\xE1n\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250083
+    m_Localized: "Odstranit su\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250084
+    m_Localized: "Vylep\u0161it \xFAchop"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250085
+    m_Localized: "P\u0159epnout kameru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300117250086
+    m_Localized: Voda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444352
+    m_Localized: Kobolda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444353
+    m_Localized: Led
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444354
+    m_Localized: "Ml\xE9ko"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444355
+    m_Localized: Koktejl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444356
+    m_Localized: "\u0161\u0165\xE1va z lilku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444357
+    m_Localized: "Melounov\xE1 \u0161\u0165\xE1va"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444358
+    m_Localized: "R\u016Fstov\xE9 s\xE9rum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444359
+    m_Localized: "Ne\xFApln\xE9 r\u016Fstov\xE9 s\xE9rum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444360
+    m_Localized: "nestabiln\xED \u010Dinidlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444361
+    m_Localized: Sperma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444362
+    m_Localized: Vejce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444363
+    m_Localized: Tuky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444364
+    m_Localized: "L\xE1ska"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444365
+    m_Localized: "Nenalezeno \u017E\xE1dn\xE9 \u010Dinidlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444366
+    m_Localized: "Skener \u010Dinidel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444367
+    m_Localized: "V\xFDbuch"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444368
+    m_Localized: "Drasl\xEDk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444369
+    m_Localized: "Hra v\xEDce hr\xE1\u010D\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444370
+    m_Localized: "Rychl\xE1 hra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444371
+    m_Localized: "Vytvo\u0159it soukromou hru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444372
+    m_Localized: "pohlav\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444373
+    m_Localized: "Odst\xEDn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444374
+    m_Localized: "Pom\u011Br Vrchn\xED / Spodn\xED \u010D\xE1st t\u011Bla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444375
+    m_Localized: "Tlou\u0161\u0165ka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444376
+    m_Localized: Jas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444377
+    m_Localized: "Nasycen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444378
+    m_Localized: Kontrast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444379
+    m_Localized: Penis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444380
+    m_Localized: Velikost penisu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444381
+    m_Localized: "Velikost poprs\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444382
+    m_Localized: "Ko\u0148sk\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444383
+    m_Localized: "Ps\xED penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444384
+    m_Localized: "Roz\u0161\xED\u0159en\xFD ko\u0148sk\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444385
+    m_Localized: "Z\xFA\u017Een\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444386
+    m_Localized: "\u017D\xE1dn\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300121444387
+    m_Localized: "Pom\u011Br dovnit\u0159 / ven"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638656
+    m_Localized: "D\u0159evo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638657
+    m_Localized: "P\u0159ipojit se k soukrom\xE9 h\u0159e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638658
+    m_Localized: "Zat\xEDm nenalezena \u017E\xE1dn\xE1 m\xEDstnost..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638659
+    m_Localized: "Zru\u0161it"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638660
+    m_Localized: "P\u0159ipojit se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638661
+    m_Localized: "N\xE1zev m\xEDstnosti:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638662
+    m_Localized: "Soukrom\xE9:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638663
+    m_Localized: "Maxim\xE1ln\u011B hr\xE1\u010D\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638664
+    m_Localized: Velikost Kobolda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638665
+    m_Localized: "Vytvo\u0159it ve\u0159ejnou hru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638666
+    m_Localized: "Prvn\xED osoba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638667
+    m_Localized: "T\u0159et\xED osoba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638668
+    m_Localized: "Voln\xE1 kamera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638669
+    m_Localized: "Upevn\u011Bn\xE1 kamera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638670
+    m_Localized: "Hled\xE1n\xED sever\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638671
+    m_Localized: "Hr\xE1\u010Di"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638672
+    m_Localized: "Spojov\xE1n\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638673
+    m_Localized: "Hled\xE1n\xED n\xE1hodn\xE9 m\xEDstnosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638674
+    m_Localized: se odpojil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638675
+    m_Localized: "Spojen\xED ztraceno!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638676
+    m_Localized: "Ananasov\xE1 \u0161\u0165\xE1va"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638677
+    m_Localized: Baculatost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638678
+    m_Localized: Velikost varlat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638679
+    m_Localized: "Kvalita odraz\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638680
+    m_Localized: "dvojit\xFD penis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638681
+    m_Localized: "Vertik\xE1ln\xED synchronizace"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638682
+    m_Localized: "c\xEDlov\xE1 sn\xEDmkov\xE1 frekvence"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638683
+    m_Localized: "\u010Dinky do bradavek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638684
+    m_Localized: "P\u0159ilba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638685
+    m_Localized: "Magicky p\u0159ipojiteln\xFD, dlouh\xFD a v\xE1lcovit\xFD s prstencem
+      v polovin\u011B a plochou \"\u0161pi\u010Dkou\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638686
+    m_Localized: "Jednoduch\xE1 p\u0159ilba na ochranu hlavy p\u0159ed padaj\xEDc\xED
+      sut\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638687
+    m_Localized: "Magicky p\u0159ipojiteln\xFD na za\u010D\xE1tku v\xFDrazn\u011B
+      roz\u0161\xED\u0159en\xFD s medial ringem a hrboly s v\xFDstupky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638688
+    m_Localized: "Magicky p\u0159ipojiteln\xFD, dlouh\xFD a v\xE1lcovit\xFD a p\u0159ed
+      za\u0161pi\u010Dat\u011Bl\xFDm koncem zes\xEDlen\xFD. v\xFDborn\xFD pro n\u011Bjak\xE9
+      to roztahov\xE1n\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638689
+    m_Localized: "Jednoduch\xE1, pro t\u011Blo bezpe\u010Dn\xE1, z hypoalergenn\xEDho
+      kovu vyroben\xE1 \u010Dinka do bradavek. (Ano do bradavek)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638690
+    m_Localized: ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638691
+    m_Localized: "Magicky p\u0159ipojiteln\xFD, dlouh\xFD z\xFA\u017Een\xFD do \u0161pi\u010Dky.
+      Koule jsou v t\u011Ble!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638692
+    m_Localized: "Kandiho p\xE9ro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638693
+    m_Localized: "Bra\u0161na na ocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638694
+    m_Localized: "Ostnat\xFD obojek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300125638695
+    m_Localized: "Vysok\xE9 podpatky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832960
+    m_Localized: "Nov\xE9 ulo\u017Een\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832961
+    m_Localized: "Ulo\u017Eit / Na\u010D\xEDst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832962
+    m_Localized: "Nov\xE1 hra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832963
+    m_Localized: "Vytvo\u0159it vlastn\xED hru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832964
+    m_Localized: Pauza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832965
+    m_Localized: Kvalita slizu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832966
+    m_Localized: "\u010Cerpadla bradavka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832967
+    m_Localized: "Objem prost\u0159ed\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832968
+    m_Localized: Opakovat se
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4300129832969
+    m_Localized: "Z\xE1chvat"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
