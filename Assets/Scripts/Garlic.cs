@@ -30,7 +30,7 @@ public class Garlic : Weapon {
                         continue;
                     }
                     if (Vector3.Distance(character.position, player.position) <= radius.GetValue()+player.radius+character.radius) {
-                        float knockbackAmount = 0.05f;
+                        float knockbackAmount = 0.001f;
                         character.BeHit(new Character.DamageInstance(damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
                     }
                 }

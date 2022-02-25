@@ -8,10 +8,12 @@ public class VoreTail : MonoBehaviour {
     public delegate void VoreBumpAddedAction(VoreBump bumps);
     public event VoreBumpAddedAction bumpAdded;
     public class VoreBump {
-        public VoreBump(float st, float dur) {
+        public VoreBump(float st, float dur, float xp) {
             startTime = st;
             duration = dur;
+            this.xp = xp;
         }
+        public float xp;
         public float startTime;
         public float duration;
     }
@@ -62,7 +64,7 @@ public class VoreTail : MonoBehaviour {
         foreach(Character other in readyToVore) {
             other.Reset();
             other.gameObject.SetActive(false);
-            voreBumps.Add(new VoreBump(Time.time,UnityEngine.Random.Range(1f, 3f)));
+            voreBumps.Add(new VoreBump(Time.time,UnityEngine.Random.Range(1f, 3f), Mathf.Lerp(other.health.GetValue(), 1f, 0.5f)));
             bumpAdded(voreBumps[voreBumps.Count-1]);
             vaccuming.Remove(other);
         }
@@ -92,7 +94,7 @@ public class VoreTail : MonoBehaviour {
                 blendAmount = Mathf.Lerp(blendAmount, 2.5f, sample/2.5f);
                 if (t>1f && i == tailBlendIDs.Count-1) {
                     // TODO: trigger some belly stuff here
-                    Leveler.AddXP(1);
+                    Leveler.AddXP(voreBumps[j].xp);
                     voreBumps.RemoveAt(j);
                 }
             }

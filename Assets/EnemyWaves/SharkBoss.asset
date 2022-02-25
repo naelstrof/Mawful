@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesToSpawn:
   - {fileID: 8347615568578718693, guid: 7e09af6720928d44ea21706941473ff9, type: 3}
-  waveDuration: 1
+  waveDuration: 20
   spawnCount: 5

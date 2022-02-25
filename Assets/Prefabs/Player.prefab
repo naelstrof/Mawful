@@ -170,7 +170,8 @@ MonoBehaviour:
   penetration:
     modifiers: []
   radius:
-    modifiers: []
+    modifiers:
+    - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
   speed:
     modifiers: []
 --- !u!114 &2202833000548899440
@@ -443,7 +444,7 @@ MonoBehaviour:
   speed:
     modifiers:
     - {fileID: 11400000, guid: 2935146997b7e034b8c2f7d6fcfe857f, type: 2}
-  friction: 0.3
+  friction: 0.4
   health:
     modifiers:
     - {fileID: 11400000, guid: 5f5153e61ae20314689b8caec238adec, type: 2}
@@ -1175,7 +1176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6443ec728293eee43ae3efb59721d8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 1551488208449756090}
+  startingWeapon: {fileID: 5815323361503714890}
 --- !u!1 &8178335319285403162
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class PlayerCharacter : Character {
     public Attribute projectileSpeed;
     public Attribute luck;
     private float lastHitTime;
+    private Vector3 lookSmooth;
     public override void BeHit(DamageInstance instance) {
         // 0.3 second damage boost
         if (Time.time - lastHitTime > 0.33f) {
@@ -37,9 +38,8 @@ public class PlayerCharacter : Character {
         SetPositionAndVelocity(WorldGrid.instance.GetPathableGridElement().worldPosition, Vector3.zero);
     }
     void Update() {
-        if (velocity.sqrMagnitude > 0.0001f) {
-            transform.rotation = Quaternion.LookRotation(velocity.normalized, Vector3.up);
-        }
+        lookSmooth = Vector3.RotateTowards(lookSmooth, fireDir, Mathf.PI*8f*Time.deltaTime, 10f);
+        transform.rotation = Quaternion.LookRotation(lookSmooth, Vector3.up);
     }
     public override void Die() {
         base.Die();

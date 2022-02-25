@@ -101,6 +101,7 @@ public class WorldGrid : MonoBehaviour {
             }
         }
         float randomChoice = UnityEngine.Random.Range(0f,possibleChoices);
+        Debug.Log("Chose " + randomChoice + " out of " + possibleChoices);
         float currentChoice = 0f;
         for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
             for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
@@ -149,9 +150,9 @@ public class WorldGrid : MonoBehaviour {
         lastElement = null;
         PrimeGrid<PathGridElement>(40, pathGrid, pathGridSize);
         PrimeGrid<CollisionGridElement>(100, collisionGrid, collisionGridSize);
-        bounds = new Bounds((Vector3.forward+Vector3.right)*Mathf.Max(pathGridSize, collisionGridSize), Vector3.up);
-        float width = Mathf.Min((pathGrid.Count-2)*pathGridSize, (collisionGrid.Count-2)*collisionGridSize);
-        float height = Mathf.Min((pathGrid[0].Count-2)*pathGridSize, (collisionGrid[0].Count-2)*collisionGridSize);
+        bounds = new Bounds((Vector3.forward+Vector3.right)*Mathf.Max(pathGridSize+0.5f, collisionGridSize+0.5f), Vector3.up);
+        float width = Mathf.Min((pathGrid.Count-1.5f)*pathGridSize, (collisionGrid.Count-1.5f)*collisionGridSize);
+        float height = Mathf.Min((pathGrid[0].Count-1.5f)*pathGridSize, (collisionGrid[0].Count-1.5f)*collisionGridSize);
         bounds.Encapsulate(Vector3.right*width + Vector3.forward*height);
         mapGeneration.generationFinished += OnMapGenerationComplete;
     }

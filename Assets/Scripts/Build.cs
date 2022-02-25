@@ -28,7 +28,7 @@ public class Build {
         GetBuildVersion();
         string output = outputDirectory+"Mawful";
         Debug.Log("#### BUILDING TO " + output + " ####");
-        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneLinux64, BuildOptions.None);
+        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneLinux64, BuildOptions.Development);
         Debug.Log("#### BUILD " + output + " DONE ####");
         Debug.Log(report.summary);
     }
@@ -42,7 +42,7 @@ public class Build {
         GetBuildVersion();
         string output = outputDirectory+"Mawful.app";
         Debug.Log("#### BUILDING TO " + output + " ####");
-        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneOSX, BuildOptions.None);
+        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneOSX, BuildOptions.Development);
         Debug.Log("#### BUILD " + output + " DONE ####");
         Debug.Log(report.summary);
     }
@@ -57,7 +57,7 @@ public class Build {
         GetBuildVersion();
         string output = outputDirectory+"Mawful.exe";
         Debug.Log("#### BUILDING TO " + output + " ####");
-        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneWindows64, BuildOptions.None);
+        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneWindows64, BuildOptions.Development);
         Debug.Log("#### BUILD " + output + " DONE ####");
         Debug.Log(report.summary);
     }
@@ -72,7 +72,7 @@ public class Build {
         GetBuildVersion();
         string output = outputDirectory+"Mawful.exe";
         Debug.Log("#### BUILDING TO " + output + " ####");
-        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneWindows, BuildOptions.None);
+        var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneWindows, BuildOptions.Development);
         Debug.Log("#### BUILD " + output + " DONE ####");
         Debug.Log(report.summary);
     }
