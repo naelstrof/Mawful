@@ -150,9 +150,10 @@ public class WorldGrid : MonoBehaviour {
         lastElement = null;
         PrimeGrid<PathGridElement>(40, pathGrid, pathGridSize);
         PrimeGrid<CollisionGridElement>(100, collisionGrid, collisionGridSize);
-        bounds = new Bounds((Vector3.forward+Vector3.right)*Mathf.Max(pathGridSize+0.5f, collisionGridSize+0.5f), Vector3.up);
-        float width = Mathf.Min((pathGrid.Count-1.5f)*pathGridSize, (collisionGrid.Count-1.5f)*collisionGridSize);
-        float height = Mathf.Min((pathGrid[0].Count-1.5f)*pathGridSize, (collisionGrid[0].Count-1.5f)*collisionGridSize);
+        float offset = Mathf.Max((float)pathGridSize*0.5f, (float)collisionGridSize*0.5f);
+        bounds = new Bounds((Vector3.forward*offset+Vector3.right*offset), Vector3.up);
+        float width = Mathf.Min(((float)pathGrid.Count-1.5f)*(float)pathGridSize, ((float)collisionGrid.Count-1.5f)*(float)collisionGridSize);
+        float height = Mathf.Min(((float)pathGrid[0].Count-1.5f)*(float)pathGridSize, ((float)collisionGrid[0].Count-1.5f)*(float)collisionGridSize);
         bounds.Encapsulate(Vector3.right*width + Vector3.forward*height);
         mapGeneration.generationFinished += OnMapGenerationComplete;
     }

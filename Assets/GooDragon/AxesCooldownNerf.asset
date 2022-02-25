@@ -15,4 +15,4 @@ MonoBehaviour:
   baseValue: 0
   diminishingReturnUp: 0
   flatUp: 0
-  multiplier: 0.3
+  multiplier: 0.32

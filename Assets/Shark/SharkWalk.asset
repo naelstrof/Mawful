@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
   m_Name: SharkWalk
   m_EditorClassIdentifier: 
-  framesPerSecond: 15
+  framesPerSecond: 16
   animationClip: {fileID: 447439991529600006, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
   animatedMeshPrefab: {fileID: 919132149155446097, guid: 147da3b74ae9f1c4188eeb12a00ca516, type: 3}
   loop: 1

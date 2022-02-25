@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 767c232356964024dba1537d7eb65c6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Brick
     second: {fileID: 2100000, guid: ca38f3f93ecefbb49afaea50267e6375, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brim
+    second: {fileID: 2100000, guid: 96a86d7a928281d4f8d3898ef7f58c3f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -12,6 +12,10 @@ public class EnemyWaveManager : MonoBehaviour {
 
     void OnDestroy() {
         WorldGrid.instance.worldPathReady -= OnWorldPathReady;
+        // Cleanup!!!
+        foreach(var wave in waves) {
+            wave.waveEnded -= NextWave;
+        }
     }
 
     void OnWorldPathReady() {

@@ -118,9 +118,9 @@ public class Character : PooledItem {
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
             if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(Mathf.Min(Mathf.Ceil(health.GetHealth()),3f), Vector3.zero));
+                character.BeHit(new DamageInstance(Mathf.Min(health.GetHealth(),2f), Vector3.zero));
             } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(Mathf.Min(Mathf.Ceil(health.GetHealth()),3f), Vector3.zero));
+                this.BeHit(new DamageInstance(Mathf.Min(character.health.GetHealth(),2f), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
@@ -136,7 +136,10 @@ public class Character : PooledItem {
         }
     }
     public virtual void FixedUpdate() {
-        Vector3 newPosition = position + (position-lastPosition)*(1f-friction*friction);
+        Vector3 diff = (position-lastPosition);
+        float mag = diff.magnitude;
+        float maxMeterMovement = 5f;
+        Vector3 newPosition = position + diff.normalized*Mathf.Min(mag,maxMeterMovement)*(1f-friction*friction);
         lastPosition = position;
         newPosition += wishDir * Time.deltaTime * speed.GetValue();
         newPosition = WorldGrid.instance.worldBounds.ClosestPoint(newPosition);
