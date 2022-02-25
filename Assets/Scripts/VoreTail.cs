@@ -34,7 +34,7 @@ public class VoreTail : MonoBehaviour {
     void VaccumDefeated(WorldGrid.CollisionGridElement element) {
         foreach(Character character in element.charactersInElement) {
             if (character.health.GetHealth() <= 0f && character is EnemyCharacter) {
-                if (Vector3.Distance(tailMouth.position, character.position) < 1f+character.radius) {
+                if (Vector3.Distance(tailMouth.position, character.position) < 1.25f+character.radius) {
                     if (!vaccuming.Contains(character)) {
                         character.StartVore();
                         // Disable all thinking, time to suck

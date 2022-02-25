@@ -7,9 +7,18 @@ public class EnemyWaveManager : MonoBehaviour {
     private List<EnemyWave> waves = new List<EnemyWave>();
     private int currentWave = 0;
     void Start() {
+        WorldGrid.instance.worldPathReady += OnWorldPathReady;
+    }
+
+    void OnDestroy() {
+        WorldGrid.instance.worldPathReady -= OnWorldPathReady;
+    }
+
+    void OnWorldPathReady(List<List<WorldGrid.PathGridElement>> path) {
         waves[currentWave].waveEnded += NextWave;
         waves[currentWave].OnWaveStart(this);
     }
+
     void NextWave() {
         waves[currentWave].waveEnded -= NextWave;
         currentWave++;

@@ -63,6 +63,7 @@ public class PlayerCharacter : Character {
     }
     public override void Die() {
         base.Die();
+        enabled = false;
         //gameObject.SetActive(false);
     }
     public override void FixedUpdate() {
