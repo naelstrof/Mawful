@@ -95,10 +95,10 @@ public class Character : PooledItem {
         health.Heal(99999f);
         health.depleted += Die;
         targetRenderer = GetComponentInChildren<Renderer>();
-        Pauser.pauseChanged += OnPauseChanged;
     }
     void Start() {
         radius = GetComponent<SphereCollider>().radius;
+        Pauser.pauseChanged += OnPauseChanged;
     }
     public virtual void OnEnable() {
         characters.Add(this);

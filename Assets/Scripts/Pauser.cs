@@ -7,12 +7,19 @@ public static class Pauser {
     public static bool GetPaused() => paused;
     public delegate void PauseAction(bool paused);
     public static event PauseAction pauseChanged;
+    private static int pauseCount = 0;
     public static void SetPaused(bool newPause) {
-        if (newPause == paused) {
+        if (newPause) {
+            pauseCount++;
+        } else {
+            pauseCount = Mathf.Max(0,pauseCount-1);
+        }
+        bool pauseBuffer = (pauseCount!=0);
+        if (pauseBuffer == paused) {
             return;
         }
-        paused = newPause;
+        paused = pauseBuffer;
         Time.timeScale = paused ? 0f : 1f;
-        pauseChanged?.Invoke(newPause);
+        pauseChanged?.Invoke(paused);
     }
 }

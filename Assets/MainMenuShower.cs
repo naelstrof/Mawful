@@ -8,7 +8,6 @@ public class MainMenuShower : MonoBehaviour {
     public Selectable selectable;
     public GameObject pauseMenu;
     private bool paused => gameObject.activeInHierarchy;
-    private bool pauseMemory;
     void Awake() {
         instance = this;
     }
@@ -49,12 +48,11 @@ public class MainMenuShower : MonoBehaviour {
         }
         if (!gameObject.activeInHierarchy && pause) {
             gameObject.SetActive(true);
-            pauseMemory = Pauser.GetPaused();
             Pauser.SetPaused(true);
             selectable.Select();
         } else if (gameObject.activeInHierarchy && !pause) {
             gameObject.SetActive(false);
-            Pauser.SetPaused(pauseMemory);
+            Pauser.SetPaused(false);
         }
     }
 }
