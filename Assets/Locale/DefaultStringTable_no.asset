@@ -435,7 +435,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444382
-    m_Localized: Equine
+    m_Localized: Equine.
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444383
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638669
-    m_Localized: Klebrig freecam.
+    m_Localized: Klebrig freecam
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638670
@@ -543,7 +543,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638677
-    m_Localized: Chubbiness
+    m_Localized: Chubbiness.
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638678
@@ -659,6 +659,31 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300129832969
     m_Localized: Angrep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boomerang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentakel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Basseng
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Dette er et veldig tungt arbeid p\xE5g\xE5r. Det er forferdelig!
+      Jeg h\xE5per du liker det uansett."
     m_Metadata:
       m_Items: []
   references:

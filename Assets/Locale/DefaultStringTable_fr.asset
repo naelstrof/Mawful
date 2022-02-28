@@ -663,5 +663,30 @@ MonoBehaviour:
     m_Localized: Attaque
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boomerang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentacule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Lanceur de blob
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Autocollant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Piscine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "C'est un travail vraiment lourd en cours. C'est affreux! J'esp\xE8re
+      que vous l'appr\xE9cierez quand m\xEAme."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class Weapon : MonoBehaviour {
+    public LocalizedString weaponName;
     public static HashSet<Weapon> weapons = new HashSet<Weapon>();
     [System.Serializable]
     public class WeaponUpgrade {

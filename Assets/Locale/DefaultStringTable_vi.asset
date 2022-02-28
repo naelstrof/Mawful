@@ -310,7 +310,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300117250084
-    m_Localized: "N\xE2ng c\u1EA5p l\u1EA5y"
+    m_Localized: "N\xE2ng c\u1EA5p l\u1EA5y."
     m_Metadata:
       m_Items: []
   - m_Id: 4300117250085
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444382
-    m_Localized: "C\u01B0\u1EE1i ng\u1EF1a."
+    m_Localized: "C\u01B0\u1EE1i ng\u1EF1a"
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444383
@@ -471,7 +471,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638657
-    m_Localized: "Tham gia tr\xF2 ch\u01A1i ri\xEAng t\u01B0"
+    m_Localized: "Tham gia tr\xF2 ch\u01A1i ri\xEAng t\u01B0."
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638658
@@ -675,6 +675,32 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300129832969
     m_Localized: "T\u1EA5n c\xF4ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boomerang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: "T\u1EF1 \u0111\u1ED9ng kh\u1EDFi ch\u1EA1y"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: "H\u1ED3 b\u01A1i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "\u0110\xE2y l\xE0 m\u1ED9t c\xF4ng vi\u1EC7c th\u1EF1c s\u1EF1
+      r\u1EA5t nhi\u1EC1u \u0111ang ti\u1EBFn tri\u1EC3n. Th\u1EADt kinh kh\u1EE7ng!
+      T\xF4i hy v\u1ECDng b\u1EA1n th\xEDch n\xF3 d\xF9 sao \u0111i n\u1EEFa."
     m_Metadata:
       m_Items: []
   references:

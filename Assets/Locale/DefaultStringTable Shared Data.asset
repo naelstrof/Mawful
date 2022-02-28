@@ -647,6 +647,30 @@ MonoBehaviour:
     m_Key: ATTACK
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Key: WEAPON_BOOMERANG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Key: WEAPON_TENTACLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Key: WEAPON_BLOB_LAUNCHER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Key: WEAPON_AUTO_LAUNCHER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Key: WEAPON_POOL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Key: AGH_MAWFUL
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

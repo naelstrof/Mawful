@@ -32,7 +32,14 @@ public class PlayerCharacter : Character {
     void Start() {
         lastHitTime = Time.time;
         playerInput = GetComponent<PlayerInput>();
+        playerInput.actions["Pause"].started += OnPausePerformed;
         WorldGrid.instance.worldPathReady += OnWorldPathReady;
+    }
+    void OnDestroy() {
+        playerInput.actions["Pause"].started -= OnPausePerformed;
+    }
+    void OnPausePerformed(InputAction.CallbackContext ctx) {
+        MainMenuShower.ToggleShow();
     }
     void OnWorldPathReady() {
         SetPositionAndVelocity(WorldGrid.instance.GetPathableGridElement().worldPosition, Vector3.zero);

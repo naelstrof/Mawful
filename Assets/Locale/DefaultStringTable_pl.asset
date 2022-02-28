@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300113055749
-    m_Localized: "Czu\u0142o\u015B\u0107 myszy"
+    m_Localized: "Czu\u0142o\u015B\u0107 myszy."
     m_Metadata:
       m_Items: []
   - m_Id: 4300113055750
@@ -668,6 +668,31 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300129832969
     m_Localized: Atak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Bumerang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Macka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: BLOB Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Basen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Jest to naprawd\u0119 ci\u0119\u017Cka praca w toku. To okropne!
+      Mam nadziej\u0119, \u017Ce tak si\u0119 spodoba."
     m_Metadata:
       m_Items: []
   references:

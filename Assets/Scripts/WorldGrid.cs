@@ -93,8 +93,8 @@ public class WorldGrid : MonoBehaviour {
     }
     public PathGridElement GetPathableGridElement() {
         float possibleChoices = 0f;
-        for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
-            for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
+        for(int x=0;x<pathGrid.Count;x++) {
+            for(int y=0;y<pathGrid[x].Count;y++) {
                 if (pathGrid[x][y].passable) {
                     possibleChoices += 1f;
                 }
@@ -103,8 +103,8 @@ public class WorldGrid : MonoBehaviour {
         float randomChoice = UnityEngine.Random.Range(0f,possibleChoices);
         Debug.Log("Chose " + randomChoice + " out of " + possibleChoices);
         float currentChoice = 0f;
-        for(int x=0;x<WorldGrid.instance.pathGridSize;x++) {
-            for(int y=0;y<WorldGrid.instance.pathGridSize;y++) {
+        for(int x=0;x<pathGrid.Count;x++) {
+            for(int y=0;y<pathGrid[x].Count;y++) {
                 if (pathGrid[x][y].passable) {
                     currentChoice += 1f;
                     if (currentChoice >= randomChoice) {

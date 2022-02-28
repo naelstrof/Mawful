@@ -666,5 +666,30 @@ MonoBehaviour:
     m_Localized: "T\xE1mad\xE1s"
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: "Bumer\xE1ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: "Cs\xE1p"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: "Blob ind\xEDt\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: "Auto-ind\xEDt\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Medence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Ez egy nagyon neh\xE9z munka folyamatban. Ez borzaszt\xF3! Rem\xE9lem,
+      egy\xE9bk\xE9nt \xE9lvezed."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

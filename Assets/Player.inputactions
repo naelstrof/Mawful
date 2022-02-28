@@ -6,6 +6,14 @@
             "id": "14ccd5ff-33c4-48f6-bf18-2905ba5d8e38",
             "actions": [
                 {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "8e10e417-b037-40ea-a20b-a39bace1eef1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Move",
                     "type": "Value",
                     "id": "45da877a-eaa3-4acc-bde7-53db56cbcc04",
@@ -248,6 +256,28 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d85619fd-309a-4538-b9ff-8d145f706992",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "252fc7ca-3e44-4f6b-84bb-51d3c251dc73",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

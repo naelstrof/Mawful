@@ -213,8 +213,8 @@ MonoBehaviour:
       SEKSUEEL EXPLICIET GEDRAG <#FFFFFF>
 
 
-      DOOR TE KLIKKEN op <#008CFF> PLAY
-      <#FFFFFF> VERKLAART U DAT:'
+      DOOR OP <#008CFF> PLAY <#FFFFFF>
+      TE KLIKKEN VERKLAART U DAT:'
     m_Metadata:
       m_Items: []
   - m_Id: 4300117250063
@@ -670,6 +670,31 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300129832969
     m_Localized: Aanval
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boemerang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentakel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob Launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Zwembad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: Dit is een heel zwaar werk in uitvoering. Het is verschrikkelijk!
+      Ik hoop dat je het hoe dan ook leuk vindt.
     m_Metadata:
       m_Items: []
   references:

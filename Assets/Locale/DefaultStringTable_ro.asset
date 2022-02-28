@@ -664,5 +664,30 @@ MonoBehaviour:
     m_Localized: Atac
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Bumerang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentacul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Bazin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Aceasta este o lucrare foarte grea \xEEn desf\u0103\u0219urare.
+      E ingrozitor! Sper c\u0103 v\u0103 place oricum."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

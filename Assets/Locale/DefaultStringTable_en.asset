@@ -671,5 +671,30 @@ MonoBehaviour:
     m_Localized: Attack
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boomerang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentacle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob Launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-Launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Pool
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: This is a really heavy work in progress. It's awful! I hope you
+      enjoy it anyway.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

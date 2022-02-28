@@ -124,6 +124,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e3c657b081b29489f38f74bef2f8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 959889777496065
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -175,6 +184,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
   speed:
     modifiers: []
+  references:
+    version: 1
 --- !u!114 &2202833000548899440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +223,7 @@ MonoBehaviour:
   - TailBulge1
   - TailBulge2
   - TailBulge3
-  - BellyInflate
+  - BellyBulge
   tailRenderer: {fileID: 1331076685134111450}
   voreBumpCurve:
     serializedVersion: 2
@@ -324,7 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: fe98a379294f82c46bf4313d0ff7e41c, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -800,6 +811,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1963ce62a61307d42a29282646bc7643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 959889777496064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
@@ -841,6 +861,8 @@ MonoBehaviour:
   speed:
     modifiers: []
   whipPrefab: {fileID: 4961857443656139276, guid: d08810abf11ebfd43a144d8cdb3bf515, type: 3}
+  references:
+    version: 1
 --- !u!1 &3497111116916458203
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +987,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf53e88248b3ffc4b996c594cc200d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 959889777496066
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -1014,6 +1045,8 @@ MonoBehaviour:
     modifiers: []
   speed:
     modifiers: []
+  references:
+    version: 1
 --- !u!1 &5267907334321417206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1121,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3f47f55ca745f46ab34ee788784943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 959889777496067
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
@@ -1129,6 +1171,8 @@ MonoBehaviour:
   speed:
     modifiers: []
   garlicVisuals: {fileID: 6549988509822625336}
+  references:
+    version: 1
 --- !u!1 &7620036881675504844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1265,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1334246df72a7488faa087214fac6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 959889731358720
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
@@ -1262,6 +1315,8 @@ MonoBehaviour:
   speed:
     modifiers:
     - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
+  references:
+    version: 1
 --- !u!1 &8652095247479488560
 GameObject:
   m_ObjectHideFlags: 0

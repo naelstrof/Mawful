@@ -568,7 +568,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638682
-    m_Localized: Target framerate.
+    m_Localized: Framerate target.
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638683
@@ -667,6 +667,31 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300129832969
     m_Localized: attacco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boomerang.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentacolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Piscina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Questo \xE8 un lavoro davvero pesante in corso. \xC8 orribile!
+      Spero ti piaccia comunque."
     m_Metadata:
       m_Items: []
   references:

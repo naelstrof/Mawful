@@ -664,5 +664,30 @@ MonoBehaviour:
     m_Localized: "Hy\xF6kk\xE4ys"
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Bumerangi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Lonkero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob Launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-Launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Uima-allas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "T\xE4m\xE4 on todella raskas ty\xF6 k\xE4ynniss\xE4. Se on kamalaa!
+      Toivon, ett\xE4 nautit siit\xE4 joka tapauksessa."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

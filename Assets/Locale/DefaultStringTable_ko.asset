@@ -678,5 +678,32 @@ MonoBehaviour:
     m_Localized: "\uACF5\uACA9"
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: "\uBD80\uBA54\uB791"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: "\uCD09\uC218"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: "BLOB \uB7F0\uCC98"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: "\uC790\uB3D9 \uC2E4\uD589\uAE30"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: "\uC218\uC601\uC7A5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "\uC774\uAC83\uC740 \uC9C4\uD589\uC911\uC778 \uC9C4\uD589\uC911\uC778
+      \uC815\uB9D0\uB85C \uBB34\uAC70\uC6B4 \uC77C\uC785\uB2C8\uB2E4. \uB054\uCC0D\uD574!
+      \uC5B4\uCA0C\uB4E0 \uB2F9\uC2E0\uC774 \uADF8\uAC83\uC744 \uC990\uAE30\uAE30\uB97C
+      \uBC14\uB78D\uB2C8\uB2E4."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

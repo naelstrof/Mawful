@@ -666,5 +666,30 @@ MonoBehaviour:
     m_Localized: Ataque
     m_Metadata:
       m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Bumerangue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: "Tent\xE1culo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: "Lan\xE7ador de blob."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: "Lan\xE7ador autom\xE1tico."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Piscina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Este \xE9 um trabalho realmente pesado em andamento. \xC9 horr\xEDvel!
+      Espero que voc\xEA goste de qualquer maneira."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

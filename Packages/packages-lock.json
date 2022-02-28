@@ -7,6 +7,16 @@
       "dependencies": {},
       "hash": "c4cd8d470aaf02a7a26fc08d956e9c032c1911cd"
     },
+    "com.naelstrof.unityscriptablesettings": {
+      "version": "https://github.com/naelstrof/UnityScriptableSettings.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.localization": "1.0.4",
+        "com.unity.textmeshpro": "3.0.6"
+      },
+      "hash": "b135fb2dec409e23ea980c83245923203e75a46c"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -14,11 +24,11 @@
       "dependencies": {}
     },
     "com.unity.addressables": {
-      "version": "1.19.15",
-      "depth": 1,
+      "version": "1.19.18",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.scriptablebuildpipeline": "1.19.5",
+        "com.unity.scriptablebuildpipeline": "1.19.6",
         "com.unity.modules.assetbundle": "1.0.0",
         "com.unity.modules.imageconversion": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
@@ -118,8 +128,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.scriptablebuildpipeline": {
-      "version": "1.19.5",
-      "depth": 2,
+      "version": "1.19.6",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

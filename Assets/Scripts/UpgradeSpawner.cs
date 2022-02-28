@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 public class UpgradeSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject buttonPrefab;
     private List<GameObject> buttons;
     private HashSet<int> takenChoices;
+    [SerializeField]
+    private Sprite newWeapon;
+    [SerializeField]
+    private Sprite upgradeWeapon;
     void Awake() {
         takenChoices = new HashSet<int>();
         buttons = new List<GameObject>();
@@ -50,7 +56,9 @@ public class UpgradeSpawner : MonoBehaviour {
         foreach(Weapon weapon in Weapon.weapons) {
             if (!weapon.gameObject.activeSelf) {
                 if (currentChoice++ == choice) {
-                    newButton.GetComponentInChildren<TMPro.TMP_Text>().text = "Weapon " + weapon.gameObject.name;
+                    newButton.transform.Find("Image").GetComponent<Image>().sprite = newWeapon;
+                    newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponName;
+                    //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = weapon.weaponName.GetLocalizedString();//"Weapon " + weapon.gameObject.name;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
                         weapon.gameObject.SetActive(true);
                         gameObject.SetActive(false);
@@ -62,7 +70,9 @@ public class UpgradeSpawner : MonoBehaviour {
             }
             if (weapon.CanUpgrade()) {
                 if (currentChoice++ == choice) {
-                    newButton.GetComponentInChildren<TMPro.TMP_Text>().text = "Upgrade " + weapon.gameObject.name;
+                    newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponName;
+                    //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = "Upgrade " + weapon.gameObject.name;
+                    newButton.transform.Find("Image").GetComponent<Image>().sprite = upgradeWeapon;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
                         weapon.Upgrade();
                         gameObject.SetActive(false);
@@ -88,5 +98,6 @@ public class UpgradeSpawner : MonoBehaviour {
             }
         }
         takenChoices.Clear();
+        buttons[0].GetComponent<Button>().Select();
     }
 }

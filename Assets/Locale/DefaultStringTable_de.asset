@@ -658,7 +658,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300129832967
-    m_Localized: Ambiente Volumen.
+    m_Localized: Ambiente Volumen
     m_Metadata:
       m_Items: []
   - m_Id: 4300129832968
@@ -667,6 +667,31 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300129832969
     m_Localized: Attacke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889731358720
+    m_Localized: Boomerang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496064
+    m_Localized: Tentakel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496065
+    m_Localized: Blob-Launcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496066
+    m_Localized: Auto-Launcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959889777496067
+    m_Localized: Schwimmbad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963451521732608
+    m_Localized: "Dies ist eine wirklich schwere Arbeit. Es ist schrecklich! Ich
+      hoffe, Sie genie\xDFen es trotzdem."
     m_Metadata:
       m_Items: []
   references:
