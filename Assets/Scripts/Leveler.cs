@@ -48,8 +48,8 @@ public class Leveler : MonoBehaviour {
     void Update() {
         targetDickTransform.localScale = Vector3.one * (1f+currentTummyVolume*0.1f);
         targetRenderer.SetBlendShapeWeight(targetRenderer.sharedMesh.GetBlendShapeIndex(targetBlendshape), Mathf.Min(currentTummyVolume*8f,100f));
-        currentTummyVelocity = Mathf.MoveTowards(currentTummyVelocity, 0f, Time.deltaTime*2f);
-        currentTummyVelocity += (tummyVolume - currentTummyVolume) * Time.deltaTime * 8f;
+        currentTummyVelocity = Mathf.MoveTowards(currentTummyVelocity, 0f, Time.deltaTime*3f);
+        currentTummyVelocity += (tummyVolume - currentTummyVolume) * Time.deltaTime * 7f;
         currentTummyVolume += currentTummyVelocity;
         tummyVolume = Mathf.MoveTowards(tummyVolume, 0f, tummyVolume*Time.deltaTime*0.05f);
     }
