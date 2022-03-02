@@ -18,6 +18,6 @@ public class PlayerDisplayController : MonoBehaviour {
         animator.enabled = !paused;
     }
     void Update() {
-        animator.SetFloat("Speed", character.velocity.magnitude*12f);
+        animator.SetFloat("Speed", character.velocity.magnitude*14f);
     }
 }
