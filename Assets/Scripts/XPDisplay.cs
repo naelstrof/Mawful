@@ -13,17 +13,20 @@ public class XPDisplay : MonoBehaviour {
     public Transform targetTransform;
     private List<Image> prefabs;
     private List<float> voreBumps;
+    public VoreTail targetTail;
     private int currentBump;
+    [SerializeField]
+    private Leveler leveler;
     void Start() {
         prefabs = new List<Image>();
-        Leveler.instance.xpChanged += OnXPChanged;
+        leveler.xpChanged += OnXPChanged;
         background.material = Material.Instantiate(background.material);
         voreBumps = new List<float>();
         for(int i=0;i<64;i++) {
             voreBumps.Add(i%2==0? float.MaxValue : 1f);
         }
         background.material.SetFloatArray("_Vores", voreBumps);
-        VoreTail.instance.bumpAdded += OnVoreBumpsChanged;
+        targetTail.bumpAdded += OnVoreBumpsChanged;
         OnXPChanged(0f, 5f);
     }
     void OnVoreBumpsChanged(VoreTail.VoreBump bump) {
@@ -34,8 +37,8 @@ public class XPDisplay : MonoBehaviour {
         background.material.SetFloatArray("_Vores", voreBumps);
     }
     void OnDestroy() {
-        Leveler.instance.xpChanged -= OnXPChanged;
-        VoreTail.instance.bumpAdded -= OnVoreBumpsChanged;
+        leveler.xpChanged -= OnXPChanged;
+        targetTail.bumpAdded -= OnVoreBumpsChanged;
     }
     void SpawnIfNeeded(int number) {
         for (int i=prefabs.Count;i<number;i++) {

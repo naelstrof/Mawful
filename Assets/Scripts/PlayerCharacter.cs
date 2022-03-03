@@ -20,7 +20,7 @@ public class PlayerCharacter : Character {
     private Vector3 lookSmooth;
     public override void BeHit(DamageInstance instance) {
         // 0.3 second damage boost
-        if (Time.time - lastHitTime > 0.33f) {
+        if (Time.time - lastHitTime > 0.5f || frozen) {
             base.BeHit(instance);
             lastHitTime = Time.time;
         }
@@ -29,14 +29,16 @@ public class PlayerCharacter : Character {
         base.Awake();
         player = this;
     }
-    void Start() {
+    protected override void Start() {
         lastHitTime = Time.time;
         playerInput = GetComponent<PlayerInput>();
         playerInput.actions["Pause"].started += OnPausePerformed;
         WorldGrid.instance.worldPathReady += OnWorldPathReady;
+        base.Start();
     }
-    void OnDestroy() {
+    protected override void OnDestroy() {
         playerInput.actions["Pause"].started -= OnPausePerformed;
+        base.OnDestroy();
     }
     void OnPausePerformed(InputAction.CallbackContext ctx) {
         MainMenuShower.ToggleShow();
@@ -45,6 +47,23 @@ public class PlayerCharacter : Character {
         SetPositionAndVelocity(WorldGrid.instance.GetPathableGridElement().worldPosition, Vector3.zero);
     }
     void Update() {
+        Vector2 look = playerInput.actions["Look"].ReadValue<Vector2>();
+        if (playerInput.currentControlScheme != "Keyboard&Mouse") {
+            look *= Time.deltaTime*100f;
+        } else {
+            look *= 0.08f;
+        }
+        CameraFollower.AddDeflection(look);
+        float zoom = playerInput.actions["Zoom"].ReadValue<float>();
+        if (playerInput.currentControlScheme != "Keyboard&Mouse") {
+            zoom *= Time.deltaTime;
+        } else {
+            zoom *= 0.1f;
+        }
+        CameraFollower.AddZoom(zoom);
+        if (frozen) {
+            return;
+        }
         lookSmooth = Vector3.RotateTowards(lookSmooth, fireDir, Mathf.PI*8f*Time.deltaTime, 10f);
         transform.rotation = Quaternion.LookRotation(lookSmooth, Vector3.up);
     }
@@ -61,5 +80,10 @@ public class PlayerCharacter : Character {
             fireDir = flatDir.normalized;
         }
         wishDir = flatDir;
+    }
+    protected override void OnPauseChanged(bool paused) {
+        base.OnPauseChanged(paused);
+        Cursor.lockState = paused ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = paused ? true : false;
     }
 }

@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(CanvasGroup))]
 public class OnPlayerDie : MonoBehaviour {
+    public PlayerCharacter character;
     private CanvasGroup group;
     // Start is called before the first frame update
     void Start() {
         group = GetComponent<CanvasGroup>();
-        PlayerCharacter.player.health.depleted += OnHealthDepleted;
+        character.health.depleted += OnHealthDepleted;
     }
     void OnHealthDepleted() {
         group.alpha = 1f;

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerDisplayController : MonoBehaviour {
     private Character character;
     private Animator animator;
+    public delegate void StateTriggeredAction(string name);
+    public event StateTriggeredAction eventTriggered;
     void Start() {
         character = GetComponentInParent<Character>();
         animator = GetComponent<Animator>();
@@ -19,5 +21,8 @@ public class PlayerDisplayController : MonoBehaviour {
     }
     void Update() {
         animator.SetFloat("Speed", character.velocity.magnitude*14f);
+    }
+    void InvokeTrigger(string name) {
+        eventTriggered?.Invoke(name);
     }
 }

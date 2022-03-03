@@ -7,7 +7,6 @@ public class Leveler : MonoBehaviour {
     public event XPChangedAction xpChanged;
     public event LevelUpAction levelUp;
     public delegate void LevelUpAction();
-    public static Leveler instance;
     [SerializeField]
     private string targetBlendshape;
     [SerializeField]
@@ -27,23 +26,22 @@ public class Leveler : MonoBehaviour {
     [SerializeField]
     private Transform targetDickTransform;
     void Awake() {
-        instance = this;
         Pauser.pauseChanged += OnPauseChanged;
     }
     void OnDestroy() {
         Pauser.pauseChanged -= OnPauseChanged;
     }
-    public static void AddXP(float xp) {
-        instance.tummyVolume += xp;
-        instance.currentXP += xp;
-        if (instance.currentXP >= instance.neededXP) {
-            instance.currentXP -= instance.neededXP;
-            instance.levelUp?.Invoke();
-            instance.currentLevel++;
-            instance.neededXP = Mathf.Pow(instance.currentLevel,instance.xpScalingPower) + 5f;
-            Debug.Log("Leveled up to " + instance.currentLevel + ", now need " + instance.neededXP + " XP");
+    public void AddXP(float xp) {
+        tummyVolume += xp;
+        currentXP += xp;
+        if (currentXP >= neededXP) {
+            currentXP -= neededXP;
+            levelUp?.Invoke();
+            currentLevel++;
+            neededXP = Mathf.Pow(currentLevel,xpScalingPower) + 5f;
+            Debug.Log("Leveled up to " + currentLevel + ", now need " + neededXP + " XP");
         }
-        instance.xpChanged?.Invoke(instance.currentXP, instance.neededXP);
+        xpChanged?.Invoke(currentXP, neededXP);
     }
     void Update() {
         targetDickTransform.localScale = Vector3.one * (1f+currentTummyVolume*0.1f);

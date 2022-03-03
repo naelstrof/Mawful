@@ -36,6 +36,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Ultimate",
+                    "type": "Button",
+                    "id": "411c6a82-a831-4920-9905-ebad80cc94b1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "9c6493a0-9880-4c6f-bb5d-032a3147eecc",
+                    "expectedControlType": "Axis",
+                    "processors": "AxisDeadzone",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -173,39 +189,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
-                    "path": "<Pointer>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse;Touch",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
-                    "path": "<Joystick>/{Hatswitch}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
@@ -278,6 +261,83 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb573ee8-a9f0-42f0-bfe9-341a488d3696",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Ultimate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b635fd5f-1c30-481a-adb7-10f1d205961e",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Ultimate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone,ScaleVector2(y=0)",
+                    "groups": ";Gamepad",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse;Touch",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
+                    "path": "<Joystick>/{Hatswitch}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "903700d7-24cb-49a7-b1e1-9dd9d854acbf",
+                    "path": "<Gamepad>/rightStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "126e9ea8-b161-4db5-a664-db29e3f3877e",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Zoom",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

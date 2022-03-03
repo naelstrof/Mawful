@@ -33,7 +33,8 @@ public class Character : PooledItem {
     [ColorUsage(false, true)]
     private Color colorFlash;
     private bool beingVored = false;
-
+    protected bool frozen;
+    private Vector3 freezePosition;
     public Attribute damage;
     public struct DamageInstance {
         public DamageInstance(float damage, Vector3 knockback) {
@@ -53,13 +54,30 @@ public class Character : PooledItem {
         }
         targetRenderer.material.SetColor("_EmissionColor", Color.black);
     }
-    public virtual void StartVore() {
+    /*public virtual void Freeze(float time) {
+        StartCoroutine(FreezeRoutine(time));
+    }
+    private IEnumerator FreezeRoutine(float time) {
+        frozen = true;
+        freezePosition = position;
+        yield return new WaitForSeconds(time);
+        frozen = false;
+    }*/
+    public void SetFreeze(bool freeze) {
+        frozen = freeze;
+        freezePosition = position;
+    }
+    public virtual bool StartVore() {
+        if (beingVored) {
+            return false;
+        }
         beingVored = true;
         enabled = false;
         startedVore?.Invoke();
+        return true;
     }
     public virtual void BeHit(DamageInstance instance) {
-        if (health.GetHealth() <= 0f) {
+        if (health.GetHealth() <= 0f || frozen) {
             return;
         }
         MeshFloater floater;
@@ -96,14 +114,14 @@ public class Character : PooledItem {
         health.depleted += Die;
         targetRenderer = GetComponentInChildren<Renderer>();
     }
-    void Start() {
+    protected virtual void Start() {
         radius = GetComponent<SphereCollider>().radius;
         Pauser.pauseChanged += OnPauseChanged;
     }
     public virtual void OnEnable() {
         characters.Add(this);
     }
-    void OnDestroy() {
+    protected virtual void OnDestroy() {
         Pauser.pauseChanged -= OnPauseChanged;
     }
     public virtual void OnDisable() {
@@ -147,6 +165,11 @@ public class Character : PooledItem {
             newPosition.y = 0f;
         }
 
+        if (frozen) {
+            position = freezePosition;
+            return;
+        }
+
         if (!phased) {
             int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.collisionGridSize);
             int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.collisionGridSize);
@@ -177,7 +200,7 @@ public class Character : PooledItem {
         beingVored = false;
         health.Heal(99999f);
     }
-    void OnPauseChanged(bool paused) {
+    protected virtual void OnPauseChanged(bool paused) {
         enabled = !paused && !beingVored;
     }
 }

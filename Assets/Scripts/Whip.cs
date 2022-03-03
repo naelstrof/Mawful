@@ -30,7 +30,7 @@ public class Whip : Weapon {
         for(int i=0;i<Mathf.RoundToInt(newProjectileCount);i++) {
             VisualEffect whip = GameObject.Instantiate(whipPrefab, transform).GetComponent<VisualEffect>();
             whips.Add(whip);
-            whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f+270f, Vector3.up);
+            //whips[i].transform.rotation = Quaternion.Euler(0f,CameraFollower.GetCamera().transform.rotation.eulerAngles.y,0f)*Quaternion.AngleAxis((i%2)*180f+270f, Vector3.up);
         }
     }
     void OnCooldownChanged(float newCooldown) {
@@ -45,8 +45,8 @@ public class Whip : Weapon {
         while(isActiveAndEnabled) {
             yield return timeToWait;
             for (int i=0;i<whips.Count;i++) {
-                float aimAngle = Mathf.Round(player.transform.rotation.eulerAngles.y/180f)*180f;
-                whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f+45f+aimAngle, Vector3.up);
+                float aimAngle = Vector3.Dot(CameraFollower.GetCamera().transform.right, player.fireDir) > 0f ? 0f : 180f;
+                whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f+90f+aimAngle+CameraFollower.GetCamera().transform.rotation.eulerAngles.y, Vector3.up);
                 whips[i].Play();
                 for(float dist=0f;dist<4f+radius.GetValue();dist+=2f) {
                     foreach(Character character in Character.characters) {

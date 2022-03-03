@@ -25,6 +25,11 @@ public class HealthBar : MonoBehaviour {
         originalOutlineColor = outlineRenderer.material.color;
         rountine = StartCoroutine(HurtRoutine());
     }
+    void OnDisable() {
+        flashMaterial.color = originalColor;
+        outlineRenderer.material.color = originalOutlineColor;
+        flashRenderer.transform.localScale = originalScale;
+    }
     void OnDestroy() {
         if (character != null) {
             character.health.healthChanged -= OnHealthChanged;

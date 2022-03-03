@@ -14,12 +14,14 @@ public class UpgradeSpawner : MonoBehaviour {
     private Sprite newWeapon;
     [SerializeField]
     private Sprite upgradeWeapon;
+    [SerializeField]
+    private Leveler leveler;
     void Awake() {
         takenChoices = new HashSet<int>();
         buttons = new List<GameObject>();
     }
     void Start() {
-        Leveler.instance.levelUp += OnLevelUp;
+        leveler.levelUp += OnLevelUp;
         gameObject.SetActive(false);
     }
     int GetAllChoices() {

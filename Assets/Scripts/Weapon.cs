@@ -45,7 +45,7 @@ public class Weapon : MonoBehaviour {
         weapons.Remove(this);
         Pauser.pauseChanged -= OnPauseChanged;
     }
-    void OnPauseChanged(bool paused) {
+    protected virtual void OnPauseChanged(bool paused) {
         enabled = !paused;
         if (!paused && isActiveAndEnabled) {
             StopAllCoroutines();

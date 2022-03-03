@@ -95,16 +95,21 @@ public class WorldGrid : MonoBehaviour {
         float possibleChoices = 0f;
         for(int x=0;x<pathGrid.Count;x++) {
             for(int y=0;y<pathGrid[x].Count;y++) {
+                if (x == 0 || x == pathGrid.Count-1 || y == 0 || y == pathGrid[x].Count-1) {
+                    continue;
+                }
                 if (pathGrid[x][y].passable) {
                     possibleChoices += 1f;
                 }
             }
         }
         float randomChoice = UnityEngine.Random.Range(0f,possibleChoices);
-        Debug.Log("Chose " + randomChoice + " out of " + possibleChoices);
         float currentChoice = 0f;
         for(int x=0;x<pathGrid.Count;x++) {
             for(int y=0;y<pathGrid[x].Count;y++) {
+                if (x == 0 || x == pathGrid.Count-1 || y == 0 || y == pathGrid[x].Count-1) {
+                    continue;
+                }
                 if (pathGrid[x][y].passable) {
                     currentChoice += 1f;
                     if (currentChoice >= randomChoice) {
