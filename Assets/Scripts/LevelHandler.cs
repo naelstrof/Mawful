@@ -41,6 +41,7 @@ public class LevelHandler : MonoBehaviour {
         if (loading) {
             return;
         }
+        Pauser.SetPaused(false);
         loading = true;
         loadingPanel.alpha = 1f;
         loadingPanel.interactable = true;
@@ -51,6 +52,7 @@ public class LevelHandler : MonoBehaviour {
             if (loadingPanel == null) {
                 return;
             }
+            Pauser.SetPaused(false);
             loadingPanel.interactable = false;
             loadingPanel.blocksRaycasts = false;
             loadingPanel.alpha = 0f;

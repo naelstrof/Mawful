@@ -33,27 +33,46 @@ public class PlayerCharacter : Character {
         lastHitTime = Time.time;
         playerInput = GetComponent<PlayerInput>();
         playerInput.actions["Pause"].started += OnPausePerformed;
+        playerInput.actions["GrabLook"].started += OnGrabLookStarted;
+        playerInput.actions["GrabLook"].canceled += OnGrabLookFinished;
         WorldGrid.instance.worldPathReady += OnWorldPathReady;
         base.Start();
     }
     protected override void OnDestroy() {
         playerInput.actions["Pause"].started -= OnPausePerformed;
+        playerInput.actions["GrabLook"].started -= OnGrabLookStarted;
+        playerInput.actions["GrabLook"].canceled -= OnGrabLookFinished;
         base.OnDestroy();
     }
     void OnPausePerformed(InputAction.CallbackContext ctx) {
         MainMenuShower.ToggleShow();
     }
+    void OnGrabLookStarted(InputAction.CallbackContext ctx) {
+        if (Pauser.GetPaused()) {
+            return;
+        }
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    void OnGrabLookFinished(InputAction.CallbackContext ctx) {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     void OnWorldPathReady() {
         SetPositionAndVelocity(WorldGrid.instance.GetPathableGridElement().worldPosition, Vector3.zero);
     }
     void Update() {
-        Vector2 look = playerInput.actions["Look"].ReadValue<Vector2>();
-        if (playerInput.currentControlScheme != "Keyboard&Mouse") {
-            look *= Time.deltaTime*100f;
-        } else {
-            look *= 0.08f;
+        // Only look if we're on gamepad, or if the player has clicked the mouse in
+        if (Cursor.lockState == CursorLockMode.Locked || playerInput.currentControlScheme != "Keyboard&Mouse") {
+            Vector2 look = playerInput.actions["Look"].ReadValue<Vector2>();
+            if (playerInput.currentControlScheme != "Keyboard&Mouse") {
+                look *= Time.deltaTime*100f;
+            } else {
+                look *= 0.08f;
+            }
+            CameraFollower.AddDeflection(look);
         }
-        CameraFollower.AddDeflection(look);
+
         float zoom = playerInput.actions["Zoom"].ReadValue<float>();
         if (playerInput.currentControlScheme != "Keyboard&Mouse") {
             zoom *= Time.deltaTime;
@@ -83,7 +102,9 @@ public class PlayerCharacter : Character {
     }
     protected override void OnPauseChanged(bool paused) {
         base.OnPauseChanged(paused);
-        Cursor.lockState = paused ? CursorLockMode.None : CursorLockMode.Locked;
-        Cursor.visible = paused ? true : false;
+        if (paused) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }

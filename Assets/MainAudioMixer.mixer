@@ -52,6 +52,22 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-4338083476021780000
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8f0900cd1a37e754d9fbc1cf24df5ec6
+  m_EffectName: Lowpass Simple
+  m_MixLevel: e9676f78fde150c41b72a3beef4488c0
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: f31dd6f47ff17554887a301620efc2d7
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-704706384289605986
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -67,6 +83,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 7462297922247603135}
+  - {fileID: -4338083476021780000}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -89,6 +106,8 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: a851a1dcb8af30c4e88e59c049a0676a
     name: GloryDuckVolume
+  - guid: f31dd6f47ff17554887a301620efc2d7
+    name: GloryDuckLowpass
   m_AudioMixerGroupViews:
   - guids:
     - 399a831d3db635e44b8b41435a9aa57f
@@ -143,7 +162,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 831eb433ac114a54a86399489649b6bf
-  m_FloatValues: {}
+  m_FloatValues:
+    f31dd6f47ff17554887a301620efc2d7: 22000
   m_TransitionOverrides: {}
 --- !u!243 &2647672992419380789
 AudioMixerGroupController:

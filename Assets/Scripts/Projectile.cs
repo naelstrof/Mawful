@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Projectile : PooledItem {
+    [SerializeField]
+    protected AudioPack hitPack;
     [HideInInspector]
     public Vector3 lastPosition;
     [Range(0f,1f)][SerializeField]
@@ -50,6 +52,8 @@ public class Projectile : PooledItem {
     protected void DoHit(EnemyCharacter character) {
         hitCount++;
         character.BeHit(new Character.DamageInstance(damage, velocity*knockback));
+
+        hitPack.PlayOneShot(character.audioSource);
         if (hitCount>=hitLimit) {
             gameObject.SetActive(false);
         }

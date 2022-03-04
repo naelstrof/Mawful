@@ -2,8 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class EnemyCharacter : Character {
+    [HideInInspector]
+    public AudioSource audioSource;
     private bool stunned = false;
+    [SerializeField]
+    private AudioPack dieSound;
+    public override void Awake() {
+        base.Awake();
+        audioSource = GetComponent<AudioSource>();
+    }
     public override void LateUpdate() {
         base.LateUpdate();
         if (health.GetHealth()>0f && velocity.sqrMagnitude > 0.0001f) {
@@ -14,6 +23,7 @@ public class EnemyCharacter : Character {
         base.Die();
         stunned = true;
         phased = true;
+        dieSound?.PlayOneShot(audioSource);
     }
     public override void FixedUpdate() {
         base.FixedUpdate();

@@ -96,6 +96,7 @@ public class Vore : MonoBehaviour {
         player = GetComponentInParent<Character>();
     }
     protected virtual void Digest(Character character) {
+        gulp.PlayOneShot(source);
         voreFinished?.Invoke(character);
     }
     protected virtual void Update() {
@@ -107,7 +108,6 @@ public class Vore : MonoBehaviour {
                 float sample = voreBumpCurve.Evaluate(t);
                 blendAmount = Mathf.Lerp(blendAmount, maxSimultaneousVores, sample/maxSimultaneousVores);
                 if (t>1f && i == blendIDs.Count-1) {
-                    gulp.PlayOneShot(source);
                     Digest(voreBumps[j].character);
                     voreBumps.RemoveAt(j);
                     if (voreBumps.Count == 0) {

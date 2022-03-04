@@ -29,6 +29,7 @@ public class HealthBar : MonoBehaviour {
         flashMaterial.color = originalColor;
         outlineRenderer.material.color = originalOutlineColor;
         flashRenderer.transform.localScale = originalScale;
+        flashRenderer.transform.localPosition = Vector3.zero;
     }
     void OnDestroy() {
         if (character != null) {

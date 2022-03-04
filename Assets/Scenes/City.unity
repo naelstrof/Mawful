@@ -646,6 +646,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 35867bf9fe037e940aec424f2ee3391a, type: 2}
   - {fileID: 11400000, guid: 13af9b635ac9b0946b45d31b52655a8b, type: 2}
   - {fileID: 11400000, guid: 35867bf9fe037e940aec424f2ee3391a, type: 2}
+  - {fileID: 11400000, guid: 5683d7f61ef1a0f41bd072f996251d7c, type: 2}
+  - {fileID: 11400000, guid: 35867bf9fe037e940aec424f2ee3391a, type: 2}
+  - {fileID: 11400000, guid: 5683d7f61ef1a0f41bd072f996251d7c, type: 2}
+  - {fileID: 11400000, guid: 5683d7f61ef1a0f41bd072f996251d7c, type: 2}
+  - {fileID: 11400000, guid: 5683d7f61ef1a0f41bd072f996251d7c, type: 2}
 --- !u!4 &1140880571
 Transform:
   m_ObjectHideFlags: 0
@@ -1637,6 +1642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}
+  gloryVolume: 0.8
+  gloryLowpassLimit: 800
 --- !u!1001 &2325681476931522206
 PrefabInstance:
   m_ObjectHideFlags: 0

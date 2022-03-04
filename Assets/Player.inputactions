@@ -52,6 +52,14 @@
                     "expectedControlType": "Axis",
                     "processors": "AxisDeadzone",
                     "interactions": ""
+                },
+                {
+                    "name": "GrabLook",
+                    "type": "Button",
+                    "id": "6ec9097e-125c-4c3a-ab84-3143340fae88",
+                    "expectedControlType": "Button",
+                    "processors": "AxisDeadzone",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -338,6 +346,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "67a90b2a-2278-4bdf-a172-e58d3abe08ac",
+                    "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "GrabLook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

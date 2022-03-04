@@ -22,6 +22,7 @@ public class CockVoreWeapon : Weapon {
     [SerializeField]
     private Renderer barContainer;
     private float timeout;
+    private bool paused;
     public override void Start() {
         cooldown.changed += OnCooldownChanged;
         OnCooldownChanged(cooldown.GetValue());
@@ -90,7 +91,7 @@ public class CockVoreWeapon : Weapon {
         animator.SetBool("DickAttack", true);
         waiting = true;
         timeout = Time.time + 8f;
-        while((waiting || !isActiveAndEnabled) && Time.time < timeout) {
+        while((waiting || !isActiveAndEnabled || paused) && Time.time < timeout) {
             yield return null;
         }
         player.SetFreeze(false);
@@ -128,5 +129,8 @@ public class CockVoreWeapon : Weapon {
         player.SetFreeze(false);
         animator.SetBool("DickAttack", false);*/
         yield break;
+    }
+    protected override void OnPauseChanged(bool paused) {
+        this.paused = paused;
     }
 }

@@ -158,6 +158,8 @@ MonoBehaviour:
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
   damage:
     modifiers: []
+  audioSource: {fileID: 0}
+  dieSound: {fileID: 0}
 --- !u!1 &8568940013376001890
 GameObject:
   m_ObjectHideFlags: 0

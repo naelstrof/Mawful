@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class MagicWand : Weapon {
+    private AudioSource source;
+    [SerializeField]
+    private AudioPack wandFire;
     private WaitForSeconds perProjectileWait;
     private WaitForSeconds timeToWait;
     public override void Start() {
+        source = GetComponent<AudioSource>();
         cooldown.changed += OnCooldownChanged;
         OnCooldownChanged(cooldown.GetValue());
         perProjectileWait = new WaitForSeconds(0.10f);
@@ -36,6 +41,7 @@ public class MagicWand : Weapon {
             for (int i=0;i<projectileCount.GetValue();i++) {
                 Projectile magicBolt;
                 if (!ProjectilePool.StaticTryInstantiate(out magicBolt)) { continue; }
+                wandFire.PlayOneShot(source);
                 SetUpProjectile(magicBolt);
                 if (target != null) {
                     Vector3 dir = target.position - player.position;
