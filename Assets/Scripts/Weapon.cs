@@ -38,6 +38,7 @@ public class Weapon : MonoBehaviour {
     public Attribute speed;
     protected PlayerCharacter player;
     void Awake() {
+        player = GetComponentInParent<PlayerCharacter>();
         weapons.Add(this);
         Pauser.pauseChanged += OnPauseChanged;
     }
@@ -53,7 +54,6 @@ public class Weapon : MonoBehaviour {
         }
     }
     public virtual void Start() {
-        player = GetComponentInParent<PlayerCharacter>();
         projectileCount.SetParentAttribute(player.projectileCount);
         damage.SetParentAttribute(player.damage);
         cooldown.SetParentAttribute(player.projectileCooldown);
