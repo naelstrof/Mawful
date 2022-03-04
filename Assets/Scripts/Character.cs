@@ -32,7 +32,7 @@ public class Character : PooledItem {
     [SerializeField]
     [ColorUsage(false, true)]
     private Color colorFlash;
-    private bool beingVored = false;
+    protected bool beingVored = false;
     protected bool frozen;
     private Vector3 freezePosition;
     public Attribute damage;

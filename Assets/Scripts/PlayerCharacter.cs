@@ -48,7 +48,7 @@ public class PlayerCharacter : Character {
         MainMenuShower.ToggleShow();
     }
     void OnGrabLookStarted(InputAction.CallbackContext ctx) {
-        if (Pauser.GetPaused()) {
+        if (Pauser.GetPaused() || health.GetHealth() <= 0f) {
             return;
         }
         Cursor.lockState = CursorLockMode.Locked;
@@ -101,7 +101,7 @@ public class PlayerCharacter : Character {
         wishDir = flatDir;
     }
     protected override void OnPauseChanged(bool paused) {
-        base.OnPauseChanged(paused);
+        enabled = !paused && !beingVored && health.GetHealth()>0f;
         if (paused) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
