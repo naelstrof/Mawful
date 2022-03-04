@@ -104,10 +104,14 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: 09998d1c089766d45be6ac5b79c900f6
+    name: MasterVolume
   - guid: a851a1dcb8af30c4e88e59c049a0676a
     name: GloryDuckVolume
   - guid: f31dd6f47ff17554887a301620efc2d7
     name: GloryDuckLowpass
+  - guid: e7ba82092dc3d1f4e83e3062d2f65ec7
+    name: SoundEffectsVolume
   m_AudioMixerGroupViews:
   - guids:
     - 399a831d3db635e44b8b41435a9aa57f

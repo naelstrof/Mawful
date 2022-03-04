@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Garlic : Weapon {
+    [SerializeField]
+    private AudioPack hitSound;
+    private AudioSource source;
     private WaitForSeconds perProjectileWait;
     private WaitForSeconds timeToWait;
     [SerializeField]
     private Transform garlicVisuals;
     public override void Start() {
+        source = GetComponent<AudioSource>();
         cooldown.changed += OnCooldownChanged;
         radius.changed += OnRadiusChanged;
         OnCooldownChanged(cooldown.GetValue());
@@ -25,14 +30,19 @@ public class Garlic : Weapon {
         while(isActiveAndEnabled) {
             yield return timeToWait;
             for (int i=0;i<projectileCount.GetValue();i++) {
+                bool hit = false;
                 foreach(Character character in Character.characters) {
                     if (character == player) {
                         continue;
                     }
-                    if (Vector3.Distance(character.position, player.position) <= radius.GetValue()+player.radius+character.radius) {
+                    if (Vector3.Distance(character.position, player.position) <= radius.GetValue()+player.radius+character.radius && character.health.GetHealth() > 0f) {
                         float knockbackAmount = 0.001f;
                         character.BeHit(new Character.DamageInstance(damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
+                        hit = true;
                     }
+                }
+                if (hit) {
+                    hitSound.PlayOneShot(source);
                 }
                 yield return perProjectileWait;
             }

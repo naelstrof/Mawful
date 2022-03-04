@@ -306,6 +306,45 @@ MonoBehaviour:
   decor: {fileID: 11400000, guid: b75c16373a810cb4c9485ad1df602372, type: 2}
   tileSize: 2.5
   pixelCount: 4
+--- !u!1 &615858075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615858077}
+  - component: {fileID: 615858076}
+  m_Layer: 0
+  m_Name: AudioListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &615858076
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615858075}
+  m_Enabled: 1
+--- !u!4 &615858077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615858075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2089980664}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683916555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de19ac8797e062741ab1f257fa641bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listener: {fileID: 0}
+  listenerDistance01: 0
   main: 0
   targetTransform: {fileID: 0}
   screenSpacePosition: {x: 0.5, y: 0.5, z: 0.5}
@@ -1485,7 +1526,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2089980664}
   - component: {fileID: 2089980663}
-  - component: {fileID: 2089980662}
   - component: {fileID: 2089980665}
   - component: {fileID: 2089980666}
   - component: {fileID: 2089980667}
@@ -1497,14 +1537,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2089980662
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089980661}
-  m_Enabled: 1
 --- !u!20 &2089980663
 Camera:
   m_ObjectHideFlags: 0
@@ -1561,6 +1593,7 @@ Transform:
   m_Children:
   - {fileID: 2017671210}
   - {fileID: 1219650047}
+  - {fileID: 615858077}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60, y: -45, z: 0}
@@ -1608,6 +1641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de19ac8797e062741ab1f257fa641bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listener: {fileID: 615858076}
+  listenerDistance01: 0.5
   main: 1
   targetTransform: {fileID: 0}
   screenSpacePosition: {x: 0.5, y: 0.5, z: 0.5}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MagicWandLaunch
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: b8c37a0f059c5a640883c50d0c8c932e, type: 3}
-  volume: 0.25
+  - {fileID: 8300000, guid: de9b9727781a1474f9c83f4e965488a5, type: 3}
+  volume: 0.55
   group: {fileID: -704706384289605986, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}

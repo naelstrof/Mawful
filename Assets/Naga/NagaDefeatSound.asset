@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf485709fc1332443a4e5e0b661279e1, type: 3}
-  m_Name: Splash
+  m_Name: NagaDefeatSound
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 297ea66c8767d9d419393cefc9e4a97a, type: 3}
-  - {fileID: 8300000, guid: aa3333babb98ff246817b007ce8e6c5c, type: 3}
-  - {fileID: 8300000, guid: f242b08dfe824684a81b4e3ab3b68d31, type: 3}
-  - {fileID: 8300000, guid: 83f4ebe425f1d2d4b900f71917b720fa, type: 3}
-  volume: 0.5
+  - {fileID: 8300000, guid: 518e2317df5b1ee4fbaa2135a77fd416, type: 3}
+  volume: 1
   group: {fileID: -704706384289605986, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}

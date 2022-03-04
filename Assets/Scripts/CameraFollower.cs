@@ -7,6 +7,9 @@ public class CameraFollower : MonoBehaviour {
     public delegate void GloryModeChangeAction(bool glory);
     public event GloryModeChangeAction gloryModeChanged;
     public static CameraFollower instance;
+    public AudioListener listener;
+    [Range(0f,1f)]
+    public float listenerDistance01;
     public bool main = true;
     public Transform targetTransform;
     public static Camera GetCamera() => instance.cam;
@@ -82,6 +85,7 @@ public class CameraFollower : MonoBehaviour {
         }
         transform.position = Vector3.SmoothDamp(transform.position, transform.position + diff, ref vel, 0.1f);
         if (main) {
+            listener.transform.position = Vector3.Lerp(transform.position, targetTransform.position, listenerDistance01);
             Shader.SetGlobalFloat("PlayerDistance", screenPosition.z*0.8f);
         }
     }

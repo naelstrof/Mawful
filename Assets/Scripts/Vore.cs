@@ -7,6 +7,8 @@ using UnityEngine.VFX;
 public class Vore : MonoBehaviour {
     protected AudioSource source;
     [SerializeField]
+    private AnimationCurve blendPlacements;
+    [SerializeField]
     protected AudioPack gulp;
     [SerializeField]
     protected AudioPack travelSound;
@@ -40,7 +42,7 @@ public class Vore : MonoBehaviour {
     [SerializeField]
     protected float maxSimultaneousVores = 2.5f;
     public VisualEffect chompEffect;
-    protected const float blendDistance = 0.5f;
+    //protected const float blendDistance = 5f;
     [SerializeField]
     [Range(0f,10f)]
     protected float minTimeRange = 1f;
@@ -99,11 +101,12 @@ public class Vore : MonoBehaviour {
         gulp.PlayOneShot(source);
         voreFinished?.Invoke(character);
     }
-    protected virtual void Update() {
+    protected virtual async void Update() {
         for(int i=0;i<blendIDs.Count;i++) {
             float blendAmount = 0f;
             for(int j=voreBumps.Count-1;j>=0;j--) {
-                float offset = blendDistance * (float)i;
+                float percentage = (float)(i+1)/(float)blendIDs.Count;
+                float offset = voreBumps[j].duration * blendPlacements.Evaluate(percentage);
                 float t = (Time.time-(voreBumps[j].startTime+offset))/voreBumps[j].duration;
                 float sample = voreBumpCurve.Evaluate(t);
                 blendAmount = Mathf.Lerp(blendAmount, maxSimultaneousVores, sample/maxSimultaneousVores);

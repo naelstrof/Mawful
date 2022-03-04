@@ -15,10 +15,12 @@ public class AudioPack : ScriptableObject {
         source.outputAudioMixerGroup = group;
         source.clip = GetRandomClip();
         source.volume = volume;
+        source.pitch = UnityEngine.Random.Range(0.7f,1.3f);
         source.Play();
     }
     public void PlayOneShot(AudioSource source) {
         source.outputAudioMixerGroup = group;
+        source.pitch = UnityEngine.Random.Range(0.7f,1.3f);
         source.PlayOneShot(GetRandomClip(), volume);
     }
 

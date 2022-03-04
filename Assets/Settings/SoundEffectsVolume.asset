@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localizedName:
     m_TableReference:
-      m_TableCollectionName: GUID:50701cddf03d43b439083daad6e6cd46
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
     m_TableEntryReference:
-      m_KeyId: 939933618184
+      m_KeyId: 4300113055771
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
   minValue: 0
   maxValue: 1
   wholeNumbers: 0
-  audioMixer: {fileID: 24100000, guid: 6575fa5b5c95c51429f2a24386ccb468, type: 2}
+  audioMixer: {fileID: 24100000, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}
   audioExposedParamName: SoundEffectsVolume
   isVolumeParameter: 1
   references:
