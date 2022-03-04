@@ -284,10 +284,24 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.6666667
+    functionName: PlayFromPack
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 46aaf30584dd0474ba2f510402280483, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.2833333
     functionName: InvokeTrigger
     data: DickChompComplete
     objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.3666667
+    functionName: PlayFromPack
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 39f7a2c8301c10e4da4e7da6aa5899f0, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

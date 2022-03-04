@@ -11,10 +11,8 @@ public class CameraFollower : MonoBehaviour {
     public Transform targetTransform;
     public static Camera GetCamera() => instance.cam;
     public static void SetGloryVore(bool glory) => instance.SetGloryVoreCam(glory);
-    public static Vector3 GetTargetScreenSpace() {
-        Vector3 screenPosition = Vector3.Lerp(instance.screenSpacePosition, instance.gloryScreenSpacePosition, instance.gloryTween);
-        screenPosition.z = Mathf.Lerp(screenPosition.z, 0.15f, instance.zoom);
-        return screenPosition;
+    public static Vector3 StaticGetTargetScreenSpace() {
+        return instance.GetTargetScreenSpace();
     }
     public static Quaternion GetInputRotation() {
         Vector3 euler = instance.cam.transform.rotation.eulerAngles;
@@ -22,6 +20,8 @@ public class CameraFollower : MonoBehaviour {
     }
     [SerializeField]
     private Vector3 screenSpacePosition;
+    [SerializeField]
+    private bool controlRotation = false;
     [SerializeField]
     private Vector3 gloryScreenSpacePosition;
     private Camera cam;
@@ -55,6 +55,11 @@ public class CameraFollower : MonoBehaviour {
             targetTransform = PlayerCharacter.player.transform;
         }
     }
+    private Vector3 GetTargetScreenSpace() {
+        Vector3 screenPosition = Vector3.Lerp(screenSpacePosition, gloryScreenSpacePosition, gloryTween);
+        screenPosition.z = Mathf.Lerp(screenPosition.z, 0.15f, zoom);
+        return screenPosition;
+    }
     void Update() {
         gloryTween = Mathf.MoveTowards(gloryTween, gloryTweenTarget, Time.deltaTime*2f);
         if (letterboxRenderers != null) {
@@ -70,7 +75,7 @@ public class CameraFollower : MonoBehaviour {
         }
         Vector3 desiredPoint = cam.ScreenToWorldPoint(new Vector3(screenPosition.x*cam.pixelWidth, screenPosition.y*cam.pixelHeight, screenZ));
         Vector3 diff = position-desiredPoint;
-        if (main) {
+        if (main && controlRotation) {
             transform.rotation = Quaternion.Lerp(Quaternion.Euler(60f-deflection.y,-45f+deflection.x,0f), Quaternion.Euler(30f-deflection.y,-45f+deflection.x,0f), gloryTween);
             Vector3 newDesiredPoint = cam.ScreenToWorldPoint(new Vector3(screenPosition.x*cam.pixelWidth, screenPosition.y*cam.pixelHeight, screenZ));
             transform.position -= newDesiredPoint-desiredPoint;

@@ -26,7 +26,7 @@ public class VolumeSettingListener : MonoBehaviour {
         if (cam != null) {
             DepthOfField depth;
             if (!v.profile.TryGet<DepthOfField>(out depth)) { return; }
-            depth.focusDistance.Override(CameraFollower.GetTargetScreenSpace().z*cam.farClipPlane + cam.nearClipPlane);
+            depth.focusDistance.Override(CameraFollower.StaticGetTargetScreenSpace().z*cam.farClipPlane + cam.nearClipPlane);
             depth.mode.Override(DepthOfFieldMode.Bokeh);
         }
     }

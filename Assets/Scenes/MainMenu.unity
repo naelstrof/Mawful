@@ -256,6 +256,9 @@ MonoBehaviour:
   main: 1
   targetTransform: {fileID: 500278348}
   screenSpacePosition: {x: 0.2, y: 0.33, z: 0.2}
+  controlRotation: 0
+  gloryScreenSpacePosition: {x: 0.2, y: 0.33, z: 0.2}
+  letterboxRenderers: []
 --- !u!114 &53995608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +905,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1772d21b9598372449a0297762d8cf72, type: 3}
+--- !u!1 &1119266289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 260645048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1119266290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119266289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d76f24409a39604ca3986f91ce6d28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolate: 1
+  jiggleRigs:
+  - rootTransform: {fileID: 2016049769}
+    jiggleSettings: {fileID: 11400000, guid: a23821a32f669334e96eb0ef8e925b41, type: 2}
+    ignoredTransforms: []
+  - rootTransform: {fileID: 1567784380}
+    jiggleSettings: {fileID: 11400000, guid: 151ecfdd47cf903448e7b8c8bba89c88, type: 2}
+    ignoredTransforms: []
+  debugDraw: 0
 --- !u!1 &1184620724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82092038c2545fd409789d5ddbd66610, type: 3}
+--- !u!4 &1567784380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 260645048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1699325058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1204,6 +1238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1772d21b9598372449a0297762d8cf72, type: 3}
+--- !u!4 &2016049769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 260645048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2049143747
 PrefabInstance:
   m_ObjectHideFlags: 0

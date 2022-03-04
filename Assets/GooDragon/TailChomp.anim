@@ -860,10 +860,24 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.6666667
+    functionName: PlayFromPack
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: f0e6d6c7a4a33b04d96fb7bf545f117e, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.75
     functionName: InvokeTrigger
     data: ChompComplete
     objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.85
+    functionName: PlayFromPack
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 9f7c202e900984543b62ee3846aea712, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

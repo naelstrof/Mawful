@@ -36,6 +36,7 @@ public class MeshFloater : PooledItem {
         renderer.material.SetColor("_UnderlayColor", Color.black);
         renderer.material.SetColor("_OutlineColor", Color.black);
         transform.localScale = Vector3.one*bouncyCurve.Evaluate(0f)*Mathf.Lerp(0.08f, 0.25f, (float)display/(float)numbers.maxNumber);
+        transform.rotation = CameraFollower.GetCamera().transform.rotation;
     }
     public void Update() {
         float duration = 1.25f;

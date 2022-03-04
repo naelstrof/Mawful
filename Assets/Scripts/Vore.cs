@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
+[RequireComponent(typeof(AudioSource))]
 public class Vore : MonoBehaviour {
+    protected AudioSource source;
+    [SerializeField]
+    protected AudioPack gulp;
+    [SerializeField]
+    protected AudioPack travelSound;
     public delegate void VoreBumpAddedAction(VoreBump bumps);
     public event VoreBumpAddedAction bumpAdded;
     public delegate void VoreFinished (Character character);
@@ -42,6 +48,7 @@ public class Vore : MonoBehaviour {
     [Range(0f,10f)]
     protected float maxTimeRange = 3f;
     protected virtual void Awake() {
+        source = GetComponent<AudioSource>();
         vaccuming = new HashSet<Character>();
         voreBumps = new List<VoreBump>();
         readyToVore = new HashSet<Character>();
@@ -61,6 +68,10 @@ public class Vore : MonoBehaviour {
             bumpAdded?.Invoke(voreBumps[voreBumps.Count-1]);
             vaccuming.Remove(other);
         }
+        if (source.clip == null) {
+            travelSound.Play(source);
+        }
+        gulp.PlayOneShot(source);
         readyToVore.Clear();
         chompEffect.Play();
     }
@@ -96,8 +107,14 @@ public class Vore : MonoBehaviour {
                 float sample = voreBumpCurve.Evaluate(t);
                 blendAmount = Mathf.Lerp(blendAmount, maxSimultaneousVores, sample/maxSimultaneousVores);
                 if (t>1f && i == blendIDs.Count-1) {
+                    gulp.PlayOneShot(source);
                     Digest(voreBumps[j].character);
                     voreBumps.RemoveAt(j);
+                    if (voreBumps.Count == 0) {
+                        // Stop the travelling sound
+                        source.Stop();
+                        source.clip = null;
+                    }
                 }
             }
             targetRenderer.SetBlendShapeWeight(blendIDs[i], Mathf.Min(blendAmount*100f, 250f));

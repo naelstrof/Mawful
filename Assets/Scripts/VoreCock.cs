@@ -15,7 +15,7 @@ public class VoreCock : Vore {
     protected override void Awake() {
         base.Awake();
         cockAnimator = GetComponentInParent<Animator>();
-        GetComponent<PlayerDisplayController>().eventTriggered += OnEventTriggered;
+        GetComponentInParent<PlayerDisplayController>().eventTriggered += OnEventTriggered;
     }
     void OnEventTriggered(string name) {
         if (name == listenName) {

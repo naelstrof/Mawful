@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Leveler : MonoBehaviour {
+    private AudioSource source;
+    public AudioPack tummyGrumbles;
     public delegate void XPChangedAction(float xp, float neededXP);
     public event XPChangedAction xpChanged;
     public event LevelUpAction levelUp;
@@ -26,6 +29,7 @@ public class Leveler : MonoBehaviour {
     [SerializeField]
     private Transform targetDickTransform;
     void Awake() {
+        source = GetComponent<AudioSource>();
         Pauser.pauseChanged += OnPauseChanged;
     }
     void OnDestroy() {
@@ -50,6 +54,9 @@ public class Leveler : MonoBehaviour {
         currentTummyVelocity += (tummyVolume - currentTummyVolume) * Time.deltaTime * 7f;
         currentTummyVolume += currentTummyVelocity;
         tummyVolume = Mathf.MoveTowards(tummyVolume, 0f, tummyVolume*Time.deltaTime*0.05f);
+        if (tummyVolume > 8f && !source.isPlaying) {
+            tummyGrumbles.Play(source);
+        }
     }
     void Process(float xp, float maxXP) {
     }

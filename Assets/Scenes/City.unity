@@ -1208,6 +1208,7 @@ MonoBehaviour:
   main: 0
   targetTransform: {fileID: 0}
   screenSpacePosition: {x: 0.5, y: 0.5, z: 0.5}
+  controlRotation: 0
   gloryScreenSpacePosition: {x: 0, y: 0, z: 0}
   letterboxRenderers: []
 --- !u!114 &1729696718
@@ -1483,6 +1484,7 @@ GameObject:
   - component: {fileID: 2089980665}
   - component: {fileID: 2089980666}
   - component: {fileID: 2089980667}
+  - component: {fileID: 2089980668}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1604,6 +1606,7 @@ MonoBehaviour:
   main: 1
   targetTransform: {fileID: 0}
   screenSpacePosition: {x: 0.5, y: 0.5, z: 0.5}
+  controlRotation: 1
   gloryScreenSpacePosition: {x: 0.5, y: 0.4, z: 0.15}
   letterboxRenderers:
   - {fileID: 2017671212}
@@ -1621,6 +1624,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   antiAliasing: {fileID: 11400000, guid: 5fd45b293617e82439ce690bd39a5360, type: 2}
+--- !u!114 &2089980668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089980661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835264909064b4146855d8d25d1b44be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}
 --- !u!1001 &2325681476931522206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1859,6 +1875,18 @@ PrefabInstance:
     - target: {fileID: 5695180224331535904, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084278285042572386, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: audioTriggers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084278285042572386, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: audioTriggers.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f524e0a9a41fb2c4fab0bf18ed4a3965, type: 3}
+    - target: {fileID: 7084278285042572386, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: audioTriggers.Array.data[1].name
+      value: DickChompComplete
       objectReference: {fileID: 0}
     - target: {fileID: 7428550951893318616, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
