@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 182a9f99a6a4c994a982893da074171b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _BulgeLanes_output: {fileID: 2800000, guid: 70f3cd3eb0effca489c1e47ba427ac02, type: 3}
+  - _GooTongue_TongueMaterial_AlbedoTransparency: {fileID: 2800000, guid: e1ef26fa61548364a8a323ef16512443, type: 3}
+  - _GooTongue_TongueMaterial_Normal: {fileID: 2800000, guid: b509a39944911ce4eb35a5c83f125f34, type: 3}
+  - _BulgeLanes_normal: {fileID: 2800000, guid: 236f8c747dc5c8f488e26fe8896968d1, type: 3}
+  - _GooTongue_TongueMaterial_MetallicSmoothness: {fileID: 2800000, guid: b2ab29231afa34d4095e03f1414f0041, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

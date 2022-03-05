@@ -4,3 +4,4 @@ shark.spp filter=lfs diff=lfs merge=lfs -text
 frennedy.spp filter=lfs diff=lfs merge=lfs -text
 kanagroo.spp filter=lfs diff=lfs merge=lfs -text
 wolf.spp filter=lfs diff=lfs merge=lfs -text
+*.spp filter=lfs diff=lfs merge=lfs -text
