@@ -689,5 +689,21 @@ MonoBehaviour:
       Toivon, ett\xE4 nautit siit\xE4 joka tapauksessa."
     m_Metadata:
       m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: Kaupunki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Kukko vure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: Ase valinta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Kartta Valitse
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

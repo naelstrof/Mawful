@@ -658,7 +658,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300129832967
-    m_Localized: Ambiente Volumen
+    m_Localized: Ambiente Volumen.
     m_Metadata:
       m_Items: []
   - m_Id: 4300129832968
@@ -692,6 +692,22 @@ MonoBehaviour:
   - m_Id: 963451521732608
     m_Localized: "Dies ist eine wirklich schwere Arbeit. Es ist schrecklich! Ich
       hoffe, Sie genie\xDFen es trotzdem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: Stadt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Schwanzvorfahrer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: Waffenauswahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Map Select.
     m_Metadata:
       m_Items: []
   references:

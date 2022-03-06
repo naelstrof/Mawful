@@ -104,6 +104,7 @@ Material:
     - _AlphaCutoff: 0.5
     - _Blend: 0
     - _BulgeAmount: 0.24
+    - _BulgeClip: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0

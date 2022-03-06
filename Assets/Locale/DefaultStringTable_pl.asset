@@ -468,7 +468,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638657
-    m_Localized: "Do\u0142\u0105cz do prywatnej gry."
+    m_Localized: "Do\u0142\u0105cz do prywatnej gry"
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638658
@@ -536,7 +536,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638674
-    m_Localized: "Lewy pok\xF3j"
+    m_Localized: "Lewy pok\xF3j."
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638675
@@ -586,7 +586,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300125638686
     m_Localized: "Prosty hardhat chroni\u0107 g\u0142ow\u0119 przed spadaj\u0105cymi
-      gruzem."
+      gruzami."
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638687
@@ -693,6 +693,22 @@ MonoBehaviour:
   - m_Id: 963451521732608
     m_Localized: "Jest to naprawd\u0119 ci\u0119\u017Cka praca w toku. To okropne!
       Mam nadziej\u0119, \u017Ce tak si\u0119 spodoba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: Miasto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Cock Vore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: Selekcja broni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Mapa Wybierz
     m_Metadata:
       m_Items: []
   references:

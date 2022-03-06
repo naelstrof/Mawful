@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300108861441
-    m_Localized: "\xC2m thanh"
+    m_Localized: "\xC2m thanh."
     m_Metadata:
       m_Items: []
   - m_Id: 4300113055744
@@ -310,7 +310,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300117250084
-    m_Localized: "N\xE2ng c\u1EA5p l\u1EA5y."
+    m_Localized: "N\xE2ng c\u1EA5p l\u1EA5y"
     m_Metadata:
       m_Items: []
   - m_Id: 4300117250085
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444382
-    m_Localized: "C\u01B0\u1EE1i ng\u1EF1a"
+    m_Localized: "C\u01B0\u1EE1i ng\u1EF1a."
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444383
@@ -471,7 +471,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638657
-    m_Localized: "Tham gia tr\xF2 ch\u01A1i ri\xEAng t\u01B0."
+    m_Localized: "Tham gia tr\xF2 ch\u01A1i ri\xEAng t\u01B0"
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638658
@@ -701,6 +701,22 @@ MonoBehaviour:
     m_Localized: "\u0110\xE2y l\xE0 m\u1ED9t c\xF4ng vi\u1EC7c th\u1EF1c s\u1EF1
       r\u1EA5t nhi\u1EC1u \u0111ang ti\u1EBFn tri\u1EC3n. Th\u1EADt kinh kh\u1EE7ng!
       T\xF4i hy v\u1ECDng b\u1EA1n th\xEDch n\xF3 d\xF9 sao \u0111i n\u1EEFa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: "Th\xE0nh ph\u1ED1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: "G\xE0 vore."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "L\u1EF1a ch\u1ECDn v\u0169 kh\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: "B\u1EA3n \u0111\u1ED3 Ch\u1ECDn"
     m_Metadata:
       m_Items: []
   references:

@@ -687,8 +687,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 963451521732608
-    m_Localized: "Este \xE9 um trabalho realmente pesado em andamento. \xC9 horr\xEDvel!
+    m_Localized: "Este \xE9 um trabalho muito pesado em andamento. \xC9 horr\xEDvel!
       Espero que voc\xEA goste de qualquer maneira."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: Cidade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Galo vore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: Arma Select.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Mapa Select.
     m_Metadata:
       m_Items: []
   references:

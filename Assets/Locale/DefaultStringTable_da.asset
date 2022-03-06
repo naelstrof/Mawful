@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4300117250062
     m_Localized: "DETTE SPIL skildrer FIKTIONELLE KARAKTERER, DER DELTAGER I <#FF0000>
-      SEKSUEL EKSPLITIGT ADF\xC6RD <#FFFFFF>\n\nVED AT KLIKKE P\xC5 <#008CFF> SPIL
+      SEKSUEL EKSPLITIGT ADF\xC6RD <#FFFFFF>\n\nVED AT KLIKKE p\xE5 <#008CFF> SPIL
       <#FFFFFF> ER DU AT ERKL\xC6RE AT:"
     m_Metadata:
       m_Items: []
@@ -431,7 +431,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444381
-    m_Localized: "Boob st\xF8rrelse"
+    m_Localized: "Boob st\xF8rrelse."
     m_Metadata:
       m_Items: []
   - m_Id: 4300121444382
@@ -686,6 +686,22 @@ MonoBehaviour:
   - m_Id: 963451521732608
     m_Localized: "Dette er et virkelig tungt arbejde i gang. Det er forf\xE6rdeligt!
       Jeg h\xE5ber du nyder det alligevel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: City.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Pik vore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "V\xE5ben Select."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: "Kort V\xE6lg"
     m_Metadata:
       m_Items: []
   references:

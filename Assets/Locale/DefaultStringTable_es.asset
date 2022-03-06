@@ -688,5 +688,21 @@ MonoBehaviour:
       Espero que lo disfrutes de todos modos."
     m_Metadata:
       m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: Ciudad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Gallo vore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: Arma seleccionada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Mapa Seleccionar
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -688,5 +688,21 @@ MonoBehaviour:
       que vous l'appr\xE9cierez quand m\xEAme."
     m_Metadata:
       m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: Ville
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Vore de coq
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "S\xE9lectionner une arme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Carte Select
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

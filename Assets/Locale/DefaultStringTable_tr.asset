@@ -469,7 +469,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638658
-    m_Localized: "Hen\xFCz oda bulunamad\u0131."
+    m_Localized: "Hen\xFCz oda bulunamad\u0131 ..."
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638659
@@ -688,6 +688,22 @@ MonoBehaviour:
   - m_Id: 963451521732608
     m_Localized: "Bu, devam eden ger\xE7ekten a\u011F\u0131r bir i\u015Ftir. Bu korkun\xE7!
       Umar\u0131m yine de tad\u0131n\u0131 \xE7\u0131kar\u0131rs\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: "\u015Eehir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Horoz vore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "Silah Se\xE7in"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: "Harita Se\xE7"
     m_Metadata:
       m_Items: []
   references:

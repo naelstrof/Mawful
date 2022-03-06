@@ -691,5 +691,21 @@ MonoBehaviour:
       egy\xE9bk\xE9nt \xE9lvezed."
     m_Metadata:
       m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: "V\xE1ros"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: "Kakas vigy\xE1z"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "Fegyver kiv\xE1laszt\xE1sa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: "T\xE9rk\xE9p kiv\xE1laszt\xE1sa"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

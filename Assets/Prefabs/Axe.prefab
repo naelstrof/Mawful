@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e60a9c13c43e24bbe76e9cfc98512f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPack: {fileID: 11400000, guid: dc5bf240363a960428e9621c8006d271, type: 2}
   lastPosition: {x: 0, y: 0, z: 0}
   friction: 0
   position: {x: 100, y: 0, z: 100}

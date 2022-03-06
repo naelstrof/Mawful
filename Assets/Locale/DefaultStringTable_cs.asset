@@ -642,7 +642,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300129832963
-    m_Localized: "Vytvo\u0159it vlastn\xED hru"
+    m_Localized: "Vytvo\u0159it vlastn\xED hru."
     m_Metadata:
       m_Items: []
   - m_Id: 4300129832964
@@ -692,6 +692,22 @@ MonoBehaviour:
   - m_Id: 963451521732608
     m_Localized: "Jedn\xE1 se o opravdu t\u011B\u017Ekou pr\xE1ci. Je to stra\u0161n\xE9!
       Douf\xE1m, \u017Ee se v\xE1m to l\xEDb\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: "M\u011Bsto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Kohout Vore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "Zbra\u0148 Select"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Mapa Select
     m_Metadata:
       m_Items: []
   references:

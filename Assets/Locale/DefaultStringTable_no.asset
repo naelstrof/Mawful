@@ -686,5 +686,21 @@ MonoBehaviour:
       Jeg h\xE5per du liker det uansett."
     m_Metadata:
       m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: By
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Kuk vore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: "V\xE5pen Velg det"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Kart Velg det
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

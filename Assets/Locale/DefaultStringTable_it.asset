@@ -568,7 +568,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638682
-    m_Localized: Framerate target.
+    m_Localized: Target framerate.
     m_Metadata:
       m_Items: []
   - m_Id: 4300125638683
@@ -692,6 +692,22 @@ MonoBehaviour:
   - m_Id: 963451521732608
     m_Localized: "Questo \xE8 un lavoro davvero pesante in corso. \xC8 orribile!
       Spero ti piaccia comunque."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764677136384
+    m_Localized: "Citt\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079424
+    m_Localized: Cock frore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079425
+    m_Localized: Arma seleziona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3263764719079426
+    m_Localized: Mappa Seleziona.
     m_Metadata:
       m_Items: []
   references:
