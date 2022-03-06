@@ -14,7 +14,7 @@ public class CockVoreWeapon : Weapon {
     private PlayerInput input;
     public Animator animator;
     public PlayerDisplayController controller;
-    private bool waiting = false;
+    private int waiting;
     private Vector3 originalBarScale;
     private Color originalBarColor;
     [SerializeField]
@@ -23,6 +23,7 @@ public class CockVoreWeapon : Weapon {
     private Renderer barContainer;
     private float timeout;
     private bool paused;
+    private bool attacking = false;
     public override void Start() {
         cooldown.changed += OnCooldownChanged;
         OnCooldownChanged(cooldown.GetValue());
@@ -33,16 +34,7 @@ public class CockVoreWeapon : Weapon {
     }
     void OnStateTriggered(string name) {
         if (name == "DickAttacked") {
-            Character target = AquireTarget();
-            if (target == null) {
-                waiting = false;
-                // Whiffs reset cooldown
-                lastFireTime = Time.time - timeToWait;
-                return;
-            }
-            CameraFollower.SetGloryVore(true);
-            voreTarget.Vaccum(target);
-            player.SetFreeze(true);
+            attacking = true;
         }
     }
     void OnEnable() {
@@ -55,13 +47,14 @@ public class CockVoreWeapon : Weapon {
         voreTarget.voreFinished -= OnVoreComplete;
         controller.eventTriggered -= OnStateTriggered;
         input.actions["Ultimate"].performed -= OnUltimateButton;
-        waiting = false;
+        waiting = 0;
+        attacking = false;
         player.SetFreeze(false);
         CameraFollower.SetGloryVore(false);
         animator.SetBool("DickAttack", false);
     }
     void OnVoreComplete(Character other) {
-        waiting = false;
+        waiting--;
     }
     void OnCooldownChanged(float newCooldown) {
         timeToWait = (1f/newCooldown)*defaultCooldown;
@@ -89,11 +82,26 @@ public class CockVoreWeapon : Weapon {
     }
     public IEnumerator UltimateRoutine() {
         animator.SetBool("DickAttack", true);
-        waiting = true;
-        timeout = Time.time + 8f;
-        while((waiting || !isActiveAndEnabled || paused) && Time.time < timeout) {
+        while(!attacking) {
             yield return null;
         }
+        for (int i=0;i<projectileCount.GetValue();i++) {
+            Character target = AquireTarget();
+            if (target == null) {
+                continue;
+            }
+            waiting++;
+            CameraFollower.SetGloryVore(true);
+            voreTarget.Vaccum(target);
+            player.SetFreeze(true);
+            float progress= (float)i/(projectileCount.GetValue());
+            yield return new WaitForSeconds(2f*(1f-progress)+1f);
+        }
+        timeout = Time.time + 8f;
+        while((waiting!=0 || !isActiveAndEnabled || paused) && Time.time < timeout) {
+            yield return null;
+        }
+        attacking = false;
         player.SetFreeze(false);
         CameraFollower.SetGloryVore(false);
         animator.SetBool("DickAttack", false);

@@ -863,12 +863,54 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
     m_TableEntryReference:
-      m_KeyId: 4300121444382
+      m_KeyId: 3263764719079424
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  upgrades: []
+  upgrades:
+  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+  - countModifier: {fileID: 0}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:

@@ -1890,6 +1890,22 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4829638982802748200, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: projectileCount.modifiers.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    - target: {fileID: 4829638982802748200, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: projectileCount.modifiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    - target: {fileID: 4829638982802748200, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: projectileCount.modifiers.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    - target: {fileID: 4829638982802748200, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: projectileCount.modifiers.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     - target: {fileID: 4974871420462100123, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

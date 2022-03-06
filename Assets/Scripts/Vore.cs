@@ -101,7 +101,7 @@ public class Vore : MonoBehaviour {
         gulp.PlayOneShot(source);
         voreFinished?.Invoke(character);
     }
-    protected virtual async void Update() {
+    protected virtual void Update() {
         for(int i=0;i<blendIDs.Count;i++) {
             float blendAmount = 0f;
             for(int j=voreBumps.Count-1;j>=0;j--) {
