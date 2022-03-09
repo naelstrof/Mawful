@@ -99,13 +99,14 @@ public class Vore : MonoBehaviour {
     }
     protected virtual void Digest(Character character) {
         gulp.PlayOneShot(source);
+        Score.AddScore(character.GetComponentInChildren<MeshFilter>().mesh, character.GetComponentInChildren<MeshRenderer>().sharedMaterial, character.health.GetValue());
         voreFinished?.Invoke(character);
     }
     protected virtual void Update() {
         for(int i=0;i<blendIDs.Count;i++) {
             float blendAmount = 0f;
             for(int j=voreBumps.Count-1;j>=0;j--) {
-                float percentage = (float)(i+1)/(float)blendIDs.Count;
+                float percentage = (float)i/(float)blendIDs.Count;
                 float offset = voreBumps[j].duration * blendPlacements.Evaluate(percentage);
                 float t = (Time.time-(voreBumps[j].startTime+offset))/voreBumps[j].duration;
                 float sample = voreBumpCurve.Evaluate(t);

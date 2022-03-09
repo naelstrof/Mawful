@@ -7,6 +7,13 @@
       "dependencies": {},
       "hash": "c4cd8d470aaf02a7a26fc08d956e9c032c1911cd"
     },
+    "com.naelstrof.penetrationtech": {
+      "version": "https://github.com/naelstrof/UnityPenetrationTech.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "cfbdfb2fe44eb3cdfd477f68a60655ed57080749"
+    },
     "com.naelstrof.unityscriptablesettings": {
       "version": "https://github.com/naelstrof/UnityScriptableSettings.git#upm",
       "depth": 0,
@@ -24,7 +31,7 @@
       "dependencies": {}
     },
     "com.unity.addressables": {
-      "version": "1.19.18",
+      "version": "1.19.19",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -171,7 +178,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.29",
+      "version": "1.1.31",
       "depth": 0,
       "source": "registry",
       "dependencies": {

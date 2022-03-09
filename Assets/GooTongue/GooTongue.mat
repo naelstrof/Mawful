@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BulgeLanes_normal:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 236f8c747dc5c8f488e26fe8896968d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BulgeLanes_output:
@@ -108,8 +108,10 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _ClipDick: 1
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DeformBalls: 1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -117,9 +119,20 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _InvisibleWhenInside: 0
     - _Metallic: 0
+    - _NoBlendshapes: 0
     - _OcclusionStrength: 1
+    - _OrificeLength: 1.5985383
     - _Parallax: 0.005
+    - _PenetrationDepth: -1
+    - _PenetratorBlendshapeMultiplier: 0.64999974
+    - _PenetratorBulgePercentage: 0.5
+    - _PenetratorCumActive: 0
+    - _PenetratorCumProgress: 0
+    - _PenetratorLength: 1.8922292
+    - _PenetratorSquishPullAmount: 0
+    - _PinchBuffer: 0.1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 1
@@ -133,6 +146,15 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OrificeOutWorldPosition1: {r: 0.00010361927, g: -0.33483055, b: -0.0031162808, a: 0}
+    - _OrificeOutWorldPosition2: {r: 0.00010040845, g: -0.66488385, b: -0.003032217, a: 0}
+    - _OrificeOutWorldPosition3: {r: 0.00010040845, g: -1.0048838, b: -0.003032217, a: 0}
+    - _OrificeWorldNormal: {r: -0.101790905, g: 0.60169315, b: -0.9360688, a: 0}
+    - _OrificeWorldPosition: {r: 0.00010361927, g: -0.0048305453, b: -0.0031162808, a: 0}
+    - _PenetratorForward: {r: -0.00000007488013, g: 1, b: -0.000000062515845, a: 0}
+    - _PenetratorOrigin: {r: -0.000000087308656, g: -0.026380295, b: -0.00000051580713, a: 0}
+    - _PenetratorRight: {r: 1, g: -0.000000044190482, b: -0.00000002284346, a: 0}
+    - _PenetratorUp: {r: -0.000000012175244, g: -0.00000015465614, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1069169335777301815
