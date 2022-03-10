@@ -705,5 +705,9 @@ MonoBehaviour:
     m_Localized: Kartta Valitse
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: 'Kokemuspisteet saivat:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

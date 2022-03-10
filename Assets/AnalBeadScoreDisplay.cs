@@ -6,13 +6,15 @@ using UnityEngine.VFX;
 public class AnalBeadScoreDisplay : MonoBehaviour {
     [SerializeField]
     private AnalBeadPool analBeadPool;
-    private List<Score.ScorePacket> packets;
+    private List<ScoreCard> packets;
     [SerializeField]
     private AnimationCurve scaleCurve;
     [SerializeField]
     private float beadsPerSecond = 1f;
     [SerializeField]
     private float timeScale = 1f;
+    private float maxBeadsPerSecond = 5f;
+    private float maxTimeScale = 5f;
     private float duration = 5f;
     [SerializeField]
     private Transform startTransform;
@@ -40,10 +42,12 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
     private Vector3[] lineRendererPositions;
     [SerializeField]
     private VisualEffect effect;
+    [SerializeField]
+    private XPPanelDisplay panelDisplay;
     void Start() {
         currentPacket = 0;
         packets = Score.GetScores();
-        packets.Sort((a,b)=>1-2*Random.Range(0,1));
+        Score.ClearScore();
         positions = new Vector3[5];
         positionCurve = new CatmullRomPositionSpline();
         lineRendererPositions = new Vector3[20];
@@ -54,10 +58,46 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
         effect.enabled = true;
         lineRenderer.enabled = true;
     }
-    public void PacketReachedEnd(Score.ScorePacket packet) {
+    public void PacketReachedEnd(ScoreCard packet) {
         targetVore.Vaccum(null);
+        panelDisplay.AddScore(packet);
+    }
+    public void Skip() {
+        if (!enabled && Score.HasScore()) {
+            Begin();
+            return;
+        }
+        if (timeScale < maxTimeScale) {
+            timeScale = maxTimeScale;
+            return;
+        }
+        if (beadsPerSecond < maxBeadsPerSecond) {
+            beadsPerSecond = maxBeadsPerSecond;
+            return;
+        }
+        if (currentPacket <= packets.Count && maxBeadsPerSecond != 0) {
+            for(int i=currentPacket;i<packets.Count;i++) {
+                PacketReachedEnd(packets[i]);
+            }
+            targetVore.Flush();
+            timer = float.MaxValue;
+            currentPacket = packets.Count;
+            enabled = false;
+            effect.enabled = false;
+            lineRenderer.enabled = false;
+            return;
+        }
+        // If we're all done
+        if (currentPacket >= packets.Count || maxBeadsPerSecond == 0) {
+            LevelHandler.StartLevelStatic("MainMenu");
+            return;
+        }
     }
     void Update() {
+        timeScale = Mathf.MoveTowards(timeScale, maxTimeScale, Time.deltaTime*0.1f);
+        if (timeScale >= maxTimeScale) {
+            beadsPerSecond = Mathf.MoveTowards(beadsPerSecond, maxBeadsPerSecond, Time.deltaTime*0.1f);
+        }
         timer += Time.deltaTime*timeScale;
         float dist = Vector3.Distance(startTransform.position, endTransform.position);
         positions[0] = startTransform.position;
@@ -85,6 +125,7 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
             currentPacket++;
             if (currentPacket>=packets.Count) {
                 beadsPerSecond = 0f;
+                maxBeadsPerSecond = 0f;
             }
             buttCurveSampleTime = timer;
             penetrable.enabled = false;

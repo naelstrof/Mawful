@@ -712,5 +712,9 @@ MonoBehaviour:
     m_Localized: Map Select
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: 'Experience points gained:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

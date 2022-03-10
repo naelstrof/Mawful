@@ -713,5 +713,9 @@ MonoBehaviour:
     m_Localized: Kaart selecteren
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: 'Ervaringspunten opgedaan:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

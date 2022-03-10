@@ -710,5 +710,9 @@ MonoBehaviour:
     m_Localized: Mappa Seleziona.
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: 'Punti esperienza guadagnati:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

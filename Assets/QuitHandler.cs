@@ -14,7 +14,7 @@ public class QuitHandler : MonoBehaviour {
          Application.Quit();
 #endif
         } else {
-            if (Score.GetTotalScore() <= 0f) {
+            if (!Score.HasScore()) {
                 LevelHandler.StartLevelStatic("MainMenu");
             } else {
                 LevelHandler.StartLevelStatic("ScoreScreen");

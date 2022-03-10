@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityScriptableSettings;
 
 [RequireComponent(typeof(Camera))]
 public class CameraFollower : MonoBehaviour {
@@ -36,6 +37,8 @@ public class CameraFollower : MonoBehaviour {
     private float maxDeflection = 15f;
     private Vector2 deflection;
     private float zoom;
+    [SerializeField]
+    private VolumeSettingListener depth;
     void SetGloryVoreCam(bool glory) {
         gloryTweenTarget = glory?1f:0f;
         gloryModeChanged?.Invoke(glory);
@@ -85,6 +88,7 @@ public class CameraFollower : MonoBehaviour {
         }
         transform.position = Vector3.SmoothDamp(transform.position, transform.position + diff, ref vel, 0.1f);
         if (main) {
+            depth.SetDepth(Vector3.Distance(targetTransform.position, transform.position));
             listener.transform.position = Vector3.Lerp(transform.position, targetTransform.position, listenerDistance01);
             Shader.SetGlobalFloat("PlayerDistance", screenPosition.z*0.8f);
         }

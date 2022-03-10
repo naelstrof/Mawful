@@ -25,7 +25,6 @@ public class AnimationBatcher : PooledItem {
         startTime = Time.time;
     }
     void Start() {
-        startTime = UnityEngine.Random.Range(0f,10f);
         filter = GetComponent<MeshFilter>();
         defaultMaterial = GetComponent<Renderer>().sharedMaterial;
         character = GetComponentInParent<Character>();
@@ -55,12 +54,15 @@ public class AnimationBatcher : PooledItem {
         startTime = Time.time;
     }
     void Update() {
+        if (currentAnimation == null) {
+            return;
+        }
         float fFrames = (float)(currentAnimation.frames.Count-1);
         if (currentAnimation.loop) {
-            int frame = Mathf.RoundToInt(Mathf.Repeat(Time.time - startTime, fFrames/currentAnimation.framesPerSecond)*currentAnimation.framesPerSecond);
+            int frame = Mathf.RoundToInt(Mathf.Repeat((Time.time - startTime)*currentAnimation.framesPerSecond, fFrames));
             filter.sharedMesh = currentAnimation.frames[frame];
         } else {
-            int frame = Mathf.RoundToInt(Mathf.Min(Time.time - startTime, fFrames/currentAnimation.framesPerSecond)*currentAnimation.framesPerSecond);
+            int frame = Mathf.RoundToInt(Mathf.Min((Time.time - startTime)*currentAnimation.framesPerSecond, fFrames));
             filter.sharedMesh = currentAnimation.frames[frame];
         }
     }

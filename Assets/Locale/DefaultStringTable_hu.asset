@@ -707,5 +707,9 @@ MonoBehaviour:
     m_Localized: "T\xE9rk\xE9p kiv\xE1laszt\xE1sa"
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: 'Tapasztalati pontok:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

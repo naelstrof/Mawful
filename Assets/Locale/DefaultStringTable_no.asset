@@ -702,5 +702,9 @@ MonoBehaviour:
     m_Localized: Kart Velg det
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: "Opplev poeng oppn\xE5dd:"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983b3b5fc653a334c93b969fba9b4103, type: 3}
+  m_Name: ScoreCardFrennedy
+  m_EditorClassIdentifier: 
+  struggleAnimations:
+  - {fileID: 11400000, guid: 93c44caebf10ac74694949e6c77bb427, type: 2}
+  - {fileID: 11400000, guid: 10f14fe6113ed3340828783d8798de18, type: 2}
+  - {fileID: 11400000, guid: 20654a5a90cb0bf48b3d5d3fdfa9226d, type: 2}
+  - {fileID: 11400000, guid: 2ba23ae23f3e8e94baa7eadceb4b1e54, type: 2}
+  material: {fileID: 2100000, guid: c782f8ed180779140b0a50f87c90bc9f, type: 2}
+  characterSprite: {fileID: 21300000, guid: a1abb440e61ff894ba423c596d93d807, type: 3}

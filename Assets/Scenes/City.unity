@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3287e18ec9d97f14d94ab646dff48269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  packets: []
 --- !u!4 &410645869
 Transform:
   m_ObjectHideFlags: 0
@@ -1300,6 +1301,7 @@ MonoBehaviour:
   controlRotation: 0
   gloryScreenSpacePosition: {x: 0, y: 0, z: 0}
   letterboxRenderers: []
+  depth: {fileID: 0}
 --- !u!114 &1729696718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1694,6 +1696,7 @@ MonoBehaviour:
   letterboxRenderers:
   - {fileID: 2017671212}
   - {fileID: 1219650049}
+  depth: {fileID: 991161374}
 --- !u!114 &2089980667
 MonoBehaviour:
   m_ObjectHideFlags: 0

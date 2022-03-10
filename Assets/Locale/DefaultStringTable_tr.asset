@@ -706,5 +706,9 @@ MonoBehaviour:
     m_Localized: "Harita Se\xE7"
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: "Tecr\xFCbe puanlar\u0131 kazan\u0131ld\u0131:"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -710,5 +710,9 @@ MonoBehaviour:
     m_Localized: Mapa Select
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: "Z\xEDskan\xE9 body zku\u0161enost\xED:"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -21,14 +21,11 @@ public class VolumeSettingListener : MonoBehaviour {
         OnValueChange(postExposure);
         OnValueChange(dofOption);
     }
-    void Update() {
-        Camera cam = CameraFollower.GetCamera();
-        if (cam != null) {
-            DepthOfField depth;
-            if (!v.profile.TryGet<DepthOfField>(out depth)) { return; }
-            depth.focusDistance.Override(CameraFollower.StaticGetTargetScreenSpace().z*cam.farClipPlane + cam.nearClipPlane);
-            depth.mode.Override(DepthOfFieldMode.Bokeh);
-        }
+    public void SetDepth(float dist) {
+        DepthOfField depth;
+        if (!v.profile.TryGet<DepthOfField>(out depth)) { return; }
+        depth.focusDistance.Override(dist);
+        depth.mode.Override(DepthOfFieldMode.Bokeh);
     }
     void OnValueChange(ScriptableSetting option) {
         if (option == blurOption) {

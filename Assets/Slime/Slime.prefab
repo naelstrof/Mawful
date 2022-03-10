@@ -157,6 +157,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 001ae02bcb43cc040a5f6173c284621e, type: 2}
   radius: 0.5
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
+  scoreCard: {fileID: 11400000, guid: 9c99841a0d4c1ae4f8380f8d5f02d5da, type: 2}
   damage:
     modifiers: []
   audioSource: {fileID: 0}

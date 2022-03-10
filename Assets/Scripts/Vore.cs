@@ -99,8 +99,16 @@ public class Vore : MonoBehaviour {
     }
     protected virtual void Digest(Character character) {
         gulp.PlayOneShot(source);
-        Score.AddScore(character.scoreAnimation, character.GetComponentInChildren<MeshRenderer>().sharedMaterial, character.health.GetValue());
+        Score.AddScore(character.scoreCard);
         voreFinished?.Invoke(character);
+    }
+    public virtual void Flush() {
+        for(int i=0;i<voreBumps.Count;i++) {
+            Digest(voreBumps[i].character);
+        }
+        voreBumps.Clear();
+        source.Stop();
+        source.clip = null;
     }
     protected virtual void Update() {
         for(int i=0;i<blendIDs.Count;i++) {

@@ -710,5 +710,9 @@ MonoBehaviour:
     m_Localized: Map Select.
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: 'Erleben Sie Punkte, die gewonnen haben:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

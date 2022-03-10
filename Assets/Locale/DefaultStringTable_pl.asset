@@ -711,5 +711,9 @@ MonoBehaviour:
     m_Localized: Mapa Wybierz
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: "Zdobyte punkty do\u015Bwiadczenia:"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

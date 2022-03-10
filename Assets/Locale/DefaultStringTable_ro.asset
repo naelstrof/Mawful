@@ -705,5 +705,9 @@ MonoBehaviour:
     m_Localized: "Harta Selecta\u021Bi"
     m_Metadata:
       m_Items: []
+  - m_Id: 4634474477654016
+    m_Localized: "Punctele de experien\u021B\u0103 dob\xE2ndite:"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
