@@ -10,6 +10,13 @@ public class PooledItem : MonoBehaviour {
     public virtual void Awake() {
         pooledChildren = new List<PooledItem>();
         GetComponentsInChildren<PooledItem>(pooledChildren);
+
+        // Make sure we don't loop forever
+        for(int i=0;i<pooledChildren.Count;i++) {
+            if (pooledChildren[i].pooledChildren.Contains(this)) {
+                pooledChildren[i].pooledChildren.Remove(this);
+            }
+        }
         pooledChildren.Remove(this);
     }
     public virtual void Reset() {

@@ -17,14 +17,23 @@ public class AnimationBatcher : PooledItem {
     private Material goopMaterial;
     private float startTime;
     private Character character;
+    public BakedAnimation GetScoreAnimation() {
+        return struggles[UnityEngine.Random.Range(0,struggles.Count)];
+    }
+    public void SetAnimation(BakedAnimation animation) {
+        currentAnimation = animation;
+        startTime = Time.time;
+    }
     void Start() {
         startTime = UnityEngine.Random.Range(0f,10f);
         filter = GetComponent<MeshFilter>();
         defaultMaterial = GetComponent<Renderer>().sharedMaterial;
         character = GetComponentInParent<Character>();
-        character.health.depleted += OnDie;
-        character.startedVore += OnVoreStart;
-        currentAnimation = walk;
+        if (character != null) {
+            character.health.depleted += OnDie;
+            character.startedVore += OnVoreStart;
+            currentAnimation = walk;
+        }
         Pauser.pauseChanged += OnPauseChanged;
     }
     void OnDestroy() {

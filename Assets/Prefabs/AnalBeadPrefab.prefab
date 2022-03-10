@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3720369363571284547}
   - component: {fileID: 6171301029828127895}
   - component: {fileID: 5648901220768321467}
+  - component: {fileID: 5000768070625116432}
   m_Layer: 0
   m_Name: AnalBeadPrefab
   m_TagString: Untagged
@@ -136,3 +137,19 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5000768070625116432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7234052014528752397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9828ce5f14ae58f4faee2386d37b71ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walk: {fileID: 11400000, guid: fc7099ba024368346bd5da6065ebb1da, type: 2}
+  stunned: {fileID: 0}
+  struggles: []
+  goopMaterial: {fileID: 0}

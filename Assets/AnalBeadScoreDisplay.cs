@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class AnalBeadScoreDisplay : MonoBehaviour {
     [SerializeField]
@@ -24,6 +25,8 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
     [SerializeField]
     private SkinnedMeshRenderer player;
     private Vector3[] positions;
+    [SerializeField]
+    private Transform[] vfxBindedPositions;
     private CatmullRomPositionSpline positionCurve;
     [SerializeField]
     private AnimationCurve buttSampleCurve;
@@ -35,6 +38,8 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
     [SerializeField]
     private LineRenderer lineRenderer;
     private Vector3[] lineRendererPositions;
+    [SerializeField]
+    private VisualEffect effect;
     void Start() {
         currentPacket = 0;
         packets = Score.GetScores();
@@ -46,6 +51,7 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
     }
     public void Begin() {
         enabled = true;
+        effect.enabled = true;
         lineRenderer.enabled = true;
     }
     public void PacketReachedEnd(Score.ScorePacket packet) {
@@ -56,9 +62,13 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
         float dist = Vector3.Distance(startTransform.position, endTransform.position);
         positions[0] = startTransform.position;
         positions[1] = startTransform.position - startTransform.up*0.4f;
-        positions[2] = (startTransform.position*0.6f + endTransform.position*0.4f) + Vector3.down*dist*0.5f;
+        float jiggle = Mathf.Lerp((Mathf.Abs(Mathf.Sin(Time.time*3f))*Mathf.Abs(Mathf.Sin(Time.time*0.5f)-0.5f)+0.1f), 1f, 0.75f);
+        positions[2] = (startTransform.position*0.6f + endTransform.position*0.4f) + Vector3.down*dist*0.5f*jiggle;
         positions[3] = endTransform.position + endTransform.up*1.5f;
         positions[4] = endTransform.position;
+        for(int i=0;i<vfxBindedPositions.Length && i < positions.Length;i++) {
+            vfxBindedPositions[i].position = positions[i];
+        }
 
         positionCurve.SetTargetPositions(positions);
         for(int i=0;i<lineRendererPositions.Length;i++) {
@@ -79,7 +89,8 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
             buttCurveSampleTime = timer;
             penetrable.enabled = false;
         }
-        player.SetBlendShapeWeight(player.sharedMesh.GetBlendShapeIndex("ButtOpen"), buttSampleCurve.Evaluate(Mathf.Clamp01((timer-buttCurveSampleTime)/0.75f))*100f);
+        player.SetBlendShapeWeight(player.sharedMesh.GetBlendShapeIndex("OpenMouth"), buttSampleCurve.Evaluate(Mathf.Clamp01((timer-buttCurveSampleTime)/0.75f))*100f);
+        player.SetBlendShapeWeight(player.sharedMesh.GetBlendShapeIndex("NeckBulge"), buttSampleCurve.Evaluate(Mathf.Clamp01((timer-buttCurveSampleTime)/0.75f))*100f);
         player.SetBlendShapeWeight(player.sharedMesh.GetBlendShapeIndex("Fatten"), (1f-currentPacket/packets.Count)*100f);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Score : MonoBehaviour {
     [System.Serializable]
     public class ScorePacket {
-        public Mesh mesh;
+        public BakedAnimation mesh;
         public Material material;
         public float score;
     }
@@ -30,7 +30,7 @@ public class Score : MonoBehaviour {
     public static void Reset() {
         instance.packets.Clear();
     }
-    public static void AddScore(Mesh mesh, Material material, float score) {
+    public static void AddScore(BakedAnimation mesh, Material material, float score) {
         ScorePacket packet = new ScorePacket();
         packet.mesh = mesh;
         packet.material = material;

@@ -99,7 +99,7 @@ public class Vore : MonoBehaviour {
     }
     protected virtual void Digest(Character character) {
         gulp.PlayOneShot(source);
-        Score.AddScore(character.GetComponentInChildren<MeshFilter>().mesh, character.GetComponentInChildren<MeshRenderer>().sharedMaterial, character.health.GetValue());
+        Score.AddScore(character.scoreAnimation, character.GetComponentInChildren<MeshRenderer>().sharedMaterial, character.health.GetValue());
         voreFinished?.Invoke(character);
     }
     protected virtual void Update() {

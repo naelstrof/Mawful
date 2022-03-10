@@ -35,6 +35,7 @@ public class Character : PooledItem {
     protected bool beingVored = false;
     protected bool frozen;
     private Vector3 freezePosition;
+    public BakedAnimation scoreAnimation => GetComponentInChildren<AnimationBatcher>().GetScoreAnimation();
     public Attribute damage;
     public struct DamageInstance {
         public DamageInstance(float damage, Vector3 knockback) {

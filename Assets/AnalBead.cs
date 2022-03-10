@@ -5,9 +5,9 @@ using UnityEngine;
 public class AnalBead : PooledItem {
     private float startTime;
     private float duration;
-    private MeshFilter filter;
     private new MeshRenderer renderer;
     private Vector3 offset;
+    private AnimationBatcher batcher;
     private IPositionCurve positionCurve;
     [SerializeField]
     private AnimationCurve scaleCurve;
@@ -16,7 +16,7 @@ public class AnalBead : PooledItem {
     private bool triggered = false;
     public override void Awake() {
         base.Awake();
-        filter = GetComponent<MeshFilter>();
+        batcher = GetComponent<AnimationBatcher>();
         renderer = GetComponent<MeshRenderer>();
     }
     public void SetUpBead(Score.ScorePacket packet, IPositionCurve curve, AnalBeadScoreDisplay timerSource, float duration) {
@@ -26,7 +26,8 @@ public class AnalBead : PooledItem {
         startTime = timerSource.timer+0.2f;
         this.duration = duration;
         transform.rotation = Quaternion.Euler(UnityEngine.Random.Range(0,2)*180f,UnityEngine.Random.Range(-20f,20f), UnityEngine.Random.Range(0f,360f));
-        filter.sharedMesh = packet.mesh;
+        //filter.sharedMesh = packet.mesh;
+        batcher.SetAnimation(packet.mesh);
         renderer.sharedMaterial = packet.material;
         offset = renderer.bounds.center-transform.position;
         triggered = false;
