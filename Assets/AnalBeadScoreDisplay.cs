@@ -44,6 +44,8 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
     private VisualEffect effect;
     [SerializeField]
     private XPPanelDisplay panelDisplay;
+    [SerializeField]
+    private CanvasGroup damageShow;
     void Start() {
         currentPacket = 0;
         packets = Score.GetScores();
@@ -85,6 +87,7 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
             enabled = false;
             effect.enabled = false;
             lineRenderer.enabled = false;
+            damageShow.alpha = 1f;
             return;
         }
         // If we're all done
@@ -126,6 +129,7 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
             if (currentPacket>=packets.Count) {
                 beadsPerSecond = 0f;
                 maxBeadsPerSecond = 0f;
+                damageShow.alpha = 1f;
             }
             buttCurveSampleTime = timer;
             penetrable.enabled = false;

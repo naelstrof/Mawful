@@ -58,8 +58,8 @@ public class UpgradeSpawner : MonoBehaviour {
         foreach(Weapon weapon in Weapon.weapons) {
             if (!weapon.gameObject.activeSelf) {
                 if (currentChoice++ == choice) {
-                    newButton.transform.Find("Image").GetComponent<Image>().sprite = newWeapon;
-                    newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponName;
+                    newButton.transform.Find("Image").GetComponent<Image>().sprite = weapon.weaponCard.icon;
+                    newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponCard.localizedName;
                     //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = weapon.weaponName.GetLocalizedString();//"Weapon " + weapon.gameObject.name;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
                         weapon.gameObject.SetActive(true);
@@ -72,9 +72,9 @@ public class UpgradeSpawner : MonoBehaviour {
             }
             if (weapon.CanUpgrade()) {
                 if (currentChoice++ == choice) {
-                    newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponName;
+                    newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponCard.localizedName;
                     //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = "Upgrade " + weapon.gameObject.name;
-                    newButton.transform.Find("Image").GetComponent<Image>().sprite = upgradeWeapon;
+                    newButton.transform.Find("Image").GetComponent<Image>().sprite = weapon.weaponCard.icon;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
                         weapon.Upgrade();
                         gameObject.SetActive(false);

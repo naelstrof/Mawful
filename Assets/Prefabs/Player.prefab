@@ -125,15 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e3c657b081b29489f38f74bef2f8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 959889777496065
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  weaponCard: {fileID: 11400000, guid: 246162c9f21555947b057efc2f00a7d0, type: 2}
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -186,8 +178,6 @@ MonoBehaviour:
   speed:
     modifiers: []
   daggerFire: {fileID: 11400000, guid: a88ccf3f91b454b4fbafe40ad118a846, type: 2}
-  references:
-    version: 1
 --- !u!82 &6775893412083229993
 AudioSource:
   m_ObjectHideFlags: 0
@@ -859,15 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da368d9656668d44a918a1bd0479323d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 3263764719079424
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  weaponCard: {fileID: 11400000, guid: 4216e04216ca33840bc58e76f0fa6623, type: 2}
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -929,8 +911,6 @@ MonoBehaviour:
   controller: {fileID: 7084278285042572386}
   bar: {fileID: 2248306680727015296}
   barContainer: {fileID: 8300240788951293045}
-  references:
-    version: 1
 --- !u!82 &7221951160170617253
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1417,6 +1397,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5f5153e61ae20314689b8caec238adec, type: 2}
   radius: 0.25
   colorFlash: {r: 0.4245283, g: 0.082102165, b: 0.082102165, a: 0}
+  scoreCard: {fileID: 0}
   damage:
     modifiers:
     - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
@@ -2116,15 +2097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1963ce62a61307d42a29282646bc7643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 959889777496064
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  weaponCard: {fileID: 11400000, guid: 59efa7b969ebdce4e8d4505e2c720bef, type: 2}
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
@@ -2166,8 +2139,6 @@ MonoBehaviour:
   speed:
     modifiers: []
   whipPrefab: {fileID: 4961857443656139276, guid: d08810abf11ebfd43a144d8cdb3bf515, type: 3}
-  references:
-    version: 1
 --- !u!1 &3497111116916458203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,15 +2303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf53e88248b3ffc4b996c594cc200d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 959889777496066
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  weaponCard: {fileID: 11400000, guid: 47b2937169d521f4faa730658c4148d6, type: 2}
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -2391,8 +2354,6 @@ MonoBehaviour:
   speed:
     modifiers: []
   wandFire: {fileID: 11400000, guid: a88ccf3f91b454b4fbafe40ad118a846, type: 2}
-  references:
-    version: 1
 --- !u!82 &7986656898009221296
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2793,15 +2754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3f47f55ca745f46ab34ee788784943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 959889777496067
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  weaponCard: {fileID: 11400000, guid: 4f607d14a3e08c9498ccc1dd57afe3fd, type: 2}
   upgrades:
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
@@ -2844,8 +2797,6 @@ MonoBehaviour:
     modifiers: []
   hitSound: {fileID: 11400000, guid: b3381b2fbbcee204db7b1b850802789a, type: 2}
   garlicVisuals: {fileID: 6549988509822625336}
-  references:
-    version: 1
 --- !u!82 &266760407903384811
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3312,15 +3263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1334246df72a7488faa087214fac6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 959889731358720
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  weaponCard: {fileID: 11400000, guid: ee847430e4f77d44cb67898396bbe620, type: 2}
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
@@ -3362,8 +3305,6 @@ MonoBehaviour:
   speed:
     modifiers:
     - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
-  references:
-    version: 1
 --- !u!1 &8504847677514764730
 GameObject:
   m_ObjectHideFlags: 0

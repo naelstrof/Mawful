@@ -42,6 +42,7 @@ public class PlayerCharacter : Character {
         playerInput.actions["Pause"].started -= OnPausePerformed;
         playerInput.actions["GrabLook"].started -= OnGrabLookStarted;
         playerInput.actions["GrabLook"].canceled -= OnGrabLookFinished;
+        Score.TriggerEndTime();
         base.OnDestroy();
     }
     void OnPausePerformed(InputAction.CallbackContext ctx) {
@@ -60,6 +61,7 @@ public class PlayerCharacter : Character {
     }
     void OnWorldPathReady() {
         SetPositionAndVelocity(WorldGrid.instance.GetPathableGridElement().worldPosition, Vector3.zero);
+        Score.ClearScore();
     }
     void Update() {
         // Only look if we're on gamepad, or if the player has clicked the mouse in
@@ -89,6 +91,7 @@ public class PlayerCharacter : Character {
     public override void Die() {
         base.Die();
         enabled = false;
+        Score.TriggerEndTime();
         //gameObject.SetActive(false);
     }
     public override void FixedUpdate() {

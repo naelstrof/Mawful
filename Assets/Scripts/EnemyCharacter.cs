@@ -25,6 +25,10 @@ public class EnemyCharacter : Character {
         phased = true;
         dieSound?.PlayOneShot(audioSource);
     }
+    public override void BeHit(DamageInstance instance) {
+        base.BeHit(instance);
+        Score.AddDamage(instance.card, Mathf.Min(health.GetHealth(), instance.damage));
+    }
     public override void FixedUpdate() {
         base.FixedUpdate();
         if (!stunned) {

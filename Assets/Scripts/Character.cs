@@ -38,10 +38,12 @@ public class Character : PooledItem {
     public ScoreCard scoreCard;
     public Attribute damage;
     public struct DamageInstance {
-        public DamageInstance(float damage, Vector3 knockback) {
+        public DamageInstance(WeaponCard card, float damage, Vector3 knockback) {
+            this.card = card;
             this.damage = damage;
             this.knockback = knockback;
         }
+        public WeaponCard card;
         public float damage;
         public Vector3 knockback;
     }
@@ -137,9 +139,9 @@ public class Character : PooledItem {
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
             if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(Mathf.Min(health.GetHealth(),2f), Vector3.zero));
+                character.BeHit(new DamageInstance(null, Mathf.Min(health.GetHealth(),2f), Vector3.zero));
             } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(Mathf.Min(character.health.GetHealth(),2f), Vector3.zero));
+                this.BeHit(new DamageInstance(null, Mathf.Min(character.health.GetHealth(),2f), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;

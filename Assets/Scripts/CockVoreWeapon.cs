@@ -92,6 +92,7 @@ public class CockVoreWeapon : Weapon {
             }
             waiting++;
             CameraFollower.SetGloryVore(true);
+            Score.AddDamage(weaponCard, target.health.GetHealth());
             voreTarget.Vaccum(target);
             player.SetFreeze(true);
             float progress= (float)i/(projectileCount.GetValue());

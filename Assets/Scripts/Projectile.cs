@@ -11,6 +11,7 @@ public class Projectile : PooledItem {
     [Range(0f,1f)][SerializeField]
     protected float friction = 0f;
     public Vector3 position;
+    public WeaponCard weaponCard;
     [SerializeField]
     public float damage = 1f;
     public float radius = 1f;
@@ -51,7 +52,7 @@ public class Projectile : PooledItem {
     }
     protected void DoHit(EnemyCharacter character) {
         hitCount++;
-        character.BeHit(new Character.DamageInstance(damage, velocity*knockback));
+        character.BeHit(new Character.DamageInstance(weaponCard, damage, velocity*knockback));
 
         hitPack.PlayOneShot(character.audioSource);
         if (hitCount>=hitLimit) {

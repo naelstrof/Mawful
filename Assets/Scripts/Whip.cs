@@ -56,7 +56,7 @@ public class Whip : Weapon {
                         float vfxRadius = radius.GetValue()*0.6f;
                         if (Vector3.Distance(character.position, player.position+whips[i].transform.forward*dist) <= vfxRadius+character.radius) {
                             float knockbackAmount = 0.2f*dist;
-                            character.BeHit(new Character.DamageInstance(damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
+                            character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
                         }
                     }
                 }

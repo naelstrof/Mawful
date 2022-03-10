@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.Localization;
 
 public class Weapon : MonoBehaviour {
-    public LocalizedString weaponName;
+    //public LocalizedString weaponName;
+    [SerializeField]
+    public WeaponCard weaponCard;
     public static HashSet<Weapon> weapons = new HashSet<Weapon>();
     [System.Serializable]
     public class WeaponUpgrade {
@@ -69,5 +71,6 @@ public class Weapon : MonoBehaviour {
         p.damage = damage.GetValue();
         p.hitLimit = Mathf.CeilToInt(penetration.GetValue());
         p.radius = radius.GetValue();
+        p.weaponCard = weaponCard;
     }
 }
