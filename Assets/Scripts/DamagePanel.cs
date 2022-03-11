@@ -11,9 +11,9 @@ public class DamagePanel : MonoBehaviour {
     public void Setup(WeaponCard card, Score.WeaponDamage weaponDamage) {
         weaponIcon.sprite = card.icon;
         float timeHeld = (weaponDamage.endTime-weaponDamage.startTime);
-        float dps = (weaponDamage.totalDamage/timeHeld)*10f;
-        dpsText.text = "DPS " + dps.ToString("N0");
-        timeHeldText.text = Mathf.FloorToInt(timeHeld/60f).ToString("N0") + Mathf.Repeat(timeHeld,60f).ToString("N0");
+        float dps = (weaponDamage.totalDamage*10f/timeHeld);
+        dpsText.text = "DPS " + dps.ToString("0.00");
+        timeHeldText.text = Mathf.FloorToInt(timeHeld/60f).ToString("N0") + ":" + Mathf.Repeat(timeHeld,60f).ToString("00");
         totalDamageText.text = (weaponDamage.totalDamage*10f).ToString("N0");
     }
 }
