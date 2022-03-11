@@ -11,7 +11,7 @@ using UnityEditor;
 //using UnityEngine.Localization;
 
 public class Build {
-    static string[] scenes = {"Assets/Scenes/MainMenu.unity", "Assets/Scenes/City.unity" };
+    static string[] scenes = {"Assets/Scenes/MainMenu.unity", "Assets/Scenes/City.unity", "Assets/Scenes/ScoreScreen.unity" };
     private static string outputDirectory {
         get {
             string dir = Environment.GetEnvironmentVariable("BUILD_DIR");
