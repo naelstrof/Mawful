@@ -711,5 +711,13 @@ MonoBehaviour:
     m_Localized: "Pontos de experi\xEAncia ganhos:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Pontos de experi\xEAncia dispon\xEDveis:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: "Atualiza\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

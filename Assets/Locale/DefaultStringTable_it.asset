@@ -714,5 +714,13 @@ MonoBehaviour:
     m_Localized: 'Punti esperienza guadagnati:'
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: 'Punti esperienza disponibili:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Aggiornamenti
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -717,5 +717,13 @@ MonoBehaviour:
     m_Localized: 'Ervaringspunten opgedaan:'
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: 'Ervaringspunten beschikbaar:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Upgrades
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

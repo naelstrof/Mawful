@@ -723,5 +723,13 @@ MonoBehaviour:
     m_Localized: "\u0110i\u1EC3m kinh nghi\u1EC7m \u0111\u1EA1t \u0111\u01B0\u1EE3c:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "\u0110i\u1EC3m kinh nghi\u1EC7m c\xF3 s\u1EB5n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: "N\xE2ng c\u1EA5p"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

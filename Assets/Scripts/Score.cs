@@ -14,6 +14,7 @@ public class Score : MonoBehaviour {
     private Dictionary<WeaponCard,WeaponDamage> damageData;
     [SerializeField]
     private List<ScoreCard> packets;
+
     private static Score instance;
     void Awake() {
         if (instance != null) {
@@ -24,6 +25,13 @@ public class Score : MonoBehaviour {
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
+    public static float GetXP(ScoreCard type) {
+        float xp = PlayerPrefs.GetFloat(type.name, 0f);
+        return xp;
+    }
+    private void SetXP(ScoreCard type, float xp)  {
+        PlayerPrefs.SetFloat(type.name, xp);
+    }
     public static bool HasScore() {
         return instance.packets.Count > 0;
     }
@@ -32,6 +40,17 @@ public class Score : MonoBehaviour {
             if (pair.Value.endTime == 0f) {
                 pair.Value.endTime = Time.timeSinceLevelLoad;
             }
+        }
+
+        HashSet<ScoreCard> cardTypes = new HashSet<ScoreCard>(instance.packets);
+        foreach(ScoreCard card in cardTypes) {
+            float addedXP = 0f;
+            foreach(ScoreCard scoreCard in instance.packets) {
+                if (scoreCard == card) {
+                    addedXP++;
+                }
+            }
+            instance.SetXP(card, GetXP(card)+addedXP);
         }
     }
     public static void Reset() {

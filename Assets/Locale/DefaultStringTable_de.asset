@@ -714,5 +714,13 @@ MonoBehaviour:
     m_Localized: 'Erleben Sie Punkte, die gewonnen haben:'
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Erleben Sie Punkte zur Verf\xFCgung:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Upgrades
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

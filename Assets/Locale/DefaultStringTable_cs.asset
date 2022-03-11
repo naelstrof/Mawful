@@ -714,5 +714,13 @@ MonoBehaviour:
     m_Localized: "Z\xEDskan\xE9 body zku\u0161enost\xED:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Dostupn\xE9 body zku\u0161enost\xED:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Upgrady
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

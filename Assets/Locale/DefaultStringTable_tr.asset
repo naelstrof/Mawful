@@ -710,5 +710,13 @@ MonoBehaviour:
     m_Localized: "Tecr\xFCbe puanlar\u0131 kazan\u0131ld\u0131:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Tecr\xFCbe noktalar\u0131 mevcut:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: "Y\xFCkseltme"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

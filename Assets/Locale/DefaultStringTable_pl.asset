@@ -715,5 +715,13 @@ MonoBehaviour:
     m_Localized: "Zdobyte punkty do\u015Bwiadczenia:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Dost\u0119pne punkty do\u015Bwiadczenia:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Uaktualnienia
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

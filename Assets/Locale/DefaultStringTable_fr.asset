@@ -708,5 +708,13 @@ MonoBehaviour:
     m_Localized: "Points d'exp\xE9rience acquise:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Points d'exp\xE9rience disponibles:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: "Mises \xE0 niveau"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

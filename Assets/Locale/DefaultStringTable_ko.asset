@@ -725,5 +725,13 @@ MonoBehaviour:
     m_Localized: "\uACBD\uD5D8 \uD3EC\uC778\uD2B8\uAC00 \uC5BB\uC740 :"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "\uACBD\uD5D8 \uD3EC\uC778\uD2B8 :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: "\uC5C5\uADF8\uB808\uC774\uB4DC"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

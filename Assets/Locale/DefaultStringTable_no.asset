@@ -706,5 +706,13 @@ MonoBehaviour:
     m_Localized: "Opplev poeng oppn\xE5dd:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: 'Opplev poeng tilgjengelig:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Oppgraderinger
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

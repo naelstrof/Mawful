@@ -709,5 +709,13 @@ MonoBehaviour:
     m_Localized: "Punctele de experien\u021B\u0103 dob\xE2ndite:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Puncte de experien\u021B\u0103 disponibile:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Upgrade-uri
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

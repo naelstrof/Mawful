@@ -26,8 +26,8 @@ public class EnemyCharacter : Character {
         dieSound?.PlayOneShot(audioSource);
     }
     public override void BeHit(DamageInstance instance) {
-        base.BeHit(instance);
         Score.AddDamage(instance.card, Mathf.Min(health.GetHealth(), instance.damage));
+        base.BeHit(instance);
     }
     public override void FixedUpdate() {
         base.FixedUpdate();

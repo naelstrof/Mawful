@@ -15,10 +15,8 @@ public class MenuCamera : MonoBehaviour {
             return desiredPoint;
         }
     }
-    [SerializeField]
-    private MenuCameraTarget targetA;
-    [SerializeField]
-    private MenuCameraTarget targetB;
+    public MenuCameraTarget targetA;
+    public MenuCameraTarget targetB;
     public AudioListener listener;
     [Range(0f,1f)]
     public float listenerDistance01;
@@ -44,7 +42,7 @@ public class MenuCamera : MonoBehaviour {
         Vector3 movementB = desiredTargetPointB-realPointB;
 
         Vector3 diff = (movementA + movementB)*0.5f;
-        transform.position = Vector3.SmoothDamp(transform.position, transform.position - diff, ref vel, 0.1f);
+        transform.position = Vector3.SmoothDamp(transform.position, transform.position - diff, ref vel, 1f);
         listener.transform.position = Vector3.Lerp(transform.position, realPointA, listenerDistance01);
         Shader.SetGlobalFloat("PlayerDistance", targetA.screenSpacePosition.z*0.8f);
         depth.SetDepth(Vector3.Distance(realPointA, transform.position));

@@ -709,5 +709,13 @@ MonoBehaviour:
     m_Localized: 'Kokemuspisteet saivat:'
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: 'Kokemuspisteet saatavilla:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: "P\xE4ivitykset"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

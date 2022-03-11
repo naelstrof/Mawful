@@ -708,5 +708,13 @@ MonoBehaviour:
     m_Localized: "Erfaringspunkter opn\xE5et:"
     m_Metadata:
       m_Items: []
+  - m_Id: 4970538971041792
+    m_Localized: "Erfaringspoint til r\xE5dighed:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4972182714585088
+    m_Localized: Opgraderinger.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
