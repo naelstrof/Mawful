@@ -77,7 +77,7 @@ public class AnalBeadScoreDisplay : MonoBehaviour {
             beadsPerSecond = maxBeadsPerSecond;
             return;
         }
-        if (currentPacket <= packets.Count && maxBeadsPerSecond != 0) {
+        if (currentPacket < packets.Count && maxBeadsPerSecond != 0) {
             for(int i=currentPacket;i<packets.Count;i++) {
                 PacketReachedEnd(packets[i]);
             }
