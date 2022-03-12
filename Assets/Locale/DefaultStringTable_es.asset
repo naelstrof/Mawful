@@ -716,5 +716,57 @@ MonoBehaviour:
     m_Localized: Actualizaciones
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Instant\xE1neamente la polla de la criatura cercana. Invulnerable
+      por duraci\xF3n, y aumenta ligeramente el da\xF1o por todas las armas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "Dispone de goobs de goo frente al usuario. Capacidad r\xE1pida,
+      da\xF1os bajos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Dispara blobs de goo al enemigo m\xE1s cercano. Da\xF1os consistentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Incendios penetrantes boomerangs. Alto da\xF1o, dif\xEDcil de apuntar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "Una piscina de goo nocivo alrededor del usuario, el da\xF1o del
+      chip de \xE1rea de efecto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "L\xE1mite a la izquierda y la derecha, un buen da\xF1os en el \xE1rea
+      de efecto, un gran retraso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Contar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: "Da\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Demora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: "Penetraci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Radio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Velocidad del proyectil
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -724,5 +724,54 @@ MonoBehaviour:
     m_Localized: Upgrades
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: Instantly cock vore nearby creature. Invulnerable for duration,
+      and slightly increases damage for all weapons.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: Fires blobs of goo in front of the user. Fast firing, low damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: Fires blobs of goo at nearest enemy. Consistent damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: Fires piercing boomerangs. High damage, hard to aim.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: A pool of noxious goo around the user, area-of-effect chip damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: Whips to the left and right, good area-of-effect damage, high knockback.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Delay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Penetration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Projectile Speed
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -716,5 +716,56 @@ MonoBehaviour:
     m_Localized: Opgraderinger.
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "\xD8jeblikkeligt pik vore n\xE6rliggende v\xE6sen. Ulykkes for
+      varighed og \xF8ger lidt skade for alle v\xE5ben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "Br\xE6nder blobs af goo foran brugeren. Hurtig fyring, lav skade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Br\xE6nder blokke af goo p\xE5 n\xE6rmeste fjende. Konsekvent skade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Br\xE6nder piercing boomerangs. H\xF8j skade, sv\xE6rt at sigte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "En pulje af skadelig goo omkring brugeren, omr\xE5de-of-effect
+      chip skade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Pisker til venstre og h\xF8jre, god skade p\xE5 omr\xE5det, h\xF8j
+      knockback."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: "T\xE6lle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Skade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Forsinke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: "Tr\xE6nge ind"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Projektilhastighed
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

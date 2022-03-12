@@ -716,5 +716,59 @@ MonoBehaviour:
     m_Localized: "Mises \xE0 niveau"
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Instantan\xE9ment Cock Vore Cr\xE9ature \xE0 proximit\xE9. Invuln\xE9rable
+      \xE0 la dur\xE9e et augmente l\xE9g\xE8rement les d\xE9g\xE2ts pour toutes
+      les armes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "Incendies blobs de goo devant l'utilisateur. Tir rapide, faibles
+      d\xE9g\xE2ts."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Fires gars de goo \xE0 l'ennemi le plus proche. Dommages coh\xE9rents."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Incendies piercing boomerangs. Dommages \xE9lev\xE9s, difficiles
+      \xE0 viser."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "Une piscine de goo nocif autour de l'utilisateur, des d\xE9g\xE2ts
+      de la puce de zone d'effet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Whips \xE0 gauche et \xE0 droite, de bons endommag\xE9s de la zone
+      d'effet, haut rentr\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Compter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Dommage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Retard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: "P\xE9n\xE9tration"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Rayon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Vitesse de projectile
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

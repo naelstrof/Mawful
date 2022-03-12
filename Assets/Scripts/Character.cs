@@ -168,11 +168,6 @@ public class Character : PooledItem {
             newPosition.y = 0f;
         }
 
-        if (frozen) {
-            position = freezePosition;
-            return;
-        }
-
         if (!phased) {
             int collisionX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.collisionGridSize);
             int collisionY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.collisionGridSize);
@@ -182,6 +177,11 @@ public class Character : PooledItem {
             DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY), ref newPosition);
             DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX, collisionY+collisionYOffset), ref newPosition);
             DoCharacterCollision(WorldGrid.instance.GetCollisionGridElement(collisionX+collisionXOffset, collisionY+collisionYOffset), ref newPosition);
+        }
+
+        if (frozen) {
+            position = freezePosition;
+            return;
         }
 
         int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.pathGridSize);

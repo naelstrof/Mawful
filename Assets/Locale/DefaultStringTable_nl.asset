@@ -725,5 +725,57 @@ MonoBehaviour:
     m_Localized: Upgrades
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: Onmiddellijk pik voren in de buurt van wezen. Onkwetsbaar voor duur
+      en neemt de schade aan voor alle wapens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: BLOBS VAN GOO VOOR DE GEBRUIKER. Snel vuur, lage schade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: Brandt blobs van goo bij de dichtstbijzijnde vijand. Consistente
+      schade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: Branden doordringende boemerangs. Hoge schade, moeilijk te richten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: Een pool van schadelijke goo rondom de gebruiker, areaal-van-effect
+      chip-schade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: Zwepen naar links en rechts, goede areaal-van-effectschade, hoge
+      bakback.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Graaf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Schade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Vertraging
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Penetratie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Straal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Projectiel
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

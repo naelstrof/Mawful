@@ -139,9 +139,11 @@ MonoBehaviour:
     modifiers: []
   friction: 1
   health:
-    modifiers: []
+    modifiers:
+    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
   radius: 0.5
   colorFlash: {r: 1, g: 1, b: 1, a: 0}
+  scoreCard: {fileID: 11400000, guid: 2fc44f6d98df14c43860d80e383fbd23, type: 2}
   damage:
     modifiers: []
 --- !u!114 &304728222183438910
@@ -194,11 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.00000023841855
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalRotation.y

@@ -722,5 +722,56 @@ MonoBehaviour:
     m_Localized: Upgrades
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Sofort schwanz in der N\xE4he in der N\xE4he Kreatur. Unverwundbar
+      f\xFCr Dauer und erh\xF6ht die Sch\xE4digung f\xFCr alle Waffen leicht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: Feuert Blobs of Goo vor dem Benutzer. Schnellfeuerung, geringer
+      Schaden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Feuert Blobs of Goo am n\xE4chsten Feind. Konsistente Sch\xE4den."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: Feuer Piercing Bumerangs. Hoher Schaden, schwer zu zielen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "Ein Pool aus sch\xE4dlicher Goo um den Benutzer, der Effekt-Chipschaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Peitschen nach links und rechts, guter Besch\xE4digungsbereich,
+      hoher R\xFCckschlag."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Anzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: "Verz\xF6gern"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Penetration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Geschossgeschwindigkeit
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

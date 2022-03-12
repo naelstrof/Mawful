@@ -722,5 +722,56 @@ MonoBehaviour:
     m_Localized: Aggiornamenti
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: Istantaneamente il cazzo della creatura nelle vicinanze. Invulnerabile
+      per la durata e aumenta leggermente il danno per tutte le armi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: Fires Blobs di Goo davanti all'utente. Sparato veloce, basso danno.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Incendi blob di goo al nemico pi\xF9 vicino. Danno coerente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: Fires Piercing Boomerangs. Danno elevato, difficile da mirare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: Una piscina di goo nocivi attorno all'utente, danni ai chip di area
+      di effetto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: Si frusta a sinistra ea destra, danni di buona area di effetto,
+      alto knockback.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Contano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Danno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Ritardo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Penetrazione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Raggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: "Velocit\xE0 del proiettile"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

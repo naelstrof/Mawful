@@ -714,5 +714,55 @@ MonoBehaviour:
     m_Localized: Oppgraderinger
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "\xD8yeblikkelig kuk vore n\xE6rliggende skapning. Invulnerable
+      for varighet, og litt \xF8ker skaden for alle v\xE5pen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: Brenner blobs av goo foran brukeren. Rask avfyring, lav skade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Branner blobs av goo p\xE5 n\xE6rmeste fiende. Konsistent skade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Branner piercing boomerangs. H\xF8y skade, vanskelig \xE5 sikte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "Et basseng med skadelig goo rundt brukeren, skade p\xE5 omr\xE5de-av-effekt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Whips til venstre og h\xF8yre, god skade p\xE5 omr\xE5det, h\xF8y
+      knockback."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Telle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Skader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Forsinkelse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Penetrasjon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Prosjektil hastighet
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

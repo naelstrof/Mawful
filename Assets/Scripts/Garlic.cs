@@ -28,6 +28,9 @@ public class Garlic : Weapon {
     }
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {
+            while(Pauser.GetPaused()) {
+                yield return null;
+            }
             yield return timeToWait;
             for (int i=0;i<projectileCount.GetValue();i++) {
                 bool hit = false;

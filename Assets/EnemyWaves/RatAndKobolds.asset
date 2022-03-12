@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 8347615568578718693, guid: 7fc943033ac6b4d49b49bf92903b0249, type: 3}
   - {fileID: 8347615568578718693, guid: b4f7667f7cc9d114ab60100ae47a3cbc, type: 3}
   waveDuration: 50
-  spawnCount: 70
+  spawnCount: 130

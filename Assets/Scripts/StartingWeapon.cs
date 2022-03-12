@@ -11,5 +11,6 @@ public class StartingWeapon : MonoBehaviour {
                 weapon.gameObject.SetActive(false);
             }
         }
+        Weapon.weaponSetChanged?.Invoke(Weapon.weapons);
     }
 }

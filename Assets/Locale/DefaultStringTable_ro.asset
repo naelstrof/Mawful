@@ -717,5 +717,58 @@ MonoBehaviour:
     m_Localized: Upgrade-uri
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Instantaneu coco\u0219 creatur\u0103 \xEEn apropiere. Invulnerabil
+      pentru durat\u0103 \u0219i cre\u0219te u\u0219or daunele pentru toate armele."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "Incendiaz\u0103 Blobs de Goo \xEEn fa\u021Ba utilizatorului. Ardere
+      rapid\u0103, daune sc\u0103zute."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Incendiaz\u0103 blobs de goo la cel mai apropiat inamic. Daune
+      coerente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Incendierea bumerangilor piercing. Daune mari, greu de urm\u0103rit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "O piscin\u0103 de goo nocive \xEEn jurul utilizatorului, daune
+      de cip de zon\u0103-efect."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "B\u0103ie\u021Bi la st\xE2nga \u0219i la dreapta, deteriorarea
+      unei zone bune de efect, knockback ridicat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Numara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Deteriora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: "\xCEnt\xE2rziere"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Penetrare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: "Raz\u0103"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Viteza de proiectil
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -719,5 +719,57 @@ MonoBehaviour:
     m_Localized: "Atualiza\xE7\xF5es"
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Instantaneamente galo vore vizinho criatura. Invulner\xE1vel por
+      dura\xE7\xE3o, e aumenta ligeiramente os danos para todas as armas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "Inc\xEAndios flobs de goo na frente do usu\xE1rio. Disparo r\xE1pido,
+      baixo dano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Inc\xEAndios flobs de goo no inimigo mais pr\xF3ximo. Dano consistente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Inc\xEAndios bumerangs perfurantes. Alto dano, dif\xEDcil de apontar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "Uma piscina de goo nocivo em torno do usu\xE1rio, dano de chip
+      de \xE1rea de efeito."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Chicotes para a esquerda e direita, boa \xE1rea de dano de efeito,
+      altos knockback."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Contar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Dano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Atraso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: "Penetra\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: Raio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: "Velocidade de proj\xE9teis"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

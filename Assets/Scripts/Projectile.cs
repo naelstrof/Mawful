@@ -114,6 +114,11 @@ public class Projectile : PooledItem {
         //DoWallCollision(WorldGrid.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), newPosition);
     }
     public virtual void LateUpdate() {
+        float velMag = velocity.magnitude;
+        if (velMag > 0.0001f) {
+            transform.rotation = Quaternion.LookRotation(velocity, Vector3.up);
+        }
+        transform.localScale = Vector3.one*radius + Vector3.forward*velMag;
         transform.position = interpolatedPosition;
     }
     public override void Reset() {

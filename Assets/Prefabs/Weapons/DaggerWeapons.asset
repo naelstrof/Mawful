@@ -24,9 +24,9 @@ MonoBehaviour:
     m_LocalVariables: []
   localizedDescription:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 5319329942392832
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

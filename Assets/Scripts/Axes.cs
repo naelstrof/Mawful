@@ -16,6 +16,9 @@ public class Axes : Weapon {
     }
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {
+            while(Pauser.GetPaused()) {
+                yield return null;
+            }
             yield return timeToWait;
             float arc = projectileCount.GetValue()*5f;
             Quaternion rot = Quaternion.AngleAxis(-arc*0.5f, Vector3.up);

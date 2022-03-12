@@ -37,13 +37,15 @@ public class CockVoreWeapon : Weapon {
             attacking = true;
         }
     }
-    void OnEnable() {
+    protected override void OnEnable() {
+        base.OnEnable();
         voreTarget.voreFinished += OnVoreComplete;
         controller.eventTriggered += OnStateTriggered;
         input = GetComponentInParent<PlayerInput>();
         input.actions["Ultimate"].performed += OnUltimateButton;
     }
-    void OnDisable() {
+    protected override void OnDisable() {
+        base.OnDisable();
         voreTarget.voreFinished -= OnVoreComplete;
         controller.eventTriggered -= OnStateTriggered;
         input.actions["Ultimate"].performed -= OnUltimateButton;

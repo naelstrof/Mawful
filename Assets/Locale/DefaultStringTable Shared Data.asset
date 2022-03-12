@@ -699,6 +699,54 @@ MonoBehaviour:
     m_Key: UPGRADES
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Key: COCK_VORE_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Key: BLOB_LAUNCHER_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Key: AUTO_LAUNCHER_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Key: BOOMERANG_LAUNCHER_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Key: POOL_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Key: TENTACLE_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Key: STAT_COUNT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Key: STAT_DAMAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Key: STAT_COOLDOWN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Key: STAT_PENETRATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Key: STAT_RADIUS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Key: STAT_SPEED
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -31,4 +31,7 @@ public class Axe : Projectile {
         int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.pathGridSize);
         DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX,pathY), newPosition);
     }
+    public override void LateUpdate() {
+        transform.position = interpolatedPosition;
+    }
 }

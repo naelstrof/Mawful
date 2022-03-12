@@ -719,5 +719,58 @@ MonoBehaviour:
     m_Localized: "Friss\xEDt\xE9sek"
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Azonnal kakas vore adott l\xE9ny. S\xE9rthetetlen id\u0151tartam\xE1ra,
+      \xE9s enyh\xE9n n\xF6veli a sebz\xE9st az \xF6sszes fegyvert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "T\xFCzek fest\xE9kfoltok a ragacs el\u0151tt a felhaszn\xE1l\xF3.
+      Gyors \xE9get\xE9s, az alacsony k\xE1rosod\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "T\xFCzek foltok a ragacs a legk\xF6zelebbi ellens\xE9g. Egyenletes
+      k\xE1rokat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "T\xFCzek piercing bumer\xE1ng. Nagy k\xE1r, kem\xE9ny a c\xE9l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "A medence \xE1rtalmas ragacs a felhaszn\xE1l\xF3 k\xF6r\xE9, ter\xFClet-of-hat\xE1s
+      chip k\xE1rokat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Ostorok, hogy a bal \xE9s jobb, j\xF3 ter\xFClet-of-hat\xE1s k\xE1rosod\xE1st,
+      nagy knockback."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: "Sz\xE1mol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: "K\xE1r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: "K\xE9sleltet\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: "Behatol\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: "Sug\xE1r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: "L\xF6ved\xE9k"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

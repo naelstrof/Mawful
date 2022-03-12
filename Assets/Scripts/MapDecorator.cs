@@ -42,7 +42,7 @@ public class MapDecorator : MonoBehaviour {
         }
         GameObject obj = GameObject.Instantiate(decoration.prefabsToSpawn[UnityEngine.Random.Range(0,decoration.prefabsToSpawn.Count)], transform);
         obj.transform.localPosition = position+new Vector3(-5f+1.25f, 0f, -5f+1.25f);
-        obj.transform.localRotation = Quaternion.AngleAxis(90f*UnityEngine.Random.Range(0,3), Vector3.up);
+        obj.transform.localRotation = Quaternion.AngleAxis(90f*UnityEngine.Random.Range(0,3), Vector3.up)*Quaternion.AngleAxis(90f,Vector3.right);
         Character character = obj.GetComponentInChildren<Character>();
         if (character != null) {
             character.SetPositionAndVelocity(obj.transform.position, Vector3.zero);

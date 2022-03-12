@@ -43,6 +43,9 @@ public class Whip : Weapon {
     }
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {
+            while(Pauser.GetPaused()) {
+                yield return null;
+            }
             yield return timeToWait;
             for (int i=0;i<whips.Count;i++) {
                 float aimAngle = Vector3.Dot(CameraFollower.GetCamera().transform.right, player.fireDir) > 0f ? 0f : 180f;

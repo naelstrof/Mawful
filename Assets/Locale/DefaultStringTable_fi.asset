@@ -717,5 +717,58 @@ MonoBehaviour:
     m_Localized: "P\xE4ivitykset"
     m_Metadata:
       m_Items: []
+  - m_Id: 5319329904644096
+    m_Localized: "Heti kukko huomaa l\xE4hist\xF6ll\xE4 olevaa olentoa. Irrottamaton
+      kesto ja hieman lis\xE4\xE4 vahinkoa kaikille aseille."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392832
+    m_Localized: "Tulipalot GOO: n blobs k\xE4ytt\xE4j\xE4n edess\xE4. Nopea ampuminen,
+      alhainen vahinko."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392833
+    m_Localized: "Tulipalot GOO: n blobs l\xE4himp\xE4\xE4n viholliseen. Johdonmukainen
+      vahinko."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392834
+    m_Localized: "Tulipalot l\xE4vistykset boomerangs. Korkea vahinko, vaikea tavoite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392835
+    m_Localized: "Alueellinen haitallinen goo k\xE4ytt\xE4j\xE4n ymp\xE4rill\xE4,
+      alueen vaikuttava siru vaurio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319329942392836
+    m_Localized: "Hy\xF6kk\xE4\xE4 vasemmalle ja oikealle, hyv\xE4 alue-vaurioituminen,
+      korkea knockback."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529280
+    m_Localized: Kreivi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529281
+    m_Localized: Vahingoittaa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529282
+    m_Localized: Viive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529283
+    m_Localized: Tunkeutuminen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529284
+    m_Localized: "S\xE4de"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337045474529285
+    m_Localized: Ammusnopeus
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

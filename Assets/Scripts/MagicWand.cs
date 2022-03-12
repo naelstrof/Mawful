@@ -36,6 +36,9 @@ public class MagicWand : Weapon {
     }
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {
+            while(Pauser.GetPaused()) {
+                yield return null;
+            }
             yield return timeToWait;
             Character target = AquireTarget();
             for (int i=0;i<projectileCount.GetValue();i++) {

@@ -7,6 +7,12 @@ using UnityEngine.Localization.Components;
 
 public class UpgradeSpawner : MonoBehaviour {
     [SerializeField]
+    private Transform targetSpawnTransform;
+    [SerializeField]
+    private Image descriptionImage;
+    [SerializeField]
+    private TMPro.TMP_Text descriptionText;
+    [SerializeField]
     private GameObject buttonPrefab;
     private List<GameObject> buttons;
     private HashSet<int> takenChoices;
@@ -53,7 +59,7 @@ public class UpgradeSpawner : MonoBehaviour {
             choice = UnityEngine.Random.Range(0, maxChoices);
         }
         takenChoices.Add(choice);
-        GameObject newButton = GameObject.Instantiate(buttonPrefab, transform);
+        GameObject newButton = GameObject.Instantiate(buttonPrefab, targetSpawnTransform);
         int currentChoice = 0;
         foreach(Weapon weapon in Weapon.weapons) {
             if (!weapon.gameObject.activeSelf) {
@@ -63,9 +69,14 @@ public class UpgradeSpawner : MonoBehaviour {
                     //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = weapon.weaponName.GetLocalizedString();//"Weapon " + weapon.gameObject.name;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
                         weapon.gameObject.SetActive(true);
+                        Weapon.weaponSetChanged?.Invoke(Weapon.weapons);
                         gameObject.SetActive(false);
                         Pauser.SetPaused(false);
                     });
+                    newButton.GetComponent<SelectHandler>().onSelect += (eventData)=>{
+                        descriptionImage.sprite = weapon.weaponCard.icon;
+                        descriptionText.text = weapon.weaponCard.localizedDescription.GetLocalizedString();
+                    };
                     return newButton;
                 }
                 continue;
@@ -80,6 +91,10 @@ public class UpgradeSpawner : MonoBehaviour {
                         gameObject.SetActive(false);
                         Pauser.SetPaused(false);
                     });
+                    newButton.GetComponent<SelectHandler>().onSelect += (eventData)=>{
+                        descriptionImage.sprite = weapon.weaponCard.icon;
+                        descriptionText.text = weapon.GetUpgradeText();
+                    };
                     return newButton;
                 }
             }
