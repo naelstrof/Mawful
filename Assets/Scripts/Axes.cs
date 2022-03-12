@@ -23,7 +23,7 @@ public class Axes : Weapon {
             float arc = projectileCount.GetValue()*5f;
             Quaternion rot = Quaternion.AngleAxis(-arc*0.5f, Vector3.up);
             for (int i=0;i<projectileCount.GetValue();i++) {
-                Vector3 updir = new Vector3(-1,0,1).normalized;
+                Vector3 updir = Vector3.ProjectOnPlane(CameraFollower.GetCamera().transform.forward, Vector3.up).normalized;
                 float angle = Vector3.Angle(player.fireDir, updir);
                 Vector3 aimDir = Vector3.RotateTowards(player.fireDir, updir, angle*0.8f*Mathf.Deg2Rad, 10f);
 
