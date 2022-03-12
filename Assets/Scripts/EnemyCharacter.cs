@@ -37,8 +37,8 @@ public class EnemyCharacter : Character {
             wishDir = Vector3.zero;
         }
     }
-    public override void Reset() {
-        base.Reset();
+    public override void Reset(bool recurse = true) {
+        base.Reset(recurse);
         stunned = false;
         phased = false;
     }

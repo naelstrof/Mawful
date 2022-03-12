@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
+  m_Name: ACar
+  m_EditorClassIdentifier: 
+  framesPerSecond: 15
+  animationClip: {fileID: 0}
+  animatedMeshPrefab: {fileID: 0}
+  loop: 1
+  frames:
+  - {fileID: 289301614986012343, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}
+  - {fileID: 289301614986012343, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}

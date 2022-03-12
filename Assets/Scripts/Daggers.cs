@@ -13,11 +13,11 @@ public class Daggers : Weapon {
         source = GetComponent<AudioSource>();
         cooldown.changed += OnCooldownChanged;
         OnCooldownChanged(cooldown.GetValue());
-        perProjectileWait = new WaitForSeconds(0.10f);
         base.Start();
     }
     void OnCooldownChanged(float newCooldown) {
         timeToWait = new WaitForSeconds(1f/newCooldown);
+        perProjectileWait = new WaitForSeconds(0.1f*(1f/newCooldown));
     }
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {
@@ -30,7 +30,9 @@ public class Daggers : Weapon {
                 if (!ProjectilePool.StaticTryInstantiate(out magicBolt)) { continue; }
                 daggerFire.PlayOneShot(source);
                 SetUpProjectile(magicBolt);
-                magicBolt.SetPositionAndVelocity(player.interpolatedPosition, player.fireDir*speed.GetValue());
+                // Give it a little spread... Otherwise really hard to aim
+                Vector3 firedir = Quaternion.AngleAxis(UnityEngine.Random.Range(-7f,7f), Vector3.up)*player.fireDir;
+                magicBolt.SetPositionAndVelocity(player.interpolatedPosition, firedir*speed.GetValue());
                 yield return perProjectileWait;
             }
         }

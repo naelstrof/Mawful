@@ -719,32 +719,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "An\u0131nda horoz en yak\u0131ndaki yarat\u0131k. S\xFCre i\xE7in
-      yenilmez ve t\xFCm silahlar i\xE7in hasar\u0131 biraz artt\u0131r\u0131r."
+    m_Localized: "An\u0131nda yak\u0131ndaki bir yarat\u0131\u011F\u0131n vore--
+      Bekle .. ile ne ??"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Kullan\u0131c\u0131n\u0131n \xF6n\xFCndeki goo bloblar\u0131n\u0131
-      ate\u015F eder. H\u0131zl\u0131 ate\u015Fleme, d\xFC\u015F\xFCk hasar."
+    m_Localized: "\xD6n\xFCmdeki goo bloblar\u0131 ate\u015Fler. H\u0131zl\u0131
+      ate\u015Fleme, d\xFC\u015F\xFCk hasar."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "En yak\u0131n d\xFC\u015Fmana goo bloblar\u0131 ate\u015Fler. Tutarl\u0131
-      hasar."
+    m_Localized: "En yak\u0131n yarat\u0131kta goo bloblar\u0131n\u0131 ate\u015Fler.
+      Tutarl\u0131 hasar."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Boomerang'lar\u0131 piercing ate\u015Fler. Y\xFCksek hasar, ama\xE7lanmas\u0131
-      zor."
+    m_Localized: "PERCICING BOOMERANGS! Y\xFCksek hasar, ama\xE7lanmas\u0131 zor."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Kullan\u0131c\u0131 \xE7evresinde zararl\u0131 bir goo havuzu,
-      etkisi alan\u0131 hasar\u0131."
+    m_Localized: "Art\u0131k etraf\u0131mda havuzlar, etkisi alan\u0131 hasar\u0131."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Sol ve sa\u011Fa, iyi etki alan\u0131 hasar\u0131, y\xFCksek k\u0131nama."
+    m_Localized: "Sol ve sa\u011Fa, y\xFCksek k\u0131nama ile etkisi hasar\u0131."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -756,7 +754,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Gecikme
+    m_Localized: "Yang\u0131n h\u0131z\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -769,6 +767,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Mermi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: Ekstra kalp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "WHOA !!! Her \u015Fey \xE7ok yava\u015F g\xF6r\xFCn\xFCyor. \xC7ift
+      yang\u0131n h\u0131z\u0131, yar\u0131 hasar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: "Goo yap\u0131mc\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Daha da fazla Goo! \xC7ok var."
     m_Metadata:
       m_Items: []
   references:

@@ -718,32 +718,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Heti kukko huomaa l\xE4hist\xF6ll\xE4 olevaa olentoa. Irrottamaton
-      kesto ja hieman lis\xE4\xE4 vahinkoa kaikille aseille."
+    m_Localized: "V\xE4litt\xF6m\xE4sti l\xE4heinen olento - odota .. minun mit\xE4?"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Tulipalot GOO: n blobs k\xE4ytt\xE4j\xE4n edess\xE4. Nopea ampuminen,
-      alhainen vahinko."
+    m_Localized: "Tulipalot goo blobs edess\xE4ni. Nopea ampuminen, alhainen vahinko."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Tulipalot GOO: n blobs l\xE4himp\xE4\xE4n viholliseen. Johdonmukainen
-      vahinko."
+    m_Localized: "Tulipalot Blobs of Goo l\xE4himm\xE4n olennon. Johdonmukainen vahinko."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Tulipalot l\xE4vistykset boomerangs. Korkea vahinko, vaikea tavoite."
+    m_Localized: Palauta Boomerangs! Korkea vahinko, vaikea tavoite.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Alueellinen haitallinen goo k\xE4ytt\xE4j\xE4n ymp\xE4rill\xE4,
-      alueen vaikuttava siru vaurio."
+    m_Localized: "Se altaat ymp\xE4rilleni nyt, aluekohtainen siru vaurio."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Hy\xF6kk\xE4\xE4 vasemmalle ja oikealle, hyv\xE4 alue-vaurioituminen,
-      korkea knockback."
+    m_Localized: Ruosaa vasemmalle ja oikealle alueelle aiheuttamat vahingot, joilla
+      on suuri knockback.
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -755,7 +751,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Viive
+    m_Localized: Palonopeus
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -768,6 +764,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Ammusnopeus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Ylim\xE4\xE4r\xE4inen syd\xE4n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "WHOA !!! Kaikki n\xE4ytt\xE4\xE4 niin hitaasti. Kaksinkertainen
+      palokorkeus, puolet vahinkoa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Goo-tuottaja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Viel\xE4 enemm\xE4n Gooa! Siell\xE4 on niin paljon."
     m_Metadata:
       m_Items: []
   references:

@@ -59,7 +59,7 @@ public class CockVoreWeapon : Weapon {
         waiting--;
     }
     void OnCooldownChanged(float newCooldown) {
-        timeToWait = (1f/newCooldown)*defaultCooldown;
+        timeToWait = (1f/newCooldown)*defaultCooldown+10f;
     }
     void OnUltimateButton(InputAction.CallbackContext context) {
         if (Time.time - lastFireTime > timeToWait) {
@@ -98,7 +98,7 @@ public class CockVoreWeapon : Weapon {
             voreTarget.Vaccum(target);
             player.SetFreeze(true);
             float progress= (float)i/(projectileCount.GetValue());
-            yield return new WaitForSeconds(2f*(1f-progress)+1f);
+            yield return new WaitForSeconds((1f-progress)+0.8f);
         }
         timeout = Time.time + 8f;
         while((waiting!=0 || !isActiveAndEnabled || paused) && Time.time < timeout) {

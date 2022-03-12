@@ -21,7 +21,7 @@ public class WorldGrid : MonoBehaviour {
     public delegate void CharacterAction(Character character);
     private List<List<CollisionGridElement>> collisionGrid = new List<List<CollisionGridElement>>();
     private List<List<PathGridElement>> pathGrid = new List<List<PathGridElement>>();
-    private static Collider[] staticColliders = new Collider[4];
+    private static Collider[] staticColliders = new Collider[32];
     private HashSet<PathGridElement> openGraph;
     private PathGridElement lastElement;
     //private  HashSet<GridElement> closedGraph;

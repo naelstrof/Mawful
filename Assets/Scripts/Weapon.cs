@@ -7,21 +7,18 @@ public class Weapon : MonoBehaviour {
     //public LocalizedString weaponName;
     [SerializeField]
     public WeaponCard weaponCard;
-    public static HashSet<Weapon> weapons = new HashSet<Weapon>();
-    public delegate void WeaponSetChangedAction(HashSet<Weapon> weapons);
-    public static WeaponSetChangedAction weaponSetChanged;
     [SerializeField]
-    private LocalizedString countText;
+    protected LocalizedString countText;
     [SerializeField]
-    private LocalizedString damageText;
+    protected LocalizedString damageText;
     [SerializeField]
-    private LocalizedString cooldownText;
+    protected LocalizedString cooldownText;
     [SerializeField]
-    private LocalizedString penetrationText;
+    protected LocalizedString penetrationText;
     [SerializeField]
-    private LocalizedString radiusText;
+    protected LocalizedString radiusText;
     [SerializeField]
-    private LocalizedString speedText;
+    protected LocalizedString speedText;
     [System.Serializable]
     private class WeaponUpgrade {
         public AttributeModifier countModifier;
@@ -37,7 +34,7 @@ public class Weapon : MonoBehaviour {
     public virtual int GetUpgradeLevel() {
         return currentUpgrade;
     }
-    private string GenerateUpgradeLine(LocalizedString name, AttributeModifier modifier) {
+    protected string GenerateUpgradeLine(LocalizedString name, AttributeModifier modifier) {
         if (modifier == null) {
             return "";
         }
@@ -62,8 +59,8 @@ public class Weapon : MonoBehaviour {
     public virtual int GetUpgradeTotal() {
         return upgrades.Count;
     }
-    public virtual bool CanUpgrade() {
-        return currentUpgrade < upgrades.Count;
+    public bool CanUpgrade() {
+        return GetUpgradeLevel() < GetUpgradeTotal();
     }
     public virtual void Upgrade() {
         WeaponUpgrade upgrade = upgrades[currentUpgrade++];
@@ -73,7 +70,6 @@ public class Weapon : MonoBehaviour {
         penetration.AddModifier(upgrade.penetrationModifier);
         radius.AddModifier(upgrade.radiusModifier);
         speed.AddModifier(upgrade.speedModifier);
-        weaponSetChanged?.Invoke(weapons);
     }
     public Attribute projectileCount;
     public Attribute damage;
@@ -83,8 +79,6 @@ public class Weapon : MonoBehaviour {
     public Attribute speed;
     protected PlayerCharacter player;
     protected virtual void Awake() {
-        weapons.Add(this);
-        weaponSetChanged?.Invoke(weapons);
         Pauser.pauseChanged += OnPauseChanged;
     }
     protected virtual void OnEnable() {
@@ -95,8 +89,6 @@ public class Weapon : MonoBehaviour {
         StopAllCoroutines();
     }
     protected virtual void OnDestroy() {
-        weapons.Remove(this);
-        weaponSetChanged?.Invoke(weapons);
         Pauser.pauseChanged -= OnPauseChanged;
     }
     protected virtual void OnPauseChanged(bool paused) {

@@ -723,30 +723,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: Istantaneamente il cazzo della creatura nelle vicinanze. Invulnerabile
-      per la durata e aumenta leggermente il danno per tutte le armi.
+    m_Localized: Florare istantaneamente una creatura vicina ... Aspetta ... con
+      il mio cosa ??
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: Fires Blobs di Goo davanti all'utente. Sparato veloce, basso danno.
+    m_Localized: Incendi Blobs di Goo di fronte a me. Sparato veloce, basso danno.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Incendi blob di goo al nemico pi\xF9 vicino. Danno coerente."
+    m_Localized: "Incendi Blobs di Goo alla creatura pi\xF9 vicina. Danno coerente."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: Fires Piercing Boomerangs. Danno elevato, difficile da mirare.
+    m_Localized: Pericing Boomerangs! Danno elevato, difficile da mirare.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: Una piscina di goo nocivi attorno all'utente, danni ai chip di area
-      di effetto.
+    m_Localized: Potrai intorno a me ora, danni ai trucioli di area.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: Si frusta a sinistra ea destra, danni di buona area di effetto,
-      alto knockback.
+    m_Localized: Fruste a sinistra e destra, danni all'area di effetto con alto knockback.
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -758,7 +756,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Ritardo
+    m_Localized: Tasso di fuoco
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -771,6 +769,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: "Velocit\xE0 del proiettile"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: Cuore extra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Tutto sembra cos\xEC lento. Doppio tasso di fuoco, met\xE0
+      danno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Produttore Goo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Ancora pi\xF9 goo! C'\xE8 cos\xEC tanto."
     m_Metadata:
       m_Items: []
   references:

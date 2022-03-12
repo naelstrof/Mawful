@@ -22,7 +22,7 @@ public class Character : PooledItem {
     private Coroutine hitRoutine;
     protected Vector3 wishDir;
     [SerializeField]
-    protected Attribute speed;
+    public Attribute speed;
     [Range(0f,1f)][SerializeField]
     protected float friction;
     protected bool phased = false;
@@ -35,6 +35,8 @@ public class Character : PooledItem {
     protected bool beingVored = false;
     protected bool frozen;
     private Vector3 freezePosition;
+    [SerializeField]
+    private bool invulnerable = false;
     public ScoreCard scoreCard;
     public Attribute damage;
     public struct DamageInstance {
@@ -80,7 +82,7 @@ public class Character : PooledItem {
         return true;
     }
     public virtual void BeHit(DamageInstance instance) {
-        if (health.GetHealth() <= 0f || frozen) {
+        if (health.GetHealth() <= 0f || frozen || invulnerable) {
             return;
         }
         MeshFloater floater;
@@ -139,9 +141,9 @@ public class Character : PooledItem {
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
             if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(null, Mathf.Min(health.GetHealth(),2f), Vector3.zero));
+                character.BeHit(new DamageInstance(null, Mathf.Min(health.GetHealth()*0.5f,1.5f), Vector3.zero));
             } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(null, Mathf.Min(character.health.GetHealth(),2f), Vector3.zero));
+                this.BeHit(new DamageInstance(null, Mathf.Min(character.health.GetHealth()*0.5f,1.5f), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
@@ -197,8 +199,8 @@ public class Character : PooledItem {
     public virtual void LateUpdate() {
         transform.position = interpolatedPosition;
     }
-    public override void Reset() {
-        base.Reset();
+    public override void Reset(bool recurse = true) {
+        base.Reset(recurse);
         enabled = !Pauser.GetPaused();
         beingVored = false;
         health.Heal(99999f);

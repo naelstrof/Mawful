@@ -7,6 +7,8 @@ using UnityEngine.Localization.Components;
 
 public class UpgradeSpawner : MonoBehaviour {
     [SerializeField]
+    private WeaponSet weaponSet;
+    [SerializeField]
     private Transform targetSpawnTransform;
     [SerializeField]
     private Image descriptionImage;
@@ -32,7 +34,7 @@ public class UpgradeSpawner : MonoBehaviour {
     }
     int GetAllChoices() {
         int count = 0;
-        foreach(Weapon weapon in Weapon.weapons) {
+        foreach(Weapon weapon in weaponSet.GetAllWeapons()) {
             if (!weapon.gameObject.activeSelf || weapon.CanUpgrade()) {
                 count++;
             }
@@ -61,15 +63,14 @@ public class UpgradeSpawner : MonoBehaviour {
         takenChoices.Add(choice);
         GameObject newButton = GameObject.Instantiate(buttonPrefab, targetSpawnTransform);
         int currentChoice = 0;
-        foreach(Weapon weapon in Weapon.weapons) {
+        foreach(Weapon weapon in weaponSet.GetAllWeapons()) {
             if (!weapon.gameObject.activeSelf) {
                 if (currentChoice++ == choice) {
                     newButton.transform.Find("Image").GetComponent<Image>().sprite = weapon.weaponCard.icon;
                     newButton.GetComponentInChildren<LocalizeStringEvent>().StringReference = weapon.weaponCard.localizedName;
                     //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = weapon.weaponName.GetLocalizedString();//"Weapon " + weapon.gameObject.name;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
-                        weapon.gameObject.SetActive(true);
-                        Weapon.weaponSetChanged?.Invoke(Weapon.weapons);
+                        weaponSet.ActivateWeapon(weapon);
                         gameObject.SetActive(false);
                         Pauser.SetPaused(false);
                     });
@@ -87,7 +88,7 @@ public class UpgradeSpawner : MonoBehaviour {
                     //newButton.GetComponentInChildren<TMPro.TMP_Text>().text = "Upgrade " + weapon.gameObject.name;
                     newButton.transform.Find("Image").GetComponent<Image>().sprite = weapon.weaponCard.icon;
                     newButton.GetComponent<Button>().onClick.AddListener(()=>{
-                        weapon.Upgrade();
+                        weaponSet.UpgradeWeapon(weapon);
                         gameObject.SetActive(false);
                         Pauser.SetPaused(false);
                     });

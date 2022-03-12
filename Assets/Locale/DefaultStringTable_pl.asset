@@ -724,32 +724,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Natychmiast kutas gore w pobli\u017Cu. Niezwodny na czas trwania
-      i nieznacznie zwi\u0119ksza obra\u017Cenia dla wszystkich broni."
+    m_Localized: "Natychmiast go przera\u017Ca pobliskie stworzenie - czekaj .. z
+      moim co?"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Firy Blobs of Goo przed u\u017Cytkownikiem. Szybkie wypalanie,
-      niskie obra\u017Cenia."
+    m_Localized: "Fires Blobs of Goo przede mn\u0105. Szybkie wypalanie, niskie obra\u017Cenia."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Ogrzewa blobe of goo przy najbli\u017Cszym wroga. Sp\xF3jne uszkodzenia."
+    m_Localized: "Ogrzewa bloje z goo przy najbli\u017Cszym stworzeniu. Sp\xF3jne
+      uszkodzenie."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Po\u017Cary przebijaj\u0105ce bumerangs. Wysokie obra\u017Cenia,
-      trudne do celu."
+    m_Localized: "Du\u017Co Bumerangs! Wysokie obra\u017Cenia, trudne do celu."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Basen szkodliwych goo wok\xF3\u0142 u\u017Cytkownika, obra\u017Cenia
-      obra\u017Ce\u0144 wi\xF3r\xF3w."
+    m_Localized: "Baseny wok\xF3\u0142 mnie teraz, obra\u017Cenia obra\u017Ce\u0144
+      wi\xF3rowych."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Bicze do lewej i prawej, dobrej obj\u0119tych uszkodze\u0144, wysoki
-      zwrotka."
+    m_Localized: "Bicze do lewej i prawej, obszarze obra\u017Ce\u0144 z wysokim wyrzuceniem."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -761,7 +759,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: "Op\xF3\u017Anienie"
+    m_Localized: "Szybko\u015B\u0107 ognia"
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -774,6 +772,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: "Pr\u0119dko\u015B\u0107 pocisku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: Dodatkowe serce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Wszystko wydaje si\u0119 tak powolne. Podw\xF3jna szybko\u015B\u0107
+      ognia, w po\u0142owie obra\u017Ce\u0144."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Producent goo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Jeszcze wi\u0119cej goo! Jest tak wiele."
     m_Metadata:
       m_Items: []
   references:

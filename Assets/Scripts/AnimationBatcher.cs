@@ -66,8 +66,8 @@ public class AnimationBatcher : PooledItem {
             filter.sharedMesh = currentAnimation.frames[frame];
         }
     }
-    public override void Reset() {
-        base.Reset();
+    public override void Reset(bool recurse = true) {
+        base.Reset(recurse);
         if (defaultMaterial != null) {
             GetComponent<Renderer>().sharedMaterial = defaultMaterial;
         }

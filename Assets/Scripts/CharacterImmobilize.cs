@@ -26,10 +26,12 @@ public class CharacterImmobilize : PooledItem {
         targetCharacter.positionSet -= OnPositionSet;
     }
     void OnDestroy() {
-        targetCharacter.startedVore -= OnVore;
+        if (targetCharacter != null) {
+            targetCharacter.startedVore -= OnVore;
+        }
     }
-    public override void Reset() {
-        base.Reset();
+    public override void Reset(bool recurse) {
+        base.Reset(recurse);
         enabled = true;
     }
 }

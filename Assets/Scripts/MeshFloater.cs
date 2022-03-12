@@ -52,7 +52,7 @@ public class MeshFloater : PooledItem {
             gameObject.SetActive(false);
         }
     }
-    public override void Reset() {
-        base.Reset();
+    public override void Reset(bool recurse = true) {
+        base.Reset(recurse);
     }
 }

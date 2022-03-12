@@ -717,31 +717,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Instant\xE1neamente la polla de la criatura cercana. Invulnerable
-      por duraci\xF3n, y aumenta ligeramente el da\xF1o por todas las armas."
+    m_Localized: "Al instante, vore a una criatura cercana, \xA1espera ... con mi
+      qu\xE9?"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Dispone de goobs de goo frente al usuario. Capacidad r\xE1pida,
-      da\xF1os bajos."
+    m_Localized: "Dispara blobs de goo frente a m\xED. Capacidad r\xE1pida, da\xF1os
+      bajos."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Dispara blobs de goo al enemigo m\xE1s cercano. Da\xF1os consistentes."
+    m_Localized: "Dispara blobs de goo a la criatura m\xE1s cercana. Da\xF1os consistentes."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Incendios penetrantes boomerangs. Alto da\xF1o, dif\xEDcil de apuntar."
+    m_Localized: "\xA1Pericing boomerangs! Alto da\xF1o, dif\xEDcil de apuntar."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Una piscina de goo nocivo alrededor del usuario, el da\xF1o del
-      chip de \xE1rea de efecto."
+    m_Localized: "Piscina a mi alrededor ahora, da\xF1os de chips de \xE1rea de efecto."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "L\xE1mite a la izquierda y la derecha, un buen da\xF1os en el \xE1rea
-      de efecto, un gran retraso."
+    m_Localized: "Azota a la izquierda y derecha, el da\xF1o del \xE1rea de efecto
+      con un gran retorno."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -753,7 +752,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Demora
+    m_Localized: Velocidad de fuego
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -766,6 +765,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Velocidad del proyectil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Coraz\xF3n extra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Todo parece tan lento. Doble velocidad de incendio, medio
+      da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Productor de goo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "\xA1A\xFAn m\xE1s goo! Hay mucho."
     m_Metadata:
       m_Items: []
   references:

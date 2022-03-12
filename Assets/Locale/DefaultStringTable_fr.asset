@@ -717,33 +717,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Instantan\xE9ment Cock Vore Cr\xE9ature \xE0 proximit\xE9. Invuln\xE9rable
-      \xE0 la dur\xE9e et augmente l\xE9g\xE8rement les d\xE9g\xE2ts pour toutes
-      les armes."
+    m_Localized: "Adore instantan\xE9ment une cr\xE9ature \xE0 proximit\xE9-- Attendez
+      .. avec mon quoi ??"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Incendies blobs de goo devant l'utilisateur. Tir rapide, faibles
-      d\xE9g\xE2ts."
+    m_Localized: "Incendie des blobs de goo devant moi. Tir rapide, faibles d\xE9g\xE2ts."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Fires gars de goo \xE0 l'ennemi le plus proche. Dommages coh\xE9rents."
+    m_Localized: "Incendie des blobs de goo \xE0 la cr\xE9ature la plus proche. Dommages
+      coh\xE9rents."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Incendies piercing boomerangs. Dommages \xE9lev\xE9s, difficiles
-      \xE0 viser."
+    m_Localized: "Pering Boomerangs! Dommages \xE9lev\xE9s, difficiles \xE0 viser."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Une piscine de goo nocif autour de l'utilisateur, des d\xE9g\xE2ts
-      de la puce de zone d'effet."
+    m_Localized: "Il se plie autour de moi maintenant, des d\xE9g\xE2ts de la puce
+      de zone d'effet."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Whips \xE0 gauche et \xE0 droite, de bons endommag\xE9s de la zone
-      d'effet, haut rentr\xE9e."
+    m_Localized: "Whips \xE0 gauche et \xE0 droite, des dommages caus\xE9s \xE0 la
+      zone d'effet avec une hauteur recul\xE9e."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -755,7 +753,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Retard
+    m_Localized: Taux d'incendie
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -768,6 +766,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Vitesse de projectile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Coeur suppl\xE9mentaire"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Tout semble si lent. Double rythme d'incendie, moiti\xE9
+      de d\xE9g\xE2ts."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Producteur de goo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: Encore plus goo! Il y a tellement beaucoup.
     m_Metadata:
       m_Items: []
   references:

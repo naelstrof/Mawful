@@ -747,6 +747,22 @@ MonoBehaviour:
     m_Key: STAT_SPEED
     m_Metadata:
       m_Items: []
+  - m_Id: 5397053008564224
+    m_Key: WEAPON_EXTRA_HEART
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Key: EXTRA_HEART_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Key: WEAPON_GOO_PRODUCER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Key: GOO_PRODUCER_DESCRIPTION
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

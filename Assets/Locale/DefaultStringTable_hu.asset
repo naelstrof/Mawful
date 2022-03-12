@@ -720,32 +720,32 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Azonnal kakas vore adott l\xE9ny. S\xE9rthetetlen id\u0151tartam\xE1ra,
-      \xE9s enyh\xE9n n\xF6veli a sebz\xE9st az \xF6sszes fegyvert."
+    m_Localized: "Azonnal vigy\xE1zzon egy k\xF6zeli teremtm\xE9nyre - v\xE1rjon
+      .. Az \xE9n?"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "T\xFCzek fest\xE9kfoltok a ragacs el\u0151tt a felhaszn\xE1l\xF3.
-      Gyors \xE9get\xE9s, az alacsony k\xE1rosod\xE1s."
+    m_Localized: "T\xFCzek foltok goo el\u0151ttem. Gyors t\xFCzel\xE9s, alacsony
+      k\xE1rosod\xE1s."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "T\xFCzek foltok a ragacs a legk\xF6zelebbi ellens\xE9g. Egyenletes
-      k\xE1rokat."
+    m_Localized: "A legk\xF6zelebbi teremtm\xE9nyt t\u0171zi foltok. K\xF6vetkezetes
+      k\xE1r."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "T\xFCzek piercing bumer\xE1ng. Nagy k\xE1r, kem\xE9ny a c\xE9l."
+    m_Localized: "A boomerangok elh\xE1r\xEDt\xE1sa! Nagy k\xE1r, neh\xE9z c\xE9l."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "A medence \xE1rtalmas ragacs a felhaszn\xE1l\xF3 k\xF6r\xE9, ter\xFClet-of-hat\xE1s
-      chip k\xE1rokat."
+    m_Localized: "Mostant\xF3l k\xF6r\xFCl\xF6tte van, a ter\xFClet-of-effect chip
+      k\xE1rosod\xE1s."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Ostorok, hogy a bal \xE9s jobb, j\xF3 ter\xFClet-of-hat\xE1s k\xE1rosod\xE1st,
-      nagy knockback."
+    m_Localized: "A bal \xE9s jobb oldali ostorok, a hat\xE1sai k\xE1rosod\xE1s nagy
+      kopog\xE1s\xE1val."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -757,7 +757,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: "K\xE9sleltet\xE9s"
+    m_Localized: "T\xFCzel\xE9si sebess\xE9g"
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -770,6 +770,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: "L\xF6ved\xE9k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Extra sz\xEDv"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "WHOA !!! Minden olyan lass\xFAnak t\u0171nik. Dupla t\u0171zsebess\xE9g,
+      f\xE9l k\xE1rosod\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Goo producer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "M\xE9g t\xF6bb goo! Annyira van."
     m_Metadata:
       m_Items: []
   references:

@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03364dffbcdef8542919aa5a1e5d7a7c, type: 3}
-  m_Name: ASomething
+  m_Script: {fileID: 11500000, guid: acf0077ce7063534488e9115d47ad16e, type: 3}
+  m_Name: Double
   m_EditorClassIdentifier: 
-  framesPerSecond: 15
-  animationClip: {fileID: 0}
-  animatedMeshPrefab: {fileID: 0}
-  loop: 1
-  frames:
-  - {fileID: 289301614986012343, guid: 1e37ddf6aec76924592efc27dd018040, type: 3}
+  baseValue: 0
+  diminishingReturnUp: 0
+  flatUp: 0
+  multiplier: 2

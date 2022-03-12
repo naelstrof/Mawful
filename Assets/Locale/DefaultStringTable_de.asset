@@ -723,30 +723,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Sofort schwanz in der N\xE4he in der N\xE4he Kreatur. Unverwundbar
-      f\xFCr Dauer und erh\xF6ht die Sch\xE4digung f\xFCr alle Waffen leicht."
+    m_Localized: Sofort ein nahe gelegenes Kreatur - Warten Sie .. mit meinem was?
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: Feuert Blobs of Goo vor dem Benutzer. Schnellfeuerung, geringer
-      Schaden.
+    m_Localized: Feuert Blobs of Goo vor mir. Schnellfeuerung, geringer Schaden.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Feuert Blobs of Goo am n\xE4chsten Feind. Konsistente Sch\xE4den."
+    m_Localized: "Feuert Blobs of Goo an der n\xE4chsten Kreatur. Konsistente Sch\xE4den."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: Feuer Piercing Bumerangs. Hoher Schaden, schwer zu zielen.
+    m_Localized: Peaking Boomerangs! Hoher Schaden, schwer zu zielen.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Ein Pool aus sch\xE4dlicher Goo um den Benutzer, der Effekt-Chipschaden."
+    m_Localized: Es liegt jetzt um mich herum, nun mit einem Effekt-Chipschaden.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Peitschen nach links und rechts, guter Besch\xE4digungsbereich,
-      hoher R\xFCckschlag."
+    m_Localized: "Peitschen nach links und rechts, Besch\xE4digung des Effekts mit
+      hohem R\xFCckschlag."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -758,7 +756,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: "Verz\xF6gern"
+    m_Localized: Schussrate
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -771,6 +769,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Geschossgeschwindigkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Ein zus\xE4tzliches Herz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Alles scheint so langsam zu sein. Doppelte Feuerrate,
+      halbe Besch\xE4digung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Goo Producer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: Noch mehr Goo! Da ist soviel.
     m_Metadata:
       m_Items: []
   references:

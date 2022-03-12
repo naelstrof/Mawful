@@ -718,32 +718,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Instantaneu coco\u0219 creatur\u0103 \xEEn apropiere. Invulnerabil
-      pentru durat\u0103 \u0219i cre\u0219te u\u0219or daunele pentru toate armele."
+    m_Localized: "Instantaneu o creatur\u0103 din apropiere ... a\u0219tepta\u021Bi
+      ... cu ce?"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Incendiaz\u0103 Blobs de Goo \xEEn fa\u021Ba utilizatorului. Ardere
-      rapid\u0103, daune sc\u0103zute."
+    m_Localized: "Incendierea blobs de goo \xEEn fa\u021Ba mea. Ardere rapid\u0103,
+      daune sc\u0103zute."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Incendiaz\u0103 blobs de goo la cel mai apropiat inamic. Daune
-      coerente."
+    m_Localized: "Incendiaz\u0103 Blobs de Goo la cea mai apropiat\u0103 creatur\u0103.
+      Daune coerente."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Incendierea bumerangilor piercing. Daune mari, greu de urm\u0103rit."
+    m_Localized: "Pericing Bumerangs! Daune mari, greu de urm\u0103rit."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "O piscin\u0103 de goo nocive \xEEn jurul utilizatorului, daune
-      de cip de zon\u0103-efect."
+    m_Localized: "Se bazeaz\u0103 \xEEn jurul meu acum, daune de cip de zon\u0103-efect."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "B\u0103ie\u021Bi la st\xE2nga \u0219i la dreapta, deteriorarea
-      unei zone bune de efect, knockback ridicat."
+    m_Localized: "Biciui\u021Bi la st\xE2nga \u0219i la dreapta, deteriorarea zonei
+      cu efect cu o lovitur\u0103 mare."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -755,7 +754,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: "\xCEnt\xE2rziere"
+    m_Localized: Rata de incendiu
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -768,6 +767,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Viteza de proiectil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Inima suplimentar\u0103."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Totul pare at\xE2t de lent. Rata dubl\u0103 de foc, deteriorarea
+      de jum\u0103tate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: "Produc\u0103tor de goo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: Chiar mai mult goo! E atat de mult.
     m_Metadata:
       m_Items: []
   references:

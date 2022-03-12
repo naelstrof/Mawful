@@ -720,30 +720,29 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Instantaneamente galo vore vizinho criatura. Invulner\xE1vel por
-      dura\xE7\xE3o, e aumenta ligeiramente os danos para todas as armas."
+    m_Localized: "Instantaneamente vore uma criatura pr\xF3xima - espere .. com o
+      meu qu\xEA ??"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Inc\xEAndios flobs de goo na frente do usu\xE1rio. Disparo r\xE1pido,
-      baixo dano."
+    m_Localized: "Inc\xEAndios gozam de goo na minha frente. Disparo r\xE1pido, baixo
+      dano."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Inc\xEAndios flobs de goo no inimigo mais pr\xF3ximo. Dano consistente."
+    m_Localized: "Inc\xEAndios flobs de goo na criatura mais pr\xF3xima. Dano consistente."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Inc\xEAndios bumerangs perfurantes. Alto dano, dif\xEDcil de apontar."
+    m_Localized: "Pericing Boomerangs! Alto dano, dif\xEDcil de apontar."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Uma piscina de goo nocivo em torno do usu\xE1rio, dano de chip
-      de \xE1rea de efeito."
+    m_Localized: "Ele se junta ao meu redor agora, dano de chip de \xE1rea de efeito."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Chicotes para a esquerda e direita, boa \xE1rea de dano de efeito,
+    m_Localized: "Chicotes para a esquerda e direita, dano de \xE1rea de efeito com
       altos knockback."
     m_Metadata:
       m_Items: []
@@ -756,7 +755,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Atraso
+    m_Localized: Taxa de fogo
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -769,6 +768,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: "Velocidade de proj\xE9teis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Cora\xE7\xE3o extra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Uau!!! Tudo parece t\xE3o lento. Taxa de fogo duplo, meio dano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Produtor de goo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Ainda mais Goo! H\xE1 muito."
     m_Metadata:
       m_Items: []
   references:

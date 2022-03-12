@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acf0077ce7063534488e9115d47ad16e, type: 3}
-  m_Name: BasicEnemy
-  m_EditorClassIdentifier: Assembly-CSharp::AttributeModifier
-  baseValue: 6
+  m_Name: Halve
+  m_EditorClassIdentifier: 
+  baseValue: 0
   diminishingReturnUp: 0
   flatUp: 0
-  multiplier: 1
+  multiplier: 0.5

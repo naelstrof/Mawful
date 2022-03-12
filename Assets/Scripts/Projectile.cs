@@ -48,6 +48,7 @@ public class Projectile : PooledItem {
         if (!element.passable) {
             Reset();
             gameObject.SetActive(false);
+            return;
         }
     }
     protected void DoHit(EnemyCharacter character) {
@@ -56,7 +57,9 @@ public class Projectile : PooledItem {
 
         hitPack.PlayOneShot(character.audioSource);
         if (hitCount>=hitLimit) {
+            Reset();
             gameObject.SetActive(false);
+            return;
         }
     }
     public void SetPositionAndVelocity(Vector3 position, Vector3 velocity) {
@@ -72,7 +75,7 @@ public class Projectile : PooledItem {
             if (enemyCharacter.health.GetHealth() <= 0f) {
                 continue;
             }
-            float dist = Vector3.Distance(position, enemyCharacter.position);
+            float dist = Vector3.Distance(newPosition, enemyCharacter.position);
             if (dist<(radius+1f)*0.5f) {
                 if (!hits.ContainsKey(enemyCharacter)) {
                     hits.Add(enemyCharacter, Time.time);
@@ -89,9 +92,10 @@ public class Projectile : PooledItem {
         lastPosition = position;
         position = newPosition;
         Vector3 edgePoint = WorldGrid.instance.worldBounds.ClosestPoint(newPosition);
-        if (Vector3.Distance(edgePoint,newPosition) > 0.001f) {
+        if (Vector3.Distance(edgePoint,newPosition) > 0.01f) {
             Reset();
             gameObject.SetActive(false);
+            return;
         }
         position.y = 0f;
 
@@ -116,13 +120,13 @@ public class Projectile : PooledItem {
     public virtual void LateUpdate() {
         float velMag = velocity.magnitude;
         if (velMag > 0.0001f) {
-            transform.rotation = Quaternion.LookRotation(velocity, Vector3.up);
+            transform.rotation = Quaternion.LookRotation(velocity.normalized, Vector3.up);
         }
-        transform.localScale = Vector3.one*radius + Vector3.forward*velMag;
+        transform.localScale = Vector3.one*radius + Vector3.forward*velMag*1.5f;
         transform.position = interpolatedPosition;
     }
-    public override void Reset() {
-        base.Reset();
+    public override void Reset(bool recurse = true) {
+        base.Reset(recurse);
         hits.Clear();
         hitCount = 0;
     }

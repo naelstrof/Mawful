@@ -23,7 +23,7 @@ public class MagicWand : Weapon {
         float closestDist = float.MaxValue;
         Character target = null;
         foreach(Character character in Character.characters) {
-            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
+            if (!(character is EnemyCharacter) || character.health.GetHealth() <= 0f) {
                 continue;
             }
             float dist = Vector3.Distance(character.position, player.position);

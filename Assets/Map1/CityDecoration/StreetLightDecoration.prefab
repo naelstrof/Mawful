@@ -143,6 +143,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
   radius: 0.5
   colorFlash: {r: 1, g: 1, b: 1, a: 0}
+  invulnerable: 0
   scoreCard: {fileID: 11400000, guid: 2fc44f6d98df14c43860d80e383fbd23, type: 2}
   damage:
     modifiers: []
@@ -196,11 +197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.0003455041
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000023841855
+      value: -0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalRotation.y
@@ -212,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -180.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c489466cf849f74f8f07b14e6743854, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

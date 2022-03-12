@@ -715,29 +715,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "\xD8yeblikkelig kuk vore n\xE6rliggende skapning. Invulnerable
-      for varighet, og litt \xF8ker skaden for alle v\xE5pen."
+    m_Localized: "Umiddelbart vore en n\xE6rliggende skapning - vent. Med min hva
+      ??"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: Brenner blobs av goo foran brukeren. Rask avfyring, lav skade.
+    m_Localized: Brenner blobs av goo foran meg. Rask avfyring, lav skade.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Branner blobs av goo p\xE5 n\xE6rmeste fiende. Konsistent skade."
+    m_Localized: "Branner blobs av goo p\xE5 n\xE6rmeste skapning. Konsistent skade."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Branner piercing boomerangs. H\xF8y skade, vanskelig \xE5 sikte."
+    m_Localized: "Pericing boomerangs! H\xF8y skade, vanskelig \xE5 sikte."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Et basseng med skadelig goo rundt brukeren, skade p\xE5 omr\xE5de-av-effekt."
+    m_Localized: "Det bassenger rundt meg n\xE5, omr\xE5de-of-effekt chip skade."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Whips til venstre og h\xF8yre, god skade p\xE5 omr\xE5det, h\xF8y
-      knockback."
+    m_Localized: "Pisker til venstre og h\xF8yre, skade p\xE5-effekt med h\xF8y knockback."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -749,7 +748,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: Forsinkelse
+    m_Localized: Brannhastighet
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -762,6 +761,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: Prosjektil hastighet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: Ekstra hjerte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "Whoa !!! Alt virker s\xE5 sakte. Dobbel brannhastighet, halv skade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Goo produsent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Enda mer goo! Det er s\xE5 mye."
     m_Metadata:
       m_Items: []
   references:

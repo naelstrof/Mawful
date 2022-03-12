@@ -142,6 +142,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
   radius: 1.25
   colorFlash: {r: 1, g: 1, b: 1, a: 0}
+  invulnerable: 1
   scoreCard: {fileID: 11400000, guid: 2fc44f6d98df14c43860d80e383fbd23, type: 2}
   damage:
     modifiers: []

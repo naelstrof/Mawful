@@ -10,19 +10,14 @@ public class PooledItem : MonoBehaviour {
     public virtual void Awake() {
         pooledChildren = new List<PooledItem>();
         GetComponentsInChildren<PooledItem>(pooledChildren);
-
-        // Make sure we don't loop forever
-        for(int i=0;i<pooledChildren.Count;i++) {
-            if (pooledChildren[i].pooledChildren.Contains(this)) {
-                pooledChildren[i].pooledChildren.Remove(this);
-            }
-        }
         pooledChildren.Remove(this);
     }
-    public virtual void Reset() {
-        foreach(PooledItem item in pooledChildren) {
-            item.Reset();
+    public virtual void Reset(bool recurse = true) {
+        if (recurse) {
+            foreach(PooledItem item in pooledChildren) {
+                item.Reset(false);
+            }
+            resetTrigger?.Invoke();
         }
-        resetTrigger?.Invoke();
     }
 }

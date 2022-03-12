@@ -723,33 +723,32 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329904644096
-    m_Localized: "Okam\u017Eit\u011B kohout v okol\xED klidu. Zraniteln\xFD po dobu
-      trv\xE1n\xED a m\xEDrn\u011B zvy\u0161uje po\u0161kozen\xED v\u0161ech zbran\xED."
+    m_Localized: "Okam\u017Eit\u011B p\u0159edvedl bl\xEDzk\xFD bytost - po\u010Dkejte
+      .. S m\xFDm \u010D\xEDm?"
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392832
-    m_Localized: "Ohn\u011Bm blobs goo p\u0159ed u\u017Eivatelem. Rychl\xE9 vyp\xE1len\xED,
+    m_Localized: "Ohn\u011Bm blobs goo p\u0159ede mnou. Rychl\xE9 vyp\xE1len\xED,
       n\xEDzk\xE9 po\u0161kozen\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392833
-    m_Localized: "Po\u017E\xE1ry kuli\u010Dky goo na nejbli\u017E\u0161\xED nep\u0159\xEDtele.
+    m_Localized: "Ohn\u011Bm blobs goo na nejbli\u017E\u0161\xED stvo\u0159en\xED.
       Konzistentn\xED po\u0161kozen\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: "Po\u017E\xE1ry piercing bumerangy. Vysok\xE9 \u0161kody, t\u011B\u017Ek\xE9
+    m_Localized: "Peringov\xE9 bumerangy! Vysok\xE9 \u0161kody, t\u011B\u017Ek\xE9
       c\xEDlit."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
-    m_Localized: "Baz\xE9n \u0161kodliv\xE9ho goo kolem u\u017Eivatele, po\u0161kozen\xED
-      \u010Dipu."
+    m_Localized: "Te\u010F je to baz\xE9ny, po\u0161kozen\xED \u010Dip\u016F."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392836
-    m_Localized: "Bi\u010De vlevo a vpravo, dobr\xE1 oblast-of-efektu po\u0161kozen\xED,
-      vysok\xFD knockback."
+    m_Localized: "Bi\u010De vlevo a vpravo, plo\u0161e-of-efektu po\u0161kozen\xED
+      s vysok\xFDm knockbackem."
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529280
@@ -761,7 +760,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529282
-    m_Localized: "Zpo\u017Ed\u011Bn\xED"
+    m_Localized: "Ohe\u0148"
     m_Metadata:
       m_Items: []
   - m_Id: 5337045474529283
@@ -774,6 +773,23 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5337045474529285
     m_Localized: "Projektilov\xE1 rychlost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053008564224
+    m_Localized: "Nav\xEDc srdce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5397053037924352
+    m_Localized: "THOA !!! V\u0161echno se zd\xE1 tak pomal\xE9. Dvojit\xE1 ohe\u0148,
+      polovina po\u0161kozen\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392640
+    m_Localized: Goo Producer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428587585392641
+    m_Localized: "Je\u0161t\u011B v\xEDce goo! Tady je tolik."
     m_Metadata:
       m_Items: []
   references:
