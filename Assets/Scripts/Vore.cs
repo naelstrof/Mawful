@@ -82,6 +82,9 @@ public class Vore : MonoBehaviour {
     public virtual void Vaccum(Character other) {
         if (other.StartVore()) {
             vaccuming.Add(other);
+            other.targetRenderer.material.SetVector("_PinchPosition", pinchPlane.transform.position);
+            other.targetRenderer.material.SetVector("_PinchNormal", pinchPlane.transform.up);
+            other.targetRenderer.material.SetFloat("_PinchWeight", 0f);
         }
     }
     protected virtual void StartVore(Character other) {
@@ -157,10 +160,12 @@ public class Vore : MonoBehaviour {
             }
             character.targetRenderer.material.SetVector("_PinchPosition", pinchPlane.transform.position);
             character.targetRenderer.material.SetVector("_PinchNormal", pinchPlane.transform.up);
+            character.targetRenderer.material.SetFloat("_PinchWeight", 1f-Mathf.Min(dist,1f));
         }
         foreach(Character character in readyToVore) {
             character.targetRenderer.material.SetVector("_PinchPosition", pinchPlane.transform.position);
             character.targetRenderer.material.SetVector("_PinchNormal", pinchPlane.transform.up);
+            character.targetRenderer.material.SetFloat("_PinchWeight", 1f);
         }
     }
 }

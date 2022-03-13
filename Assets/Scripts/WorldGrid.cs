@@ -27,13 +27,15 @@ public class WorldGrid : MonoBehaviour {
     //private  HashSet<GridElement> closedGraph;
     public List<List<PathGridElement>> GetPathGrid() => pathGrid;
     public class GridElement {
-        public float gridSize;
+        public float tileSize;
+        public int gridSize;
         public Vector3 worldPosition {
-            get { return new Vector3(position.x, position.y, position.z)*gridSize; }
+            get { return new Vector3(position.x, position.y, position.z)*tileSize; }
         }
         public int3 position;
-        public virtual void Initialize(int3 pos, float gridSize) {
+        public virtual void Initialize(int3 pos, float tileSize, int gridSize) {
             this.position = pos;
+            this.tileSize = tileSize;
             this.gridSize = gridSize;
         }
         public override int GetHashCode() {
@@ -45,8 +47,8 @@ public class WorldGrid : MonoBehaviour {
     }
     public class CollisionGridElement : GridElement {
         public HashSet<Character> charactersInElement;
-        public override void Initialize(int3 pos, float gridSize) {
-            base.Initialize(pos, gridSize);
+        public override void Initialize(int3 pos, float tileSize, int gridSize) {
+            base.Initialize(pos, tileSize, gridSize);
             charactersInElement = new HashSet<Character>();
         }
     }
@@ -54,14 +56,16 @@ public class WorldGrid : MonoBehaviour {
         public bool passable;
         public bool visited;
         public GridElement cameFrom;
-        public override void Initialize(int3 pos, float gridSize) {
-            base.Initialize(pos, gridSize);
-            passable = Physics.OverlapBoxNonAlloc(new Vector3(pos.x,pos.y,pos.z)*gridSize, Vector3.one*0.5f*gridSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
+        public override void Initialize(int3 pos, float tileSize, int gridSize) {
+            base.Initialize(pos, tileSize, gridSize);
+            passable = Physics.OverlapBoxNonAlloc(new Vector3(pos.x,pos.y,pos.z)*tileSize, Vector3.one*0.5f*tileSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
+            passable = passable && pos.x > 0 && pos.x < gridSize-1 && pos.z > 0 && pos.z < gridSize-1;
             visited = false;
             cameFrom = null;
         }
         public void Refresh() {
-            passable = Physics.OverlapBoxNonAlloc(new Vector3(position.x,position.y,position.z)*gridSize, Vector3.one*0.5f*gridSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
+            passable = Physics.OverlapBoxNonAlloc(new Vector3(position.x,position.y,position.z)*tileSize, Vector3.one*0.5f*tileSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
+            passable = passable && position.x > 0 && position.x < gridSize-1 && position.z > 0 && position.z < gridSize-1;
         }
         public override int GetHashCode() {
             return position.GetHashCode();
@@ -80,13 +84,13 @@ public class WorldGrid : MonoBehaviour {
         }
         return (element.cameFrom.worldPosition-element.worldPosition).normalized;
     }
-    private void PrimeGrid<T>(int count, List<List<T>> grid, float gridSize) where T : GridElement, new() {
+    private void PrimeGrid<T>(int count, List<List<T>> grid, float tileSize) where T : GridElement, new() {
         grid.Clear();
         for(int x=0;x<count;x++) {
             grid.Add(new List<T>());
             for(int y=0;y<count;y++) {
                 T element = new T();
-                element.Initialize(new int3(x,0,y), gridSize);
+                element.Initialize(new int3(x,0,y), tileSize, count);
                 grid[x].Add(element);
             }
         }

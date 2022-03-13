@@ -9,9 +9,7 @@ public class Attribute : ISerializationCallbackReceiver {
     private Attribute parentAttribute;
     private HashSet<Attribute> childAttributes;
 
-    [SerializeField]
-
-    private List<AttributeModifier> modifiers;
+    public List<AttributeModifier> modifiers;
     private float baseValue;
     private float multiplier;
     private float diminishingReturnUp;

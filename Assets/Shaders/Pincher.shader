@@ -13,7 +13,8 @@ Shader "Pincher"
 		_PinchNormal("PinchNormal", Vector) = (0,1,0,0)
 		_PinchPosition("PinchPosition", Vector) = (0,0,0,0)
 		_Color("Color", Color) = (0,0,0,0)
-		[ASEEnd][Toggle(_PINCH_ON)] _Pinch("Pinch", Float) = 1
+		[Toggle(_PINCH_ON)] _Pinch("Pinch", Float) = 1
+		[ASEEnd]_PinchWeight("PinchWeight", Range( 0 , 1)) = 1
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 
 		//_TransmissionShadow( "Transmission Shadow", Range( 0, 1 ) ) = 0.5
@@ -251,6 +252,7 @@ Shader "Pincher"
 			float4 _MetallicGlossMap_ST;
 			float3 _PinchPosition;
 			float3 _PinchNormal;
+			float _PinchWeight;
 			#ifdef _TRANSMISSION_ASE
 				float _TransmissionShadow;
 			#endif
@@ -290,8 +292,9 @@ Shader "Pincher"
 				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
 				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
 				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
+				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult63;
+				float4 staticSwitch56 = lerpResult66;
 				#else
 				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
 				#endif
@@ -722,6 +725,7 @@ Shader "Pincher"
 			float4 _MetallicGlossMap_ST;
 			float3 _PinchPosition;
 			float3 _PinchNormal;
+			float _PinchWeight;
 			#ifdef _TRANSMISSION_ASE
 				float _TransmissionShadow;
 			#endif
@@ -763,8 +767,9 @@ Shader "Pincher"
 				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
 				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
 				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
+				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult63;
+				float4 staticSwitch56 = lerpResult66;
 				#else
 				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
 				#endif
@@ -1028,6 +1033,7 @@ Shader "Pincher"
 			float4 _MetallicGlossMap_ST;
 			float3 _PinchPosition;
 			float3 _PinchNormal;
+			float _PinchWeight;
 			#ifdef _TRANSMISSION_ASE
 				float _TransmissionShadow;
 			#endif
@@ -1065,8 +1071,9 @@ Shader "Pincher"
 				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
 				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
 				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
+				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult63;
+				float4 staticSwitch56 = lerpResult66;
 				#else
 				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
 				#endif
@@ -1308,6 +1315,7 @@ Shader "Pincher"
 			float4 _MetallicGlossMap_ST;
 			float3 _PinchPosition;
 			float3 _PinchNormal;
+			float _PinchWeight;
 			#ifdef _TRANSMISSION_ASE
 				float _TransmissionShadow;
 			#endif
@@ -1345,8 +1353,9 @@ Shader "Pincher"
 				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
 				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
 				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
+				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult63;
+				float4 staticSwitch56 = lerpResult66;
 				#else
 				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
 				#endif
@@ -1573,6 +1582,7 @@ Shader "Pincher"
 			float4 _MetallicGlossMap_ST;
 			float3 _PinchPosition;
 			float3 _PinchNormal;
+			float _PinchWeight;
 			#ifdef _TRANSMISSION_ASE
 				float _TransmissionShadow;
 			#endif
@@ -1610,8 +1620,9 @@ Shader "Pincher"
 				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
 				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
 				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
+				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult63;
+				float4 staticSwitch56 = lerpResult66;
 				#else
 				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
 				#endif
@@ -1884,6 +1895,7 @@ Shader "Pincher"
 			float4 _MetallicGlossMap_ST;
 			float3 _PinchPosition;
 			float3 _PinchNormal;
+			float _PinchWeight;
 			#ifdef _TRANSMISSION_ASE
 				float _TransmissionShadow;
 			#endif
@@ -1923,8 +1935,9 @@ Shader "Pincher"
 				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
 				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
 				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
+				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult63;
+				float4 staticSwitch56 = lerpResult66;
 				#else
 				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
 				#endif
@@ -2286,7 +2299,7 @@ Shader "Pincher"
 }
 /*ASEBEGIN
 Version=18935
-155;418;2027;743;1144.664;-330.5887;1;True;True
+284;285;2027;737;1137.301;138.9139;1.798758;True;True
 Node;AmplifyShaderEditor.Vector3Node;50;-833.5298,564.8736;Inherit;False;Property;_PinchPosition;PinchPosition;5;0;Create;True;0;0;0;False;0;False;0,0,0;0,-0.33,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.DynamicAppendNode;51;-593.1422,574.9378;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.Vector3Node;45;-831.9488,841.2955;Inherit;False;Property;_PinchNormal;PinchNormal;4;0;Create;True;0;0;0;False;0;False;0,1,0;0,1,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
@@ -2298,15 +2311,17 @@ Node;AmplifyShaderEditor.SimpleSubtractOpNode;59;-158.3982,552.3758;Inherit;Fals
 Node;AmplifyShaderEditor.DotProductOpNode;54;-70.96737,815.5097;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;61;91.7018,919.1758;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;3;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SaturateNode;62;294.3018,879.1758;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;41;-560.7904,-740.9868;Inherit;False;Property;_Color;Color;6;0;Create;True;0;0;0;False;0;False;0,0,0,0;1,1,1,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.LerpOp;63;419.1019,719.2761;Inherit;False;3;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT;0;False;1;FLOAT4;0
+Node;AmplifyShaderEditor.RangedFloatNode;65;180.4364,526.5024;Inherit;False;Property;_PinchWeight;PinchWeight;8;0;Create;True;0;0;0;False;0;False;1;0;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.ColorNode;41;-560.7904,-740.9868;Inherit;False;Property;_Color;Color;6;0;Create;True;0;0;0;False;0;False;0,0,0,0;1,1,1,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;8;-670.004,-217.9936;Inherit;True;Property;_MainTex;MainTex;0;0;Create;True;0;0;0;False;0;False;-1;None;b75bae14171a90d468d61afd2fe3b5ba;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.ColorNode;43;45.23389,-261.7788;Inherit;False;Property;_EmissiveColor;_EmissiveColor;3;1;[HDR];Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;10;-666.6412,201.0316;Inherit;True;Property;_MetallicGlossMap;MetallicGlossMap;2;0;Create;True;0;0;0;False;0;False;-1;None;c9d8af14729c1724fb5fff96fdb76035;True;0;False;gray;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;9;-671.6412,-15.96835;Inherit;True;Property;_BumpMap;BumpMap;1;0;Create;True;0;0;0;False;0;False;-1;None;7291f02e0ab138c44a3cee2eea87aea8;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.StaticSwitch;56;508.5258,288.0227;Inherit;False;Property;_Pinch;Pinch;7;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT4;0,0,0,0;False;0;FLOAT4;0,0,0,0;False;2;FLOAT4;0,0,0,0;False;3;FLOAT4;0,0,0,0;False;4;FLOAT4;0,0,0,0;False;5;FLOAT4;0,0,0,0;False;6;FLOAT4;0,0,0,0;False;7;FLOAT4;0,0,0,0;False;8;FLOAT4;0,0,0,0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.SignOpNode;64;123.3105,809.4239;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.LerpOp;66;662.3673,480.5627;Inherit;False;3;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT;0;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;42;-48.59033,-496.5869;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ColorNode;43;45.23389,-261.7788;Inherit;False;Property;_EmissiveColor;_EmissiveColor;3;1;[HDR];Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;9;-671.6412,-15.96835;Inherit;True;Property;_BumpMap;BumpMap;1;0;Create;True;0;0;0;False;0;False;-1;None;7291f02e0ab138c44a3cee2eea87aea8;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;10;-666.6412,201.0316;Inherit;True;Property;_MetallicGlossMap;MetallicGlossMap;2;0;Create;True;0;0;0;False;0;False;-1;None;c9d8af14729c1724fb5fff96fdb76035;True;0;False;gray;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SignOpNode;64;123.3105,809.4239;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.StaticSwitch;56;886.2649,309.6079;Inherit;False;Property;_Pinch;Pinch;7;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT4;0,0,0,0;False;0;FLOAT4;0,0,0,0;False;2;FLOAT4;0,0,0,0;False;3;FLOAT4;0,0,0,0;False;4;FLOAT4;0,0,0,0;False;5;FLOAT4;0,0,0,0;False;6;FLOAT4;0,0,0,0;False;7;FLOAT4;0,0,0,0;False;8;FLOAT4;0,0,0,0;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ExtraPrePass;0;0;ExtraPrePass;5;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;0;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;2;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ShadowCaster;0;2;ShadowCaster;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;False;False;False;False;False;True;1;False;-1;True;3;False;-1;False;True;1;LightMode=ShadowCaster;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;4;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;Meta;0;4;Meta;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=Meta;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
@@ -2328,11 +2343,14 @@ WireConnection;62;0;61;0
 WireConnection;63;0;57;0
 WireConnection;63;1;47;0
 WireConnection;63;2;62;0
-WireConnection;56;1;57;0
-WireConnection;56;0;63;0
-WireConnection;64;0;54;0
+WireConnection;66;0;57;0
+WireConnection;66;1;63;0
+WireConnection;66;2;65;0
 WireConnection;42;0;41;0
 WireConnection;42;1;8;0
+WireConnection;64;0;54;0
+WireConnection;56;1;57;0
+WireConnection;56;0;66;0
 WireConnection;1;0;42;0
 WireConnection;1;1;9;0
 WireConnection;1;2;43;0
@@ -2340,4 +2358,4 @@ WireConnection;1;3;10;1
 WireConnection;1;6;8;4
 WireConnection;1;8;56;0
 ASEEND*/
-//CHKSM=EDFF7E37BC561C6A996F013FDBE09958725ADB89
+//CHKSM=1B8CF39D375E5F1CD36D717A3A8035806A81BF82

@@ -1839,7 +1839,7 @@ PrefabInstance:
     - target: {fileID: 7759271914248061, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: localStartingWeapons.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 4216e04216ca33840bc58e76f0fa6623, type: 2}
+      objectReference: {fileID: 11400000, guid: 2059581e91ea43a44b8451e8b74e5928, type: 2}
     - target: {fileID: 404002453501975964, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
@@ -1874,7 +1874,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ed196a78f9f72e14d8a2d6f80990b14d, type: 2}
     - target: {fileID: 1331076685134111450, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
-      value: 16
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1331076685134111450, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]
@@ -1915,6 +1915,10 @@ PrefabInstance:
     - target: {fileID: 1331076685134111450, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[10]
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331076685134111450, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[18]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1574011253825618672, guid: fe8414d774014e445b7d0d0f31c80bd7, type: 3}
       propertyPath: m_Materials.Array.size

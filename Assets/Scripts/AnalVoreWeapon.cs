@@ -15,6 +15,7 @@ public class AnalVoreWeapon : Weapon {
     public Animator animator;
     public PlayerDisplayController controller;
     private int waiting;
+    private int attackCount = 0;
     private Vector3 originalBarScale;
     private Color originalBarColor;
     [SerializeField]
@@ -23,7 +24,7 @@ public class AnalVoreWeapon : Weapon {
     private Renderer barContainer;
     private float timeout;
     private bool paused;
-    private bool attacking = false;
+    private bool doneAttacking = false;
     public override void Start() {
         cooldown.changed += OnCooldownChanged;
         OnCooldownChanged(cooldown.GetValue());
@@ -32,9 +33,45 @@ public class AnalVoreWeapon : Weapon {
         originalBarScale = bar.transform.localScale;
         originalBarColor = bar.material.color;
     }
+    void OnPostSlam() {
+        if (attackCount >= Mathf.RoundToInt(projectileCount.GetValue())) {
+            doneAttacking = true;
+        }
+        foreach(Character character in Character.characters) {
+            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
+                continue;
+            }
+            float blowbackDist = radius.GetValue()*3f;
+            // Blowback!!
+            Vector3 diff = (character.position-player.position);
+            float dist = diff.magnitude;
+            if (dist > blowbackDist) {
+                continue;
+            }
+            float scale = (blowbackDist-Mathf.Min(dist,blowbackDist))/blowbackDist;
+            Vector3 dir = diff.normalized;
+            character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue()*scale, dir*0.2f*scale));
+        }
+    }
     void OnStateTriggered(string name) {
         if (name == "AnalAttacked") {
-            attacking = true;
+            if (attackCount < projectileCount.GetValue()) {
+                Character target = AquireTarget();
+                attackCount++;
+                if (target == null) {
+                    OnPostSlam();
+                    return;
+                }
+                animator.SetBool("AnalVore", true);
+                waiting++;
+                Score.AddDamage(weaponCard, target.health.GetHealth());
+                voreTarget.Vaccum(target);
+                //player.SetFreeze(true);
+                player.invulnerable = true;
+                //float progress= (float)i/(projectileCount.GetValue());
+                //yield return new WaitForSeconds((1f-progress)+0.8f);
+            }
+            OnPostSlam();
         }
     }
     protected override void OnEnable() {
@@ -50,7 +87,8 @@ public class AnalVoreWeapon : Weapon {
         controller.eventTriggered -= OnStateTriggered;
         input.actions["Ultimate"].performed -= OnUltimateButton;
         waiting = 0;
-        attacking = false;
+        attackCount = 0;
+        doneAttacking = false;
         //player.SetFreeze(false);
         player.invulnerable = false;
         CameraFollower.SetGloryVore(false);
@@ -81,44 +119,37 @@ public class AnalVoreWeapon : Weapon {
                 closestDist = dist;
             }
         }
+        if (closestDist > radius.GetValue()) {
+            return null;
+        }
         return target;
     }
     public IEnumerator UltimateRoutine() {
+        attackCount = 0;
+        foreach(AttributeModifier modifier in speed.modifiers) {
+            player.speed.AddModifier(modifier);
+        }
         animator.SetBool("AnalAttack", true);
-        while(!attacking) {
+        player.invulnerable = true;
+        while(!doneAttacking) {
             yield return null;
         }
-        for (int i=0;i<projectileCount.GetValue();i++) {
-            Character target = AquireTarget();
-            if (target == null) {
-                continue;
-            }
-            waiting++;
-            CameraFollower.SetGloryVore(true);
-            Score.AddDamage(weaponCard, target.health.GetHealth());
-            voreTarget.Vaccum(target);
-            //player.SetFreeze(true);
-            player.invulnerable = true;
-            //float progress= (float)i/(projectileCount.GetValue());
-            //yield return new WaitForSeconds((1f-progress)+0.8f);
-        }
-        timeout = Time.time + 8f;
+        CameraFollower.SetGloryVore(true);
+        animator.SetBool("AnalAttack", false);
+        player.SetFreeze(true);
+        timeout = Time.time + 5f*projectileCount.GetValue();
         while((waiting!=0 || !isActiveAndEnabled || paused) && Time.time < timeout) {
             yield return null;
         }
-        attacking = false;
-        //player.SetFreeze(false);
+        foreach(AttributeModifier modifier in speed.modifiers) {
+            player.speed.RemoveModifier(modifier);
+        }
+        doneAttacking = false;
+        player.SetFreeze(false);
         player.invulnerable = false;
         CameraFollower.SetGloryVore(false);
-        animator.SetBool("AnalAttack", false);
-        foreach(Character character in Character.characters) {
-            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
-                continue;
-            }
-            // Blowback!!
-            Vector3 dir = (character.position-player.position).normalized;
-            character.position += dir*0.7f;
-        }
+        animator.SetBool("AnalVore", false);
+        OnPostSlam();
     }
     public void Update() {
         float pastTime = Time.time-lastFireTime;
@@ -134,14 +165,6 @@ public class AnalVoreWeapon : Weapon {
         }
     }
     public override IEnumerator FireRoutine() {
-        // Animator should trigger a "DickAttack" state trigger on the PlayerDisplayController, which we're listening for.
-        /*animator.SetBool("DickAttack", true);
-        waiting = true;
-        while(waiting || !isActiveAndEnabled) {
-            yield return null;
-        }
-        player.SetFreeze(false);
-        animator.SetBool("DickAttack", false);*/
         yield break;
     }
     protected override void OnPauseChanged(bool paused) {
