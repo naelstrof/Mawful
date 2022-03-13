@@ -11,6 +11,8 @@ public class VoreCock : Vore {
     private string listenName;
     [SerializeField]
     private AttributeModifier damageModifier;
+    [SerializeField]
+    private AttributeModifier radiusModifier;
     private const float tailBlendDistance = 0.5f;
     protected override void Awake() {
         base.Awake();
@@ -24,7 +26,12 @@ public class VoreCock : Vore {
     }
     protected override void Digest(Character character) {
         base.Digest(character);
-        GetComponentInParent<PlayerCharacter>().damage.AddModifier(damageModifier);
+        if (damageModifier != null) {
+            player.damage.AddModifier(damageModifier);
+        }
+        if (radiusModifier != null) {
+            (player as PlayerCharacter).projectileRadius.AddModifier(radiusModifier);
+        }
     }
     protected override void StartVore(Character other) {
         readyToVore.Add(other);

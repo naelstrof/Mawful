@@ -770,5 +770,13 @@ MonoBehaviour:
     m_Localized: "\u751A\u81F3\u66F4\u591Agoo\uFF01\u6709\u8FD9\u4E48\u591A\u3002"
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Localized: "\u5C41\u80A1\u731B\u62C9!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Localized: "\u5C41\u80A1\u731B\u62C9!!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

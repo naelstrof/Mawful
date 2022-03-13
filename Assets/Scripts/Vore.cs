@@ -29,6 +29,8 @@ public class Vore : MonoBehaviour {
     [SerializeField]
     protected Transform mouth;
     [SerializeField]
+    protected Transform pinchPlane;
+    [SerializeField]
     protected List<string> blends;
     protected List<int> blendIDs;
     [SerializeField]
@@ -93,7 +95,11 @@ public class Vore : MonoBehaviour {
     protected virtual void Start() {
         blendIDs = new List<int>();
         for (int i=0;i<blends.Count;i++) {
-            blendIDs.Add(targetRenderer.sharedMesh.GetBlendShapeIndex(blends[i]));
+            int id = targetRenderer.sharedMesh.GetBlendShapeIndex(blends[i]);
+            if (id == -1) {
+                Debug.LogWarning("Failed to find blendshape " + blends[i] + " on model " + targetRenderer.sharedMesh + ". Might be on purpose though to create a delay.");
+            }
+            blendIDs.Add(id);
         }
         player = GetComponentInParent<Character>();
     }
@@ -111,34 +117,50 @@ public class Vore : MonoBehaviour {
         source.clip = null;
     }
     protected virtual void Update() {
-        for(int i=0;i<blendIDs.Count;i++) {
-            float blendAmount = 0f;
-            for(int j=voreBumps.Count-1;j>=0;j--) {
-                float percentage = (float)i/(float)blendIDs.Count;
-                float offset = voreBumps[j].duration * blendPlacements.Evaluate(percentage);
-                float t = (Time.time-(voreBumps[j].startTime+offset))/voreBumps[j].duration;
-                float sample = voreBumpCurve.Evaluate(t);
-                blendAmount = Mathf.Lerp(blendAmount, maxSimultaneousVores, sample/maxSimultaneousVores);
-                if (t>1f && i == blendIDs.Count-1) {
-                    Digest(voreBumps[j].character);
-                    voreBumps.RemoveAt(j);
-                    if (voreBumps.Count == 0) {
-                        // Stop the travelling sound
-                        source.Stop();
-                        source.clip = null;
+        if (voreBumps.Count != 0) {
+            for(int i=0;i<blendIDs.Count;i++) {
+                float blendAmount = 0f;
+                for(int j=voreBumps.Count-1;j>=0;j--) {
+                    float percentage = (float)i/(float)blendIDs.Count;
+                    float offset = voreBumps[j].duration * blendPlacements.Evaluate(percentage);
+                    float t = (Time.time-(voreBumps[j].startTime+offset))/voreBumps[j].duration;
+                    float sample = voreBumpCurve.Evaluate(t);
+                    blendAmount = Mathf.Lerp(blendAmount, maxSimultaneousVores, sample/maxSimultaneousVores);
+                    if (t>1f && i == blendIDs.Count-1) {
+                        Digest(voreBumps[j].character);
+                        voreBumps.RemoveAt(j);
+                        if (voreBumps.Count == 0) {
+                            // Stop the travelling sound
+                            source.Stop();
+                            source.clip = null;
+                        }
                     }
                 }
+                if (blendIDs[i] != -1) {
+                    targetRenderer.SetBlendShapeWeight(blendIDs[i], Mathf.Min(blendAmount*100f, 250f));
+                }
             }
-            targetRenderer.SetBlendShapeWeight(blendIDs[i], Mathf.Min(blendAmount*100f, 250f));
         }
-        Vector3 tailTarget = mouth.transform.position+mouth.transform.up*0.4f;
+        Vector3 tailTarget = mouth.transform.position;
+        Quaternion tailRotation = mouth.transform.rotation;
         foreach(Character character in vaccuming) {
-            float dist = Vector3.Distance(character.transform.position, tailTarget);
-            character.transform.position = Vector3.MoveTowards(character.transform.position, tailTarget, Time.deltaTime*8f + dist*Time.deltaTime*2f);
-            character.transform.rotation = Quaternion.RotateTowards(character.transform.rotation, mouth.rotation, Time.deltaTime*360f*4f);
-            if (Vector3.Distance(character.transform.position, tailTarget) < 0.1f && !readyToVore.Contains(character)) {
+            Vector3 diffp = tailTarget - character.voreMagnetTransform.position;
+            Quaternion diffr = tailRotation*Quaternion.Inverse(character.voreMagnetTransform.rotation);
+            float dist = diffp.magnitude;
+
+            //character.transform.position = Vector3.MoveTowards(character.transform.position, tailTarget, Time.deltaTime*8f + dist*Time.deltaTime*2f);
+            //character.transform.rotation = Quaternion.RotateTowards(character.transform.rotation, mouth.rotation, Time.deltaTime*360f*4f);
+            character.transform.position = Vector3.MoveTowards(character.transform.position, character.transform.position+diffp, Time.deltaTime*8f + dist*Time.deltaTime*2f);
+            character.transform.rotation = Quaternion.RotateTowards(character.transform.rotation, diffr*character.transform.rotation, Time.deltaTime*360f*4f);
+            if (dist < 0.1f && !readyToVore.Contains(character)) {
                 StartVore(character);
             }
+            character.targetRenderer.material.SetVector("_PinchPosition", pinchPlane.transform.position);
+            character.targetRenderer.material.SetVector("_PinchNormal", pinchPlane.transform.up);
+        }
+        foreach(Character character in readyToVore) {
+            character.targetRenderer.material.SetVector("_PinchPosition", pinchPlane.transform.position);
+            character.targetRenderer.material.SetVector("_PinchNormal", pinchPlane.transform.up);
         }
     }
 }

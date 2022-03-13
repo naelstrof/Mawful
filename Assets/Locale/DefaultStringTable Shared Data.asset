@@ -763,6 +763,14 @@ MonoBehaviour:
     m_Key: GOO_PRODUCER_DESCRIPTION
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Key: WEAPON_BUTTSLAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Key: WEAPON_BUTTSLAM_DESCRIPTION
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

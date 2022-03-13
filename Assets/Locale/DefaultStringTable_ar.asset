@@ -838,5 +838,13 @@ MonoBehaviour:
       \u0627\u0644\u0643\u062B\u064A\u0631."
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Localized: "\u0628\u0639\u0642\u0628 \u0633\u0644\u0627\u0645!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Localized: "\u0628\u0639\u0642\u0628 \u0633\u0644\u0627\u0645!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

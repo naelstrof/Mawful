@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 571fd9e1623714e4a89f385c845495e4, type: 3}
+  m_Name: AnalVoreWeapon
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: b016a0d4bbe1648468eadcf137e150db, type: 3}
+  localizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5727232214790144
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5727557197852672
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 1

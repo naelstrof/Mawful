@@ -45,7 +45,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.71
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &991773355764033130
 MonoBehaviour:
@@ -157,9 +157,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 453a844aa716c02488e15a7a45a6a0ce, type: 2}
   radius: 0.7
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
+  invulnerable: 0
   scoreCard: {fileID: 11400000, guid: 64b4bf30b1eea634ab6db58cb004bd90, type: 2}
   damage:
     modifiers: []
+  voreMagnetTransform: {fileID: 1093394043516265268}
   audioSource: {fileID: 0}
   dieSound: {fileID: 0}
 --- !u!82 &2983376260118329916

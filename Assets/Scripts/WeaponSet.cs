@@ -4,18 +4,42 @@ using UnityEngine;
 
 public class WeaponSet : MonoBehaviour {
     [SerializeField]
-    private WeaponCard startingWeapon;
+    private List<WeaponCard> localStartingWeapons;
+    private static List<WeaponCard> startingWeapons;
+    public static void SetStaringWeapons(WeaponCard[] cards) {
+        startingWeapons = new List<WeaponCard>(cards);
+    }
     private List<Weapon> weapons;
+    [SerializeField]
+    private List<Weapon> ultimateWeapons;
     private List<Weapon> activeWeapons;
+    private PlayerCharacter player;
     public delegate void WeaponSetChangedAction(WeaponSet set);
     public WeaponSetChangedAction weaponSetChanged;
     void Awake() {
+        if (startingWeapons == null) {
+            startingWeapons = new List<WeaponCard>();
+            startingWeapons.AddRange(localStartingWeapons);
+        }
         activeWeapons = new List<Weapon>();
         weapons = new List<Weapon>(GetComponentsInChildren<Weapon>(true));
         foreach(var weapon in weapons) {
-            weapon.gameObject.SetActive(weapon.weaponCard == startingWeapon);
+            weapon.gameObject.SetActive(startingWeapons.Contains(weapon.weaponCard));
+        }
+        // Can only have one ultimate weapon at a time...
+        foreach(var weapon in ultimateWeapons) {
+            if (!startingWeapons.Contains(weapon.weaponCard)) {
+                weapons.Remove(weapon);
+            }
         }
         weaponSetChanged?.Invoke(this);
+        player = GetComponentInParent<PlayerCharacter>();
+        player.died += OnDie;
+    }
+    public void OnDie() {
+        foreach(Weapon weapon in weapons) {
+            weapon.gameObject.SetActive(false);
+        }
     }
     public List<Weapon> GetAllWeapons() {
         return weapons;

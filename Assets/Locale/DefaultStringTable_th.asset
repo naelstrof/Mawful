@@ -787,5 +787,13 @@ MonoBehaviour:
     m_Localized: "goo \u0E21\u0E32\u0E01\u0E02\u0E36\u0E49\u0E19! \u0E21\u0E35\u0E21\u0E32\u0E01"
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Localized: "\u0E01\u0E49\u0E19\u0E2A\u0E41\u0E25\u0E21 !!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Localized: "\u0E01\u0E49\u0E19\u0E2A\u0E41\u0E25\u0E21 !!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

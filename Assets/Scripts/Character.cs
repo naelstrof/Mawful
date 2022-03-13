@@ -7,6 +7,8 @@ public class Character : PooledItem {
     public delegate void StartVoreAction();
     public event StartVoreAction startedVore;
     public delegate void PositionSet(Vector3 newPosition);
+    public delegate void DieAction();
+    public DieAction died;
     public PositionSet positionSet;
     public static HashSet<Character> characters = new HashSet<Character>();
     public AnimationCurve hitEffectCurve;
@@ -18,7 +20,8 @@ public class Character : PooledItem {
         }
     }
     private Collider characterCollider;
-    private Renderer targetRenderer;
+    [HideInInspector]
+    public Renderer targetRenderer;
     private Coroutine hitRoutine;
     protected Vector3 wishDir;
     [SerializeField]
@@ -36,9 +39,10 @@ public class Character : PooledItem {
     protected bool frozen;
     private Vector3 freezePosition;
     [SerializeField]
-    private bool invulnerable = false;
+    public bool invulnerable = false;
     public ScoreCard scoreCard;
     public Attribute damage;
+    public Transform voreMagnetTransform;
     public struct DamageInstance {
         public DamageInstance(WeaponCard card, float damage, Vector3 knockback) {
             this.card = card;
@@ -79,6 +83,7 @@ public class Character : PooledItem {
         beingVored = true;
         enabled = false;
         startedVore?.Invoke();
+        targetRenderer.material.EnableKeyword("_PINCH_ON");
         return true;
     }
     public virtual void BeHit(DamageInstance instance) {
@@ -110,6 +115,7 @@ public class Character : PooledItem {
         }
     }
     public virtual void Die() {
+        died?.Invoke();
     }
     public override void Awake() {
         base.Awake();
@@ -204,6 +210,7 @@ public class Character : PooledItem {
         enabled = !Pauser.GetPaused();
         beingVored = false;
         health.Heal(99999f);
+        targetRenderer.material.DisableKeyword("_PINCH_ON");
     }
     protected virtual void OnPauseChanged(bool paused) {
         enabled = !paused && !beingVored;

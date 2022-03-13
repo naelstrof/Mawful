@@ -32,8 +32,8 @@ public class Garlic : Weapon {
                 yield return null;
             }
             yield return timeToWait;
+            bool hit = false;
             for (int i=0;i<projectileCount.GetValue();i++) {
-                bool hit = false;
                 foreach(Character character in Character.characters) {
                     if (character == player) {
                         continue;
@@ -44,10 +44,10 @@ public class Garlic : Weapon {
                         hit = true;
                     }
                 }
-                if (hit) {
-                    hitSound.PlayOneShot(source);
-                }
                 yield return perProjectileWait;
+            }
+            if (hit) {
+                hitSound.PlayOneShot(source);
             }
         }
     }

@@ -14,7 +14,11 @@ public class CameraFollower : MonoBehaviour {
     public bool main = true;
     public Transform targetTransform;
     public static Camera GetCamera() => instance.cam;
-    public static void SetGloryVore(bool glory) => instance.SetGloryVoreCam(glory);
+    public static void SetGloryVore(bool glory) {
+        if (instance!=null) {
+            instance.SetGloryVoreCam(glory);
+        }
+    }
     public static Vector3 StaticGetTargetScreenSpace() {
         return instance.GetTargetScreenSpace();
     }

@@ -786,5 +786,13 @@ MonoBehaviour:
     m_Localized: "Daha da fazla Goo! \xC7ok var."
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Localized: Popo Slam !!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Localized: Popo Slam !!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -20,7 +20,7 @@ public class PlayerCharacter : Character {
     private Vector3 lookSmooth;
     public override void BeHit(DamageInstance instance) {
         // 0.3 second damage boost
-        if (Time.time - lastHitTime > 0.5f || frozen) {
+        if ((Time.time - lastHitTime > 0.5f || frozen) && !invulnerable) {
             base.BeHit(instance);
             lastHitTime = Time.time;
         }

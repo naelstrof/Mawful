@@ -157,9 +157,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 001ae02bcb43cc040a5f6173c284621e, type: 2}
   radius: 0.2
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
+  invulnerable: 0
   scoreCard: {fileID: 11400000, guid: 57a43ebedb51ea84bbab0796686ac373, type: 2}
   damage:
     modifiers: []
+  voreMagnetTransform: {fileID: 1093394043516265268}
   audioSource: {fileID: 0}
   dieSound: {fileID: 11400000, guid: 21f06a827a502814fbe3d4d47c280beb, type: 2}
 --- !u!82 &1702953447796424297

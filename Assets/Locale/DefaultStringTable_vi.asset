@@ -803,5 +803,13 @@ MonoBehaviour:
     m_Localized: "Th\u1EADm ch\xED nhi\u1EC1u h\u01A1n! Qu\xE1 nhi\u1EC1u r\u1ED3i."
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Localized: "M\xF4ng slam !!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Localized: "M\xF4ng slam !!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

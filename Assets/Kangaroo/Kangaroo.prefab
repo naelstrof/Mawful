@@ -157,9 +157,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 36d52e923ec7c494abc49ef5ad0e8ab5, type: 2}
   radius: 0.4
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
+  invulnerable: 0
   scoreCard: {fileID: 11400000, guid: 4eadf9d140ee5644282d6259e474d209, type: 2}
   damage:
     modifiers: []
+  voreMagnetTransform: {fileID: 1093394043516265268}
   audioSource: {fileID: 0}
   dieSound: {fileID: 0}
 --- !u!82 &2423621335245222833
@@ -343,7 +345,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8568940013376001890}
-  m_Mesh: {fileID: 4300000, guid: bb56692db3ef54a4f8744207c941aa87, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 5b05588721ad1e64b80d57f43c08696f, type: 2}
 --- !u!23 &6719131962823964539
 MeshRenderer:
   m_ObjectHideFlags: 0

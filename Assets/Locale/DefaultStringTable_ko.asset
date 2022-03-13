@@ -804,5 +804,13 @@ MonoBehaviour:
     m_Localized: "\uB354 \uB9CE\uC740 goo! \uB108\uBB34 \uB9CE\uC774 \uC788\uC5B4\uC694."
     m_Metadata:
       m_Items: []
+  - m_Id: 5727232214790144
+    m_Localized: "\uC5C9\uB369\uC774 \uC2AC\uB7A8 !!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5727557197852672
+    m_Localized: "\uC5C9\uB369\uC774 \uC2AC\uB7A8 !!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

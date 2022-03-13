@@ -32,7 +32,7 @@ public class ExtraHeart : Weapon {
         addCount++;
     }
     public override int GetUpgradeLevel() {
-        return addCount;
+        return addCount-1;
     }
     public override int GetUpgradeTotal() {
         return 2;

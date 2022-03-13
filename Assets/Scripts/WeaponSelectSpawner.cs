@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class WeaponSelectSpawner : MonoBehaviour {
     [SerializeField]
+    private WeaponCard defaultWeapon;
+    [SerializeField]
     private List<WeaponCard> availableWeapons;
     [SerializeField]
     private GameObject weaponDisplayPrefab;
@@ -27,6 +29,7 @@ public class WeaponSelectSpawner : MonoBehaviour {
             obj.transform.Find("Image").GetComponent<Image>().sprite = card.icon;
             obj.GetComponentInChildren<LocalizeStringEvent>().StringReference = card.localizedName;
             obj.GetComponentInChildren<Button>().onClick.AddListener(()=>{
+                WeaponSet.SetStaringWeapons(new WeaponCard[] { card, defaultWeapon});
                 panel.SetActive(false);
                 nextPanel.SetActive(true);
             });
