@@ -66,7 +66,7 @@ public class Projectile : PooledItem {
         this.position = position;
         lastPosition = position - velocity;
         transform.position = this.position;
-        transform.localScale = Vector3.one*radius;
+        transform.localScale = Vector3.one*Mathf.Max(radius,0.01f);
     }
     protected void CheckCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
         foreach(Character character in element.charactersInElement) {
@@ -122,7 +122,7 @@ public class Projectile : PooledItem {
         if (velMag > 0.0001f) {
             transform.rotation = Quaternion.LookRotation(velocity.normalized, Vector3.up);
         }
-        transform.localScale = Vector3.one*radius + Vector3.forward*velMag*1.5f;
+        transform.localScale = Vector3.one*Mathf.Max(radius,0.01f) + Vector3.forward*velMag*1.5f;
         transform.position = interpolatedPosition;
     }
     public override void Reset(bool recurse = true) {

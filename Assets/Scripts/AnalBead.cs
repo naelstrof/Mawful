@@ -39,7 +39,7 @@ public class AnalBead : PooledItem {
         float t = Mathf.Clamp01((timerSource.timer-startTime)/duration);
         float scale = scaleCurve.Evaluate(t);
         transform.position = positionCurve.Evaluate(t) - offset*scale;
-        transform.localScale = Vector3.one * scale;
+        transform.localScale = Vector3.one * Mathf.Max(scale,0.01f);
         if (!triggered && t>0.7f) {
             timerSource.PacketReachedEnd(packet);
             triggered = true;

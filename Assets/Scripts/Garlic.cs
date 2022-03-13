@@ -24,7 +24,7 @@ public class Garlic : Weapon {
         timeToWait = new WaitForSeconds(1f/newCooldown);
     }
     void OnRadiusChanged(float newRadius) {
-        garlicVisuals.transform.localScale = Vector3.Scale(Vector3.one * newRadius, new Vector3(2f,0.1f,2f));
+        garlicVisuals.transform.localScale = Vector3.Scale(Vector3.one * Mathf.Max(newRadius,0.01f), new Vector3(2f,0.1f,2f));
     }
     public override IEnumerator FireRoutine() {
         while(isActiveAndEnabled) {

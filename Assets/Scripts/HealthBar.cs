@@ -40,7 +40,7 @@ public class HealthBar : MonoBehaviour {
         float ratio = character.health.GetHealth()/character.health.GetValue();
         flashMaterial.color = originalColor;
         outlineRenderer.material.color = originalOutlineColor;
-        flashRenderer.transform.localScale = Vector3.Scale(originalScale, new Vector3(ratio,1f,1f));
+        flashRenderer.transform.localScale = Vector3.Scale(originalScale, new Vector3(Mathf.Max(ratio,0.01f),1f,1f));
         flashRenderer.transform.localPosition = Vector3.left*(1f-ratio)*originalScale.x*0.5f;
         if (rountine != null) {
             StopCoroutine(rountine);

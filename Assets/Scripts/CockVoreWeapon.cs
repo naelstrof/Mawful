@@ -120,7 +120,7 @@ public class CockVoreWeapon : Weapon {
     public void Update() {
         float pastTime = Time.time-lastFireTime;
         float ratio = Mathf.Clamp01(pastTime/timeToWait);
-        bar.transform.localScale = Vector3.Scale(originalBarScale, new Vector3(ratio,1f,1f));
+        bar.transform.localScale = Vector3.Scale(originalBarScale, new Vector3(Mathf.Max(ratio,0.01f),1f,1f));
         bar.transform.localPosition = Vector3.left*(1f-ratio)*originalBarScale.x*0.5f;
         if (ratio == 1f) {
             bar.material.color = Color.Lerp(originalBarColor, Color.white, Mathf.Abs(Mathf.Sin(Time.time*6f)));
