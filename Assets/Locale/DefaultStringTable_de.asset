@@ -735,7 +735,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
-    m_Localized: Peaking Boomerangs! Hoher Schaden, schwer zu zielen.
+    m_Localized: Peaking Bumerangs! Hoher Schaden, schwer zu zielen.
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392835
@@ -793,7 +793,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt Slam !!
+    m_Localized: Hintern Slam !! Oder ist es blockiert?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Quecksilber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Meine F\xFC\xDFe sind so schnell!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: Schrittgeschwindigkeit
     m_Metadata:
       m_Items: []
   references:

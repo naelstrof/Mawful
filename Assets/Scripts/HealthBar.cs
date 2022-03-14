@@ -23,7 +23,8 @@ public class HealthBar : MonoBehaviour {
         flashMaterial = flashRenderer.material;
         originalColor = flashMaterial.color;
         originalOutlineColor = outlineRenderer.material.color;
-        rountine = StartCoroutine(HurtRoutine());
+        flashMaterial.color = originalColor;
+        OnHealthChanged(character.health.GetHealth());
     }
     void OnDisable() {
         flashMaterial.color = originalColor;

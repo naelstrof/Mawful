@@ -9,7 +9,13 @@ public class Whip : Weapon {
     [SerializeField]
     private GameObject whipPrefab;
     private List<VisualEffect> whips;
+    [SerializeField]
+    private AudioPack whipMiss;
+    [SerializeField]
+    private AudioPack whipHit;
+    private AudioSource source;
     public override void Start() {
+        source = GetComponentInParent<AudioSource>();
         cooldown.changed += OnCooldownChanged;
         radius.changed += OnRadiusChanged;
         projectileCount.changed += OnProjectileCountChanged;
@@ -48,6 +54,7 @@ public class Whip : Weapon {
             }
             yield return timeToWait;
             for (int i=0;i<whips.Count;i++) {
+                bool hit = false;
                 float aimAngle = Vector3.Dot(CameraFollower.GetCamera().transform.right, player.fireDir) > 0f ? 0f : 180f;
                 whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f+90f+aimAngle+CameraFollower.GetCamera().transform.rotation.eulerAngles.y, Vector3.up);
                 whips[i].Play();
@@ -60,8 +67,14 @@ public class Whip : Weapon {
                         if (Vector3.Distance(character.position, player.position+whips[i].transform.forward*dist) <= vfxRadius+character.radius) {
                             float knockbackAmount = 0.2f*dist;
                             character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
+                            hit = true;
                         }
                     }
+                }
+                if (hit) {
+                    whipHit.PlayOneShot(source);
+                } else {
+                    whipMiss.PlayOneShot(source);
                 }
                 yield return perProjectileWait;
             }

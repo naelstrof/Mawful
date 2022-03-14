@@ -62,6 +62,8 @@ public class AnalVoreWeapon : Weapon {
                     OnPostSlam();
                     return;
                 }
+                // Hack, just keep things from slurping in too early-- let them stack up.
+                animator.SetTrigger("ButtChomp");
                 animator.SetBool("AnalVore", true);
                 waiting++;
                 Score.AddDamage(weaponCard, target.health.GetHealth());
@@ -126,6 +128,7 @@ public class AnalVoreWeapon : Weapon {
     }
     public IEnumerator UltimateRoutine() {
         attackCount = 0;
+        doneAttacking = false;
         foreach(AttributeModifier modifier in speed.modifiers) {
             player.speed.AddModifier(modifier);
         }
@@ -144,6 +147,7 @@ public class AnalVoreWeapon : Weapon {
         foreach(AttributeModifier modifier in speed.modifiers) {
             player.speed.RemoveModifier(modifier);
         }
+        attackCount = 0;
         doneAttacking = false;
         player.SetFreeze(false);
         player.invulnerable = false;

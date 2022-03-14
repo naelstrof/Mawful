@@ -789,7 +789,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt slam !!
+    m_Localized: Butt slam !! Eller er det jordet pund?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Quicksilver.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Mine f\xF8dder er s\xE5 hurtige!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "G\xE5hastighed"
     m_Metadata:
       m_Items: []
   references:

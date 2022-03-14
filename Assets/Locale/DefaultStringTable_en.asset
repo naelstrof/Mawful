@@ -793,7 +793,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: BUTT SLAM!!
+    m_Localized: BUTT SLAM!! Or is it ground pound?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Quicksilver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: My feet are so speedy!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: Walk speed
     m_Metadata:
       m_Items: []
   references:

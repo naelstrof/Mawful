@@ -788,7 +788,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt Slam !!
+    m_Localized: Butt Slam !! Vai onko se maadoitettu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Quicksilver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: Jalkani ovat niin nopeita!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "K\xE4vell\xE4 nopeus"
     m_Metadata:
       m_Items: []
   references:

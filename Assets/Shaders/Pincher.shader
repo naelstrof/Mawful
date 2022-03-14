@@ -7,14 +7,14 @@ Shader "Pincher"
 		[HideInInspector] _AlphaCutoff("Alpha Cutoff ", Range(0, 1)) = 0.5
 		[HideInInspector] _EmissionColor("Emission Color", Color) = (1,1,1,1)
 		[ASEBegin]_MainTex("MainTex", 2D) = "white" {}
+		_PinchNormal("PinchNormal", Vector) = (0,1,0,0)
+		_PinchPosition("PinchPosition", Vector) = (0,0,0,0)
+		[Toggle(_PINCH_ON)] _Pinch("Pinch", Float) = 1
+		_PinchWeight("PinchWeight", Range( 0 , 1)) = 1
 		_BumpMap("BumpMap", 2D) = "bump" {}
 		_MetallicGlossMap("MetallicGlossMap", 2D) = "gray" {}
 		[HDR]_EmissiveColor("_EmissiveColor", Color) = (0,0,0,0)
-		_PinchNormal("PinchNormal", Vector) = (0,1,0,0)
-		_PinchPosition("PinchPosition", Vector) = (0,0,0,0)
-		_Color("Color", Color) = (0,0,0,0)
-		[Toggle(_PINCH_ON)] _Pinch("Pinch", Float) = 1
-		[ASEEnd]_PinchWeight("PinchWeight", Range( 0 , 1)) = 1
+		[ASEEnd]_Color("Color", Color) = (0,0,0,0)
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 
 		//_TransmissionShadow( "Transmission Shadow", Range( 0, 1 ) ) = 0.5
@@ -211,7 +211,7 @@ Shader "Pincher"
 			#endif
 
 			#define ASE_NEEDS_VERT_POSITION
-			#pragma shader_feature_local _PINCH_ON
+			#pragma multi_compile_local __ _PINCH_ON
 
 
 			struct VertexInput
@@ -286,17 +286,17 @@ Shader "Pincher"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-				float4 appendResult51 = (float4(_PinchPosition , 1.0));
-				float4 transform47 = mul(GetWorldToObjectMatrix(),appendResult51);
-				float4 appendResult52 = (float4(_PinchNormal , 0.0));
-				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
-				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
-				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
-				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
+				float4 appendResult2_g1 = (float4(_PinchPosition , 1.0));
+				float4 transform4_g1 = mul(GetWorldToObjectMatrix(),appendResult2_g1);
+				float4 appendResult5_g1 = (float4(_PinchNormal , 0.0));
+				float4 transform6_g1 = mul(GetWorldToObjectMatrix(),appendResult5_g1);
+				float dotResult8_g1 = dot( ( transform4_g1 - float4( v.vertex.xyz , 0.0 ) ) , transform6_g1 );
+				float4 lerpResult11_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , transform4_g1 , saturate( ( dotResult8_g1 * 3.0 ) ));
+				float4 lerpResult13_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult11_g1 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult66;
+				float4 staticSwitch16_g1 = lerpResult13_g1;
 				#else
-				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
+				float4 staticSwitch16_g1 = float4( v.vertex.xyz , 0.0 );
 				#endif
 				
 				o.ase_texcoord7.xy = v.texcoord.xy;
@@ -308,7 +308,7 @@ Shader "Pincher"
 				#else
 					float3 defaultVertexValue = float3(0, 0, 0);
 				#endif
-				float3 vertexValue = staticSwitch56.xyz;
+				float3 vertexValue = staticSwitch16_g1.xyz;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					v.vertex.xyz = vertexValue;
 				#else
@@ -692,7 +692,7 @@ Shader "Pincher"
 			#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
 
 			#define ASE_NEEDS_VERT_POSITION
-			#pragma shader_feature_local _PINCH_ON
+			#pragma multi_compile_local __ _PINCH_ON
 
 
 			struct VertexInput
@@ -761,17 +761,17 @@ Shader "Pincher"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO( o );
 
-				float4 appendResult51 = (float4(_PinchPosition , 1.0));
-				float4 transform47 = mul(GetWorldToObjectMatrix(),appendResult51);
-				float4 appendResult52 = (float4(_PinchNormal , 0.0));
-				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
-				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
-				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
-				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
+				float4 appendResult2_g1 = (float4(_PinchPosition , 1.0));
+				float4 transform4_g1 = mul(GetWorldToObjectMatrix(),appendResult2_g1);
+				float4 appendResult5_g1 = (float4(_PinchNormal , 0.0));
+				float4 transform6_g1 = mul(GetWorldToObjectMatrix(),appendResult5_g1);
+				float dotResult8_g1 = dot( ( transform4_g1 - float4( v.vertex.xyz , 0.0 ) ) , transform6_g1 );
+				float4 lerpResult11_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , transform4_g1 , saturate( ( dotResult8_g1 * 3.0 ) ));
+				float4 lerpResult13_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult11_g1 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult66;
+				float4 staticSwitch16_g1 = lerpResult13_g1;
 				#else
-				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
+				float4 staticSwitch16_g1 = float4( v.vertex.xyz , 0.0 );
 				#endif
 				
 				o.ase_texcoord2.xy = v.ase_texcoord.xy;
@@ -783,7 +783,7 @@ Shader "Pincher"
 				#else
 					float3 defaultVertexValue = float3(0, 0, 0);
 				#endif
-				float3 vertexValue = staticSwitch56.xyz;
+				float3 vertexValue = staticSwitch16_g1.xyz;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					v.vertex.xyz = vertexValue;
 				#else
@@ -1000,7 +1000,7 @@ Shader "Pincher"
 			#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
 
 			#define ASE_NEEDS_VERT_POSITION
-			#pragma shader_feature_local _PINCH_ON
+			#pragma multi_compile_local __ _PINCH_ON
 
 
 			struct VertexInput
@@ -1065,17 +1065,17 @@ Shader "Pincher"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-				float4 appendResult51 = (float4(_PinchPosition , 1.0));
-				float4 transform47 = mul(GetWorldToObjectMatrix(),appendResult51);
-				float4 appendResult52 = (float4(_PinchNormal , 0.0));
-				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
-				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
-				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
-				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
+				float4 appendResult2_g1 = (float4(_PinchPosition , 1.0));
+				float4 transform4_g1 = mul(GetWorldToObjectMatrix(),appendResult2_g1);
+				float4 appendResult5_g1 = (float4(_PinchNormal , 0.0));
+				float4 transform6_g1 = mul(GetWorldToObjectMatrix(),appendResult5_g1);
+				float dotResult8_g1 = dot( ( transform4_g1 - float4( v.vertex.xyz , 0.0 ) ) , transform6_g1 );
+				float4 lerpResult11_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , transform4_g1 , saturate( ( dotResult8_g1 * 3.0 ) ));
+				float4 lerpResult13_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult11_g1 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult66;
+				float4 staticSwitch16_g1 = lerpResult13_g1;
 				#else
-				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
+				float4 staticSwitch16_g1 = float4( v.vertex.xyz , 0.0 );
 				#endif
 				
 				o.ase_texcoord2.xy = v.ase_texcoord.xy;
@@ -1087,7 +1087,7 @@ Shader "Pincher"
 				#else
 					float3 defaultVertexValue = float3(0, 0, 0);
 				#endif
-				float3 vertexValue = staticSwitch56.xyz;
+				float3 vertexValue = staticSwitch16_g1.xyz;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					v.vertex.xyz = vertexValue;
 				#else
@@ -1280,7 +1280,7 @@ Shader "Pincher"
 			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/ShaderGraphFunctions.hlsl"
 			
 			#define ASE_NEEDS_VERT_POSITION
-			#pragma shader_feature_local _PINCH_ON
+			#pragma multi_compile_local __ _PINCH_ON
 
 
 			#pragma shader_feature _ _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
@@ -1347,17 +1347,17 @@ Shader "Pincher"
 				UNITY_TRANSFER_INSTANCE_ID( v, o );
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO( o );
 
-				float4 appendResult51 = (float4(_PinchPosition , 1.0));
-				float4 transform47 = mul(GetWorldToObjectMatrix(),appendResult51);
-				float4 appendResult52 = (float4(_PinchNormal , 0.0));
-				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
-				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
-				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
-				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
+				float4 appendResult2_g1 = (float4(_PinchPosition , 1.0));
+				float4 transform4_g1 = mul(GetWorldToObjectMatrix(),appendResult2_g1);
+				float4 appendResult5_g1 = (float4(_PinchNormal , 0.0));
+				float4 transform6_g1 = mul(GetWorldToObjectMatrix(),appendResult5_g1);
+				float dotResult8_g1 = dot( ( transform4_g1 - float4( v.vertex.xyz , 0.0 ) ) , transform6_g1 );
+				float4 lerpResult11_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , transform4_g1 , saturate( ( dotResult8_g1 * 3.0 ) ));
+				float4 lerpResult13_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult11_g1 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult66;
+				float4 staticSwitch16_g1 = lerpResult13_g1;
 				#else
-				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
+				float4 staticSwitch16_g1 = float4( v.vertex.xyz , 0.0 );
 				#endif
 				
 				o.ase_texcoord2.xy = v.ase_texcoord.xy;
@@ -1370,7 +1370,7 @@ Shader "Pincher"
 				#else
 					float3 defaultVertexValue = float3(0, 0, 0);
 				#endif
-				float3 vertexValue = staticSwitch56.xyz;
+				float3 vertexValue = staticSwitch16_g1.xyz;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					v.vertex.xyz = vertexValue;
 				#else
@@ -1548,7 +1548,7 @@ Shader "Pincher"
 			#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
 
 			#define ASE_NEEDS_VERT_POSITION
-			#pragma shader_feature_local _PINCH_ON
+			#pragma multi_compile_local __ _PINCH_ON
 
 
 			struct VertexInput
@@ -1614,17 +1614,17 @@ Shader "Pincher"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-				float4 appendResult51 = (float4(_PinchPosition , 1.0));
-				float4 transform47 = mul(GetWorldToObjectMatrix(),appendResult51);
-				float4 appendResult52 = (float4(_PinchNormal , 0.0));
-				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
-				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
-				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
-				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
+				float4 appendResult2_g1 = (float4(_PinchPosition , 1.0));
+				float4 transform4_g1 = mul(GetWorldToObjectMatrix(),appendResult2_g1);
+				float4 appendResult5_g1 = (float4(_PinchNormal , 0.0));
+				float4 transform6_g1 = mul(GetWorldToObjectMatrix(),appendResult5_g1);
+				float dotResult8_g1 = dot( ( transform4_g1 - float4( v.vertex.xyz , 0.0 ) ) , transform6_g1 );
+				float4 lerpResult11_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , transform4_g1 , saturate( ( dotResult8_g1 * 3.0 ) ));
+				float4 lerpResult13_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult11_g1 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult66;
+				float4 staticSwitch16_g1 = lerpResult13_g1;
 				#else
-				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
+				float4 staticSwitch16_g1 = float4( v.vertex.xyz , 0.0 );
 				#endif
 				
 				o.ase_texcoord3.xy = v.ase_texcoord.xy;
@@ -1636,7 +1636,7 @@ Shader "Pincher"
 				#else
 					float3 defaultVertexValue = float3(0, 0, 0);
 				#endif
-				float3 vertexValue = staticSwitch56.xyz;
+				float3 vertexValue = staticSwitch16_g1.xyz;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					v.vertex.xyz = vertexValue;
 				#else
@@ -1854,7 +1854,7 @@ Shader "Pincher"
 			#endif
 
 			#define ASE_NEEDS_VERT_POSITION
-			#pragma shader_feature_local _PINCH_ON
+			#pragma multi_compile_local __ _PINCH_ON
 
 
 			struct VertexInput
@@ -1929,17 +1929,17 @@ Shader "Pincher"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-				float4 appendResult51 = (float4(_PinchPosition , 1.0));
-				float4 transform47 = mul(GetWorldToObjectMatrix(),appendResult51);
-				float4 appendResult52 = (float4(_PinchNormal , 0.0));
-				float4 transform53 = mul(GetWorldToObjectMatrix(),appendResult52);
-				float dotResult54 = dot( ( transform47 - float4( v.vertex.xyz , 0.0 ) ) , transform53 );
-				float4 lerpResult63 = lerp( float4( v.vertex.xyz , 0.0 ) , transform47 , saturate( ( dotResult54 * 3.0 ) ));
-				float4 lerpResult66 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult63 , _PinchWeight);
+				float4 appendResult2_g1 = (float4(_PinchPosition , 1.0));
+				float4 transform4_g1 = mul(GetWorldToObjectMatrix(),appendResult2_g1);
+				float4 appendResult5_g1 = (float4(_PinchNormal , 0.0));
+				float4 transform6_g1 = mul(GetWorldToObjectMatrix(),appendResult5_g1);
+				float dotResult8_g1 = dot( ( transform4_g1 - float4( v.vertex.xyz , 0.0 ) ) , transform6_g1 );
+				float4 lerpResult11_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , transform4_g1 , saturate( ( dotResult8_g1 * 3.0 ) ));
+				float4 lerpResult13_g1 = lerp( float4( v.vertex.xyz , 0.0 ) , lerpResult11_g1 , _PinchWeight);
 				#ifdef _PINCH_ON
-				float4 staticSwitch56 = lerpResult66;
+				float4 staticSwitch16_g1 = lerpResult13_g1;
 				#else
-				float4 staticSwitch56 = float4( v.vertex.xyz , 0.0 );
+				float4 staticSwitch16_g1 = float4( v.vertex.xyz , 0.0 );
 				#endif
 				
 				o.ase_texcoord7.xy = v.texcoord.xy;
@@ -1951,7 +1951,7 @@ Shader "Pincher"
 				#else
 					float3 defaultVertexValue = float3(0, 0, 0);
 				#endif
-				float3 vertexValue = staticSwitch56.xyz;
+				float3 vertexValue = staticSwitch16_g1.xyz;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					v.vertex.xyz = vertexValue;
 				#else
@@ -2299,29 +2299,14 @@ Shader "Pincher"
 }
 /*ASEBEGIN
 Version=18935
-284;285;2027;737;1137.301;138.9139;1.798758;True;True
-Node;AmplifyShaderEditor.Vector3Node;50;-833.5298,564.8736;Inherit;False;Property;_PinchPosition;PinchPosition;5;0;Create;True;0;0;0;False;0;False;0,0,0;0,-0.33,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.DynamicAppendNode;51;-593.1422,574.9378;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;1;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.Vector3Node;45;-831.9488,841.2955;Inherit;False;Property;_PinchNormal;PinchNormal;4;0;Create;True;0;0;0;False;0;False;0,1,0;0,1,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.WorldToObjectTransfNode;47;-368.3631,609.9669;Inherit;False;1;0;FLOAT4;0,0,0,1;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.DynamicAppendNode;52;-610.6714,834.7197;Inherit;False;FLOAT4;4;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.PosVertexDataNode;57;-299.5983,305.8758;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.WorldToObjectTransfNode;53;-364.7825,881.2543;Inherit;False;1;0;FLOAT4;0,0,0,1;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleSubtractOpNode;59;-158.3982,552.3758;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.DotProductOpNode;54;-70.96737,815.5097;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;61;91.7018,919.1758;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;3;False;1;FLOAT;0
-Node;AmplifyShaderEditor.SaturateNode;62;294.3018,879.1758;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.LerpOp;63;419.1019,719.2761;Inherit;False;3;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT;0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.RangedFloatNode;65;180.4364,526.5024;Inherit;False;Property;_PinchWeight;PinchWeight;8;0;Create;True;0;0;0;False;0;False;1;0;0;1;0;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;41;-560.7904,-740.9868;Inherit;False;Property;_Color;Color;6;0;Create;True;0;0;0;False;0;False;0,0,0,0;1,1,1,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+240;266;2027;737;2224.844;451.3665;2.487065;True;True
+Node;AmplifyShaderEditor.ColorNode;41;-560.7904,-740.9868;Inherit;False;Property;_Color;Color;9;0;Create;True;0;0;0;False;0;False;0,0,0,0;1,1,1,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;8;-670.004,-217.9936;Inherit;True;Property;_MainTex;MainTex;0;0;Create;True;0;0;0;False;0;False;-1;None;b75bae14171a90d468d61afd2fe3b5ba;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.LerpOp;66;662.3673,480.5627;Inherit;False;3;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT;0;False;1;FLOAT4;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;42;-48.59033,-496.5869;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ColorNode;43;45.23389,-261.7788;Inherit;False;Property;_EmissiveColor;_EmissiveColor;3;1;[HDR];Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;9;-671.6412,-15.96835;Inherit;True;Property;_BumpMap;BumpMap;1;0;Create;True;0;0;0;False;0;False;-1;None;7291f02e0ab138c44a3cee2eea87aea8;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;10;-666.6412,201.0316;Inherit;True;Property;_MetallicGlossMap;MetallicGlossMap;2;0;Create;True;0;0;0;False;0;False;-1;None;c9d8af14729c1724fb5fff96fdb76035;True;0;False;gray;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SignOpNode;64;123.3105,809.4239;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.StaticSwitch;56;886.2649,309.6079;Inherit;False;Property;_Pinch;Pinch;7;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT4;0,0,0,0;False;0;FLOAT4;0,0,0,0;False;2;FLOAT4;0,0,0,0;False;3;FLOAT4;0,0,0,0;False;4;FLOAT4;0,0,0,0;False;5;FLOAT4;0,0,0,0;False;6;FLOAT4;0,0,0,0;False;7;FLOAT4;0,0,0,0;False;8;FLOAT4;0,0,0,0;False;1;FLOAT4;0
+Node;AmplifyShaderEditor.ColorNode;43;45.23389,-261.7788;Inherit;False;Property;_EmissiveColor;_EmissiveColor;8;1;[HDR];Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;9;-671.6412,-15.96835;Inherit;True;Property;_BumpMap;BumpMap;6;0;Create;True;0;0;0;False;0;False;-1;None;7291f02e0ab138c44a3cee2eea87aea8;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;10;-666.6412,201.0316;Inherit;True;Property;_MetallicGlossMap;MetallicGlossMap;7;0;Create;True;0;0;0;False;0;False;-1;None;c9d8af14729c1724fb5fff96fdb76035;True;0;False;gray;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.FunctionNode;67;635.1479,318.2908;Inherit;False;Pincher;1;;1;426dfffb38b0cc748a090f5f9e6a2123;0;0;1;FLOAT4;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ExtraPrePass;0;0;ExtraPrePass;5;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;0;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;2;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ShadowCaster;0;2;ShadowCaster;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;False;False;False;False;False;True;1;False;-1;True;3;False;-1;False;True;1;LightMode=ShadowCaster;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;4;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;Meta;0;4;Meta;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=Meta;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
@@ -2330,32 +2315,13 @@ Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;5;0,0;Float;False;False;-1;
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;1143.853,-123.3518;Float;False;True;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;2;Pincher;94348b07e5e8bab40bd6c8a1e3df54cd;True;Forward;0;1;Forward;18;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;1;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;1;LightMode=UniversalForward;False;False;0;Hidden/InternalErrorShader;0;0;Standard;38;Workflow;1;0;Surface;0;0;  Refraction Model;0;0;  Blend;0;0;Two Sided;1;0;Fragment Normal Space,InvertActionOnDeselection;0;0;Transmission;0;0;  Transmission Shadow;0.5,False,-1;0;Translucency;0;0;  Translucency Strength;1,False,-1;0;  Normal Distortion;0.5,False,-1;0;  Scattering;2,False,-1;0;  Direct;0.9,False,-1;0;  Ambient;0.1,False,-1;0;  Shadow;0.5,False,-1;0;Cast Shadows;1;0;  Use Shadow Threshold;0;0;Receive Shadows;1;0;GPU Instancing;0;637812707778280353;LOD CrossFade;0;637812707794140346;Built-in Fog;1;0;_FinalColorxAlpha;0;0;Meta Pass;0;637812707841260347;Override Baked GI;0;0;Extra Pre Pass;0;0;DOTS Instancing;0;0;Tessellation;0;0;  Phong;0;0;  Strength;0.5,False,-1;0;  Type;0;0;  Tess;16,False,-1;0;  Min;10,False,-1;0;  Max;25,False,-1;0;  Edge Length;16,False,-1;0;  Max Displacement;25,False,-1;0;Write Depth;0;0;  Early Z;0;0;Vertex Position,InvertActionOnDeselection;0;637827444974580486;0;8;False;True;True;True;False;True;True;True;False;;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;6;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;DepthNormals;0;6;DepthNormals;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;False;-1;True;3;False;-1;False;True;1;LightMode=DepthNormals;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;7;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraph.PBRMasterGUI;0;1;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;GBuffer;0;7;GBuffer;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;0;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;1;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;1;LightMode=UniversalGBuffer;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
-WireConnection;51;0;50;0
-WireConnection;47;0;51;0
-WireConnection;52;0;45;0
-WireConnection;53;0;52;0
-WireConnection;59;0;47;0
-WireConnection;59;1;57;0
-WireConnection;54;0;59;0
-WireConnection;54;1;53;0
-WireConnection;61;0;54;0
-WireConnection;62;0;61;0
-WireConnection;63;0;57;0
-WireConnection;63;1;47;0
-WireConnection;63;2;62;0
-WireConnection;66;0;57;0
-WireConnection;66;1;63;0
-WireConnection;66;2;65;0
 WireConnection;42;0;41;0
 WireConnection;42;1;8;0
-WireConnection;64;0;54;0
-WireConnection;56;1;57;0
-WireConnection;56;0;66;0
 WireConnection;1;0;42;0
 WireConnection;1;1;9;0
 WireConnection;1;2;43;0
 WireConnection;1;3;10;1
 WireConnection;1;6;8;4
-WireConnection;1;8;56;0
+WireConnection;1;8;67;0
 ASEEND*/
-//CHKSM=1B8CF39D375E5F1CD36D717A3A8035806A81BF82
+//CHKSM=E826EDA639FA1CAF3608CC3FFF4C3ECD371ECAE1

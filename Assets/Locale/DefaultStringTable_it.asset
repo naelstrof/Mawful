@@ -793,7 +793,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Culo slam !!
+    m_Localized: "Culo slam !! O \xE8 sterlina?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Quicksilver.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "I miei piedi sono cos\xEC veloci!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "Velocit\xE0 di cammino"
     m_Metadata:
       m_Items: []
   references:

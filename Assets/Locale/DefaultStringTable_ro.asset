@@ -791,7 +791,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt Slam !!
+    m_Localized: Butt Slam !! Sau este lira de sol?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Mercur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Picioarele mele sunt at\xE2t de rapide!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: Viteza de mers pe jos.
     m_Metadata:
       m_Items: []
   references:

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf485709fc1332443a4e5e0b661279e1, type: 3}
+  m_Name: ButtSlam
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: ea0193d6b807b994d816088ec97c2a9d, type: 3}
+  - {fileID: 8300000, guid: b883e1dcb701e8e4aba07053d4895bde, type: 3}
+  - {fileID: 8300000, guid: 4f25b60af1cb6764e8237245fd3651d7, type: 3}
+  - {fileID: 8300000, guid: 754545c42f9fe664b9db89856855e5f9, type: 3}
+  volume: 1
+  group: {fileID: -8804713341038816983, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}

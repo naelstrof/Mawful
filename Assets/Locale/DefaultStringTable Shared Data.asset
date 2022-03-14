@@ -771,6 +771,18 @@ MonoBehaviour:
     m_Key: WEAPON_BUTTSLAM_DESCRIPTION
     m_Metadata:
       m_Items: []
+  - m_Id: 6088671169269760
+    m_Key: WEAPON_QUICKSILVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Key: WEAPON_QUICKSILVER_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Key: STAT_WALKSPEED
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

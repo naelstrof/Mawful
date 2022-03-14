@@ -784,7 +784,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt slam !!
+    m_Localized: Butt slam !! Eller er det grunnpund?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: "kvikks\xF8lv"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Mine f\xF8tter er s\xE5 raske!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "G\xE5 hastighet"
     m_Metadata:
       m_Items: []
   references:

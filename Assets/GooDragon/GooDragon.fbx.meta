@@ -467,6 +467,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.6613895
+        functionName: PlayFromPack
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: 546d27eaba37fd345bda1c6aee7cdeb5, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.8327157
         functionName: InvokeTrigger
         data: AnalAttacked

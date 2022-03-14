@@ -99,6 +99,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
@@ -106,24 +115,28 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -463,6 +476,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -470,42 +492,49 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: aa695dead8f068f498c0ef7829838b8f, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers:
     - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
@@ -1253,6 +1282,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -1260,42 +1298,49 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -2719,6 +2764,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
@@ -2726,24 +2780,28 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -2760,6 +2818,8 @@ MonoBehaviour:
   speed:
     modifiers: []
   whipPrefab: {fileID: 4961857443656139276, guid: d08810abf11ebfd43a144d8cdb3bf515, type: 3}
+  whipMiss: {fileID: 11400000, guid: 6f1d342ed7471da4f96b49f4832ab84e, type: 2}
+  whipHit: {fileID: 11400000, guid: 9a6d22d0d66fa9c4e8301e9f77821e11, type: 2}
   references:
     version: 1
 --- !u!1 &3303353412445750108
@@ -2878,7 +2938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4202147925099595909}
-  - component: {fileID: 8283321178163504635}
+  - component: {fileID: 2024811872322105345}
   m_Layer: 0
   m_Name: GooProducer
   m_TagString: Untagged
@@ -2900,7 +2960,7 @@ Transform:
   m_Father: {fileID: 8231813608218332607}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8283321178163504635
+--- !u!114 &2024811872322105345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2909,7 +2969,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3427120027136413378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e100381c0be279f47a21129b1f20ad09, type: 3}
+  m_Script: {fileID: 11500000, guid: 8305f6ae34be07a46b481898afe2200b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 9f7d0b9f3d08a2f4bad96160c1a7b9dd, type: 2}
@@ -2967,7 +3027,58 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  upgrades: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgrades:
+  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
+  - countModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -2980,7 +3091,6 @@ MonoBehaviour:
     modifiers: []
   speed:
     modifiers: []
-  projectileCountModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
   references:
     version: 1
 --- !u!1 &3497111116916458203
@@ -3202,6 +3312,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
@@ -3209,36 +3328,42 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     penetrationModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 11400000, guid: aa695dead8f068f498c0ef7829838b8f, type: 2}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -3395,6 +3520,149 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &3625952133348834029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410310559841305018}
+  - component: {fileID: 6628364899132470145}
+  m_Layer: 0
+  m_Name: Quicksilver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1410310559841305018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3625952133348834029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8231813608218332607}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6628364899132470145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3625952133348834029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8305f6ae34be07a46b481898afe2200b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponCard: {fileID: 11400000, guid: 32e03e181798de64eba1821bc6f3b780, type: 2}
+  countText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5337045474529280
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  damageText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5337045474529281
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  cooldownText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5337045474529282
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  penetrationText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5337045474529283
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  radiusText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5337045474529284
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  speedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 5337045474529285
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgrades:
+  - countModifier: {fileID: 0}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+  - countModifier: {fileID: 0}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+  - countModifier: {fileID: 0}
+    damageModifier: {fileID: 0}
+    cooldownModifier: {fileID: 0}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+  projectileCount:
+    modifiers: []
+  damage:
+    modifiers: []
+  cooldown:
+    modifiers: []
+  penetration:
+    modifiers: []
+  radius:
+    modifiers: []
+  speed:
+    modifiers: []
+  references:
+    version: 1
 --- !u!1 &4290757368186533985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4003,6 +4271,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
@@ -4010,24 +4287,28 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 0}
     damageModifier: {fileID: 0}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -4427,6 +4708,7 @@ Transform:
   - {fileID: 5240592437702766551}
   - {fileID: 4202147925099595909}
   - {fileID: 2843231008783382818}
+  - {fileID: 1410310559841305018}
   m_Father: {fileID: 2325681476139413498}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4630,7 +4912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5240592437702766551}
-  - component: {fileID: 7214603838789162870}
+  - component: {fileID: 7947328219431768502}
   m_Layer: 0
   m_Name: ExtraHeart
   m_TagString: Untagged
@@ -4652,7 +4934,7 @@ Transform:
   m_Father: {fileID: 8231813608218332607}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7214603838789162870
+--- !u!114 &7947328219431768502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4661,7 +4943,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7894134578310152021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffdd180842bc08b449d8a23970444d68, type: 3}
+  m_Script: {fileID: 11500000, guid: 8305f6ae34be07a46b481898afe2200b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 8e0fd0be7585b264ea848df636061d30, type: 2}
@@ -4719,7 +5001,30 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  upgrades: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgrades:
+  - countModifier: {fileID: 0}
+    damageModifier: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
+    cooldownModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
+  - countModifier: {fileID: 0}
+    damageModifier: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
+    cooldownModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    penetrationModifier: {fileID: 0}
+    radiusModifier: {fileID: 0}
+    speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -4732,10 +5037,6 @@ MonoBehaviour:
     modifiers: []
   speed:
     modifiers: []
-  cooldownModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
-  damageModifier: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
-  speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
-  radiusModifer: {fileID: 11400000, guid: da3ae7b700db2394fac11935947a0c4b, type: 2}
   references:
     version: 1
 --- !u!1 &8178335319285403162
@@ -4836,6 +5137,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  walkSpeedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
+    m_TableEntryReference:
+      m_KeyId: 6098923893739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   upgrades:
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
@@ -4843,24 +5153,28 @@ MonoBehaviour:
     penetrationModifier: {fileID: 0}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     radiusModifier: {fileID: 0}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 0}
     penetrationModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     penetrationModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     speedModifier: {fileID: 0}
+    playerSpeedModifier: {fileID: 0}
   projectileCount:
     modifiers: []
   damage:
@@ -5564,44 +5878,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
---- !u!1 &2098038111495308778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1609590634486210384 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &4662992477826139434 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8734260831987665276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7559996389290045895, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8817191394875885942 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7746234797249311181, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &551499194026544789 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5246715961799584136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2806649645742534349, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &976100746562172255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2042133044192677348, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7712165705650932984 stripped
@@ -5614,9 +5893,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &551499194026544789 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8734260831987665276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7559996389290045895, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4662992477826139434 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1609590634486210384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8817191394875885942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7746234797249311181, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &976100746562172255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2042133044192677348, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1531753657526372616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 332477524584313267, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2098038111495308778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!137 &1331076685134111450 stripped
@@ -5761,11 +6075,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
---- !u!224 &5368364855599299986 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 2491081579466430471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3823375967286146019 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1701592448113224676, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
@@ -5780,6 +6089,11 @@ MonoBehaviour:
 --- !u!1 &6914491723654356819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 2491081579466430471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5368364855599299986 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 2491081579466430471}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5545508667278650794
@@ -5924,9 +6238,9 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 5545508667278650794}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3572117743407213310 stripped
+--- !u!1 &7292775335227431904 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3008613764058084938, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 5545508667278650794}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6586760266975331918 stripped
@@ -5940,9 +6254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &7292775335227431904 stripped
+--- !u!1 &3572117743407213310 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3008613764058084938, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 5545508667278650794}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5958699176093884581

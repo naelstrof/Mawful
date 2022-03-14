@@ -874,7 +874,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Bute Slam !!
+    m_Localized: "Bute Slam !! \u0418\u043B\u0438 \u043B\u0438 \u0435 \u0444\u043B\u043E\u0440\u0438\u043D\u0433?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Quicksilver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "\u041A\u0440\u0430\u043A\u0430\u0442\u0430 \u043C\u0438 \u0441\u0430
+      \u0442\u043E\u043B\u043A\u043E\u0432\u0430 \u0431\u044A\u0440\u0437\u0438!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "\u0420\u0430\u0437\u0445\u043E\u0434\u043A\u0430 \u0441\u043A\u043E\u0440\u043E\u0441\u0442"
     m_Metadata:
       m_Items: []
   references:

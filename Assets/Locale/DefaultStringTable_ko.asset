@@ -809,7 +809,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: "\uC5C9\uB369\uC774 \uC2AC\uB7A8 !!"
+    m_Localized: "\uC5C9\uB369\uC774 \uC2AC\uB7A8 !! \uC544\uB2C8\uBA74 \uADF8\uB77C\uC6B4\uB4DC
+      \uD30C\uC6B4\uB4DC\uC785\uB2C8\uAE4C?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: "\uC218\uC740"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "\uB0B4 \uBC1C\uC774 \uB108\uBB34 \uBE68\uB9AC\uC788\uC5B4!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "\uB3C4\uBCF4 \uC18D\uB3C4"
     m_Metadata:
       m_Items: []
   references:

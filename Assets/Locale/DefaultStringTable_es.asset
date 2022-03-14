@@ -789,7 +789,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt slam !!
+    m_Localized: "Butt slam !! \xBFO es tierra molida?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: Azogue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "\xA1Mis pies son tan r\xE1pidos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: Velocidad
     m_Metadata:
       m_Items: []
   references:

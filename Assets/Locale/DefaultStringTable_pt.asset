@@ -791,7 +791,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Bunda slam !!
+    m_Localized: "Bunda slam !! Ou \xE9 libra terrestre?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: "Merc\xFArio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Meus p\xE9s s\xE3o t\xE3o r\xE1pidos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: Velocidade de caminhada
     m_Metadata:
       m_Items: []
   references:

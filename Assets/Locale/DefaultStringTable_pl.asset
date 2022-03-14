@@ -734,7 +734,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5319329942392833
     m_Localized: "Ogrzewa bloje z goo przy najbli\u017Cszym stworzeniu. Sp\xF3jne
-      uszkodzenie."
+      uszkodzenia."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
@@ -796,7 +796,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt Slam !!
+    m_Localized: Butt Slam !! Czy jest funtem naziemnym?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: "Rt\u0119\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Moje stopy s\u0105 tak szybkie!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "Pr\u0119dko\u015B\u0107 spaceru"
     m_Metadata:
       m_Items: []
   references:

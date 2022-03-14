@@ -19,18 +19,21 @@ public class Weapon : MonoBehaviour {
     protected LocalizedString radiusText;
     [SerializeField]
     protected LocalizedString speedText;
+    [SerializeField]
+    protected LocalizedString walkSpeedText;
     [System.Serializable]
-    private class WeaponUpgrade {
+    protected class WeaponUpgrade {
         public AttributeModifier countModifier;
         public AttributeModifier damageModifier;
         public AttributeModifier cooldownModifier;
         public AttributeModifier penetrationModifier;
         public AttributeModifier radiusModifier;
         public AttributeModifier speedModifier;
+        public AttributeModifier playerSpeedModifier;
     }
     [SerializeField]
-    private List<WeaponUpgrade> upgrades;
-    private int currentUpgrade = 0;
+    protected List<WeaponUpgrade> upgrades;
+    protected int currentUpgrade = 0;
     public virtual int GetUpgradeLevel() {
         return currentUpgrade;
     }
@@ -54,6 +57,7 @@ public class Weapon : MonoBehaviour {
         line += GenerateUpgradeLine(penetrationText, upgrades[currentUpgrade].penetrationModifier);
         line += GenerateUpgradeLine(radiusText, upgrades[currentUpgrade].radiusModifier);
         line += GenerateUpgradeLine(speedText, upgrades[currentUpgrade].speedModifier);
+        line += GenerateUpgradeLine(walkSpeedText, upgrades[currentUpgrade].playerSpeedModifier);
         return line;
     }
     public virtual int GetUpgradeTotal() {
@@ -70,6 +74,7 @@ public class Weapon : MonoBehaviour {
         penetration.AddModifier(upgrade.penetrationModifier);
         radius.AddModifier(upgrade.radiusModifier);
         speed.AddModifier(upgrade.speedModifier);
+        player.speed.AddModifier(upgrade.playerSpeedModifier);
     }
     public Attribute projectileCount;
     public Attribute damage;
@@ -86,6 +91,11 @@ public class Weapon : MonoBehaviour {
         StartCoroutine(FireRoutine());
     }
     protected virtual void OnDisable() {
+        for(int i=0;i<GetUpgradeLevel();i++) {
+            if (upgrades[i].playerSpeedModifier != null) {
+                player.speed.RemoveModifier(upgrades[i].playerSpeedModifier);
+            }
+        }
         StopAllCoroutines();
     }
     protected virtual void OnDestroy() {

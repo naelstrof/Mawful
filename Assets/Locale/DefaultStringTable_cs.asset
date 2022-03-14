@@ -797,7 +797,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Butt Slam !!
+    m_Localized: "Butt Slam !! Nebo je to zemn\xED libra?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671169269760
+    m_Localized: "Rtu\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088671211212800
+    m_Localized: "Moje nohy jsou tak rychl\xE9!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6098923893739520
+    m_Localized: "Ot\xE1\u010Dky ch\u016Fze"
     m_Metadata:
       m_Items: []
   references:
