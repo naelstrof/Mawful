@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.VFX;
 
 public class AnalVoreWeapon : Weapon {
     [SerializeField]
@@ -25,6 +26,8 @@ public class AnalVoreWeapon : Weapon {
     private float timeout;
     private bool paused;
     private bool doneAttacking = false;
+    [SerializeField]
+    private VisualEffect poofEffect;
     public override void Start() {
         cooldown.changed += OnCooldownChanged;
         OnCooldownChanged(cooldown.GetValue());
@@ -52,6 +55,8 @@ public class AnalVoreWeapon : Weapon {
             Vector3 dir = diff.normalized;
             character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue()*scale, dir*0.2f*scale));
         }
+        poofEffect.SetFloat("Radius", radius.GetValue());
+        poofEffect.Play();
     }
     void OnStateTriggered(string name) {
         if (name == "AnalAttacked") {

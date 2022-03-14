@@ -167,6 +167,7 @@ public class WorldGrid : MonoBehaviour {
         mapGeneration.generationFinished += OnMapGenerationComplete;
     }
     void OnMapGenerationComplete(MapGenerator.MapGrid grid) {
+        Physics.SyncTransforms();
         // Update colliders
         for(int x=0;x<pathGrid.Count;x++) {
             if (pathGrid[x] == null) {

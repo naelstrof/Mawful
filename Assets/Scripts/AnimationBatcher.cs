@@ -15,14 +15,14 @@ public class AnimationBatcher : PooledItem {
     private Material defaultMaterial;
     [SerializeField]
     private Material goopMaterial;
-    private float startTime;
+    private float timer;
     private Character character;
     public BakedAnimation GetScoreAnimation() {
         return struggles[UnityEngine.Random.Range(0,struggles.Count)];
     }
     public void SetAnimation(BakedAnimation animation) {
         currentAnimation = animation;
-        startTime = Time.time;
+        timer = 0f;
     }
     void Start() {
         filter = GetComponent<MeshFilter>();
@@ -31,6 +31,7 @@ public class AnimationBatcher : PooledItem {
         if (character != null) {
             character.health.depleted += OnDie;
             character.startedVore += OnVoreStart;
+            character.stunChanged += OnStunChanged;
             currentAnimation = walk;
         }
         Pauser.pauseChanged += OnPauseChanged;
@@ -41,28 +42,32 @@ public class AnimationBatcher : PooledItem {
     void OnPauseChanged(bool paused) {
         enabled = !paused;
     }
+    void OnStunChanged(bool stunned) {
+        enabled = !stunned;
+    }
     void OnVoreStart() {
         if (defaultMaterial != null) {
             GetComponent<Renderer>().sharedMaterial = defaultMaterial;
         }
         currentAnimation = struggles[UnityEngine.Random.Range(0,struggles.Count)];
-        startTime = Time.time;
+        timer = 0f;
     }
     void OnDie() {
         GetComponent<Renderer>().sharedMaterial = goopMaterial;
         currentAnimation = stunned;
-        startTime = Time.time;
+        timer = 0f;
     }
     void Update() {
         if (currentAnimation == null) {
             return;
         }
+        timer += Time.deltaTime;
         float fFrames = (float)(currentAnimation.frames.Count-1);
         if (currentAnimation.loop) {
-            int frame = Mathf.RoundToInt(Mathf.Repeat((Time.time - startTime)*currentAnimation.framesPerSecond, fFrames));
+            int frame = Mathf.RoundToInt(Mathf.Repeat(timer*currentAnimation.framesPerSecond, fFrames));
             filter.sharedMesh = currentAnimation.frames[frame];
         } else {
-            int frame = Mathf.RoundToInt(Mathf.Min((Time.time - startTime)*currentAnimation.framesPerSecond, fFrames));
+            int frame = Mathf.RoundToInt(Mathf.Min(timer*currentAnimation.framesPerSecond, fFrames));
             filter.sharedMesh = currentAnimation.frames[frame];
         }
     }
@@ -72,6 +77,6 @@ public class AnimationBatcher : PooledItem {
             GetComponent<Renderer>().sharedMaterial = defaultMaterial;
         }
         currentAnimation = walk;
-        startTime = Time.time;
+        timer = 0f;
     }
 }

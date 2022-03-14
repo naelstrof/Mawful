@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Projectile : PooledItem {
+    public delegate void StunChangedAction(bool stunned);
+    public event StunChangedAction stunChanged;
     [SerializeField]
     protected AudioPack hitPack;
     [HideInInspector]
@@ -20,7 +22,9 @@ public class Projectile : PooledItem {
     private float hitCooldown = 1f;
     private int hitCount;
     public int hitLimit = 1;
+    private bool hitStunned;
     private Collider projectileCollider;
+    private WaitForFixedUpdate waitForFixedUpdate;
     public Vector3 velocity {
         get {
             return position-lastPosition;
@@ -32,8 +36,35 @@ public class Projectile : PooledItem {
             return Vector3.Lerp(position, position+(position-lastPosition), timeSinceLastUpdate/Time.fixedDeltaTime);
         }
     }
+    public void HitStun(float duration) {
+        if (hitStunned) {
+            return;
+        }
+        StartCoroutine(HitStunRoutine(duration));
+    }
+    public IEnumerator HitStunRoutine(float duration) {
+        hitStunned = true;
+        Vector3 preStunPosition = position;
+        Vector3 preStunLastPosition = lastPosition;
+        float preStunTime = Time.time;
+        stunChanged?.Invoke(true);
+        while(Time.time < preStunTime+duration) {
+            yield return waitForFixedUpdate;
+            position = preStunPosition;
+            lastPosition = preStunPosition;
+        }
+        stunChanged?.Invoke(false);
+        hitStunned = false;
+        position = preStunPosition;
+        lastPosition = preStunLastPosition;
+        if (hitCount>=hitLimit) {
+            Reset();
+            gameObject.SetActive(false);
+        }
+    }
     public override void Awake() {
         base.Awake();
+        waitForFixedUpdate = new WaitForFixedUpdate();
         projectileCollider = GetComponent<Collider>();
         hits = new Dictionary<EnemyCharacter, float>();
         Pauser.pauseChanged += OnPauseChanged;
@@ -52,15 +83,15 @@ public class Projectile : PooledItem {
         }
     }
     protected void DoHit(EnemyCharacter character) {
+        if (hitCount >= hitLimit) {
+            return;
+        }
         hitCount++;
         character.BeHit(new Character.DamageInstance(weaponCard, damage, velocity*knockback));
 
         hitPack.PlayOneShot(character.audioSource);
-        if (hitCount>=hitLimit) {
-            Reset();
-            gameObject.SetActive(false);
-            return;
-        }
+        // At the end of the hitstun, we'll check if we should be removed.
+        HitStun(0.15f);
     }
     public void SetPositionAndVelocity(Vector3 position, Vector3 velocity) {
         this.position = position;

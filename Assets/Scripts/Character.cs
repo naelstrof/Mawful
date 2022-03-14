@@ -4,6 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
 public class Character : PooledItem {
+    public delegate void StunChangedAction(bool stunned);
+    public event StunChangedAction stunChanged;
     public delegate void StartVoreAction();
     public event StartVoreAction startedVore;
     public delegate void PositionSet(Vector3 newPosition);
@@ -12,6 +14,7 @@ public class Character : PooledItem {
     public PositionSet positionSet;
     public static HashSet<Character> characters = new HashSet<Character>();
     public AnimationCurve hitEffectCurve;
+    public AnimationCurve hitVibrationCurve;
     public Vector3 lastPosition;
     public Vector3 position;
     public Vector3 velocity {
@@ -37,12 +40,14 @@ public class Character : PooledItem {
     private Color colorFlash;
     protected bool beingVored = false;
     protected bool frozen;
+    private bool hitStunned = false;
     private Vector3 freezePosition;
     [SerializeField]
     public bool invulnerable = false;
     public ScoreCard scoreCard;
     public Attribute damage;
     public Transform voreMagnetTransform;
+    private WaitForFixedUpdate waitForFixedUpdate;
     public struct DamageInstance {
         public DamageInstance(WeaponCard card, float damage, Vector3 knockback) {
             this.card = card;
@@ -72,6 +77,32 @@ public class Character : PooledItem {
         yield return new WaitForSeconds(time);
         frozen = false;
     }*/
+    public void HitStun(float duration, float vibrationMag) {
+        if (hitStunned) {
+            return;
+        }
+        StartCoroutine(HitStunRoutine(duration, vibrationMag));
+    }
+    public IEnumerator HitStunRoutine(float duration, float vibrationMag) {
+        hitStunned = true;
+        Vector3 preStunPosition = position;
+        Vector3 preStunLastPosition = lastPosition;
+        Vector3 startPosition = transform.position;
+        float preStunTime = Time.time;
+        stunChanged?.Invoke(true);
+        while(Time.time < preStunTime+duration) {
+            yield return null;
+            float t = (Time.time-preStunTime)/duration;
+            transform.position = startPosition+UnityEngine.Random.insideUnitSphere*vibrationMag*hitVibrationCurve.Evaluate(t);
+            position = preStunPosition;
+            lastPosition = preStunPosition;
+        }
+        transform.position = startPosition;
+        stunChanged?.Invoke(false);
+        position = preStunPosition;
+        lastPosition = preStunLastPosition;
+        hitStunned = false;
+    }
     public void SetFreeze(bool freeze) {
         frozen = freeze;
         freezePosition = position;
@@ -100,6 +131,7 @@ public class Character : PooledItem {
             StopCoroutine(hitRoutine);
         }
         hitRoutine = StartCoroutine(HitEffect());
+        HitStun(0.15f, instance.knockback.magnitude*2f);
     }
     public void SetPositionAndVelocity(Vector3 position, Vector3 velocity) {
         this.position = WorldGrid.instance.worldBounds.ClosestPoint(position);
@@ -119,6 +151,7 @@ public class Character : PooledItem {
     }
     public override void Awake() {
         base.Awake();
+        waitForFixedUpdate = new WaitForFixedUpdate();
         lastPosition = position = transform.position;
         characterCollider = GetComponent<Collider>();
         health.Heal(99999f);
@@ -203,6 +236,10 @@ public class Character : PooledItem {
         position = newPosition;
     }
     public virtual void LateUpdate() {
+        // Don't override our vibration movement
+        if (hitStunned) {
+            return;
+        }
         transform.position = interpolatedPosition;
     }
     public override void Reset(bool recurse = true) {
