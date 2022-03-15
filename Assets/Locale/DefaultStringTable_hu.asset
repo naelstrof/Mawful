@@ -809,5 +809,35 @@ MonoBehaviour:
     m_Localized: "S\xE9ta sebess\xE9g"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "H\xE1ny elemet tudok csomagolni a patk\xE1ny ... + fegyverek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "Gyorsabb\xE1 tesz engem! + J\xE1t\xE9kos fordulatsz\xE1ma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "T\xF6bb goo! T\xF6bb l\xF6ved\xE9k! + L\xF6ved\xE9ksz\xE1m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "A Goo hat\xE9konyabbnak \xE9rzi mag\xE1t .. + k\xE1r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Goo tudom\xE1nyos anyagok sz\xFCks\xE9gesek, bennem? + Szinten
+      szerzett szintek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "T\xF6bb Lube kevesebb s\xFArl\xF3d\xE1st jelent, gyorsabb cooldown.
+      + Projile Cooldown."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "A Goo m\xE9lyebben behatol. + PROYPLE\xC1LL\xCDT\xC1S."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

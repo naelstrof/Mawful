@@ -142,7 +142,7 @@ Material:
     - _PenetratorBulgePercentage: 0.5
     - _PenetratorCumActive: 0
     - _PenetratorCumProgress: 0
-    - _PenetratorLength: 3.1704285
+    - _PenetratorLength: 3.1704283
     - _PenetratorSquishPullAmount: 0
     - _PinchBuffer: 0.1
     - _QueueOffset: 0
@@ -163,9 +163,9 @@ Material:
     - _OrificeOutWorldPosition3: {r: -0.0018690405, g: -1.0471807, b: -0.0009848077, a: 0}
     - _OrificeWorldNormal: {r: 0.7091251, g: -2.4937477, b: 0.042654645, a: 0}
     - _OrificeWorldPosition: {r: -0.061803024, g: -0.017565878, b: 0.00049716857, a: 0}
-    - _PenetratorForward: {r: -0.00000025175578, g: -0.08245278, b: -0.996595, a: 0}
-    - _PenetratorOrigin: {r: 0.00000064275656, g: -0.08975736, b: -1.0848854, a: 0}
-    - _PenetratorRight: {r: 1, g: -0.0000001009202, b: -0.000000063547745, a: 0}
-    - _PenetratorUp: {r: -0.000000114768675, g: 0.99659497, b: -0.08245248, a: 0}
+    - _PenetratorForward: {r: -0.00000007542623, g: -0.08245261, b: -0.99659497, a: 0}
+    - _PenetratorOrigin: {r: 0.0000010889255, g: -0.08975712, b: -1.0848793, a: 0}
+    - _PenetratorRight: {r: 1, g: -0.00000008989594, b: -0.000000021496335, a: 0}
+    - _PenetratorUp: {r: -0.0000001429206, g: 0.996595, b: -0.08245257, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

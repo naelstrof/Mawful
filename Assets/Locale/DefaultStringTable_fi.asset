@@ -803,5 +803,34 @@ MonoBehaviour:
     m_Localized: "K\xE4vell\xE4 nopeus"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: Kuinka monta kohdetta voin pakata rotan ... + aseita.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: Tekee minut nopeammaksi! + Pelaajan nopeus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Lis\xE4\xE4 goo! Lis\xE4\xE4 ammusero! + Ammusluku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: Goo tuntuu tehokkaammaksi .. + vahinko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "GOO Science Materiaalit tarvitaan, sis\xE4ll\xE4ni? + Tasot saivat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Lis\xE4\xE4 lube tarkoittaa v\xE4hemm\xE4n kitkaa, nopeampaa j\xE4\xE4hdytyst\xE4.
+      + Ammusilmukka."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: Goo tunkeutuu syvemmin. + Ammusleikkaus.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

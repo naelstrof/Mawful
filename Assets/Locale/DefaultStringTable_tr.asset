@@ -806,5 +806,35 @@ MonoBehaviour:
     m_Localized: "Y\xFCr\xFCme h\u0131z\u0131"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "Ka\xE7 tane e\u015Fde\u011Fer alabiliyorum ... + Silah Yuvalar\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "Beni daha h\u0131zl\u0131 yapar! + Oyuncu H\u0131z\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Daha fazla goo! Daha Fazla Mermi Goo! + Mermi say\u0131m\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: Goo daha etkili hissediyor .. + Hasar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "GOO Bilim Materyalleri Gerekli, \u0130\xE7imde mi? + Kazan\u0131lan
+      seviyeler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Daha fazla ya\u011F, daha az s\xFCrt\xFCnme anlam\u0131na gelir,
+      daha h\u0131zl\u0131 bir beklemedi. + Merminin cooldown."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "Goo daha derinden n\xFCfuz eder. + Mermi penetrasyonu."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

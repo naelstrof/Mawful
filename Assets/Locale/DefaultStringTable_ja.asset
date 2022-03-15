@@ -789,5 +789,36 @@ MonoBehaviour:
     m_Localized: "\u6B69\u304F\u30B9\u30D4\u30FC\u30C9"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "\u68B1\u5305\u7968... +\u6B66\u5668\u306E\u30B9\u30ED\u30C3\u30C8\u306E\u6570"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "\u79C1\u3092\u8FC5\u901F\u306B\u3057\u307E\u3059\uFF01 +\u30D7\u30EC\u30A4\u30E4\u30FC\u30B9\u30D4\u30FC\u30C9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "\u3082\u3063\u3068goo\uFF01\u3082\u3063\u3068\u767A\u5C04\u4F53\u306E\u30B0\u30FC\uFF01
+      +\u767A\u5C04\u4F53\u30AB\u30A6\u30F3\u30C8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Googo\u306F\u3082\u3063\u3068\u52B9\u679C\u7684\u306B\u611F\u3058\u307E\u3059"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Goo Sigess Materials\u304C\u5FC5\u8981\u3067\u3059\u3001\u79C1\u306E\u4E2D\u306B\uFF1F
+      +\u30EC\u30D9\u30EB\u304C\u5F97\u3089\u308C\u307E\u3057\u305F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "\u3088\u308A\u591A\u304F\u306E\u6F64\u6ED1\u6027\u306F\u6469\u64E6\u304C\u5C11\u306A\u3044\u3001\u3088\u308A\u901F\u3044\u30AF\u30FC\u30EB\u30C0\u30A6\u30F3\u3067\u3059\u3002
+      +\u767A\u5C04\u4F53\u306E\u30AF\u30FC\u30EB\u30C0\u30A6\u30F3\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "GOO\u306F\u6DF1\u304F\u6D78\u900F\u3057\u307E\u3059\u3002 +\u767A\u5C04\u4F53\u6D78\u900F"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

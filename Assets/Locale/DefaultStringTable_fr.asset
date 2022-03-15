@@ -805,5 +805,35 @@ MonoBehaviour:
     m_Localized: Vitesse de marche
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: Combien d'articles je peux emballer-rat ... + Slots d'arme.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: Rend plus rapide! + Vitesse de joueur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: Plus goo! Plus de projectile goo! + Compte projectile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: GOO se sent plus efficace. + Dommages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Mat\xE9riel scientifique Goo n\xE9cessaire, en moi? + Niveaux gagn\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: Plus de lubrifier signifie moins de friction, de recharge plus rapide.
+      + Projectile de recharge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "Le goo p\xE9n\xE8tre plus profond\xE9ment. + P\xE9n\xE9tration
+      de projectiles."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

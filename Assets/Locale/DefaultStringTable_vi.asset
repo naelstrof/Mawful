@@ -823,5 +823,39 @@ MonoBehaviour:
     m_Localized: "T\u1ED1c \u0111\u1ED9 \u0111i b\u1ED9"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "T\xF4i c\xF3 th\u1EC3 \u0111\xF3ng g\xF3i bao nhi\xEAu v\u1EADt
+      ph\u1EA9m ... + Slots v\u0169 kh\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "L\xE0m cho t\xF4i ch\u1EA1y nhanh h\u01A1n! + T\u1ED1c \u0111\u1ED9
+      ng\u01B0\u1EDDi ch\u01A1i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Th\xEAm goo! Goo nhi\u1EC1u h\u01A1n! + \u0110\u1EBFm \u0111\u1EA1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Goo c\u1EA3m th\u1EA5y hi\u1EC7u qu\u1EA3 h\u01A1n .. + thi\u1EC7t
+      h\u1EA1i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "V\u1EADt li\u1EC7u khoa h\u1ECDc Goo c\u1EA7n thi\u1EBFt, b\xEAn
+      trong t\xF4i? + M\u1EE9c t\u0103ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Th\xEAm Lube c\xF3 ngh\u0129a l\xE0 \xEDt ma s\xE1t, th\u1EDDi
+      gian h\u1ED3i chi\xEAu nhanh h\u01A1n. + Th\u1EDDi gian h\u1ED3i chi\xEAu chi\u1EBFu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "Goo x\xE2m nh\u1EADp s\xE2u h\u01A1n. + Threationration th\xE2m
+      nh\u1EADp."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

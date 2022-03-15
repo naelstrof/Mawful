@@ -806,5 +806,35 @@ MonoBehaviour:
     m_Localized: Viteza de mers pe jos.
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "C\xE2te obiecte pot \xEEmpacheta ... + sloturi de arme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "M\u0103 face s\u0103 fiu viteza! + Viteza juc\u0103torului"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Mai mult goo! Mai mult proiectil goo! + Num\u0103r de proiectil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: Goo se simte mai eficace .. + daune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Materiale \u0219tiin\u021Bifice Goo necesare, \xEEn mine? + Nivelurile
+      dob\xE2ndite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Mai mult lubrifiant \xEEnseamn\u0103 mai pu\u021Bin\u0103 frecare,
+      mai rapid\u0103 cooldown. + Cooldown proiectil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "Goo p\u0103trunde mai profund. + Penetrare proiectil\u0103."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

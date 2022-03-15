@@ -812,5 +812,34 @@ MonoBehaviour:
     m_Localized: Loopsnelheid
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: Hoeveel items kan ik verpakken ... + wapen slots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: Maakt me speedier! + Spelersnelheid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: Meer goo! PROJECTIEL GOO! + Projectiel Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: Goo voelt zich effectiever .. + schade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: Goo Science-materialen die nodig zijn, in mij? + Niveaus opgedaan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: Meer smeermiddel betekent minder wrijving, snellere cooldown. +
+      Projectiel Cooldown.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: De goo penetreert dieper. + Projectiele penetratie.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

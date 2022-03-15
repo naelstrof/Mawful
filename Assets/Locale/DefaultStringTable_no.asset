@@ -799,5 +799,33 @@ MonoBehaviour:
     m_Localized: "G\xE5 hastighet"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "Hvor mange elementer jeg kan pakke rotte ... + V\xE5penspor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "Gj\xF8r meg raskere! + Spillerhastighet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: Mer goo! Mer prosjektil goo! + Projektiltall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Goo f\xF8les mer effektiv .. + skade"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Goo vitenskapsmaterialer som trengs, inne i meg? + Niv\xE5er oppn\xE5dd"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Mer sm\xF8re betyr mindre friksjon, raskere nedkj\xF8ling. + Projektils\xF8king."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: Goo penetrerer dypere. + Projektil penetrasjon.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

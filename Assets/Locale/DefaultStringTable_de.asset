@@ -808,5 +808,34 @@ MonoBehaviour:
     m_Localized: Schrittgeschwindigkeit
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: Wie viele Artikel kann ich packen ... + Waffenschlitze.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: Macht mich schneller! + Spielergeschwindigkeit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Mehr goo! Mehr Projektil Goo! + Projektilz\xE4hlung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Goo f\xFChlt sich effektiver an .. + Schaden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Goo Science-Materialien ben\xF6tigt, in mir? + Ebenen gewonnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: Mehr Lube bedeutet weniger Reibung, schneller Abklingzeit. + Projektil
+      Abklingzeit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: Der Goo dringt tiefer ein. + Projektilpenetration.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

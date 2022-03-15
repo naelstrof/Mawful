@@ -808,5 +808,34 @@ MonoBehaviour:
     m_Localized: "Velocit\xE0 di cammino"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: Quanti articoli posso impacchettare ... + slot d'arma.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "Mi rende pi\xF9 veloce! + Velocit\xE0 del giocatore"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Pi\xF9 Goo! Pi\xF9 Projectile Goo! + Conteggio del proiettile"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Goo si sente pi\xF9 efficace .. + Danni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: I materiali scientifici goo necessari, dentro di me? + Livelli acquisiti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Pi\xF9 lubrifichi significa meno attrito, un recupero pi\xF9 veloce.
+      + Cooldown del proiettile."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "Il goo penetra pi\xF9 profondamente. + Penetrazione del proiettile."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

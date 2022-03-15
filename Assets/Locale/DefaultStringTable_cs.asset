@@ -812,5 +812,35 @@ MonoBehaviour:
     m_Localized: "Ot\xE1\u010Dky ch\u016Fze"
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "Kolik polo\u017Eek mohu pack-rat ... + zbra\u0148ov\xE9 sloty."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "D\u011Bl\xE1 m\u011B rychlost! + Speed \u200B\u200BHr\xE1\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "V\xEDce goo! V\xEDce projektilu Goo! + Projektil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Goo se c\xEDt\xED efektivn\u011Bj\u0161\xED .. + po\u0161kozen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Boo v\u011Bdeck\xE9 materi\xE1ly pot\u0159ebn\xE9, uvnit\u0159
+      m\u011B? + \xDArovn\u011B z\xEDskan\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "V\xEDce Lube znamen\xE1 m\xE9n\u011B t\u0159en\xED, rychlej\u0161\xED
+      cooldown. + Projektil cooldown."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "Goo pronik\xE1 hloub\u011Bji. + Proklimat penetrace."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

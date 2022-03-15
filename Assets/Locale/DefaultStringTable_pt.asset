@@ -806,5 +806,35 @@ MonoBehaviour:
     m_Localized: Velocidade de caminhada
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: Quantos itens eu posso fazer ratos ... + slots de armas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "Me faz mais r\xE1pido! + Velocidade do jogador"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Mais goo! Mais proj\xE9til Goo! + Contagem de proj\xE9til."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: Goo sente mais eficaz .. + dano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Materiais de ci\xEAncia goo necess\xE1rios, dentro de mim? + N\xEDveis
+      adquiridos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Mais lubrificante significa menos fric\xE7\xE3o, mais r\xE1pido
+      cooldown. + Cooldown proj\xE9til."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "O goo penetra mais profundamente. + Penetra\xE7\xE3o de proj\xE9til."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -783,6 +783,34 @@ MonoBehaviour:
     m_Key: STAT_WALKSPEED
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Key: META_UPGRADE_WEAPON_SLOTS_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Key: META_UPGRADE_SPEED_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Key: META_UPGRADE_PROJECTILE_COUNT_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Key: META_UPGRADE_DAMAGE_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Key: META_XP_MULTIPLIER_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Key: META_UPGRADE_COOLDOWN_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Key: META_UPGRADE_PENETRATION_DESCRIPTION
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

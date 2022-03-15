@@ -804,5 +804,35 @@ MonoBehaviour:
     m_Localized: Velocidad
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "Cu\xE1ntos art\xEDculos puedo empacar ... + ranuras de arma."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "\xA1Me hace m\xE1s r\xE1pido! + Velocidad del jugador"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "M\xE1s Goo! M\xE1s proyectil goo! + Recuento de proyectiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "Goo se siente m\xE1s efectivo. + Da\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "\xBFSe necesitan materiales de ciencia de GoO, dentro de m\xED?
+      + Niveles ganados"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "M\xE1s LUBE significa menos fricci\xF3n, tiempo de reutilizaci\xF3n
+      m\xE1s r\xE1pido. + Colollown de proyectil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "El goo penetra m\xE1s profundamente. + Penetraci\xF3n de proyectiles."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -29,7 +29,7 @@ public class Score : MonoBehaviour {
         float xp = PlayerPrefs.GetFloat(type.name, 0f);
         return xp;
     }
-    private void SetXP(ScoreCard type, float xp)  {
+    public static void SetXP(ScoreCard type, float xp)  {
         PlayerPrefs.SetFloat(type.name, xp);
     }
     public static bool HasScore() {
@@ -50,7 +50,7 @@ public class Score : MonoBehaviour {
                     addedXP++;
                 }
             }
-            instance.SetXP(card, GetXP(card)+addedXP);
+            SetXP(card, GetXP(card)+addedXP);
         }
     }
     public static void Reset() {

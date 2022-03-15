@@ -808,5 +808,33 @@ MonoBehaviour:
     m_Localized: Walk speed
     m_Metadata:
       m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: How many items I can pack-rat... +Weapon slots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: Makes me speedier! +Player speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: More goo! More projectile goo! +Projectile count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: Goo feels more effective.. +Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: Goo science materials needed, inside me? +Levels Gained
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: More lube means less friction, faster cooldown. +Projectile cooldown.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: The goo penetrates more deeply. +Projectile penetration.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

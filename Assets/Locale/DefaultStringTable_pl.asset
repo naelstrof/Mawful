@@ -734,7 +734,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5319329942392833
     m_Localized: "Ogrzewa bloje z goo przy najbli\u017Cszym stworzeniu. Sp\xF3jne
-      uszkodzenia."
+      uszkodzenie."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
@@ -809,6 +809,37 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6098923893739520
     m_Localized: "Pr\u0119dko\u015B\u0107 spaceru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850627227648
+    m_Localized: "Ile element\xF3w mog\u0119 pakowa\u0107-szczur ... + bro\u0144
+      szczeliny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587776
+    m_Localized: "Sprawia, \u017Ce \u200B\u200Bjestem szybszy! + Pr\u0119dko\u015B\u0107
+      gracza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587777
+    m_Localized: "Wi\u0119cej goo! Wi\u0119cej pocisku goo! + Liczba pocisk\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6390850656587778
+    m_Localized: "GOO czuje si\u0119 bardziej skuteczny .. + obra\u017Cenia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420252549120
+    m_Localized: "Materia\u0142y GOO potrzebne we mnie? + Pozyskane poziomy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420286103552
+    m_Localized: "Wi\u0119cej smaru oznacza mniejsze tarcia, szybszy czas odnowienia.
+      + Pocisku pocisku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6413420298686464
+    m_Localized: "GOO dok\u0142adniej penetruje. + Przenikanie pocisku."
     m_Metadata:
       m_Items: []
   references:
