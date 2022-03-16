@@ -15,4 +15,4 @@ MonoBehaviour:
   enemiesToSpawn:
   - {fileID: 8347615568578718693, guid: e7bd1c00cb92d664c88f31e42bffb2f7, type: 3}
   waveDuration: 5
-  spawnCount: 80
+  spawnCount: 40

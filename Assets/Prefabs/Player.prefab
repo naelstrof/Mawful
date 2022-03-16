@@ -111,7 +111,7 @@ MonoBehaviour:
   controller: {fileID: 7084278285042572386}
   bar: {fileID: 1684839758814152642}
   barContainer: {fileID: 5324584998902398715}
-  mergeChance: 0.05
+  mergeChance: 0.1
   playerBuff:
     health: {fileID: 0}
     damage: {fileID: 0}
@@ -1136,10 +1136,10 @@ MonoBehaviour:
   - health: {fileID: 0}
     damage: {fileID: 0}
     walkSpeed: {fileID: 0}
-    luck: {fileID: 0}
+    luck: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
-    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
@@ -1147,10 +1147,10 @@ MonoBehaviour:
   - health: {fileID: 0}
     damage: {fileID: 0}
     walkSpeed: {fileID: 0}
-    luck: {fileID: 0}
+    luck: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
-    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
@@ -1158,10 +1158,10 @@ MonoBehaviour:
   - health: {fileID: 0}
     damage: {fileID: 0}
     walkSpeed: {fileID: 0}
-    luck: {fileID: 0}
+    luck: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
     grabRange: {fileID: 0}
-    projectileCooldown: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    projectileCount: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: aa695dead8f068f498c0ef7829838b8f, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
@@ -1208,7 +1208,7 @@ MonoBehaviour:
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
-  mergeChance: 0.05
+  mergeChance: 0.1
   timingCurve:
     serializedVersion: 2
     m_Curve:
