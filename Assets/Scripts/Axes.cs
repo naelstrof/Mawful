@@ -6,8 +6,8 @@ public class Axes : Weapon {
     private WaitForSeconds perProjectileWait;
     private WaitForSeconds timeToWait;
     public override void Start() {
-        cooldown.changed += OnCooldownChanged;
-        OnCooldownChanged(cooldown.GetValue());
+        stats.projectileCooldown.changed += OnCooldownChanged;
+        OnCooldownChanged(stats.projectileCooldown.GetValue());
         perProjectileWait = new WaitForSeconds(0.10f);
         base.Start();
     }
@@ -20,9 +20,9 @@ public class Axes : Weapon {
                 yield return null;
             }
             yield return timeToWait;
-            float arc = projectileCount.GetValue()*5f;
+            float arc = stats.projectileCount.GetValue()*5f;
             Quaternion rot = Quaternion.AngleAxis(-arc*0.5f, Vector3.up);
-            for (int i=0;i<projectileCount.GetValue();i++) {
+            for (int i=0;i<stats.projectileCount.GetValue();i++) {
                 Vector3 updir = Vector3.ProjectOnPlane(CameraFollower.GetCamera().transform.forward, Vector3.up).normalized;
                 float angle = Vector3.Angle(player.fireDir, updir);
                 Vector3 aimDir = Vector3.RotateTowards(player.fireDir, updir, angle*0.8f*Mathf.Deg2Rad, 10f);
@@ -30,7 +30,8 @@ public class Axes : Weapon {
                 Axe axe;
                 if (!AxePool.StaticTryInstantiate(out axe)) { continue; }
                 SetUpProjectile(axe);
-                axe.SetPositionAndVelocity(player.interpolatedPosition, rot*aimDir*speed.GetValue());
+                axe.gravityDir = -updir*9.81f;
+                axe.SetPositionAndVelocity(player.interpolatedPosition, rot*aimDir*stats.projectileSpeed.GetValue());
                 rot *= Quaternion.AngleAxis(5f, Vector3.up);
                 yield return perProjectileWait;
             }

@@ -832,5 +832,33 @@ MonoBehaviour:
     m_Localized: Goo tunkeutuu syvemmin. + Ammusleikkaus.
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Se tuntuu niin virkist\xE4v\xE4lt\xE4! + HP Regeneroi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Tunnen vitun voittamaton. + V\xE4henn\xE4 vahinkoa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "Koko matkan l\xE4pi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Se vuotaa vihollisten l\xE4pi, perversiivinen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Napata alue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: "Pitk\xE4 maw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Miksi niin kauan ... Maw? P\xE4\xE4st\xE4 tietenkin."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

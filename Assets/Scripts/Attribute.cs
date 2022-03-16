@@ -48,7 +48,7 @@ public class Attribute : ISerializationCallbackReceiver {
         }
     }
     protected virtual float CalculateValue() {
-        return (baseValue * Mathf.Sqrt(diminishingReturnUp + 1f) + flatUp)*multiplier;
+        return (baseValue * Mathf.Sqrt(Mathf.Max(diminishingReturnUp,0) + 1f) + flatUp)*multiplier;
     } 
     public void SetParentAttribute(Attribute parent) {
         if (parent != null && parent.childAttributes != null) {
@@ -72,6 +72,9 @@ public class Attribute : ISerializationCallbackReceiver {
         CacheData();
     }
     public virtual void RemoveModifier(AttributeModifier modifier) {
+        if (modifier == null) {
+            return;
+        }
         modifiers.Remove(modifier);
         CacheData();
     }
@@ -118,5 +121,17 @@ public class HealthAttribute : Attribute {
     }
     public float GetHealth() {
         return value;
+    }
+}
+
+[System.Serializable]
+public class LuckAttribute : Attribute {
+    public bool Roll(float chance01) {
+        for(int i=0;i<GetValue();i++) {
+            if (UnityEngine.Random.Range(0f,1f) < chance01) {
+                return true;
+            }
+        }
+        return false;
     }
 }

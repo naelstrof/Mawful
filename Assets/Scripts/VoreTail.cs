@@ -24,8 +24,8 @@ public class VoreTail : Vore {
     }
     void VaccumDefeated(WorldGrid.CollisionGridElement element) {
         foreach(Character character in element.charactersInElement) {
-            if (character.health.GetHealth() <= 0f && character is EnemyCharacter) {
-                if (Vector3.Distance(mouth.position, character.position) < 1.25f+character.radius) {
+            if (character.stats.health.GetHealth() <= 0f && character is EnemyCharacter) {
+                if (Vector3.Distance(mouth.position, character.position) < player.stats.grabRange.GetValue()+character.radius) {
                     if (!vaccuming.Contains(character)) {
                         character.StartVore();
                         // Disable all thinking, time to suck
@@ -38,7 +38,7 @@ public class VoreTail : Vore {
     }
     protected override void Digest(Character character) {
         base.Digest(character);
-        leveler.AddXP(Mathf.Lerp(character.health.GetValue(), 1f, 0.5f));
+        leveler.AddXP(Mathf.Lerp(character.stats.health.GetValue(), 1f, 0.5f));
     }
     protected override void StartVore(Character other) {
         readyToVore.Add(other);

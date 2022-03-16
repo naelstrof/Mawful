@@ -11,14 +11,8 @@ public class Passive : Weapon {
         realUpgradeLevel = 0;
     }
     public override void Upgrade() {
-        WeaponUpgrade upgrade = upgrades[currentUpgrade++];
-        player.projectileCount.AddModifier(upgrade.countModifier);
-        player.damage.AddModifier(upgrade.damageModifier);
-        player.projectileCooldown.AddModifier(upgrade.cooldownModifier);
-        player.projectilePenetration.AddModifier(upgrade.penetrationModifier);
-        player.projectileRadius.AddModifier(upgrade.radiusModifier);
-        player.projectileSpeed.AddModifier(upgrade.speedModifier);
-        player.speed.AddModifier(upgrade.playerSpeedModifier);
+        StatBlockModifier upgrade = upgrades[currentUpgrade++];
+        upgrade.Apply(player.stats);
         realUpgradeLevel++;
     }
     public override int GetUpgradeLevel() {
@@ -28,15 +22,9 @@ public class Passive : Weapon {
         return upgrades.Count-1;
     }
     protected override void OnDisable() {
-        for(int i=0;i<realUpgradeLevel;i++) {
-            WeaponUpgrade upgrade = upgrades[i];
-            player.projectileCount.RemoveModifier(upgrade.countModifier);
-            player.damage.RemoveModifier(upgrade.damageModifier);
-            player.projectileCooldown.RemoveModifier(upgrade.cooldownModifier);
-            player.projectilePenetration.RemoveModifier(upgrade.penetrationModifier);
-            player.projectileRadius.RemoveModifier(upgrade.radiusModifier);
-            player.projectileSpeed.RemoveModifier(upgrade.speedModifier);
-            player.speed.RemoveModifier(upgrade.playerSpeedModifier);
+        for(int i=0;i<currentUpgrade;i++) {
+            StatBlockModifier upgrade = upgrades[i];
+            upgrade.Revert(player.stats);
         }
         realUpgradeLevel = 0;
         currentUpgrade = 0;

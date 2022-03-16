@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2991219479033874305}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.000000104308114}
+  m_LocalRotation: {x: -0.00000007375701, y: -0.70710707, z: 0.7071066, w: 0.00000007375695}
   m_LocalPosition: {x: 0, y: -0.394, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8347615568578718689}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1 &8347615568578718693
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,19 +204,34 @@ MonoBehaviour:
   lastPosition: {x: 0, y: 0, z: 0}
   position: {x: 100, y: 0, z: 100}
   targetRenderer: {fileID: 0}
-  speed:
-    modifiers:
-    - {fileID: 11400000, guid: 0956fcfccf56c5c42831d19c61c21d43, type: 2}
   friction: 0.3
-  health:
-    modifiers:
-    - {fileID: 11400000, guid: 001ae02bcb43cc040a5f6173c284621e, type: 2}
   radius: 0.5
-  colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
+  colorFlash: {r: 0.5176471, g: 0.09411765, b: 2.8235295, a: 0}
   invulnerable: 0
   scoreCard: {fileID: 11400000, guid: 9c99841a0d4c1ae4f8380f8d5f02d5da, type: 2}
-  damage:
-    modifiers: []
+  stats:
+    health:
+      modifiers:
+      - {fileID: 11400000, guid: 001ae02bcb43cc040a5f6173c284621e, type: 2}
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    walkSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: 0956fcfccf56c5c42831d19c61c21d43, type: 2}
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
   voreMagnetTransform: {fileID: 4641610183063020808}
   audioSource: {fileID: 0}
   dieSound: {fileID: 0}

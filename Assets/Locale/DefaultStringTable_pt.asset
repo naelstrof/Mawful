@@ -836,5 +836,33 @@ MonoBehaviour:
     m_Localized: "O goo penetra mais profundamente. + Penetra\xE7\xE3o de proj\xE9til."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Parece t\xE3o refrescante! + HP regenera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Eu me sinto fodidamente invenc\xEDvel. + Reduza danos causados."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: Todo o caminho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: Ele transborda os inimigos, generosos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Grab Range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Maw longo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Por que tanto tempo ... Maw? Para alcan\xE7ar, claro."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

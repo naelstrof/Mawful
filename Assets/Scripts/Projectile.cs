@@ -87,7 +87,7 @@ public class Projectile : PooledItem {
             return;
         }
         hitCount++;
-        character.BeHit(new Character.DamageInstance(weaponCard, damage, velocity*knockback));
+        character.BeHit(new Character.DamageInstance(weaponCard, damage, velocity.normalized*knockback));
 
         hitPack.PlayOneShot(character.audioSource);
         // At the end of the hitstun, we'll check if we should be removed.
@@ -103,7 +103,7 @@ public class Projectile : PooledItem {
         foreach(Character character in element.charactersInElement) {
             if (!(character is EnemyCharacter)) { continue; }
             EnemyCharacter enemyCharacter = character as EnemyCharacter;
-            if (enemyCharacter.health.GetHealth() <= 0f) {
+            if (enemyCharacter.stats.health.GetHealth() <= 0f) {
                 continue;
             }
             float dist = Vector3.Distance(newPosition, enemyCharacter.position);

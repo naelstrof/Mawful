@@ -834,5 +834,33 @@ MonoBehaviour:
     m_Localized: "El goo penetra m\xE1s profundamente. + Penetraci\xF3n de proyectiles."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "\xA1Se siente tan refrescante! + Hp regenerates."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Me siento jodidamente invencible. + Reducir el da\xF1o tomado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "Todo el camino a trav\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Se derrama a trav\xE9s de enemigos, generalizados."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Alcance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Fauca larga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "\xBFPor qu\xE9 tal largo ... Maw? Para alcanzar por supuesto."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

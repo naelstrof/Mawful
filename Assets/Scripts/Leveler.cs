@@ -42,7 +42,7 @@ public class Leveler : MonoBehaviour {
             currentXP -= neededXP;
             levelUp?.Invoke();
             currentLevel++;
-            neededXP = Mathf.Pow(currentLevel,xpScalingPower) + 5f;
+            neededXP = Mathf.Pow(currentLevel,xpScalingPower) + 4f;
             Debug.Log("Leveled up to " + currentLevel + ", now need " + neededXP + " XP");
         }
         xpChanged?.Invoke(currentXP, neededXP);

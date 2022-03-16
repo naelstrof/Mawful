@@ -16,12 +16,12 @@ public class Whip : Weapon {
     private AudioSource source;
     public override void Start() {
         source = GetComponentInParent<AudioSource>();
-        cooldown.changed += OnCooldownChanged;
-        radius.changed += OnRadiusChanged;
-        projectileCount.changed += OnProjectileCountChanged;
-        OnProjectileCountChanged(projectileCount.GetValue());
-        OnCooldownChanged(cooldown.GetValue());
-        OnRadiusChanged(radius.GetValue());
+        stats.projectileCooldown.changed += OnCooldownChanged;
+        stats.projectileRadius.changed += OnRadiusChanged;
+        stats.projectileCount.changed += OnProjectileCountChanged;
+        OnProjectileCountChanged(stats.projectileCount.GetValue());
+        OnCooldownChanged(stats.projectileCooldown.GetValue());
+        OnRadiusChanged(stats.projectileRadius.GetValue());
         perProjectileWait = new WaitForSeconds(0.33f);
         base.Start();
     }
@@ -58,15 +58,15 @@ public class Whip : Weapon {
                 float aimAngle = Vector3.Dot(CameraFollower.GetCamera().transform.right, player.fireDir) > 0f ? 0f : 180f;
                 whips[i].transform.rotation = Quaternion.AngleAxis((i%2)*180f+90f+aimAngle+CameraFollower.GetCamera().transform.rotation.eulerAngles.y, Vector3.up);
                 whips[i].Play();
-                for(float dist=0f;dist<4f+radius.GetValue();dist+=2f) {
+                for(float dist=0f;dist<4f+stats.projectileRadius.GetValue();dist+=2f) {
                     foreach(Character character in Character.characters) {
                         if (character == player) {
                             continue;
                         }
-                        float vfxRadius = radius.GetValue()*0.6f;
+                        float vfxRadius = stats.projectileRadius.GetValue()*0.6f;
                         if (Vector3.Distance(character.position, player.position+whips[i].transform.forward*dist) <= vfxRadius+character.radius) {
                             float knockbackAmount = 0.2f*dist;
-                            character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
+                            character.BeHit(new Character.DamageInstance(weaponCard, stats.damage.GetValue(), (character.position-player.position).normalized*stats.knockback.GetValue()));
                             hit = true;
                         }
                     }

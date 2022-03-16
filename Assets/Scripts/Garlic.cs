@@ -13,10 +13,10 @@ public class Garlic : Weapon {
     private Transform garlicVisuals;
     public override void Start() {
         source = GetComponent<AudioSource>();
-        cooldown.changed += OnCooldownChanged;
-        radius.changed += OnRadiusChanged;
-        OnCooldownChanged(cooldown.GetValue());
-        OnRadiusChanged(radius.GetValue());
+        stats.projectileCooldown.changed += OnCooldownChanged;
+        stats.projectileRadius.changed += OnRadiusChanged;
+        OnCooldownChanged(stats.projectileCooldown.GetValue());
+        OnRadiusChanged(stats.projectileRadius.GetValue());
         perProjectileWait = new WaitForSeconds(0.05f);
         base.Start();
     }
@@ -33,14 +33,13 @@ public class Garlic : Weapon {
             }
             yield return timeToWait;
             bool hit = false;
-            for (int i=0;i<projectileCount.GetValue();i++) {
+            for (int i=0;i<stats.projectileCooldown.GetValue();i++) {
                 foreach(Character character in Character.characters) {
                     if (character == player) {
                         continue;
                     }
-                    if (Vector3.Distance(character.position, player.position) <= radius.GetValue()+player.radius+character.radius && character.health.GetHealth() > 0f) {
-                        float knockbackAmount = 0.001f;
-                        character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue(), (character.position-player.position).normalized*knockbackAmount));
+                    if (Vector3.Distance(character.position, player.position) <= stats.projectileRadius.GetValue()+player.radius+character.radius && character.stats.health.GetHealth() > 0f) {
+                        character.BeHit(new Character.DamageInstance(weaponCard, stats.damage.GetValue(), (character.position-player.position).normalized*stats.knockback.GetValue()));
                         hit = true;
                     }
                 }

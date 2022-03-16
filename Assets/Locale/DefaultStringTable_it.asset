@@ -837,5 +837,33 @@ MonoBehaviour:
     m_Localized: "Il goo penetra pi\xF9 profondamente. + Penetrazione del proiettile."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "\xC8 cos\xEC rinfrescante! + HP rigenera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: Mi sento cazzo invincibile. + Ridurre i danni presi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: Fino in fondo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: Viaggia attraverso i nemici, pervasivi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Gamma di grab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Lunga maw.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Perch\xE9 cos\xEC il lungo ... Maw? Per raggiungere ovviamente."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

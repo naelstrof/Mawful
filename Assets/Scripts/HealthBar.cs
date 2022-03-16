@@ -16,29 +16,26 @@ public class HealthBar : MonoBehaviour {
     [SerializeField]
     private Renderer outlineRenderer;
     private Color originalOutlineColor;
-    void Start() {
+    void OnEnable() {
         character = GetComponentInParent<Character>();
-        character.health.healthChanged += OnHealthChanged;
+        character.stats.health.healthChanged += OnHealthChanged;
         originalScale = flashRenderer.transform.localScale;
         flashMaterial = flashRenderer.material;
         originalColor = flashMaterial.color;
         originalOutlineColor = outlineRenderer.material.color;
         flashMaterial.color = originalColor;
-        OnHealthChanged(character.health.GetHealth());
+        OnHealthChanged(character.stats.health.GetHealth());
     }
     void OnDisable() {
         flashMaterial.color = originalColor;
         outlineRenderer.material.color = originalOutlineColor;
         flashRenderer.transform.localScale = originalScale;
         flashRenderer.transform.localPosition = Vector3.zero;
-    }
-    void OnDestroy() {
-        if (character != null) {
-            character.health.healthChanged -= OnHealthChanged;
-        }
+        rountine = null;
+        character.stats.health.healthChanged -= OnHealthChanged;
     }
     void OnHealthChanged(float newValue) {
-        float ratio = character.health.GetHealth()/character.health.GetValue();
+        float ratio = character.stats.health.GetHealth()/character.stats.health.GetValue();
         flashMaterial.color = originalColor;
         outlineRenderer.material.color = originalOutlineColor;
         flashRenderer.transform.localScale = Vector3.Scale(originalScale, new Vector3(Mathf.Max(ratio,0.01f),1f,1f));

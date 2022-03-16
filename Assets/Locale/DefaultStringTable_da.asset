@@ -833,5 +833,33 @@ MonoBehaviour:
     m_Localized: "Gooet tr\xE6nger dybere dybt. + Projektil penetration."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Det f\xF8les s\xE5 forfriskende! + HP regenererer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Jeg f\xF8ler mig fucking uovervindelig. + Reducer skader taget."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: Hele vejen igennem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: Det spildes gennem fjender, gennemgribende.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: "Grib r\xE6kkevidde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Long Maw.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Hvorfor s\xE5dan den lange ... Maw? At n\xE5 selvf\xF8lgelig."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

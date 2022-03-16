@@ -15,7 +15,7 @@ public class EnemyCharacter : Character {
     }
     public override void LateUpdate() {
         base.LateUpdate();
-        if (health.GetHealth()>0f && velocity.sqrMagnitude > 0.0001f) {
+        if (stats.health.GetHealth()>0f && velocity.sqrMagnitude > 0.0001f) {
             transform.rotation = Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation(velocity.normalized, Vector3.up), Time.deltaTime*360f);
         }
     }
@@ -26,13 +26,17 @@ public class EnemyCharacter : Character {
         dieSound?.PlayOneShot(audioSource);
     }
     public override void BeHit(DamageInstance instance) {
-        Score.AddDamage(instance.card, Mathf.Min(health.GetHealth(), instance.damage));
+        Score.AddDamage(instance.card, Mathf.Min(stats.health.GetHealth(), instance.damage));
         base.BeHit(instance);
     }
     public override void FixedUpdate() {
         base.FixedUpdate();
         if (!stunned) {
-            wishDir = WorldGrid.instance.GetPathTowardsPlayer(position);
+            if (collidesWithWorld) {
+                wishDir = WorldGrid.instance.GetPathTowardsPlayer(position);
+            } else {
+                wishDir = (PlayerCharacter.playerPosition-position).normalized;
+            }
         } else {
             wishDir = Vector3.zero;
         }

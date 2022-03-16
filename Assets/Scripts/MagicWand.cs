@@ -11,19 +11,19 @@ public class MagicWand : Weapon {
     private WaitForSeconds timeToWait;
     public override void Start() {
         source = GetComponent<AudioSource>();
-        cooldown.changed += OnCooldownChanged;
-        OnCooldownChanged(cooldown.GetValue());
-        perProjectileWait = new WaitForSeconds(0.10f);
+        stats.projectileCooldown.changed += OnCooldownChanged;
+        OnCooldownChanged(stats.projectileCooldown.GetValue());
         base.Start();
     }
     void OnCooldownChanged(float newCooldown) {
         timeToWait = new WaitForSeconds(1f/newCooldown);
+        perProjectileWait = new WaitForSeconds(0.1f*(1f/newCooldown));
     }
     Character AquireTarget() {
         float closestDist = float.MaxValue;
         Character target = null;
         foreach(Character character in Character.characters) {
-            if (!(character is EnemyCharacter) || character.health.GetHealth() <= 0f) {
+            if (!(character is EnemyCharacter) || character.stats.health.GetHealth() <= 0f) {
                 continue;
             }
             float dist = Vector3.Distance(character.position, player.position);
@@ -41,16 +41,16 @@ public class MagicWand : Weapon {
             }
             yield return timeToWait;
             Character target = AquireTarget();
-            for (int i=0;i<projectileCount.GetValue();i++) {
+            for (int i=0;i<stats.projectileCount.GetValue();i++) {
                 Projectile magicBolt;
                 if (!ProjectilePool.StaticTryInstantiate(out magicBolt)) { continue; }
                 wandFire.PlayOneShot(source);
                 SetUpProjectile(magicBolt);
                 if (target != null) {
                     Vector3 dir = target.position - player.position;
-                    magicBolt.SetPositionAndVelocity(player.interpolatedPosition, dir.normalized*speed.GetValue());
+                    magicBolt.SetPositionAndVelocity(player.interpolatedPosition, dir.normalized*stats.projectileSpeed.GetValue());
                 } else {
-                    magicBolt.SetPositionAndVelocity(player.interpolatedPosition, player.fireDir*speed.GetValue());
+                    magicBolt.SetPositionAndVelocity(player.interpolatedPosition, player.fireDir*stats.projectileSpeed.GetValue());
                 }
                 yield return perProjectileWait;
             }

@@ -35,7 +35,7 @@ public class Vore : MonoBehaviour {
     protected List<int> blendIDs;
     [SerializeField]
     protected SkinnedMeshRenderer targetRenderer;
-    protected Character player;
+    protected PlayerCharacter player;
     protected HashSet<Character> vaccuming;
     protected HashSet<Character> readyToVore;
     [SerializeField]
@@ -104,7 +104,7 @@ public class Vore : MonoBehaviour {
             }
             blendIDs.Add(id);
         }
-        player = GetComponentInParent<Character>();
+        player = GetComponentInParent<PlayerCharacter>();
     }
     protected virtual void Digest(Character character) {
         gulp.PlayOneShot(source);

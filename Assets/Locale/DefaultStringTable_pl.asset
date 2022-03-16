@@ -842,5 +842,34 @@ MonoBehaviour:
     m_Localized: "GOO dok\u0142adniej penetruje. + Przenikanie pocisku."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Czuje si\u0119 tak od\u015Bwie\u017Canie! + HP Regeneruates."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Czuj\u0119 si\u0119 fucking niezwyci\u0119\u017Cony. + Zmniejszy\u0107
+      obra\u017Cenia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "Przez ca\u0142\u0105 drog\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Rozlewa si\u0119 przez wrog\xF3w, wszechobecny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: "Chwyta\u0107 zasi\u0119g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: "D\u0142ugi Maw."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Dlaczego tak d\u0142ugo ... matka? Dotrze\u0107 oczywi\u015Bcie."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

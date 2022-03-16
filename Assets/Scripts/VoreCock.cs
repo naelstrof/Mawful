@@ -9,11 +9,9 @@ public class VoreCock : Vore {
     private string triggerName;
     [SerializeField]
     private string listenName;
-    [SerializeField]
-    private AttributeModifier damageModifier;
-    [SerializeField]
-    private AttributeModifier radiusModifier;
     private const float tailBlendDistance = 0.5f;
+    [SerializeField]
+    private Leveler leveler;
     protected override void Awake() {
         base.Awake();
         cockAnimator = GetComponentInParent<Animator>();
@@ -26,12 +24,7 @@ public class VoreCock : Vore {
     }
     protected override void Digest(Character character) {
         base.Digest(character);
-        if (damageModifier != null) {
-            player.damage.AddModifier(damageModifier);
-        }
-        if (radiusModifier != null) {
-            (player as PlayerCharacter).projectileRadius.AddModifier(radiusModifier);
-        }
+        leveler.AddXP(Mathf.Lerp(character.stats.health.GetValue(), 1f, 0.5f));
     }
     protected override void StartVore(Character other) {
         readyToVore.Add(other);

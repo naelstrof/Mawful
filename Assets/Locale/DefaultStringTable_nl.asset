@@ -841,5 +841,33 @@ MonoBehaviour:
     m_Localized: De goo penetreert dieper. + Projectiele penetratie.
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: Het voelt zo verfrissend! + HP regenereert.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: Ik voel me onoverwinnelijk. + Verminder de genomen schade.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: Er helemaal doorheen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: Het morsen door vijanden, pervasive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Grijpbereik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Lange meid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: Waarom zo'n lange ... maw? Om natuurlijk te bereiken.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

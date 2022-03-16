@@ -836,5 +836,33 @@ MonoBehaviour:
     m_Localized: "Goo p\u0103trunde mai profund. + Penetrare proiectil\u0103."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Se simte at\xE2t de r\u0103coritoare! + HP regenerate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "M\u0103 simt invincibil. + Reducerea daunelor luate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "P\xE2n\u0103 la cap\u0103t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Se scurge prin du\u0219mani, pervaziv\u0103."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Gama de apucare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: MAW LONG.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "De ce at\xE2t de mult ... Maw? La \xEEndeplinirea desigur."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -46,124 +46,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 2059581e91ea43a44b8451e8b74e5928, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers:
-    - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-  cooldown:
-    modifiers: []
-  penetration:
-    modifiers: []
-  radius:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-  speed:
-    modifiers:
-    - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
   defaultCooldown: 20
   voreTarget: {fileID: 9026474483638131256}
   animator: {fileID: 4662992477826139434}
   controller: {fileID: 7084278285042572386}
   bar: {fileID: 1684839758814152642}
   barContainer: {fileID: 5324584998902398715}
+  mergeChance: 0.05
+  playerBuff:
+    health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
   poofEffect: {fileID: 3867287407452770462}
-  references:
-    version: 1
 --- !u!1 &223069711424459959
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,138 +385,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 246162c9f21555947b057efc2f00a7d0, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: aa695dead8f068f498c0ef7829838b8f, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-  damage:
-    modifiers: []
-  cooldown:
-    modifiers:
-    - {fileID: 11400000, guid: c3c5aed0fabd56a459d5688d5a58836c, type: 2}
-  penetration:
-    modifiers: []
-  radius:
-    modifiers:
-    - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-  speed:
-    modifiers:
-    - {fileID: 11400000, guid: e9e3c21b10531e848b02d7cacf224530, type: 2}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers:
+      - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
+      - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
+    knockback:
+      modifiers: []
   daggerFire: {fileID: 11400000, guid: a88ccf3f91b454b4fbafe40ad118a846, type: 2}
-  references:
-    version: 1
 --- !u!82 &6775893412083229993
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1037,8 +940,7 @@ MonoBehaviour:
   maxTimeRange: 1
   triggerName: DickChomp
   listenName: DickChompComplete
-  damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-  radiusModifier: {fileID: 0}
+  leveler: {fileID: 4915065598810861846}
 --- !u!1 &1123448532859261857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,139 +1132,208 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 4216e04216ca33840bc58e76f0fa6623, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers: []
-  cooldown:
-    modifiers: []
-  penetration:
-    modifiers: []
-  radius:
-    modifiers: []
-  speed:
-    modifiers: []
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
   defaultCooldown: 30
   voreTarget: {fileID: 3157623862557101308}
   animator: {fileID: 4662992477826139434}
   controller: {fileID: 7084278285042572386}
   bar: {fileID: 2248306680727015296}
   barContainer: {fileID: 8300240788951293045}
-  references:
-    version: 1
+  playerBuff:
+    health: {fileID: 0}
+    damage: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  mergeChance: 0.05
+  timingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0.18805993
+      outSlope: 0.18805993
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.13936576
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -2.390644
+      outSlope: -2.390644
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04726976
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1586619003205825935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5683425092579160859}
+  - component: {fileID: 5071264332893474436}
+  m_Layer: 0
+  m_Name: LongMaw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5683425092579160859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586619003205825935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8231813608218332607}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5071264332893474436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586619003205825935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8305f6ae34be07a46b481898afe2200b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponCard: {fileID: 11400000, guid: 41ce84fbc7d300f4ea7cf6bb9013db6c, type: 2}
+  upgrades:
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
 --- !u!82 &7221951160170617253
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1806,7 +1777,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2325681476139413496
 MonoBehaviour:
@@ -1937,42 +1908,73 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  hitVibrationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2.8753572
+      outSlope: 2.8753572
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.032258153
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   lastPosition: {x: 0, y: 0, z: 0}
   position: {x: 0, y: 0, z: 0}
   targetRenderer: {fileID: 0}
-  speed:
-    modifiers:
-    - {fileID: 11400000, guid: 2935146997b7e034b8c2f7d6fcfe857f, type: 2}
   friction: 0.4
-  health:
-    modifiers:
-    - {fileID: 11400000, guid: 5f5153e61ae20314689b8caec238adec, type: 2}
   radius: 0.25
   colorFlash: {r: 0.4245283, g: 0.082102165, b: 0.082102165, a: 0}
+  collidesWithWorld: 1
   invulnerable: 0
   scoreCard: {fileID: 0}
-  damage:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+  stats:
+    health:
+      modifiers:
+      - {fileID: 11400000, guid: 5f5153e61ae20314689b8caec238adec, type: 2}
+    walkSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: 2935146997b7e034b8c2f7d6fcfe857f, type: 2}
+    luck:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    grabRange:
+      modifiers:
+      - {fileID: 11400000, guid: e19a5fcf6d8696a47ac22a1e935fbbbf, type: 2}
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers:
+      - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
+    knockback:
+      modifiers:
+      - {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
   voreMagnetTransform: {fileID: 0}
   fireDir: {x: 0, y: 0, z: 1}
-  projectileCooldown:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-  projectileCount:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-  projectilePenetration:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-  projectileRadius:
-    modifiers:
-    - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-  projectileSpeed:
-    modifiers:
-    - {fileID: 11400000, guid: 1293d946b67f8e24697f3f0e4214e6b3, type: 2}
-  luck:
-    modifiers: []
 --- !u!114 &4915065598810861846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2712,118 +2714,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 59efa7b969ebdce4e8d4505e2c720bef, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers:
-    - {fileID: 11400000, guid: f7a8e43541cfe3440a0567ef7b3fc9da, type: 2}
-  cooldown:
-    modifiers:
-    - {fileID: 11400000, guid: 97788e99aa3b8d943afcaf84e9405078, type: 2}
-  penetration:
-    modifiers: []
-  radius:
-    modifiers:
-    - {fileID: 11400000, guid: f3f5a226ead50db4abc74859f528592c, type: 2}
-  speed:
-    modifiers: []
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: ee59dfa195738c9468db555dabadf517, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers:
+      - {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
   whipPrefab: {fileID: 4961857443656139276, guid: d08810abf11ebfd43a144d8cdb3bf515, type: 3}
   whipMiss: {fileID: 11400000, guid: 6f1d342ed7471da4f96b49f4832ab84e, type: 2}
   whipHit: {fileID: 11400000, guid: 9a6d22d0d66fa9c4e8301e9f77821e11, type: 2}
-  references:
-    version: 1
 --- !u!1 &3303353412445750108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,126 +2929,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 9f7d0b9f3d08a2f4bad96160c1a7b9dd, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers: []
-  cooldown:
-    modifiers: []
-  penetration:
-    modifiers: []
-  radius:
-    modifiers: []
-  speed:
-    modifiers: []
-  references:
-    version: 1
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
 --- !u!1 &3497111116916458203
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,127 +3162,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 47b2937169d521f4faa730658c4148d6, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    penetrationModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 11400000, guid: aa695dead8f068f498c0ef7829838b8f, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers: []
-  cooldown:
-    modifiers: []
-  penetration:
-    modifiers: []
-  radius:
-    modifiers: []
-  speed:
-    modifiers: []
-  wandFire: {fileID: 11400000, guid: a88ccf3f91b454b4fbafe40ad118a846, type: 2}
-  references:
-    version: 1
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: ee59dfa195738c9468db555dabadf517, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
+    knockback:
+      modifiers:
+      - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+  wandFire: {fileID: 11400000, guid: 784e85ca3d7d2ec41a9139ecd140c14c, type: 2}
 --- !u!82 &7986656898009221296
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3566,105 +3420,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 32e03e181798de64eba1821bc6f3b780, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers: []
-  cooldown:
-    modifiers: []
-  penetration:
-    modifiers: []
-  radius:
-    modifiers: []
-  speed:
-    modifiers: []
-  references:
-    version: 1
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 11400000, guid: 7b8a4bcc975f12540bff9b83319af905, type: 2}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
 --- !u!1 &4275967323468945411
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,6 +3661,96 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4722574412333542047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7911264663689261089}
+  - component: {fileID: 5577979254123680820}
+  m_Layer: 0
+  m_Name: AllTheWayThrough
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7911264663689261089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722574412333542047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8231813608218332607}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5577979254123680820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722574412333542047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8305f6ae34be07a46b481898afe2200b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponCard: {fileID: 11400000, guid: aa3400f57e81c3449a7833aba29f0002, type: 2}
+  upgrades:
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
 --- !u!1 &4967652990704855990
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,117 +4230,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 4f607d14a3e08c9498ccc1dd57afe3fd, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 0}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers:
-    - {fileID: 11400000, guid: c06d871aa0bd9484d80dacf4660952b8, type: 2}
-  cooldown:
-    modifiers:
-    - {fileID: 11400000, guid: 2b32188b14d6f2041b210fa1f1d4f290, type: 2}
-  penetration:
-    modifiers: []
-  radius:
-    modifiers:
-    - {fileID: 11400000, guid: 5dbbff73479e75145a4733ccb34b848d, type: 2}
-  speed:
-    modifiers: []
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
   hitSound: {fileID: 11400000, guid: b3381b2fbbcee204db7b1b850802789a, type: 2}
   garlicVisuals: {fileID: 6549988509822625336}
-  references:
-    version: 1
 --- !u!82 &266760407903384811
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4820,6 +4685,8 @@ Transform:
   - {fileID: 4202147925099595909}
   - {fileID: 2843231008783382818}
   - {fileID: 1410310559841305018}
+  - {fileID: 7911264663689261089}
+  - {fileID: 5683425092579160859}
   m_Father: {fileID: 2325681476139413498}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5058,98 +4925,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: 8e0fd0be7585b264ea848df636061d30, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
-    cooldownModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 0}
-    damageModifier: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
-    cooldownModifier: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers: []
-  cooldown:
-    modifiers: []
-  penetration:
-    modifiers: []
-  radius:
-    modifiers: []
-  speed:
-    modifiers: []
-  references:
-    version: 1
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: da3ae7b700db2394fac11935947a0c4b, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: 7854a988fc154e54d93df68c9a041629, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 11400000, guid: da3ae7b700db2394fac11935947a0c4b, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
 --- !u!1 &8178335319285403162
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,116 +5015,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCard: {fileID: 11400000, guid: ee847430e4f77d44cb67898396bbe620, type: 2}
-  countText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529280
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  damageText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529281
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  cooldownText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529282
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  penetrationText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529283
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  radiusText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529284
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  speedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 5337045474529285
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  walkSpeedText:
-    m_TableReference:
-      m_TableCollectionName: GUID:b3b13eb23f694ad468ff6648c5075d38
-    m_TableEntryReference:
-      m_KeyId: 6098923893739520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
   upgrades:
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 0}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    radiusModifier: {fileID: 0}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 0}
-    penetrationModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  - countModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    damageModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    cooldownModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    penetrationModifier: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
-    radiusModifier: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    speedModifier: {fileID: 0}
-    playerSpeedModifier: {fileID: 0}
-  projectileCount:
-    modifiers: []
-  damage:
-    modifiers:
-    - {fileID: 11400000, guid: 464eb82f042a4fc4b93758cbbc7a9905, type: 2}
-  cooldown:
-    modifiers:
-    - {fileID: 11400000, guid: 3f20f0f8460b3ac4dbb2ca4a8f5fe109, type: 2}
-  penetration:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
-  radius:
-    modifiers: []
-  speed:
-    modifiers:
-    - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
-  references:
-    version: 1
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileRadius: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileRadius: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileRadius: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileCooldown:
+      modifiers:
+      - {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectileRadius:
+      modifiers:
+      - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers:
+      - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
 --- !u!1 &8504847677514764730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5725,8 +5510,7 @@ MonoBehaviour:
   maxTimeRange: 0.6
   triggerName: ButtChomp
   listenName: ButtChompComplete
-  damageModifier: {fileID: 0}
-  radiusModifier: {fileID: 11400000, guid: ee75c1c348cf72f4498a6c6dfae4302a, type: 2}
+  leveler: {fileID: 4915065598810861846}
 --- !u!1 &8945828400299506654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,39 +5773,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
---- !u!4 &5246715961799584136 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -2806649645742534349, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7712165705650932984 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -370475481308072893, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8299256670718100628 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &976100746562172255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2042133044192677348, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8734260831987665276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7559996389290045895, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &4662992477826139434 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1531753657526372616 stripped
+--- !u!4 &5246715961799584136 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 332477524584313267, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_CorrespondingSourceObject: {fileID: -2806649645742534349, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8817191394875885942 stripped
@@ -6029,9 +5788,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7746234797249311181, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &1331076685134111450 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -8960970926843962783, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+--- !u!4 &551499194026544789 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7712165705650932984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -370475481308072893, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8734260831987665276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7559996389290045895, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1609590634486210384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2098038111495308778 stripped
@@ -6039,14 +5813,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &551499194026544789 stripped
+--- !u!4 &8299256670718100628 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1609590634486210384 stripped
+--- !u!137 &1331076685134111450 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8960970926843962783, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &976100746562172255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2042133044192677348, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1531753657526372616 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_CorrespondingSourceObject: {fileID: 332477524584313267, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2491081579466430471
@@ -6186,16 +5970,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
---- !u!224 &5368364855599299986 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 2491081579466430471}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6914491723654356819 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 2491081579466430471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3823375967286146019 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1701592448113224676, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
@@ -6207,6 +5981,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6914491723654356819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 2491081579466430471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5368364855599299986 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 2491081579466430471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5545508667278650794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6344,6 +6128,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+--- !u!224 &2659306153356036159 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 5545508667278650794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7292775335227431904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3008613764058084938, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
@@ -6363,11 +6152,6 @@ MonoBehaviour:
 --- !u!1 &3572117743407213310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 5545508667278650794}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2659306153356036159 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 5545508667278650794}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5958699176093884581

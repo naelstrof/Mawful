@@ -10,7 +10,7 @@ public class OnPlayerDie : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         group = GetComponent<CanvasGroup>();
-        character.health.depleted += OnHealthDepleted;
+        character.stats.health.depleted += OnHealthDepleted;
     }
     void OnHealthDepleted() {
         group.alpha = 1f;

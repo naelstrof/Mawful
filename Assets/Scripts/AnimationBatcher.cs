@@ -29,7 +29,7 @@ public class AnimationBatcher : PooledItem {
         defaultMaterial = GetComponent<Renderer>().sharedMaterial;
         character = GetComponentInParent<Character>();
         if (character != null) {
-            character.health.depleted += OnDie;
+            character.stats.health.depleted += OnDie;
             character.startedVore += OnVoreStart;
             character.stunChanged += OnStunChanged;
             currentAnimation = walk;

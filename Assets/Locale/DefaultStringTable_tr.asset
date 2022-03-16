@@ -836,5 +836,33 @@ MonoBehaviour:
     m_Localized: "Goo daha derinden n\xFCfuz eder. + Mermi penetrasyonu."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "\xC7ok canland\u0131r\u0131c\u0131 hissediyor! + HP rejenerates."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Yenilmez hissediyorum. + Al\u0131nan hasar\u0131 azalt\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "T\xFCm yol boyunca"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "D\xFC\u015Fmanlar\u0131, yayg\u0131n olarak d\xF6k\xFCl\xFCr."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Kapmak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Uzun maw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Neden bu kadar uzun ... Maw? Elbette ula\u015Fmak i\xE7in."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

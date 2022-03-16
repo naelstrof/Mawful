@@ -27,12 +27,9 @@ public class Character : PooledItem {
     public Renderer targetRenderer;
     private Coroutine hitRoutine;
     protected Vector3 wishDir;
-    [SerializeField]
-    public Attribute speed;
     [Range(0f,1f)][SerializeField]
     protected float friction;
     protected bool phased = false;
-    public HealthAttribute health;
     [HideInInspector]
     public float radius = 0.5f;
     [SerializeField]
@@ -40,12 +37,14 @@ public class Character : PooledItem {
     private Color colorFlash;
     protected bool beingVored = false;
     protected bool frozen;
+    [SerializeField]
+    protected bool collidesWithWorld = true;
     private bool hitStunned = false;
     private Vector3 freezePosition;
     [SerializeField]
     public bool invulnerable = false;
     public ScoreCard scoreCard;
-    public Attribute damage;
+    public StatBlock stats;
     public Transform voreMagnetTransform;
     private WaitForFixedUpdate waitForFixedUpdate;
     public struct DamageInstance {
@@ -118,14 +117,14 @@ public class Character : PooledItem {
         return true;
     }
     public virtual void BeHit(DamageInstance instance) {
-        if (health.GetHealth() <= 0f || frozen || invulnerable) {
+        if (stats.health.GetHealth() <= 0f || frozen || invulnerable) {
             return;
         }
         MeshFloater floater;
         MeshFloaterPool.StaticTryInstantiate(out floater);
         floater.transform.position = position + Vector3.up*0.5f;
         floater.SetDisplay(Mathf.CeilToInt(instance.damage*10f));
-        health.Damage(instance.damage);
+        stats.health.Damage(instance.damage);
         position += instance.knockback;
         if (hitRoutine != null) {
             StopCoroutine(hitRoutine);
@@ -154,8 +153,8 @@ public class Character : PooledItem {
         waitForFixedUpdate = new WaitForFixedUpdate();
         lastPosition = position = transform.position;
         characterCollider = GetComponent<Collider>();
-        health.Heal(99999f);
-        health.depleted += Die;
+        stats.health.Heal(99999f);
+        stats.health.depleted += Die;
         targetRenderer = GetComponentInChildren<Renderer>();
     }
     protected virtual void Start() {
@@ -179,10 +178,10 @@ public class Character : PooledItem {
             float mag = diff.magnitude;
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
-            if ((this is EnemyCharacter && character is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(null, Mathf.Min(health.GetHealth()*0.5f,1.5f), Vector3.zero));
-            } else if ((character is EnemyCharacter && this is PlayerCharacter) && health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(null, Mathf.Min(character.health.GetHealth()*0.5f,1.5f), Vector3.zero));
+            if ((this is EnemyCharacter && character is PlayerCharacter) && stats.health.GetHealth()>0f && moveAmount > 0f) {
+                character.BeHit(new DamageInstance(null, Mathf.Min(stats.health.GetHealth()*0.5f,1.5f), Vector3.zero));
+            } else if ((character is EnemyCharacter && this is PlayerCharacter) && stats.health.GetHealth()>0f && moveAmount > 0f) {
+                this.BeHit(new DamageInstance(null, Mathf.Min(character.stats.health.GetHealth()*0.5f,1.5f), Vector3.zero));
             }
             newPosition += dir * moveAmount;
             character.position -= dir * moveAmount;
@@ -203,9 +202,9 @@ public class Character : PooledItem {
         float maxMeterMovement = 5f;
         Vector3 newPosition = position + diff.normalized*Mathf.Min(mag,maxMeterMovement)*(1f-friction*friction);
         lastPosition = position;
-        newPosition += wishDir * Time.deltaTime * speed.GetValue();
+        newPosition += wishDir * Time.deltaTime * stats.walkSpeed.GetValue();
         newPosition = WorldGrid.instance.worldBounds.ClosestPoint(newPosition);
-        if (health.GetHealth() > 0f) {
+        if (stats.health.GetHealth() > 0f) {
             newPosition.y = 0f;
         }
 
@@ -225,14 +224,16 @@ public class Character : PooledItem {
             return;
         }
 
-        int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.pathGridSize);
-        int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.pathGridSize);
-        int pathXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.instance.pathGridSize,1f))*2-1);
-        int pathYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.instance.pathGridSize,1f))*2-1);
-        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX,pathY), ref newPosition);
-        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX+pathXOffset, pathY), ref newPosition);
-        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX, pathY+pathYOffset), ref newPosition);
-        DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), ref newPosition);
+        if (collidesWithWorld) {
+            int pathX = Mathf.RoundToInt(newPosition.x/WorldGrid.instance.pathGridSize);
+            int pathY = Mathf.RoundToInt(newPosition.z/WorldGrid.instance.pathGridSize);
+            int pathXOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.x/WorldGrid.instance.pathGridSize,1f))*2-1);
+            int pathYOffset = -(Mathf.RoundToInt(Mathf.Repeat(newPosition.z/WorldGrid.instance.pathGridSize,1f))*2-1);
+            DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX,pathY), ref newPosition);
+            DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX+pathXOffset, pathY), ref newPosition);
+            DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX, pathY+pathYOffset), ref newPosition);
+            DoWallCollision(WorldGrid.instance.GetPathGridElement(pathX+pathXOffset, pathY+pathYOffset), ref newPosition);
+        }
         position = newPosition;
     }
     public virtual void LateUpdate() {
@@ -246,7 +247,8 @@ public class Character : PooledItem {
         base.Reset(recurse);
         enabled = !Pauser.GetPaused();
         beingVored = false;
-        health.Heal(99999f);
+        stats.health.Heal(99999f);
+        targetRenderer.material.SetColor("_EmissionColor", Color.black);
         targetRenderer.material.DisableKeyword("_PINCH_ON");
     }
     protected virtual void OnPauseChanged(bool paused) {

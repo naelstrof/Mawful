@@ -133,20 +133,41 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  hitVibrationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   lastPosition: {x: 0, y: 0, z: 0}
   position: {x: 0, y: 0, z: 0}
-  speed:
-    modifiers: []
+  targetRenderer: {fileID: 0}
   friction: 0.9
-  health:
-    modifiers:
-    - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
   radius: 1.25
   colorFlash: {r: 1, g: 1, b: 1, a: 0}
   invulnerable: 1
   scoreCard: {fileID: 11400000, guid: 2fc44f6d98df14c43860d80e383fbd23, type: 2}
-  damage:
-    modifiers: []
+  stats:
+    health:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
   voreMagnetTransform: {fileID: 6776946965587758131}
 --- !u!135 &5334749797992871507
 SphereCollider:
@@ -185,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8079489823626808793}
   m_LocalRotation: {x: -0.0000002936986, y: -0.79659516, z: -0.6045132, w: -0.00000042406316}
-  m_LocalPosition: {x: -0, y: -0.216, z: -0.558}
+  m_LocalPosition: {x: -0, y: 0.174, z: -0.558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 646098006470447508}
@@ -208,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7ce5688c65e50e408883058c50b0471, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7ce5688c65e50e408883058c50b0471, type: 3}
       propertyPath: m_LocalPosition.z

@@ -842,5 +842,34 @@ MonoBehaviour:
     m_Localized: "Goo pronik\xE1 hloub\u011Bji. + Proklimat penetrace."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Je to tak osv\u011B\u017Euj\xEDc\xED! + Regener\xE1ty HP."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "C\xEDt\xEDm kurva neporaziteln\xFD. + Sni\u017Ete u\u017E\xEDv\xE1n\xED
+      po\u0161kozen\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: Celou cestu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Rozpadlo p\u0159es nep\u0159\xE1tele, v\u0161udyp\u0159\xEDtomn\xFD."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Grab Range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: "Dlouh\xFD maw."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Pro\u010D takov\xFD dlouh\xFD ... MAW? Dos\xE1hnout samoz\u0159ejm\u011B."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

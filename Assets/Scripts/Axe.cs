@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Axe : Projectile {
-    private static Vector3 gravityDir = new Vector3(1f,0,-1f).normalized * 9.81f;
+    public Vector3 gravityDir;
     public void Update() {
         transform.rotation *= Quaternion.AngleAxis(Time.deltaTime*360f, Vector3.forward);
     }

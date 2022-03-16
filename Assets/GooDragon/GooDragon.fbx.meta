@@ -264,6 +264,13 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.40250447
+        functionName: PlayFromPack
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: 7430e8e4e3288bd40a9604956a66082b, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

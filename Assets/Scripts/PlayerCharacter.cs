@@ -10,12 +10,6 @@ public class PlayerCharacter : Character {
     private PlayerInput playerInput;
     [HideInInspector]
     public Vector3 fireDir = Vector3.forward;
-    public Attribute projectileCooldown;
-    public Attribute projectileCount;
-    public Attribute projectilePenetration;
-    public Attribute projectileRadius;
-    public Attribute projectileSpeed;
-    public Attribute luck;
     private float lastHitTime;
     private Vector3 lookSmooth;
     public override void BeHit(DamageInstance instance) {
@@ -49,7 +43,7 @@ public class PlayerCharacter : Character {
         MainMenuShower.ToggleShow();
     }
     void OnGrabLookStarted(InputAction.CallbackContext ctx) {
-        if (Pauser.GetPaused() || health.GetHealth() <= 0f) {
+        if (Pauser.GetPaused() || stats.health.GetHealth() <= 0f) {
             return;
         }
         Cursor.lockState = CursorLockMode.Locked;
@@ -104,7 +98,7 @@ public class PlayerCharacter : Character {
         wishDir = flatDir;
     }
     protected override void OnPauseChanged(bool paused) {
-        enabled = !paused && !beingVored && health.GetHealth()>0f;
+        enabled = !paused && !beingVored && stats.health.GetHealth()>0f;
         if (paused) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

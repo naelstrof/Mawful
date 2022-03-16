@@ -809,31 +809,59 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6390850627227648
-    m_Localized: How many items I can pack-rat... +Weapon slots.
+    m_Localized: How many items I can pack-rat... + Weapon slots.
     m_Metadata:
       m_Items: []
   - m_Id: 6390850656587776
-    m_Localized: Makes me speedier! +Player speed
+    m_Localized: Makes me speedier! + Player speed
     m_Metadata:
       m_Items: []
   - m_Id: 6390850656587777
-    m_Localized: More goo! More projectile goo! +Projectile count
+    m_Localized: More goo! More projectile goo! + Projectile count
     m_Metadata:
       m_Items: []
   - m_Id: 6390850656587778
-    m_Localized: Goo feels more effective.. +Damage
+    m_Localized: Goo feels more effective.. + Damage
     m_Metadata:
       m_Items: []
   - m_Id: 6413420252549120
-    m_Localized: Goo science materials needed, inside me? +Levels Gained
+    m_Localized: Goo science materials needed, inside me? + Levels Gained
     m_Metadata:
       m_Items: []
   - m_Id: 6413420286103552
-    m_Localized: More lube means less friction, faster cooldown. +Projectile cooldown.
+    m_Localized: More lube means less friction, faster cooldown. + Projectile cooldown.
     m_Metadata:
       m_Items: []
   - m_Id: 6413420298686464
-    m_Localized: The goo penetrates more deeply. +Projectile penetration.
+    m_Localized: The goo penetrates more deeply. + Projectile penetration.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: It feels so refreshing! + HP regenerates.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: I feel fucking invincible. + Reduce damage taken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: All the way through
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: It spills through enemies, pervasive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Grab range
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Long maw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: Why such the long... maw? To reach of course.
     m_Metadata:
       m_Items: []
   references:

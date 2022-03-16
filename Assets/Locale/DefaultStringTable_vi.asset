@@ -857,5 +857,36 @@ MonoBehaviour:
       nh\u1EADp."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "N\xF3 c\u1EA3m th\u1EA5y r\u1EA5t s\u1EA3ng kho\xE1i! + HP t\xE1i
+      sinh."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "T\xF4i c\u1EA3m th\u1EA5y b\u1EA5t kh\u1EA3 chi\u1EBFn b\u1EA1i.
+      + Gi\u1EA3m s\xE1t th\u01B0\u01A1ng."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "T\u1EA5t c\u1EA3 c\xE1c c\xE1ch th\xF4ng qua"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "N\xF3 tr\xE0n qua k\u1EBB th\xF9, ph\u1ED5 bi\u1EBFn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: "L\u1EA5y ph\u1EA1m vi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Long Maw.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "T\u1EA1i sao l\xE2u nh\u01B0 v\u1EADy ... Maw? \u0110\u1EC3 \u0111\u1EA1t
+      \u0111\u01B0\u1EE3c t\u1EA5t nhi\xEAn."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

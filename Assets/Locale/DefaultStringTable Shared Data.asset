@@ -811,6 +811,34 @@ MonoBehaviour:
     m_Key: META_UPGRADE_PENETRATION_DESCRIPTION
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Key: META_UPGRADE_HP_REGEN_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Key: META_UPGRADE_SHIELD_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Key: WEAPON_ALL_THE_WAY_THROUGH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Key: WEAPON_ALL_THE_WAY_THROUGH_DESCRIPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Key: STAT_GRAB_RANGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Key: WEAPON_LONG_MAW
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Key: WEAPON_LONG_MAW_DESCRIPTION
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

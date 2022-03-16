@@ -32,7 +32,7 @@ public class WeaponProgressPanel : MonoBehaviour {
         }
         // Set sprites
         for(int i=0;i<targetWeapon.GetUpgradeTotal();i++) {
-            if (i <= targetWeapon.GetUpgradeLevel()) {
+            if (i < targetWeapon.GetUpgradeLevel()) {
                 availableUpgradeSprites[i].sprite = onSprite;
             } else {
                 availableUpgradeSprites[i].sprite = offSprite;

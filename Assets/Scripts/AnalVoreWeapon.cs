@@ -25,26 +25,30 @@ public class AnalVoreWeapon : Weapon {
     private Renderer barContainer;
     private float timeout;
     private bool paused;
+    [SerializeField]
+    private float mergeChance = 0.05f;
     private bool doneAttacking = false;
+    [SerializeField]
+    private StatBlockModifier playerBuff;
     [SerializeField]
     private VisualEffect poofEffect;
     public override void Start() {
-        cooldown.changed += OnCooldownChanged;
-        OnCooldownChanged(cooldown.GetValue());
+        stats.projectileCooldown.changed += OnCooldownChanged;
+        OnCooldownChanged(stats.projectileCooldown.GetValue());
         base.Start();
         lastFireTime = Time.time - timeToWait;
         originalBarScale = bar.transform.localScale;
         originalBarColor = bar.material.color;
     }
     void OnPostSlam() {
-        if (attackCount >= Mathf.RoundToInt(projectileCount.GetValue())) {
+        if (attackCount >= Mathf.RoundToInt(stats.projectileCount.GetValue())) {
             doneAttacking = true;
         }
         foreach(Character character in Character.characters) {
-            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
+            if (character is PlayerCharacter || character.stats.health.GetHealth() <= 0f) {
                 continue;
             }
-            float blowbackDist = radius.GetValue()*3f;
+            float blowbackDist = stats.projectileRadius.GetValue()*3f;
             // Blowback!!
             Vector3 diff = (character.position-player.position);
             float dist = diff.magnitude;
@@ -53,14 +57,14 @@ public class AnalVoreWeapon : Weapon {
             }
             float scale = (blowbackDist-Mathf.Min(dist,blowbackDist))/blowbackDist;
             Vector3 dir = diff.normalized;
-            character.BeHit(new Character.DamageInstance(weaponCard, damage.GetValue()*scale, dir*0.2f*scale));
+            character.BeHit(new Character.DamageInstance(weaponCard, stats.damage.GetValue()*scale, dir*scale*stats.knockback.GetValue()));
         }
-        poofEffect.SetFloat("Radius", radius.GetValue());
+        poofEffect.SetFloat("Radius", stats.projectileRadius.GetValue());
         poofEffect.Play();
     }
     void OnStateTriggered(string name) {
         if (name == "AnalAttacked") {
-            if (attackCount < projectileCount.GetValue()) {
+            if (attackCount < stats.projectileCount.GetValue()) {
                 Character target = AquireTarget();
                 attackCount++;
                 if (target == null) {
@@ -71,7 +75,7 @@ public class AnalVoreWeapon : Weapon {
                 animator.SetTrigger("ButtChomp");
                 animator.SetBool("AnalVore", true);
                 waiting++;
-                Score.AddDamage(weaponCard, target.health.GetHealth());
+                Score.AddDamage(weaponCard, target.stats.health.GetHealth());
                 voreTarget.Vaccum(target);
                 //player.SetFreeze(true);
                 player.invulnerable = true;
@@ -102,6 +106,9 @@ public class AnalVoreWeapon : Weapon {
         animator.SetBool("AnalAttack", false);
     }
     void OnVoreComplete(Character other) {
+        if (stats.luck.Roll(mergeChance)) {
+            playerBuff.Apply(player.stats);
+        }
         waiting--;
     }
     void OnCooldownChanged(float newCooldown) {
@@ -117,7 +124,7 @@ public class AnalVoreWeapon : Weapon {
         float closestDist = float.MaxValue;
         Character target = null;
         foreach(Character character in Character.characters) {
-            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
+            if (character is PlayerCharacter || character.stats.health.GetHealth() <= 0f) {
                 continue;
             }
             float dist = Vector3.Distance(character.position, player.position);
@@ -126,7 +133,7 @@ public class AnalVoreWeapon : Weapon {
                 closestDist = dist;
             }
         }
-        if (closestDist > radius.GetValue()) {
+        if (closestDist > stats.projectileRadius.GetValue()) {
             return null;
         }
         return target;
@@ -134,8 +141,8 @@ public class AnalVoreWeapon : Weapon {
     public IEnumerator UltimateRoutine() {
         attackCount = 0;
         doneAttacking = false;
-        foreach(AttributeModifier modifier in speed.modifiers) {
-            player.speed.AddModifier(modifier);
+        foreach(AttributeModifier modifier in stats.projectileSpeed.modifiers) {
+            player.stats.walkSpeed.AddModifier(modifier);
         }
         animator.SetBool("AnalAttack", true);
         player.invulnerable = true;
@@ -145,12 +152,12 @@ public class AnalVoreWeapon : Weapon {
         CameraFollower.SetGloryVore(true);
         animator.SetBool("AnalAttack", false);
         player.SetFreeze(true);
-        timeout = Time.time + 5f*projectileCount.GetValue();
+        timeout = Time.time + 5f*stats.projectileCount.GetValue();
         while((waiting!=0 || !isActiveAndEnabled || paused) && Time.time < timeout) {
             yield return null;
         }
-        foreach(AttributeModifier modifier in speed.modifiers) {
-            player.speed.RemoveModifier(modifier);
+        foreach(AttributeModifier modifier in stats.projectileSpeed.modifiers) {
+            player.stats.walkSpeed.RemoveModifier(modifier);
         }
         attackCount = 0;
         doneAttacking = false;

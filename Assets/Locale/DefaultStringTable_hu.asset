@@ -839,5 +839,34 @@ MonoBehaviour:
     m_Localized: "A Goo m\xE9lyebben behatol. + PROYPLE\xC1LL\xCDT\xC1S."
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Ez olyan friss\xEDt\u0151nek \xE9rzi mag\xE1t! + HP regener\xE1lja."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "\xDAgy \xE9rzem, kibaszott legy\u0151zhetetlen. + Cs\xF6kkentse
+      a k\xE1rosod\xE1st."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: "Eg\xE9szen \xE1t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Az ellens\xE9geken \xE1t\xE1ramlik, \xE1thatolva."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Megragad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: "Hossz\xFA maw"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Mi\xE9rt ilyen hossz\xFA ... Maw? Term\xE9szetesen."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

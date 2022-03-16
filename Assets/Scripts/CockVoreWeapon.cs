@@ -23,10 +23,16 @@ public class CockVoreWeapon : Weapon {
     private Renderer barContainer;
     private float timeout;
     private bool paused;
+    [SerializeField]
+    private StatBlockModifier playerBuff;
+    [SerializeField]
+    private float mergeChance = 0.05f;
     private bool attacking = false;
+    [SerializeField]
+    private AnimationCurve timingCurve;
     public override void Start() {
-        cooldown.changed += OnCooldownChanged;
-        OnCooldownChanged(cooldown.GetValue());
+        stats.projectileCooldown.changed += OnCooldownChanged;
+        OnCooldownChanged(stats.projectileCooldown.GetValue());
         base.Start();
         lastFireTime = Time.time - timeToWait;
         originalBarScale = bar.transform.localScale;
@@ -56,6 +62,9 @@ public class CockVoreWeapon : Weapon {
         animator.SetBool("DickAttack", false);
     }
     void OnVoreComplete(Character other) {
+        if (stats.luck.Roll(mergeChance)) {
+            playerBuff.Apply(player.stats);
+        }
         waiting--;
     }
     void OnCooldownChanged(float newCooldown) {
@@ -71,7 +80,7 @@ public class CockVoreWeapon : Weapon {
         float closestDist = float.MaxValue;
         Character target = null;
         foreach(Character character in Character.characters) {
-            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
+            if (character is PlayerCharacter || character.stats.health.GetHealth() <= 0f) {
                 continue;
             }
             float dist = Vector3.Distance(character.position, player.position);
@@ -87,18 +96,19 @@ public class CockVoreWeapon : Weapon {
         while(!attacking) {
             yield return null;
         }
-        for (int i=0;i<projectileCount.GetValue();i++) {
+        float totalTime = 2f/stats.projectileCount.GetValue();
+        for (int i=0;i<stats.projectileCount.GetValue();i++) {
             Character target = AquireTarget();
             if (target == null) {
                 continue;
             }
             waiting++;
             CameraFollower.SetGloryVore(true);
-            Score.AddDamage(weaponCard, target.health.GetHealth());
+            Score.AddDamage(weaponCard, target.stats.health.GetHealth());
             voreTarget.Vaccum(target);
             player.SetFreeze(true);
-            float progress= (float)i/(projectileCount.GetValue());
-            yield return new WaitForSeconds((1f-progress)+0.8f);
+            float progress= (float)i/(stats.projectileCount.GetValue());
+            yield return new WaitForSeconds(timingCurve.Evaluate(progress)*totalTime);
         }
         timeout = Time.time + 8f;
         while((waiting!=0 || !isActiveAndEnabled || paused) && Time.time < timeout) {
@@ -109,7 +119,7 @@ public class CockVoreWeapon : Weapon {
         CameraFollower.SetGloryVore(false);
         animator.SetBool("DickAttack", false);
         foreach(Character character in Character.characters) {
-            if (character is PlayerCharacter || character.health.GetHealth() <= 0f) {
+            if (character is PlayerCharacter || character.stats.health.GetHealth() <= 0f) {
                 continue;
             }
             // Blowback!!

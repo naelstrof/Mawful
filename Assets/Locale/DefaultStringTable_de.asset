@@ -837,5 +837,34 @@ MonoBehaviour:
     m_Localized: Der Goo dringt tiefer ein. + Projektilpenetration.
     m_Metadata:
       m_Items: []
+  - m_Id: 6702229666058240
+    m_Localized: "Es f\xFChlt sich so erfrischend an! + HP Regenerate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806976
+    m_Localized: "Ich f\xFChle mich ficken unbesiegbar. + Reduzieren Sie den genommenen
+      Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806977
+    m_Localized: Den ganzen Weg durch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6702229703806978
+    m_Localized: "Es versch\xFCttet durch Feinde, durchdringend."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6709725998796800
+    m_Localized: Reichweite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064256
+    m_Localized: Langmaul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6712538548064257
+    m_Localized: "Warum so das lange ... Maw? Nat\xFCrlich erreichen."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

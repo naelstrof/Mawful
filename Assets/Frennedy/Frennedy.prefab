@@ -173,22 +173,40 @@ MonoBehaviour:
   lastPosition: {x: 0, y: 0, z: 0}
   position: {x: 100, y: 0, z: 100}
   targetRenderer: {fileID: 0}
-  speed:
-    modifiers:
-    - {fileID: 11400000, guid: 7fd12b284228557409fc59a76eccd429, type: 2}
   friction: 0.3
-  health:
-    modifiers:
-    - {fileID: 11400000, guid: abeea89ce61544d4dad6f98bcb605aac, type: 2}
   radius: 0.2
   colorFlash: {r: 0.12800248, g: 0.02336242, b: 0.7075472, a: 0}
+  collidesWithWorld: 0
   invulnerable: 0
   scoreCard: {fileID: 11400000, guid: 52595704ed18aa244a970e0910bde43b, type: 2}
-  damage:
-    modifiers: []
+  stats:
+    health:
+      modifiers:
+      - {fileID: 11400000, guid: abeea89ce61544d4dad6f98bcb605aac, type: 2}
+    walkSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: 7fd12b284228557409fc59a76eccd429, type: 2}
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
   voreMagnetTransform: {fileID: 1093394043516265268}
   audioSource: {fileID: 0}
-  dieSound: {fileID: 0}
+  dieSound: {fileID: 11400000, guid: 3392ffd39b999a44581f59339a20de40, type: 2}
 --- !u!82 &436520315007100272
 AudioSource:
   m_ObjectHideFlags: 0
