@@ -18,11 +18,11 @@ public class Projectile : PooledItem {
     public float damage = 1f;
     public float radius = 1f;
     public float knockback = 1f;
-    private Dictionary<EnemyCharacter, float> hits;
+    private Dictionary<Character, float> hits;
     private float hitCooldown = 1f;
     private int hitCount;
     public int hitLimit = 1;
-    private bool hitStunned;
+    protected bool hitStunned;
     private Collider projectileCollider;
     private WaitForFixedUpdate waitForFixedUpdate;
     public Vector3 velocity {
@@ -66,7 +66,7 @@ public class Projectile : PooledItem {
         base.Awake();
         waitForFixedUpdate = new WaitForFixedUpdate();
         projectileCollider = GetComponent<Collider>();
-        hits = new Dictionary<EnemyCharacter, float>();
+        hits = new Dictionary<Character, float>();
         Pauser.pauseChanged += OnPauseChanged;
     }
     void OnDestroy() {
@@ -82,7 +82,7 @@ public class Projectile : PooledItem {
             return;
         }
     }
-    protected void DoHit(EnemyCharacter character) {
+    protected void DoHit(Character character) {
         if (hitCount >= hitLimit) {
             return;
         }
@@ -101,19 +101,18 @@ public class Projectile : PooledItem {
     }
     protected void CheckCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
         foreach(Character character in element.charactersInElement) {
-            if (!(character is EnemyCharacter)) { continue; }
-            EnemyCharacter enemyCharacter = character as EnemyCharacter;
-            if (enemyCharacter.stats.health.GetHealth() <= 0f) {
+            if ((character is PlayerCharacter) || character.invulnerable) { continue; }
+            if (character.stats.health.GetHealth() <= 0f) {
                 continue;
             }
-            float dist = Vector3.Distance(newPosition, enemyCharacter.position);
+            float dist = Vector3.Distance(newPosition, character.position);
             if (dist<(radius+1f)*0.5f) {
-                if (!hits.ContainsKey(enemyCharacter)) {
-                    hits.Add(enemyCharacter, Time.time);
-                    DoHit(enemyCharacter);
-                } else if (Time.time-hits[enemyCharacter] > hitCooldown) {
-                    hits[enemyCharacter] = Time.time;
-                    DoHit(enemyCharacter);
+                if (!hits.ContainsKey(character)) {
+                    hits.Add(character, Time.time);
+                    DoHit(character);
+                } else if (Time.time-hits[character] > hitCooldown) {
+                    hits[character] = Time.time;
+                    DoHit(character);
                 }
             }
         }

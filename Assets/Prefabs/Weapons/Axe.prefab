@@ -44,14 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e60a9c13c43e24bbe76e9cfc98512f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPack: {fileID: 11400000, guid: dc5bf240363a960428e9621c8006d271, type: 2}
+  hitPack: {fileID: 11400000, guid: 7ad6b61bc0bce714080f0f0cc98257c9, type: 2}
   lastPosition: {x: 0, y: 0, z: 0}
   friction: 0
   position: {x: 100, y: 0, z: 100}
+  weaponCard: {fileID: 0}
   damage: 1
   radius: 1
   knockback: 0.5
   hitLimit: 1
+  gravityDir: {x: 0, y: 0, z: 0}
 --- !u!1001 &4570219841167756854
 PrefabInstance:
   m_ObjectHideFlags: 0

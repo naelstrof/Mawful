@@ -734,7 +734,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5319329942392833
     m_Localized: "Ogrzewa bloje z goo przy najbli\u017Cszym stworzeniu. Sp\xF3jne
-      uszkodzenie."
+      uszkodzenia."
     m_Metadata:
       m_Items: []
   - m_Id: 5319329942392834
@@ -788,7 +788,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Jeszcze wi\u0119cej goo! Jest tak wiele."
+    m_Localized: "Jeszcze wi\u0119cej goo! Jest tak wiele. Zwi\u0119ksza liczb\u0119
+      pocisku."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -804,7 +805,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Moje stopy s\u0105 tak szybkie!"
+    m_Localized: "Moje stopy s\u0105 tak szybkie! Zwi\u0119ksza pr\u0119dko\u015B\u0107
+      spacer."
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -856,7 +858,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Rozlewa si\u0119 przez wrog\xF3w, wszechobecny."
+    m_Localized: "Idzie na jednym ko\u0144cu i na zewn\u0105trz! Zwi\u0119ksza penetracj\u0119
+      pocisku."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -868,7 +871,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Dlaczego tak d\u0142ugo ... matka? Dotrze\u0107 oczywi\u015Bcie."
+    m_Localized: "Dlaczego tak d\u0142ugo ... matka? Dotrze\u0107 oczywi\u015Bcie.
+      Zwi\u0119ksza zasi\u0119g."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: "Ko\u0142atka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Bij mocno! Fly Harder! Zwi\u0119ksza zwrotnik."
     m_Metadata:
       m_Items: []
   references:

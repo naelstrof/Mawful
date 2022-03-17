@@ -19,7 +19,7 @@ public class Weapon : MonoBehaviour {
         return weaponCard.localizedDescription.GetLocalizedString();
     }
     public virtual int GetUpgradeTotal() {
-        return upgrades.Count-1;
+        return upgrades.Count;
     }
     public bool CanUpgrade() {
         return GetUpgradeLevel() < GetUpgradeTotal();

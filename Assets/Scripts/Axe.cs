@@ -6,6 +6,9 @@ using UnityEngine.Rendering;
 public class Axe : Projectile {
     public Vector3 gravityDir;
     public void Update() {
+        if (hitStunned) {
+            return;
+        }
         transform.rotation *= Quaternion.AngleAxis(Time.deltaTime*360f, Vector3.forward);
     }
     public override void FixedUpdate() {

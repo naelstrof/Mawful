@@ -29,7 +29,7 @@ public class EnemyDribbleWave : EnemyWave {
             yield return null;
         }
         while (currentSpawn++<spawnCount) {
-            EnemyCharacter character;
+            Character character;
             enemyPools[UnityEngine.Random.Range(0,enemyPools.Count)].TryInstantiate(out character);
             character.SetPositionAndVelocity(GetValidOffscreenSpawnPosition(), Vector3.zero);
             yield return waitInterval;

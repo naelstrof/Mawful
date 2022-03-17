@@ -57,6 +57,10 @@ public class Character : PooledItem {
         public float damage;
         public Vector3 knockback;
     }
+    [HideInInspector]
+    public AudioSource audioSource;
+    [SerializeField]
+    private AudioPack dieSound;
     IEnumerator HitEffect() {
         float startTime = Time.time;
         float duration = 0.33f;
@@ -81,6 +85,9 @@ public class Character : PooledItem {
             return;
         }
         StartCoroutine(HitStunRoutine(duration, vibrationMag));
+    }
+    protected virtual void HitResponse(Character other) {
+
     }
     protected IEnumerator HitStunRoutine(float duration, float vibrationMag) {
         hitStunned = true;
@@ -147,6 +154,7 @@ public class Character : PooledItem {
     }
     public virtual void Die() {
         died?.Invoke();
+        dieSound?.PlayOneShot(audioSource);
     }
     public override void Awake() {
         base.Awake();
@@ -156,6 +164,7 @@ public class Character : PooledItem {
         stats.health.Heal(99999f);
         stats.health.depleted += Die;
         targetRenderer = GetComponentInChildren<Renderer>();
+        audioSource = GetComponent<AudioSource>();
     }
     protected virtual void Start() {
         radius = GetComponent<SphereCollider>().radius;
@@ -170,7 +179,7 @@ public class Character : PooledItem {
     public virtual void OnDisable() {
         characters.Remove(this);
     }
-    private void DoCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
+    protected virtual void DoCharacterCollision(WorldGrid.CollisionGridElement element, ref Vector3 newPosition) {
         foreach(Character character in element.charactersInElement) {
             if (character == this || character.phased) { continue; }
             Vector3 diff = position - character.position;
@@ -178,13 +187,12 @@ public class Character : PooledItem {
             float mag = diff.magnitude;
             float doubleRadius = radius+character.radius;
             float moveAmount = Mathf.Max(doubleRadius-mag, 0f) * 0.5f;
-            if ((this is EnemyCharacter && character is PlayerCharacter) && stats.health.GetHealth()>0f && moveAmount > 0f) {
-                character.BeHit(new DamageInstance(null, Mathf.Min(stats.health.GetHealth()*0.5f,1.5f), Vector3.zero));
-            } else if ((character is EnemyCharacter && this is PlayerCharacter) && stats.health.GetHealth()>0f && moveAmount > 0f) {
-                this.BeHit(new DamageInstance(null, Mathf.Min(character.stats.health.GetHealth()*0.5f,1.5f), Vector3.zero));
+            if (moveAmount > 0f) {
+                this.HitResponse(character);
+                character.HitResponse(this);
+                newPosition += dir * moveAmount;
+                character.position -= dir * moveAmount;
             }
-            newPosition += dir * moveAmount;
-            character.position -= dir * moveAmount;
         }
     }
     private void DoWallCollision(WorldGrid.PathGridElement element, ref Vector3 newPosition) {

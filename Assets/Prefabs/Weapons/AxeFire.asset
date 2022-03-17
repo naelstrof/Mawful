@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ee440cc25a306c43809863eaeec98b2, type: 3}
-  m_Name: Sprinters
+  m_Script: {fileID: 11500000, guid: bf485709fc1332443a4e5e0b661279e1, type: 3}
+  m_Name: AxeFire
   m_EditorClassIdentifier: 
-  enemiesToSpawn:
-  - {fileID: 8347615568578718693, guid: e7bd1c00cb92d664c88f31e42bffb2f7, type: 3}
-  waveDuration: 5
-  spawnCount: 40
+  clips:
+  - {fileID: 8300000, guid: 42d48d9ede289b44cb476493d35e8896, type: 3}
+  volume: 0.5
+  group: {fileID: -704706384289605986, guid: 91fe4e65bbb033d49944d232009bee92, type: 2}

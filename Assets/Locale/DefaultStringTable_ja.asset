@@ -766,7 +766,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "\u3082\u3063\u3068\u898B\u308B\uFF01\u305F\u304F\u3055\u3093\u3042\u308B\u3002"
+    m_Localized: "\u3082\u3063\u3068\u898B\u308B\uFF01\u305F\u304F\u3055\u3093\u3042\u308B\u3002\u767A\u5C04\u4F53\u6570\u3092\u5897\u3084\u3057\u307E\u3059\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -782,7 +782,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "\u79C1\u306E\u8DB3\u306F\u3068\u3066\u3082\u8FC5\u901F\u3067\u3059\uFF01"
+    m_Localized: "\u79C1\u306E\u8DB3\u306F\u3068\u3066\u3082\u8FC5\u901F\u3067\u3059\uFF01\u6B69\u884C\u30B9\u30D4\u30FC\u30C9\u3092\u4E0A\u3052\u308B"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -835,7 +835,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "\u305D\u308C\u306F\u6575\u3001\u666E\u53CA\u3057\u3066\u3044\u308B\u6575\u3092\u901A\u3057\u3066\u3053\u307C\u308C\u307E\u3059\u3002"
+    m_Localized: "\u4E00\u65B9\u306E\u7AEF\u306B\u884C\u304D\u3001\u3082\u3046\u4E00\u65B9\u3092\u51FA\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u767A\u5C04\u4F53\u6D78\u900F\u3092\u5897\u52A0\u3055\u305B\u308B\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -847,7 +847,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "\u306A\u305C\u305D\u306E\u3088\u3046\u306A\u9577\u3044... maw\uFF1F\u3082\u3061\u308D\u3093\u5C4A\u304F\u3002"
+    m_Localized: "\u306A\u305C\u305D\u306E\u3088\u3046\u306A\u9577\u3044... maw\uFF1F\u3082\u3061\u308D\u3093\u5C4A\u304F\u3002\u30EA\u30FC\u30C1\u3092\u5897\u3084\u3057\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: "\u30CE\u30C3\u30AB\u30FC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "\u30CF\u30FC\u30C9\u30D2\u30C3\u30C8\uFF01\u6FC0\u3057\u304F\u98DB\u3076\uFF01\u30CE\u30C3\u30AF\u30D0\u30C3\u30AF\u3092\u5897\u3084\u3057\u307E\u3059\u3002"
     m_Metadata:
       m_Items: []
   references:

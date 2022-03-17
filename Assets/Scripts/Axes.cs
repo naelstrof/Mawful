@@ -5,10 +5,14 @@ using UnityEngine;
 public class Axes : Weapon {
     private WaitForSeconds perProjectileWait;
     private WaitForSeconds timeToWait;
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioPack pack;
     public override void Start() {
         stats.projectileCooldown.changed += OnCooldownChanged;
         OnCooldownChanged(stats.projectileCooldown.GetValue());
         perProjectileWait = new WaitForSeconds(0.10f);
+        audioSource = GetComponentInParent<AudioSource>();
         base.Start();
     }
     void OnCooldownChanged(float newCooldown) {
@@ -32,6 +36,7 @@ public class Axes : Weapon {
                 SetUpProjectile(axe);
                 axe.gravityDir = -updir*9.81f;
                 axe.SetPositionAndVelocity(player.interpolatedPosition, rot*aimDir*stats.projectileSpeed.GetValue());
+                pack.PlayOneShot(audioSource);
                 rot *= Quaternion.AngleAxis(5f, Vector3.up);
                 yield return perProjectileWait;
             }

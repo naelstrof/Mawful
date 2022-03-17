@@ -789,7 +789,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: Nog meer goo! Er is zoveel.
+    m_Localized: Nog meer goo! Er is zoveel. Verhoogt het projectieltelling.
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -805,7 +805,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: Mijn voeten zijn zo snel!
+    m_Localized: Mijn voeten zijn zo snel! Verhoogt de loopsnelheid
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -854,7 +854,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: Het morsen door vijanden, pervasive.
+    m_Localized: Gaat in het ene uiteinde en de andere! Verhoogt de projectiele penetratie.
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -866,7 +866,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: Waarom zo'n lange ... maw? Om natuurlijk te bereiken.
+    m_Localized: Waarom zo'n lange ... maw? Om natuurlijk te bereiken. Verhoogt het
+      bereik.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Klopper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: Hard raken! Vlieg harder! Verhoogt de klopback.
     m_Metadata:
       m_Items: []
   references:

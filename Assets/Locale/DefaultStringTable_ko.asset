@@ -801,7 +801,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "\uB354 \uB9CE\uC740 goo! \uB108\uBB34 \uB9CE\uC774 \uC788\uC5B4\uC694."
+    m_Localized: "\uB354 \uB9CE\uC740 goo! \uB108\uBB34 \uB9CE\uC774 \uC788\uC5B4\uC694.
+      \uBC1C\uC0AC\uCCB4 \uC218\uB97C \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -818,7 +819,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "\uB0B4 \uBC1C\uC774 \uB108\uBB34 \uBE68\uB9AC\uC788\uC5B4!"
+    m_Localized: "\uB0B4 \uBC1C\uC774 \uB108\uBB34 \uBE68\uB9AC\uC788\uC5B4! \uB3C4\uBCF4
+      \uC18D\uB3C4\uAC00 \uC99D\uAC00\uD569\uB2C8\uB2E4"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -876,8 +878,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "\uADF8\uAC83\uC740 \uC801\uC744 \uD1B5\uD574 \uC720\uCD9C\uB418\uBA70,
-      \uD37C\uC9C0\uC2ED\uC2DC\uC624."
+    m_Localized: "\uD55C\uCABD \uB05D\uC5D0 \uB098\uC544\uAC00\uACE0 \uB2E4\uB978
+      \uB05D\uC5D0 \uAC04\uB2E4! \uBC1C\uC0AC\uCCB4 \uCE68\uD22C\uB97C \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -890,7 +892,17 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6712538548064257
     m_Localized: "\uC65C \uADF8\uB7F0 \uAE38\uC774\uB4E0\uC9C0 ... \uB9C8\uBCF4?
-      \uBB3C\uB860 \uB3C4\uB2EC \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      \uBB3C\uB860 \uB3C4\uB2EC \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB3C4\uB2EC
+      \uBC94\uC704\uAC00 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: "\uB450\uB4DC\uB9AC\uB294 \uC0AC\uB78C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "\uC5F4\uC2EC\uD788 \uCCE4\uC5B4! \uB354 \uD798\uB4E4\uC5B4! \uB109\uBC31\uC744
+      \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
     m_Metadata:
       m_Items: []
   references:

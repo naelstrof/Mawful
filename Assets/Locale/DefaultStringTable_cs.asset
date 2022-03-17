@@ -789,7 +789,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Je\u0161t\u011B v\xEDce goo! Tady je tolik."
+    m_Localized: "Je\u0161t\u011B v\xEDce goo! Tady je tolik. Zvy\u0161uje po\u010Det
+      projektil\u016F."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -805,7 +806,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Moje nohy jsou tak rychl\xE9!"
+    m_Localized: "Moje nohy jsou tak rychl\xE9! Zvy\u0161uje rychlost ch\u016Fze"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -856,7 +857,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Rozpadlo p\u0159es nep\u0159\xE1tele, v\u0161udyp\u0159\xEDtomn\xFD."
+    m_Localized: "Jde do jednoho konce a druh\xE9ho! Zvy\u0161uje penetrace projektilu."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -868,7 +869,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Pro\u010D takov\xFD dlouh\xFD ... MAW? Dos\xE1hnout samoz\u0159ejm\u011B."
+    m_Localized: "Pro\u010D takov\xFD dlouh\xFD ... MAW? Dos\xE1hnout samoz\u0159ejm\u011B.
+      Zvy\u0161uje dosah."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Klepadlo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Ude\u0159 tvrd\u011B! Fly t\u011B\u017E\u0161\xED! Zvy\u0161uje
+      knockback."
     m_Metadata:
       m_Items: []
   references:

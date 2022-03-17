@@ -19,6 +19,11 @@ public class PlayerCharacter : Character {
             lastHitTime = Time.time;
         }
     }
+    protected override void HitResponse(Character other) {
+        if (other.stats.health.GetValue() > 0f && other.stats.damage.GetValue() > 0f) {
+            BeHit(new DamageInstance(null, other.stats.damage.GetValue(), Vector3.zero));
+        }
+    }
     // Do nothing, player hitstun suuucks
     public override void HitStun(float duration, float vibrationMag) {
     }

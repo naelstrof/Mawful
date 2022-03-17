@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class EnemyCharacter : Character {
+public class EnemySwarmer : Character {
     private bool stunned = false;
+    public int pathChoice;
     public override void LateUpdate() {
         base.LateUpdate();
         if (stats.health.GetHealth()>0f && velocity.sqrMagnitude > 0.0001f) {
@@ -23,10 +24,10 @@ public class EnemyCharacter : Character {
     public override void FixedUpdate() {
         base.FixedUpdate();
         if (!stunned) {
-            if (collidesWithWorld) {
-                wishDir = WorldGrid.instance.GetPathTowardsPlayer(position);
-            } else {
-                wishDir = (PlayerCharacter.playerPosition-position).normalized;
+            wishDir = WorldGrid.instance.GetPath(position, pathChoice);
+            if (wishDir.magnitude == 0f) {
+                Reset();
+                gameObject.SetActive(false);
             }
         } else {
             wishDir = Vector3.zero;

@@ -786,7 +786,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "M\xE9g t\xF6bb goo! Annyira van."
+    m_Localized: "M\xE9g t\xF6bb goo! Annyira van. N\xF6veli a l\xF6ved\xE9ksz\xE1mot."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -802,7 +802,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "A l\xE1bam olyan gyors!"
+    m_Localized: "A l\xE1bam olyan gyors! N\xF6veli a j\xE1r\xE1si sebess\xE9get"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -853,7 +853,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Az ellens\xE9geken \xE1t\xE1ramlik, \xE1thatolva."
+    m_Localized: "Az egyik v\xE9g\xE9n megy, \xE9s ki a m\xE1sik! N\xF6veli a l\xF6ved\xE9k
+      behatol\xE1s\xE1t."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -865,7 +866,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Mi\xE9rt ilyen hossz\xFA ... Maw? Term\xE9szetesen."
+    m_Localized: "Mi\xE9rt ilyen hossz\xFA ... Maw? Term\xE9szetesen. N\xF6veli a
+      REACH-t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: "Kopog\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Kem\xE9nyen \xFCtni! L\xE9gy nehezebb! N\xF6veli a kopog\xE1s."
     m_Metadata:
       m_Items: []
   references:

@@ -24,7 +24,7 @@ public class VoreTail : Vore {
     }
     void VaccumDefeated(WorldGrid.CollisionGridElement element) {
         foreach(Character character in element.charactersInElement) {
-            if (character.stats.health.GetHealth() <= 0f && character is EnemyCharacter) {
+            if (character.stats.health.GetHealth() <= 0f && !(character is PlayerCharacter)) {
                 if (Vector3.Distance(mouth.position, character.position) < player.stats.grabRange.GetValue()+character.radius) {
                     if (!vaccuming.Contains(character)) {
                         character.StartVore();

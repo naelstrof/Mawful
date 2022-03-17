@@ -783,7 +783,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Daha da fazla Goo! \xC7ok var."
+    m_Localized: "Daha da fazla Goo! \xC7ok var. Mermi say\u0131s\u0131n\u0131 artt\u0131r\u0131r."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -799,7 +799,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Ayaklar\u0131m \xE7ok h\u0131zl\u0131!"
+    m_Localized: "Ayaklar\u0131m \xE7ok h\u0131zl\u0131! Y\xFCr\xFCy\xFC\u015F h\u0131z\u0131n\u0131
+      artt\u0131r\u0131r"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -849,7 +850,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "D\xFC\u015Fmanlar\u0131, yayg\u0131n olarak d\xF6k\xFCl\xFCr."
+    m_Localized: "Bir ucunda ve di\u011Ferinde gider! Mermi penetrasyonunu artt\u0131r\u0131r."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -861,7 +862,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Neden bu kadar uzun ... Maw? Elbette ula\u015Fmak i\xE7in."
+    m_Localized: "Neden bu kadar uzun ... Maw? Elbette ula\u015Fmak i\xE7in. Ula\u015F\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Tokmak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Zor! Daha sert u\xE7! Kumral\u0131\u011F\u0131 artt\u0131r\u0131r."
     m_Metadata:
       m_Items: []
   references:

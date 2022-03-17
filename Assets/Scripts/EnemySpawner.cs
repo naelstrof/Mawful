@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour {
         for(int i=0;i<count;i++) {
             Vector3 position = new Vector3(UnityEngine.Random.Range(0f,200f), 0f, UnityEngine.Random.Range(0f, 200f));
             position = WorldGrid.instance.worldBounds.ClosestPoint(position);
-            EnemyCharacter character;
+            Character character;
             switch(current) {
                 case 0:
                     kobolds.TryInstantiate(out character); break;

@@ -781,7 +781,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "\xA1A\xFAn m\xE1s goo! Hay mucho."
+    m_Localized: "\xA1A\xFAn m\xE1s goo! Hay mucho. Aumenta el recuento de proyectiles."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -797,7 +797,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "\xA1Mis pies son tan r\xE1pidos!"
+    m_Localized: "\xA1Mis pies son tan r\xE1pidos! Aumenta la velocidad a pie"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -847,7 +847,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Se derrama a trav\xE9s de enemigos, generalizados."
+    m_Localized: "\xA1Va en un extremo y por el otro! Aumenta la penetraci\xF3n del
+      proyectil."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -859,7 +860,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "\xBFPor qu\xE9 tal largo ... Maw? Para alcanzar por supuesto."
+    m_Localized: "\xBFPor qu\xE9 tal largo ... Maw? Para alcanzar por supuesto. Aumenta
+      el alcance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Aldaba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "\xA1Golpear duro! \xA1Fly m\xE1s duro! Aumenta la roca."
     m_Metadata:
       m_Items: []
   references:

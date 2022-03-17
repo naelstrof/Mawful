@@ -783,7 +783,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: Chiar mai mult goo! E atat de mult.
+    m_Localized: "Chiar mai mult goo! E atat de mult. Cre\u0219te num\u0103rul de
+      proiectil."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -799,7 +800,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Picioarele mele sunt at\xE2t de rapide!"
+    m_Localized: "Picioarele mele sunt at\xE2t de rapide! Creste viteza de plimbare"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -849,7 +850,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Se scurge prin du\u0219mani, pervaziv\u0103."
+    m_Localized: "Merge \xEEntr-un cap\u0103t \u0219i altul! Cre\u0219te penetrarea
+      proiectilului."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -861,7 +863,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "De ce at\xE2t de mult ... Maw? La \xEEndeplinirea desigur."
+    m_Localized: "De ce at\xE2t de mult ... Maw? La \xEEndeplinirea desigur. Cre\u0219te
+      atingerea."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Criticastru
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: Loveste tare! Fly mai tare! Creste lovitura.
     m_Metadata:
       m_Items: []
   references:

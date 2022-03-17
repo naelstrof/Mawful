@@ -780,7 +780,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Viel\xE4 enemm\xE4n Gooa! Siell\xE4 on niin paljon."
+    m_Localized: "Viel\xE4 enemm\xE4n Gooa! Siell\xE4 on niin paljon. Lis\xE4\xE4
+      ammuslaskenta."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -796,7 +797,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: Jalkani ovat niin nopeita!
+    m_Localized: "Jalkani ovat niin nopeita! Lis\xE4\xE4 k\xE4vell\xE4 nopeutta"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -845,7 +846,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Se vuotaa vihollisten l\xE4pi, perversiivinen."
+    m_Localized: "Menee toisessa p\xE4\xE4ss\xE4 ja toinen! Lis\xE4\xE4 ammuslevyn
+      tunkeutumista."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -857,7 +859,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Miksi niin kauan ... Maw? P\xE4\xE4st\xE4 tietenkin."
+    m_Localized: "Miksi niin kauan ... Maw? P\xE4\xE4st\xE4 tietenkin. Kasvaa REACH."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Kolkutin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Ly\xF6 kovaa! Lent\xE4\xE4 kovemmin! Lis\xE4\xE4 knockback."
     m_Metadata:
       m_Items: []
   references:

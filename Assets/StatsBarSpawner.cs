@@ -8,7 +8,7 @@ public class StatsBarSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject barPrefab;
     private Dictionary<Attribute, StatBar> bars;
-    private Dictionary<AttributeModifier, StatBar> modBars;
+    private HashSet<StatBar> modBars;
     public Sprite healthSprite;
     public Sprite walkSpeedSprite;
     public Sprite luckSprite;
@@ -22,7 +22,7 @@ public class StatsBarSpawner : MonoBehaviour {
     public Sprite knockbackSprite;
     void Start() {
         bars = new Dictionary<Attribute, StatBar>();
-        modBars = new Dictionary<AttributeModifier, StatBar>();
+        modBars = new HashSet<StatBar>();
         if (target != null) {
             Setup(target.stats);
             target.stats.health.changed += OnStatsChanged;
@@ -70,24 +70,20 @@ public class StatsBarSpawner : MonoBehaviour {
         foreach(var pair in bars) {
             Destroy(pair.Value.gameObject);
         }
-        foreach(var pair in modBars) {
-            Destroy(pair.Value.gameObject);
+        foreach(var bar in modBars) {
+            Destroy(bar.gameObject);
         }
-        modBars.Clear();
         bars.Clear();
+        modBars.Clear();
     }
     void CreateBar(AttributeModifier attrMod, Sprite sprite) {
         if (attrMod == null) {
             return;
         }
-        if (modBars.ContainsKey(attrMod)) {
-            modBars[attrMod].Setup(sprite, attrMod);
-            return;
-        }
         GameObject obj = GameObject.Instantiate(barPrefab, transform);
         StatBar bar = obj.GetComponent<StatBar>();
         bar.Setup(sprite,attrMod);
-        modBars.Add(attrMod, bar);
+        modBars.Add(bar);
     }
     public void Setup(StatBlock block) {
         CreateBar(block.health, healthSprite);

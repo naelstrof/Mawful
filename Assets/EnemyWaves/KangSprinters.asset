@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ee440cc25a306c43809863eaeec98b2, type: 3}
-  m_Name: RatDribble
+  m_Script: {fileID: 11500000, guid: 210601a8f67254445bdfa25a1d385e84, type: 3}
+  m_Name: KangSprinters
   m_EditorClassIdentifier: 
   enemiesToSpawn:
-  - {fileID: 8347615568578718693, guid: 7fc943033ac6b4d49b49bf92903b0249, type: 3}
-  waveDuration: 40
-  spawnCount: 60
+  - {fileID: 8347615568578718693, guid: e7bd1c00cb92d664c88f31e42bffb2f7, type: 3}
+  waveDuration: 2
+  spawnCount: 20
+  swarmCount: 5

@@ -55,13 +55,13 @@ public class WorldGrid : MonoBehaviour {
     public class PathGridElement : GridElement {
         public bool passable;
         public bool visited;
-        public GridElement cameFrom;
+        public GridElement[] cameFrom;
         public override void Initialize(int3 pos, float tileSize, int gridSize) {
             base.Initialize(pos, tileSize, gridSize);
             passable = Physics.OverlapBoxNonAlloc(new Vector3(pos.x,pos.y,pos.z)*tileSize, Vector3.one*0.5f*tileSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
             passable = passable && pos.x > 0 && pos.x < gridSize-1 && pos.z > 0 && pos.z < gridSize-1;
             visited = false;
-            cameFrom = null;
+            cameFrom = new GridElement[5];
         }
         public void Refresh() {
             passable = Physics.OverlapBoxNonAlloc(new Vector3(position.x,position.y,position.z)*tileSize, Vector3.one*0.5f*tileSize, staticColliders, Quaternion.identity, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore) == 0;
@@ -74,6 +74,13 @@ public class WorldGrid : MonoBehaviour {
             return obj.GetHashCode() == GetHashCode();
         }
     }
+    public Vector3 GetPath(Vector3 fromPosition, int pathIndex) {
+        PathGridElement element = GetElement<PathGridElement>(fromPosition, pathGrid, pathGridSize);
+        if (element.cameFrom[pathIndex] == null) {
+            return Vector3.zero;
+        }
+        return (element.cameFrom[pathIndex].worldPosition-element.worldPosition).normalized;
+    }
     public Vector3 GetPathTowardsPlayer(Vector3 fromPosition) {
         PathGridElement element = GetElement<PathGridElement>(fromPosition, pathGrid, pathGridSize);
         if (element.cameFrom == null) {
@@ -82,7 +89,7 @@ public class WorldGrid : MonoBehaviour {
         if (element == lastElement) {
             return (PlayerCharacter.playerPosition - fromPosition).normalized;
         }
-        return (element.cameFrom.worldPosition-element.worldPosition).normalized;
+        return (element.cameFrom[0].worldPosition-element.worldPosition).normalized;
     }
     private void PrimeGrid<T>(int count, List<List<T>> grid, float tileSize) where T : GridElement, new() {
         grid.Clear();
@@ -181,8 +188,36 @@ public class WorldGrid : MonoBehaviour {
             }
         }
         DeterminePlayableArea();
+        GeneratePathToCorner(0,0,1);
+        GeneratePathToCorner(pathGrid.Count-1,0,2);
+        GeneratePathToCorner(0,pathGrid[0].Count-1,3);
+        GeneratePathToCorner(pathGrid.Count-1,pathGrid[0].Count-1,4);
         worldPathReady?.Invoke();
         TryUpdatePaths(true);
+    }
+    void GeneratePathToCorner(int cornerX, int cornerY, int destinationIndex) {
+        int minX = 0;
+        int minY = 0;
+        float minDistance = float.MaxValue;
+        for(int x=0;x<pathGrid.Count;x++) {
+            if (pathGrid[x] == null) {
+                continue;
+            }
+            for(int y=0;y<pathGrid[x].Count;y++) {
+                if (pathGrid[x][y] == null) {
+                    continue;
+                }
+                float distance = Vector2.Distance(new Vector2(cornerX, cornerY), new Vector2(x, y));
+                if (pathGrid[x][y].passable && distance < minDistance) {
+                    minX = x;
+                    minY = y;
+                    minDistance = distance;
+                }
+            }
+        }
+        // Just chew through it immediately. 
+        IEnumerator blah = ProcessPaths(pathGrid[minX][minY],destinationIndex);
+        while(blah.MoveNext()) {}
     }
     void OnDestroy() {
         if (mapGeneration != null) {
@@ -195,7 +230,7 @@ public class WorldGrid : MonoBehaviour {
         HashSet<PathGridElement> flood = new HashSet<PathGridElement>();
 
         // Just chew through it immediately. 
-        IEnumerator blah = ProcessPaths(center);
+        IEnumerator blah = ProcessPaths(center,0);
         while(blah.MoveNext()) {}
 
         foreach(List<PathGridElement> row in pathGrid) {
@@ -238,7 +273,7 @@ public class WorldGrid : MonoBehaviour {
             }
         }
     }
-    private IEnumerator ProcessPaths(PathGridElement center) {
+    private IEnumerator ProcessPaths(PathGridElement center, int destinationIndex) {
         foreach(List<PathGridElement> row in pathGrid) {
             foreach(PathGridElement element in row) {
                 element.visited = false;
@@ -273,7 +308,7 @@ public class WorldGrid : MonoBehaviour {
                         }
                     }
                     if ( !openGraph.Contains(target) && !target.visited && target.passable ) {
-                        target.cameFrom = element;
+                        target.cameFrom[destinationIndex] = element;
                         openGraph.Add(target);
                     }
                 }
@@ -309,7 +344,7 @@ public class WorldGrid : MonoBehaviour {
             if (instance.pathRoutine != null) {
                 instance.StopCoroutine(instance.pathRoutine);
             }
-            instance.pathRoutine = instance.StartCoroutine(ProcessPaths(center));
+            instance.pathRoutine = instance.StartCoroutine(ProcessPaths(center, 0));
             lastElement = center;
         }
     }
@@ -332,7 +367,7 @@ public class WorldGrid : MonoBehaviour {
                     continue;
                 }
                 //Gizmos.color = Color.Lerp(new Color(0f,0f,1f,0.1f), Color.red, Mathf.Clamp01(((float)element.pathCost)/10f));
-                Vector3 dir = (element.worldPosition-element.cameFrom.worldPosition).normalized;
+                Vector3 dir = (element.worldPosition-element.cameFrom[0].worldPosition).normalized;
                 Gizmos.DrawLine(element.worldPosition-dir*0.25f, element.worldPosition+dir*0.5f);
             }
         }

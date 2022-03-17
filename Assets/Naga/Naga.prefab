@@ -176,14 +176,23 @@ MonoBehaviour:
   friction: 0.3
   radius: 1
   colorFlash: {r: 0.5176471, g: 0.09411765, b: 2.8235295, a: 0}
+  collidesWithWorld: 1
   invulnerable: 0
   scoreCard: {fileID: 11400000, guid: eef4b7699eecc054197d2b19fd401881, type: 2}
   stats:
     health:
       modifiers:
       - {fileID: 11400000, guid: 3b92195ca192d884197052d0289e0e39, type: 2}
-    damage:
+    walkSpeed:
+      modifiers:
+      - {fileID: 11400000, guid: 5de906f7d2da3fb4b9d16b7e40956926, type: 2}
+    luck:
       modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers:
+      - {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectileCooldown:
       modifiers: []
     projectileCount:
@@ -194,12 +203,7 @@ MonoBehaviour:
       modifiers: []
     projectileSpeed:
       modifiers: []
-    walkSpeed:
-      modifiers:
-      - {fileID: 11400000, guid: 5de906f7d2da3fb4b9d16b7e40956926, type: 2}
-    luck:
-      modifiers: []
-    grabRange:
+    knockback:
       modifiers: []
   voreMagnetTransform: {fileID: 1093394043516265268}
   audioSource: {fileID: 0}

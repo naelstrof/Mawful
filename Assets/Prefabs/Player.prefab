@@ -391,42 +391,42 @@ MonoBehaviour:
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
-    projectileCooldown: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
-    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
-    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    projectileSpeed: {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
     knockback: {fileID: 0}
   - health: {fileID: 0}
     damage: {fileID: 0}
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
-    projectileCooldown: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
-    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
-    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    projectileSpeed: {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
     knockback: {fileID: 0}
   - health: {fileID: 0}
     damage: {fileID: 0}
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
-    projectileCooldown: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
-    projectileCount: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
-    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    projectileSpeed: {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
     knockback: {fileID: 0}
   - health: {fileID: 0}
-    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    damage: {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
     projectileCount: {fileID: 0}
-    projectilePenetration: {fileID: 11400000, guid: e20715b2380e0b640a90447cceeb5cef, type: 2}
+    projectilePenetration: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
@@ -936,8 +936,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   maxSimultaneousVores: 1
   chompEffect: {fileID: 2817711162976065244}
-  minTimeRange: 1
-  maxTimeRange: 1
+  minTimeRange: 0.5
+  maxTimeRange: 0.75
   triggerName: DickChomp
   listenName: DickChompComplete
   leveler: {fileID: 4915065598810861846}
@@ -1938,7 +1938,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 0}
   friction: 0.4
   radius: 0.25
-  colorFlash: {r: 0.4245283, g: 0.082102165, b: 0.082102165, a: 0}
+  colorFlash: {r: 1.6941177, g: 0.32941177, b: 0.32941177, a: 0}
   collidesWithWorld: 1
   invulnerable: 0
   scoreCard: {fileID: 0}
@@ -1977,6 +1977,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
       - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
   voreMagnetTransform: {fileID: 0}
+  audioSource: {fileID: 0}
+  dieSound: {fileID: 0}
   fireDir: {x: 0, y: 0, z: 1}
 --- !u!114 &4915065598810861846
 MonoBehaviour:
@@ -3167,7 +3169,7 @@ MonoBehaviour:
   weaponCard: {fileID: 11400000, guid: 47b2937169d521f4faa730658c4148d6, type: 2}
   upgrades:
   - health: {fileID: 0}
-    damage: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    damage: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
@@ -3178,23 +3180,23 @@ MonoBehaviour:
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
   - health: {fileID: 0}
-    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    damage: {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
-    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
   - health: {fileID: 0}
-    damage: {fileID: 11400000, guid: 12cb3cf2d7a869e4ca890811690c60b4, type: 2}
+    damage: {fileID: 11400000, guid: 1f1ec4ef395da0a4fa9ee4a4fbfce764, type: 2}
     walkSpeed: {fileID: 0}
     luck: {fileID: 0}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
-    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
@@ -3205,8 +3207,8 @@ MonoBehaviour:
     luck: {fileID: 0}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
-    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
-    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectilePenetration: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
@@ -3444,7 +3446,7 @@ MonoBehaviour:
     projectileCount: {fileID: 0}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
-    projectileSpeed: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
     knockback: {fileID: 0}
   - health: {fileID: 0}
     damage: {fileID: 0}
@@ -4308,6 +4310,7 @@ MonoBehaviour:
     knockback:
       modifiers:
       - {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
+      - {fileID: 11400000, guid: e109f90f83608c34b8d23ffd64e138d9, type: 2}
   hitSound: {fileID: 11400000, guid: b3381b2fbbcee204db7b1b850802789a, type: 2}
   garlicVisuals: {fileID: 6549988509822625336}
 --- !u!82 &266760407903384811
@@ -4693,6 +4696,7 @@ Transform:
   - {fileID: 1410310559841305018}
   - {fileID: 7911264663689261089}
   - {fileID: 5683425092579160859}
+  - {fileID: 5964054238411306446}
   m_Father: {fileID: 2325681476139413498}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5029,7 +5033,7 @@ MonoBehaviour:
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
     projectileCount: {fileID: 0}
-    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectileRadius: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
@@ -5040,7 +5044,7 @@ MonoBehaviour:
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
     projectileCount: {fileID: 0}
-    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectileRadius: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
@@ -5051,7 +5055,7 @@ MonoBehaviour:
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
     projectileCount: {fileID: 0}
-    projectilePenetration: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectilePenetration: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectileRadius: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     projectileSpeed: {fileID: 0}
     knockback: {fileID: 0}
@@ -5061,7 +5065,7 @@ MonoBehaviour:
     luck: {fileID: 0}
     grabRange: {fileID: 0}
     projectileCooldown: {fileID: 0}
-    projectileCount: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
     projectilePenetration: {fileID: 0}
     projectileRadius: {fileID: 0}
     projectileSpeed: {fileID: 0}
@@ -5091,10 +5095,12 @@ MonoBehaviour:
       modifiers:
       - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
     projectileSpeed:
-      modifiers: []
+      modifiers:
+      - {fileID: 11400000, guid: ac378912be1116e4c9e5992ab2b52711, type: 2}
     knockback:
       modifiers:
       - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+  pack: {fileID: 11400000, guid: b4564eec61ae7824c92ab700210986a5, type: 2}
 --- !u!1 &8504847677514764730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5227,6 +5233,96 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagesToUpdate:
   - {fileID: 3348340452597758224}
+--- !u!1 &8511873581498472852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5964054238411306446}
+  - component: {fileID: 7675179163168432437}
+  m_Layer: 0
+  m_Name: Knocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5964054238411306446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511873581498472852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8231813608218332607}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7675179163168432437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511873581498472852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8305f6ae34be07a46b481898afe2200b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponCard: {fileID: 11400000, guid: 5ed08156030cb654f909aeeb1bc2447e, type: 2}
+  upgrades:
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 2be121fb27675b4489fcf4f51390c571, type: 2}
+    knockback: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+  - health: {fileID: 0}
+    damage: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 2be121fb27675b4489fcf4f51390c571, type: 2}
+    knockback: {fileID: 11400000, guid: 593b4c9f23fea6e4c97eb780a176b245, type: 2}
+  stats:
+    health:
+      modifiers: []
+    walkSpeed:
+      modifiers: []
+    luck:
+      modifiers: []
+    grabRange:
+      modifiers: []
+    damage:
+      modifiers: []
+    projectileCooldown:
+      modifiers: []
+    projectileCount:
+      modifiers: []
+    projectilePenetration:
+      modifiers: []
+    projectileRadius:
+      modifiers: []
+    projectileSpeed:
+      modifiers: []
+    knockback:
+      modifiers: []
 --- !u!1 &8652095247479488560
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,6 +5880,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2806649645742534349, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &7712165705650932984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -370475481308072893, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1331076685134111450 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8960970926843962783, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1531753657526372616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 332477524584313267, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8299256670718100628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &976100746562172255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2042133044192677348, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
+  m_PrefabInstance: {fileID: 1287135977238034619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8734260831987665276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7559996389290045895, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
@@ -5812,31 +5933,6 @@ Transform:
 --- !u!4 &551499194026544789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7603339774585719250, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7712165705650932984 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -370475481308072893, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1531753657526372616 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 332477524584313267, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8299256670718100628 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7129253883390753839, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &1331076685134111450 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -8960970926843962783, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
-  m_PrefabInstance: {fileID: 1287135977238034619}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &976100746562172255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2042133044192677348, guid: fcac63614e42b3342814d56adf3cd7af, type: 3}
   m_PrefabInstance: {fileID: 1287135977238034619}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2491081579466430471
@@ -5976,6 +6072,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+--- !u!1 &6914491723654356819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 2491081579466430471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5368364855599299986 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 2491081579466430471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3823375967286146019 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1701592448113224676, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
@@ -5987,16 +6093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6914491723654356819 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 2491081579466430471}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &5368364855599299986 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 2491081579466430471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3832836093844947484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6240,9 +6336,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
---- !u!1 &3572117743407213310 stripped
+--- !u!224 &2659306153356036159 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_PrefabInstance: {fileID: 5545508667278650794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7292775335227431904 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3008613764058084938, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 5545508667278650794}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6586760266975331918 stripped
@@ -6256,14 +6357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &2659306153356036159 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7499155402478740885, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
-  m_PrefabInstance: {fileID: 5545508667278650794}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7292775335227431904 stripped
+--- !u!1 &3572117743407213310 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3008613764058084938, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9036240556653954900, guid: 9b68177d5cd384e46bfcafea5d61292c, type: 3}
   m_PrefabInstance: {fileID: 5545508667278650794}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5958699176093884581

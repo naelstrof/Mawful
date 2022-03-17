@@ -191,7 +191,8 @@ MonoBehaviour:
     grabRange:
       modifiers: []
     damage:
-      modifiers: []
+      modifiers:
+      - {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
     projectileCooldown:
       modifiers: []
     projectileCount:

@@ -785,7 +785,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: Even more goo! There's so much.
+    m_Localized: Even more goo! There's so much. Increases projectile count.
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -801,7 +801,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: My feet are so speedy!
+    m_Localized: My feet are so speedy! Increases walk speed
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -849,7 +849,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: It spills through enemies, pervasive.
+    m_Localized: Goes in one end and out the other! Increases projectile penetration.
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -861,7 +861,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: Why such the long... maw? To reach of course.
+    m_Localized: Why such the long... maw? To reach of course. Increases reach.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Knocker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: Hit hard! Fly harder! Increases knockback.
     m_Metadata:
       m_Items: []
   references:

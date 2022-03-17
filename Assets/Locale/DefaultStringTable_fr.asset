@@ -782,7 +782,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: Encore plus goo! Il y a tellement beaucoup.
+    m_Localized: Encore plus goo! Il y a tellement beaucoup. Augmente le nombre de
+      projectiles.
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -798,7 +799,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: Mes pieds sont si rapides!
+    m_Localized: Mes pieds sont si rapides! Augmente la vitesse de marche
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -848,7 +849,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Il d\xE9versait les ennemis, omnipr\xE9sents."
+    m_Localized: "Va dans une extr\xE9mit\xE9 et dehors l'autre! Augmente la p\xE9n\xE9tration
+      du projectile."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -860,7 +862,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Pourquoi de telles ... maw? Pour atteindre bien s\xFBr."
+    m_Localized: "Pourquoi de telles ... maw? Pour atteindre bien s\xFBr. Augmente
+      la port\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Heurtoir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: Frappe fort! Voler plus fort! Augmente le renversement.
     m_Metadata:
       m_Items: []
   references:

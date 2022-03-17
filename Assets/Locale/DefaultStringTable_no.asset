@@ -776,7 +776,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Enda mer goo! Det er s\xE5 mye."
+    m_Localized: "Enda mer goo! Det er s\xE5 mye. \xD8ker prosjektiltallet."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -792,7 +792,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Mine f\xF8tter er s\xE5 raske!"
+    m_Localized: "Mine f\xF8tter er s\xE5 raske! \xD8ker gangehastigheten"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -840,7 +840,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: Det spilder gjennom fiender, gjennomgripende.
+    m_Localized: "G\xE5r i den ene enden og ut den andre! \xD8ker prosjektilinntrengningen."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -852,7 +852,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Hvorfor s\xE5 lenge ... MAW? \xC5 n\xE5 selvf\xF8lgelig."
+    m_Localized: "Hvorfor s\xE5 lenge ... MAW? \xC5 n\xE5 selvf\xF8lgelig. \xD8ker
+      rekkevidden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Knocker.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Sl\xE5 hardt! Fly hardere! \xD8ker knockback."
     m_Metadata:
       m_Items: []
   references:

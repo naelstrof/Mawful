@@ -785,7 +785,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Ancora pi\xF9 goo! C'\xE8 cos\xEC tanto."
+    m_Localized: "Ancora pi\xF9 goo! C'\xE8 cos\xEC tanto. Aumenta il conteggio del
+      proiettile."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -801,7 +802,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "I miei piedi sono cos\xEC veloci!"
+    m_Localized: "I miei piedi sono cos\xEC veloci! Aumenta la velocit\xE0 della
+      camminata"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -817,7 +819,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6390850656587777
-    m_Localized: "Pi\xF9 Goo! Pi\xF9 Projectile Goo! + Conteggio del proiettile"
+    m_Localized: "Pi\xF9 goo! Pi\xF9 Projectile Goo! + Conteggio del proiettile"
     m_Metadata:
       m_Items: []
   - m_Id: 6390850656587778
@@ -850,7 +852,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: Viaggia attraverso i nemici, pervasivi.
+    m_Localized: Va in avanti e fuori l'altro! Aumenta la penetrazione del proiettile.
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -862,7 +864,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Perch\xE9 cos\xEC il lungo ... Maw? Per raggiungere ovviamente."
+    m_Localized: "Perch\xE9 cos\xEC il lungo ... Maw? Per raggiungere ovviamente.
+      Aumenta la portata."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Battente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: Colpisci forte! Vola forte! Aumenta il knockback.
     m_Metadata:
       m_Items: []
   references:

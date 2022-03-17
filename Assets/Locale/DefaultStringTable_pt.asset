@@ -783,7 +783,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: "Ainda mais Goo! H\xE1 muito."
+    m_Localized: "Ainda mais Goo! H\xE1 muito. Aumenta a contagem de proj\xE9til."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -799,7 +799,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Meus p\xE9s s\xE3o t\xE3o r\xE1pidos!"
+    m_Localized: "Meus p\xE9s s\xE3o t\xE3o r\xE1pidos! Aumenta a velocidade da caminhada"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -823,8 +823,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6413420252549120
-    m_Localized: "Materiais de ci\xEAncia goo necess\xE1rios, dentro de mim? + N\xEDveis
-      adquiridos"
+    m_Localized: "Materiais de ci\xEAncia do Goo necess\xE1rios, dentro de mim? +
+      N\xEDveis adquiridos"
     m_Metadata:
       m_Items: []
   - m_Id: 6413420286103552
@@ -849,7 +849,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: Ele transborda os inimigos, generosos.
+    m_Localized: "Vai em uma extremidade e fora do outro! Aumenta a penetra\xE7\xE3o
+      do proj\xE9til."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -861,7 +862,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Por que tanto tempo ... Maw? Para alcan\xE7ar, claro."
+    m_Localized: "Por que tanto tempo ... Maw? Para alcan\xE7ar, claro. Aumenta o
+      alcance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Aldrava
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Bata duro! Voar mais dif\xEDcil! Aumenta o kitleback."
     m_Metadata:
       m_Items: []
   references:

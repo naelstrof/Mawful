@@ -785,7 +785,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5428587585392641
-    m_Localized: Noch mehr Goo! Da ist soviel.
+    m_Localized: "Noch mehr Goo! Da ist soviel. Erh\xF6ht die Grafschaft der Projektil."
     m_Metadata:
       m_Items: []
   - m_Id: 5727232214790144
@@ -793,7 +793,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5727557197852672
-    m_Localized: Hintern Slam !! Oder ist es blockiert?
+    m_Localized: Butt Slam !! Oder ist es blockiert?
     m_Metadata:
       m_Items: []
   - m_Id: 6088671169269760
@@ -801,7 +801,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6088671211212800
-    m_Localized: "Meine F\xFC\xDFe sind so schnell!"
+    m_Localized: "Meine F\xFC\xDFe sind so schnell! Erh\xF6ht die Wandergeschwindigkeit"
     m_Metadata:
       m_Items: []
   - m_Id: 6098923893739520
@@ -851,7 +851,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6702229703806978
-    m_Localized: "Es versch\xFCttet durch Feinde, durchdringend."
+    m_Localized: "Geht in einem Ende und raus den anderen! Erh\xF6ht die Projektilpenetration."
     m_Metadata:
       m_Items: []
   - m_Id: 6709725998796800
@@ -863,7 +863,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6712538548064257
-    m_Localized: "Warum so das lange ... Maw? Nat\xFCrlich erreichen."
+    m_Localized: "Warum so das lange ... Maw? Nat\xFCrlich erreichen. Erh\xF6ht die
+      Reichweite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301641998336
+    m_Localized: Klopfer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7171301683941376
+    m_Localized: "Treffer! Fliegen Sie h\xE4rter! Erh\xF6ht den R\xFCckschlag."
     m_Metadata:
       m_Items: []
   references:

@@ -34,7 +34,9 @@ public class EnemyWave : ScriptableObject {
                     continue;
                 }
                 Vector3 screenPoint = CameraFollower.GetCamera().WorldToScreenPoint(pathGrid[x][y].worldPosition);
-                bool onScreen = screenPoint.x > 0f && screenPoint.x < Screen.width && screenPoint.y > 0f && screenPoint.y < Screen.height;
+                float bufferX = 0.5f*CameraFollower.GetCamera().pixelWidth;
+                float bufferY = 0.5f*CameraFollower.GetCamera().pixelHeight;
+                bool onScreen = screenPoint.x > -bufferX && screenPoint.x < CameraFollower.GetCamera().pixelWidth+bufferX && screenPoint.y > -bufferY && screenPoint.y < CameraFollower.GetCamera().pixelHeight+bufferY;
                 if (pathGrid[x][y].passable && pathGrid[x][y].visited && !onScreen) {
                     float distanceToPlayer = Vector3.Distance(PlayerCharacter.playerPosition, pathGrid[x][y].worldPosition);
                     totalChoices += Mathf.Max(50f-distanceToPlayer*2f, 0.01f);
@@ -50,7 +52,9 @@ public class EnemyWave : ScriptableObject {
                     continue;
                 }
                 Vector3 screenPoint = CameraFollower.GetCamera().WorldToScreenPoint(pathGrid[x][y].worldPosition);
-                bool onScreen = screenPoint.x > 0f && screenPoint.x < Screen.width && screenPoint.y > 0f && screenPoint.y < Screen.height;
+                float bufferX = 0.5f*CameraFollower.GetCamera().pixelWidth;
+                float bufferY = 0.5f*CameraFollower.GetCamera().pixelHeight;
+                bool onScreen = screenPoint.x > -bufferX && screenPoint.x < CameraFollower.GetCamera().pixelWidth+bufferX && screenPoint.y > -bufferY && screenPoint.y < CameraFollower.GetCamera().pixelHeight+bufferY;
                 if (pathGrid[x][y].passable && pathGrid[x][y].visited && !onScreen) {
                     float distanceToPlayer = Vector3.Distance(PlayerCharacter.playerPosition, pathGrid[x][y].worldPosition);
                     currentChoice += Mathf.Max(50f-distanceToPlayer*2f, 0.01f);
