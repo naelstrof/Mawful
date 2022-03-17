@@ -24,6 +24,8 @@ public class UpgradeSpawner : MonoBehaviour {
     private Sprite upgradeWeapon;
     [SerializeField]
     private Leveler leveler;
+    [SerializeField]
+    private StatsBarSpawner statsVisuals;
     void Awake() {
         takenChoices = new HashSet<int>();
         buttons = new List<GameObject>();
@@ -77,6 +79,11 @@ public class UpgradeSpawner : MonoBehaviour {
                     newButton.GetComponent<SelectHandler>().onSelect += (eventData)=>{
                         descriptionImage.sprite = weapon.weaponCard.icon;
                         descriptionText.text = weapon.weaponCard.localizedDescription.GetLocalizedString();
+                        if (weapon is Passive) {
+                            statsVisuals.Setup(weapon.GetCurrentUpgradeStatChange());
+                        } else {
+                            statsVisuals.Cleanup();
+                        }
                     };
                     return newButton;
                 }
@@ -95,6 +102,7 @@ public class UpgradeSpawner : MonoBehaviour {
                     newButton.GetComponent<SelectHandler>().onSelect += (eventData)=>{
                         descriptionImage.sprite = weapon.weaponCard.icon;
                         descriptionText.text = weapon.GetUpgradeText();
+                        statsVisuals.Setup(weapon.GetCurrentUpgradeStatChange());
                     };
                     return newButton;
                 }

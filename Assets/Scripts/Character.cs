@@ -76,13 +76,13 @@ public class Character : PooledItem {
         yield return new WaitForSeconds(time);
         frozen = false;
     }*/
-    public void HitStun(float duration, float vibrationMag) {
+    public virtual void HitStun(float duration, float vibrationMag) {
         if (hitStunned) {
             return;
         }
         StartCoroutine(HitStunRoutine(duration, vibrationMag));
     }
-    public IEnumerator HitStunRoutine(float duration, float vibrationMag) {
+    protected IEnumerator HitStunRoutine(float duration, float vibrationMag) {
         hitStunned = true;
         Vector3 preStunPosition = position;
         Vector3 preStunLastPosition = lastPosition;

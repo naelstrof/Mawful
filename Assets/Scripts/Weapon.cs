@@ -24,6 +24,9 @@ public class Weapon : MonoBehaviour {
     public bool CanUpgrade() {
         return GetUpgradeLevel() < GetUpgradeTotal();
     }
+    public virtual StatBlockModifier GetCurrentUpgradeStatChange() {
+        return upgrades[currentUpgrade];
+    }
     public virtual void Upgrade() {
         StatBlockModifier upgrade = upgrades[currentUpgrade++];
         upgrade.Apply(stats);

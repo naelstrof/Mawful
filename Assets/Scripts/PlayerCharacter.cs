@@ -19,6 +19,9 @@ public class PlayerCharacter : Character {
             lastHitTime = Time.time;
         }
     }
+    // Do nothing, player hitstun suuucks
+    public override void HitStun(float duration, float vibrationMag) {
+    }
     public override void Awake() {
         base.Awake();
         player = this;
