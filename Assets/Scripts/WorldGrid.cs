@@ -83,7 +83,7 @@ public class WorldGrid : MonoBehaviour {
     }
     public Vector3 GetPathTowardsPlayer(Vector3 fromPosition) {
         PathGridElement element = GetElement<PathGridElement>(fromPosition, pathGrid, pathGridSize);
-        if (element.cameFrom == null) {
+        if (element.cameFrom[0] == null) {
             return (fromPosition-element.worldPosition).normalized;
         }
         if (element == lastElement) {

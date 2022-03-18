@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 3317701027204177653}
   - component: {fileID: 6299236602810034}
   - component: {fileID: 2909164755788844454}
+  - component: {fileID: 4528069624309060916}
   m_Layer: 5
   m_Name: UpArrow
   m_TagString: Untagged
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19759762, g: 0.4811321, b: 0.17475079, a: 1}
+  m_Color: {r: 0.06410265, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -150,6 +151,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4528069624309060916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486517557854961815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: 1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2759818840474920569
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +177,7 @@ GameObject:
   - component: {fileID: 3283990905140342845}
   - component: {fileID: 8234909747983443223}
   - component: {fileID: 4103026964414398322}
+  - component: {fileID: 7865766393121291626}
   m_Layer: 5
   m_Name: DownArrow
   m_TagString: Untagged
@@ -225,6 +242,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7865766393121291626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2759818840474920569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7060064495199416383
 GameObject:
   m_ObjectHideFlags: 0

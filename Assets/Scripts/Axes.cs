@@ -29,7 +29,12 @@ public class Axes : Weapon {
             for (int i=0;i<stats.projectileCount.GetValue();i++) {
                 Vector3 updir = Vector3.ProjectOnPlane(CameraFollower.GetCamera().transform.forward, Vector3.up).normalized;
                 float angle = Vector3.Angle(player.fireDir, updir);
-                Vector3 aimDir = Vector3.RotateTowards(player.fireDir, updir, angle*0.8f*Mathf.Deg2Rad, 10f);
+                Vector3 aimDir;
+                if (angle < 140f) {
+                    aimDir = Vector3.RotateTowards(player.fireDir, updir, angle*0.8f*Mathf.Deg2Rad, 10f);
+                } else {
+                    aimDir = updir;
+                }
 
                 Axe axe;
                 if (!AxePool.StaticTryInstantiate(out axe)) { continue; }

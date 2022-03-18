@@ -121,6 +121,7 @@ public class Character : PooledItem {
         enabled = false;
         startedVore?.Invoke();
         targetRenderer.material.EnableKeyword("_PINCH_ON");
+        targetRenderer.material.SetColor("_EmissionColor", Color.black);
         return true;
     }
     public virtual void BeHit(DamageInstance instance) {

@@ -139,7 +139,7 @@ Material:
     - _Parallax: 0.005
     - _PenetrationDepth: -1
     - _PenetratorBlendshapeMultiplier: 1
-    - _PenetratorBulgePercentage: 0.5
+    - _PenetratorBulgePercentage: 0.4
     - _PenetratorCumActive: 0
     - _PenetratorCumProgress: 0
     - _PenetratorLength: 3.1704283

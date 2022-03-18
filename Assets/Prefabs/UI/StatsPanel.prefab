@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7604378547399090868}
   - component: {fileID: 2750893602394632118}
   - component: {fileID: 3017759021909403779}
+  - component: {fileID: 5371157989088057423}
   m_Layer: 5
   m_Name: StatsPanel
   m_TagString: Untagged
@@ -143,3 +144,15 @@ MonoBehaviour:
   projectileRadiusSprite: {fileID: 21300000, guid: e6045ab33292b1d4485d58f817a40e88, type: 3}
   projectileSpeedSprite: {fileID: 21300000, guid: bbc5fd01a02bbb14ab94b5b032315be5, type: 3}
   knockbackSprite: {fileID: 21300000, guid: b38b79420abdb7a489454f5579f06bcc, type: 3}
+--- !u!225 &5371157989088057423
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003060926434886884}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

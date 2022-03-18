@@ -7,27 +7,36 @@ public class WeaponProgressSpawner : MonoBehaviour {
     private WeaponSet weaponSet;
     [SerializeField]
     private GameObject weaponProgressPanelPrefab;
-    private List<GameObject> weaponProgressPanels;
+    private Dictionary<Weapon,GameObject> weaponProgressPanels;
     void Start() {
         weaponSet.weaponSetChanged += OnWeaponSetChanged;
-        weaponProgressPanels = new List<GameObject>();
+        weaponProgressPanels = new Dictionary<Weapon, GameObject>();
         OnWeaponSetChanged(weaponSet);
     }
     void OnDestroy() {
         weaponSet.weaponSetChanged -= OnWeaponSetChanged;
     }
     void OnWeaponSetChanged(WeaponSet weaponSet) {
-        foreach(GameObject obj in weaponProgressPanels) {
-            Destroy(obj);
-        }
-        weaponProgressPanels.Clear();
         List<Weapon> aliveWeapons = weaponSet.GetAllActiveWeapons();
-        for(int i=weaponProgressPanels.Count;i<aliveWeapons.Count;i++) {
-            GameObject obj = GameObject.Instantiate(weaponProgressPanelPrefab, transform);
-            weaponProgressPanels.Add(obj);
+        List<Weapon> allWeapons = weaponSet.GetAllWeapons();
+        // Destroy weapon panels that were removed (shouldn't happen, but just being robust)
+        foreach(Weapon weapon in allWeapons) {
+            if (!aliveWeapons.Contains(weapon) && weaponProgressPanels.ContainsKey(weapon)) {
+                Destroy(weaponProgressPanels[weapon]);
+                weaponProgressPanels.Remove(weapon);
+            }
         }
-        for(int i=0;i<aliveWeapons.Count;i++) {
-            weaponProgressPanels[i].GetComponent<WeaponProgressPanel>().Setup(aliveWeapons[i]);
+        // Create panels that are new
+        foreach(Weapon weapon in aliveWeapons) {
+            if (!weaponProgressPanels.ContainsKey(weapon)) {
+                GameObject obj = GameObject.Instantiate(weaponProgressPanelPrefab, transform);
+                weaponProgressPanels.Add(weapon, obj);
+            }
+            // Then update them
+            weaponProgressPanels[weapon].GetComponent<WeaponProgressPanel>().Setup(weapon);
+            weaponProgressPanels[weapon].GetComponent<SelectHandler>().onSelect += (callback) => {
+                weaponProgressPanels[weapon].GetComponent<WeaponProgressPanel>().Show();
+            };
         }
     }
 }

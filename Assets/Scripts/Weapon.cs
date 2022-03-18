@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour {
     [SerializeField]
     protected List<StatBlockModifier> upgrades;
     [SerializeField]
-    protected StatBlock stats;
+    public StatBlock stats;
     protected int currentUpgrade = 0;
     public virtual int GetUpgradeLevel() {
         return currentUpgrade;
@@ -33,10 +33,11 @@ public class Weapon : MonoBehaviour {
     }
     protected PlayerCharacter player;
     protected virtual void Awake() {
+        player = GetComponentInParent<PlayerCharacter>();
+        stats.SetParent(player.stats);
         Pauser.pauseChanged += OnPauseChanged;
     }
     protected virtual void OnEnable() {
-        player = GetComponentInParent<PlayerCharacter>();
         StartCoroutine(FireRoutine());
     }
     protected virtual void OnDisable() {
@@ -51,7 +52,6 @@ public class Weapon : MonoBehaviour {
     protected virtual void OnPauseChanged(bool paused) {
     }
     public virtual void Start() {
-        stats.SetParent(player.stats);
     }
     public virtual IEnumerator FireRoutine() {
         while(Pauser.GetPaused()) {

@@ -17,6 +17,10 @@ public class StatBar : MonoBehaviour {
         statIcon.sprite = statSprite;
         float value = attr.GetValue();
         statText.text = value.ToString("F1");
+        if (!isActiveAndEnabled) {
+            currentValue = value;
+            return;
+        }
         if (value > currentValue) {
             StartCoroutine(FadeInOut(up));
         }
