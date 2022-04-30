@@ -23,9 +23,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   resource: {fileID: 11400000, guid: 2fc44f6d98df14c43860d80e383fbd23, type: 2}
+  mods: []
   defaultValue: 0
-  min: 0
-  max: 4
-  value: 0
   references:
     version: 1

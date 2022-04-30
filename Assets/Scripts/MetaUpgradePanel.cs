@@ -29,13 +29,13 @@ public class MetaUpgradePanel : MonoBehaviour {
         availableUpgradeSprites.Clear();
 
         // Full respawn
-        for(int i=0;i<targetUpgrade.max;i++) {
+        for(int i=0;i<targetUpgrade.mods.Count;i++) {
             GameObject obj = new GameObject(targetUpgrade.name + " upgrade", typeof(Image));
             obj.transform.SetParent(targetSpriteSpawn);
             availableUpgradeSprites.Add(obj.GetComponent<Image>());
         }
         // Set sprites
-        for(int i=0;i<targetUpgrade.max;i++) {
+        for(int i=0;i<targetUpgrade.mods.Count;i++) {
             if (i < targetUpgrade.value) {
                 availableUpgradeSprites[i].sprite = onSprite;
             } else {

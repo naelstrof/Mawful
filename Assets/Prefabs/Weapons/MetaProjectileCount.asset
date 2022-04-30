@@ -23,9 +23,33 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   resource: {fileID: 11400000, guid: eef4b7699eecc054197d2b19fd401881, type: 2}
+  mods:
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    xpGain: {fileID: 0}
+    weaponCount: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    xpGain: {fileID: 0}
+    weaponCount: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 11400000, guid: 7ff8bdd50e86ad04a98dc391606315e1, type: 2}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
   defaultValue: 0
-  min: 0
-  max: 2
-  value: 0
   references:
     version: 1

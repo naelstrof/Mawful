@@ -23,9 +23,59 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   resource: {fileID: 11400000, guid: 4eadf9d140ee5644282d6259e474d209, type: 2}
+  mods:
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    xpGain: {fileID: 0}
+    weaponCount: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    xpGain: {fileID: 0}
+    weaponCount: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    xpGain: {fileID: 0}
+    weaponCount: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    xpGain: {fileID: 0}
+    weaponCount: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 0}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 11400000, guid: 419a3df340751cd4a8a7e237a5241de5, type: 2}
+    knockback: {fileID: 0}
   defaultValue: 0
-  min: 0
-  max: 4
-  value: 0
   references:
     version: 1

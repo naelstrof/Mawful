@@ -7,6 +7,8 @@ using UnityEngine.Localization;
 public class StatBlock {
     public HealthAttribute health;
     public Attribute walkSpeed;
+    public Attribute xpGain;
+    public Attribute weaponCount;
     public LuckAttribute luck;
     public Attribute grabRange;
     public Attribute damage;
@@ -19,6 +21,8 @@ public class StatBlock {
     public void SetParent(StatBlock block) {
         health.SetParentAttribute(block.health);
         damage.SetParentAttribute(block.damage);
+        xpGain.SetParentAttribute(block.xpGain);
+        weaponCount.SetParentAttribute(block.weaponCount);
         projectileCooldown.SetParentAttribute(block.projectileCooldown);
         projectileCount.SetParentAttribute(block.projectileCount);
         projectilePenetration.SetParentAttribute(block.projectilePenetration);
@@ -36,6 +40,8 @@ public class StatBlockModifier {
     public AttributeModifier health;
     public AttributeModifier damage;
     public AttributeModifier walkSpeed;
+    public AttributeModifier xpGain;
+    public AttributeModifier weaponCount;
     public AttributeModifier luck;
     public AttributeModifier grabRange;
     public AttributeModifier projectileCooldown;
@@ -47,6 +53,8 @@ public class StatBlockModifier {
     public void Apply(StatBlock block) {
         block.health.AddModifier(health);
         block.damage.AddModifier(damage);
+        block.xpGain.AddModifier(xpGain);
+        block.weaponCount.AddModifier(weaponCount);
         block.projectileCooldown.AddModifier(projectileCooldown);
         block.projectileCount.AddModifier(projectileCount);
         block.projectilePenetration.AddModifier(projectilePenetration);
@@ -60,6 +68,8 @@ public class StatBlockModifier {
     public void Revert(StatBlock block) {
         block.health.RemoveModifier(health);
         block.damage.RemoveModifier(damage);
+        block.xpGain.RemoveModifier(xpGain);
+        block.weaponCount.RemoveModifier(weaponCount);
         block.projectileCooldown.RemoveModifier(projectileCooldown);
         block.projectileCount.RemoveModifier(projectileCount);
         block.projectilePenetration.RemoveModifier(projectilePenetration);

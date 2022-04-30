@@ -23,9 +23,51 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   resource: {fileID: 11400000, guid: 9c99841a0d4c1ae4f8380f8d5f02d5da, type: 2}
+  mods:
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
+  - health: {fileID: 0}
+    damage: {fileID: 0}
+    walkSpeed: {fileID: 0}
+    luck: {fileID: 0}
+    grabRange: {fileID: 0}
+    projectileCooldown: {fileID: 11400000, guid: c9e86fee2048a564ebe458aac42a7308, type: 2}
+    projectileCount: {fileID: 0}
+    projectilePenetration: {fileID: 0}
+    projectileRadius: {fileID: 0}
+    projectileSpeed: {fileID: 0}
+    knockback: {fileID: 0}
   defaultValue: 0
-  min: 0
-  max: 4
-  value: 0
   references:
     version: 1

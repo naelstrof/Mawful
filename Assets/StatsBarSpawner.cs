@@ -20,6 +20,7 @@ public class StatsBarSpawner : MonoBehaviour {
     public Sprite projectileRadiusSprite;
     public Sprite projectileSpeedSprite;
     public Sprite knockbackSprite;
+    public Sprite xpGainSprite;
     private StatBlock subscribed;
     private StatBlock displayed;
     private bool isWeapon;
@@ -50,6 +51,7 @@ public class StatsBarSpawner : MonoBehaviour {
             block.health.changed += OnStatsChanged;
             block.walkSpeed.changed += OnStatsChanged;
             block.grabRange.changed += OnStatsChanged;
+            block.xpGain.changed += OnStatsChanged;
         }
         block.luck.changed += OnStatsChanged;
         block.damage.changed += OnStatsChanged;
@@ -65,6 +67,7 @@ public class StatsBarSpawner : MonoBehaviour {
         block.health.changed -= OnStatsChanged;
         block.walkSpeed.changed -= OnStatsChanged;
         block.luck.changed -= OnStatsChanged;
+        block.xpGain.changed -= OnStatsChanged;
         block.grabRange.changed -= OnStatsChanged;
         block.damage.changed -= OnStatsChanged;
         block.projectileCooldown.changed -= OnStatsChanged;
@@ -113,6 +116,7 @@ public class StatsBarSpawner : MonoBehaviour {
             CreateBar(block.health, healthSprite);
             CreateBar(block.walkSpeed, walkSpeedSprite);
             CreateBar(block.grabRange, grabRangeSprite);
+            CreateBar(block.xpGain, xpGainSprite);
         }
         CreateBar(block.luck, luckSprite);
         CreateBar(block.damage, damageSprite);
@@ -129,6 +133,7 @@ public class StatsBarSpawner : MonoBehaviour {
         CreateBar(modifier.health, healthSprite);
         CreateBar(modifier.walkSpeed, walkSpeedSprite);
         CreateBar(modifier.luck, luckSprite);
+        CreateBar(modifier.xpGain, xpGainSprite);
         CreateBar(modifier.grabRange, grabRangeSprite);
         CreateBar(modifier.damage, damageSprite);
         CreateBar(modifier.projectileCooldown, projectileCooldownSprite);

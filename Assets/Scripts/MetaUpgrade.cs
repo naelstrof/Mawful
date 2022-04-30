@@ -9,9 +9,8 @@ public class MetaUpgrade : ScriptableObject {
     public Sprite sprite;
     public LocalizedString description;
     public ScoreCard resource;
+    public List<StatBlockModifier> mods;
     public int defaultValue;
-    public int min;
-    public int max;
     [System.NonSerialized]
     public int value;
     public void Load() {
@@ -28,9 +27,9 @@ public class MetaUpgrade : ScriptableObject {
     public bool AttemptLevelUp() {
         int cost = GetCost();
         float resourceCount = Score.GetXP(resource);
-        if (resourceCount > cost && value < max) {
+        if (resourceCount > cost && value < mods.Count) {
             Score.SetXP(resource, resourceCount-cost);
-            value = Mathf.Clamp(value+1,min,max);
+            value = Mathf.Clamp(value+1,0,mods.Count);
             Save();
             return true;
         }
